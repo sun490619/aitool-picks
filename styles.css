@@ -160,8 +160,8 @@ svg[class*="icon"] {
 /* Category card images (Explore by Category section) - constrained size */
 .posts-grid > a.card .card-image,
 .category-grid > a.card .card-image {
-  height: 120px;
-  max-height: 120px;
+  height: 120px !important;
+  max-height: 120px !important;
 }
 
 .posts-grid > a.card .card-image svg,
@@ -173,8 +173,8 @@ svg[class*="icon"] {
 
 /* Article post cards - larger images */
 .post-card .card-image {
-  height: 180px;
-  max-height: 180px;
+  height: 180px !important;
+  max-height: 180px !important;
 }
 
 .post-card .card-image svg {
