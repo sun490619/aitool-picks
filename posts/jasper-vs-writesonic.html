@@ -34,12 +34,14 @@
         .affiliate-note { background: #fff3cd; padding: 12px 16px; border-radius: 8px; margin: 30px 0; font-size: 0.85em; color: #856404; }
         footer { background: #1a1a2e; color: #ccc; padding: 40px 0; text-align: center; font-size: 0.9em; margin-top: 40px; }
         footer a { color: #667eea; }
+        .progress-bar { position: fixed; top: 0; left: 0; height: 3px; background: linear-gradient(90deg, #667eea, #764ba2); z-index: 1000; transition: width 0.1s; }
     </style>
 </head>
 <body>
+    <div class="progress-bar" id="progressBar"></div>
     <header>
         <div class="container">
-            <a href="/">← Back to AI Tool Picks</a>
+            <a href="../../">← Back to AI Tool Picks</a>
             <h1>Jasper AI vs Writesonic:<br>Which AI Writer Wins in 2026?</h1>
             <div class="meta">June 14, 2026 · 8 min read</div>
         </div>
@@ -130,8 +132,17 @@
     </main>
     <footer>
         <div class="container">
-            <p>© 2026 AI Tool Picks. All rights reserved. | <a href="/privacy">Privacy Policy</a> | <a href="/affiliate-disclosure">Affiliate Disclosure</a></p>
+            <p>© 2026 AI Tool Picks. All rights reserved. | <a href="../../privacy.html">Privacy Policy</a> | <a href="../../affiliate-disclosure.html">Affiliate Disclosure</a></p>
         </div>
     </footer>
+    <script>
+        // Reading progress bar
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('progressBar').style.width = scrolled + '%';
+        });
+    </script>
 </body>
 </html>
