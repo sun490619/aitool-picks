@@ -114,6 +114,91 @@ body {
 
 img { max-width: 100%; height: auto; display: block; }
 
+/* ========================================
+   Icon System — Professional SVG Icons
+   ======================================== */
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  vertical-align: middle;
+  line-height: 1;
+  /* Prevent SVG from stretching in flex/grid */
+  max-width: 100%;
+  height: auto;
+}
+
+.icon-sm { width: 1rem; height: 1rem; }
+.icon-md { width: 1.25rem; height: 1.25rem; }
+.icon-lg { width: 1.5rem; height: 1.5rem; }
+.icon-xl { width: 2rem; height: 2rem; }
+.icon-2xl { width: 3rem; height: 3rem; }
+
+/* Brand icon specific */
+.brand-icon { width: 2rem; height: 2rem; }
+.brand-icon-lg { width: 2.5rem; height: 2.5rem; }
+
+/* Category icon in cards */
+.category-icon { width: 3rem; height: 3rem; }
+
+/* Prevent SVG from stretching in flex/grid containers */
+svg.icon,
+svg[class*="icon"] {
+  flex-shrink: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Card image container - constrain SVG */
+.card-image svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Hero badge icon */
+.hero-badge svg { width: 1rem; height: 1rem; }
+
+/* Disclosure icon */
+.disclosure-icon { width: 1.25rem; height: 1.25rem; }
+
+/* Footer social icons */
+.footer-social svg { width: 1.25rem; height: 1.25rem; }
+
+/* Share buttons */
+.share-btn svg { width: 1.125rem; height: 1.125rem; }
+
+/* TOC, breadcrumb, meta icons */
+.article-breadcrumb svg,
+.article-meta-item svg,
+.toc-link svg { width: 1rem; height: 1rem; }
+
+/* Footer logo */
+.footer-logo .brand-icon { width: 2rem; height: 2rem; }
+
+/* Mobile menu */
+.mobile-nav-link svg { width: 1.25rem; height: 1.25rem; }
+.mobile-menu-close svg { width: 1.5rem; height: 1.5rem; }
+
+/* Navigation icons */
+.nav-link svg { width: 1.125rem; height: 1.125rem; }
+.mobile-menu-btn svg { width: 1.5rem; height: 1.5rem; }
+
+/* Card badge icons - none for now, using text badges */
+
+/* Progress bar - no icon */
+
+/* Footer social icons */
+.footer-social a { display: inline-flex; align-items: center; justify-content: center; }
+
+/* Mobile menu icon */
+.mobile-menu-btn { display: inline-flex; align-items: center; justify-content: center; }
+
+/* ========================================
+   Professional Icon Definitions (inline SVG variables)
+   ======================================== */
+
 a { color: var(--color-primary); text-decoration: none; transition: color var(--transition-fast); }
 a:hover { color: var(--color-primary-dark); }
 
