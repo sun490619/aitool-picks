@@ -3,329 +3,359 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>写作与生产力工具 | AI Tool Picks</title>
-    <meta name="description" content="精选全球顶尖 AI 写作辅助与文本优化工具。DeepL、Grammarly、Notion AI、Jasper、Writesonic 等主流工具深度横评，助你找到最适合的写作助手。">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../styles.css">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%231d1d1f'/><path d='M8 12h16M8 16h16M8 20h16' stroke='white' stroke-width='2' stroke-linecap='round'/></svg>">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="写作与生产力工具 | AI Tool Picks">
-    <meta property="og:description" content="精选全球顶尖 AI 写作辅助与文本优化工具。DeepL、Grammarly、Notion AI、Jasper、Writesonic 等主流工具深度横评，助你找到最适合的写作助手。">
-    <meta property="og:url" content="https://sun490619.github.io/aitool-picks/category/writing.html">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1551434678-e076c223a692?w=1200&h=630&fit=crop">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="写作与生产力工具 | AI Tool Picks">
-    <meta name="twitter:description" content="精选全球顶尖 AI 写作辅助与文本优化工具。DeepL、Grammarly、Notion AI、Jasper、Writesonic 等主流工具深度横评。">
-    <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"ItemList","name":"写作与生产力工具","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"Grammarly","url":"https://sun490619.github.io/aitool-picks/tools/grammarly.html"}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"DeepL","url":"https://sun490619.github.io/aitool-picks/tools/deepl.html"}},{"@type":"ListItem","position":3,"item":{"@type":"Product","name":"Notion AI","url":"https://sun490619.github.io/aitool-picks/tools/notion-ai.html"}},{"@type":"ListItem","position":4,"item":{"@type":"Product","name":"Jasper","url":"https://sun490619.github.io/aitool-picks/tools/jasper.html"}},{"@type":"ListItem","position":5,"item":{"@type":"Product","name":"Writesonic","url":"https://sun490619.github.io/aitool-picks/tools/writesonic.html"}},{"@type":"ListItem","position":6,"item":{"@type":"Product","name":"DeepL","url":"https://sun490619.github.io/aitool-picks/tools/deepl.html"}},{"@type":"ListItem","position":7,"item":{"@type":"Product","name":"Notion AI","url":"https://sun490619.github.io/aitool-picks/tools/notion-ai.html"}},{"@type":"ListItem","position":8,"item":{"@type":"Product","name":"Copy.ai","url":"https://sun490619.github.io/aitool-picks/tools/copy-ai.html"}},{"@type":"ListItem","position":9,"item":{"@type":"Product","name":"Rytr","url":"https://sun490619.github.io/aitool-picks/tools/rytr.html"}},{"@type":"ListItem","position":10,"item":{"@type":"Product","name":"QuillBot","url":"https://sun490619.github.io/aitool-picks/tools/quillbot.html"}}]}
-    </script>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D53DQ3JKKL"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-D53DQ3JKKL');
-    </script>
+    <title>写作与生产力工具 - AI Tool Picks</title>
+    <!-- 引入大厂最爱的高级极简线条图标库 -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* 全局大厂风重置 */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        body {
+            background-color: #fafafa;
+            color: #1d1d1f;
+            padding-bottom: 60px;
+        }
+
+        /* 导航栏样式 */
+        .navbar {
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+            padding: 15px 30px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .navbar-brand {
+            font-weight: 600;
+            font-size: 16px;
+            color: #1d1d1f;
+            text-decoration: none;
+        }
+
+        /* 页面头部：苹果风大标题 */
+        .header-section {
+            max-width: 1100px;
+            margin: 60px auto 40px auto;
+            padding: 0 20px;
+            text-align: left;
+        }
+
+        .header-section h1 {
+            font-size: 40px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            color: #1d1d1f;
+            margin-bottom: 12px;
+        }
+
+        .header-section p {
+            font-size: 19px;
+            color: #86868b;
+            font-weight: 400;
+        }
+
+        /* 工具卡片网格布局 */
+        .grid-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 24px;
+        }
+
+        /* 高级工具卡片组件 */
+        .tool-card {
+            background-color: #f5f5f7; /* 苹果标准高级灰底色 */
+            border-radius: 14px;
+            padding: 24px;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+            border: 1px solid transparent;
+        }
+
+        /* 鼠标悬停时的优雅动效 */
+        .tool-card:hover {
+            background-color: #ffffff;
+            transform: translateY(-5px);
+            border-color: rgba(0, 0, 0, 0.04);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+        }
+
+        .card-top {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 16px;
+        }
+
+        /* 精致的单色图标样式 */
+        .card-icon {
+            background-color: rgba(0, 0, 0, 0.04);
+            color: #1d1d1f;
+            padding: 10px;
+            border-radius: 10px;
+            margin-right: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card-info h3 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1d1d1f;
+            margin-bottom: 4px;
+        }
+
+        .card-desc {
+            font-size: 14px;
+            color: #515154;
+            line-height: 1.5;
+        }
+
+        /* 卡片右下角的精致小箭头 */
+        .card-footer {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+            color: #0066cc; /* 经典科技蓝 */
+            font-size: 14px;
+            font-weight: 500;
+            transition: transform 0.2s;
+        }
+
+        .tool-card:hover .card-footer {
+            transform: translateX(3px);
+        }
+
+        /* 手机端完美适配 */
+        @media (max-width: 768px) {
+            .header-section h1 {
+                font-size: 32px;
+            }
+            .header-section p {
+                font-size: 16px;
+            }
+            .grid-container {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header class="site-header" id="siteHeader" role="banner">
-        <div class="container header-inner">
-            <a href="../../" class="brand" aria-label="AI Tool Picks - 首页">
-                <svg class="brand-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4" ry="4"></rect><path d="M8 12h16M8 16h16M8 20h16"></path></svg>
-                <span>AI Tool Picks</span>
-            </a>
 
-            <nav class="nav-desktop" role="navigation" aria-label="主导航">
-                <a href="../../" class="nav-link">首页</a>
-                <a href="./writing.html" class="nav-link" aria-current="page">写作工具</a>
-                <a href="./coding.html" class="nav-link">编程工具</a>
-                <a href="./video.html" class="nav-link">视频工具</a>
-                <a href="./seo.html" class="nav-link">SEO 工具</a>
-            </nav>
+    <!-- 顶栏导航（防404使用相对路径） -->
+    <nav class="navbar">
+        <a href="../../" class="navbar-brand">← 返回首页</a>
+    </nav>
 
-            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="打开菜单" aria-expanded="false" aria-controls="mobileMenu">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="6" x2="20" y2="6"></line><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="18" x2="20" y2="18"></line></svg>
-            </button>
-        </div>
+    <!-- 苹果风头部区 -->
+    <header class="header-section">
+        <h1>写作与生产力工具</h1>
+        <p>精选全球顶尖 AI 写作辅助、内容创作与文本优化工具</p>
     </header>
 
-    <div class="mobile-menu-overlay" id="mobileMenuOverlay" aria-hidden="true"></div>
-    <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-labelledby="mobileMenuTitle">
-        <div class="mobile-menu-header">
-            <span class="brand" id="mobileMenuTitle"><svg class="brand-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4" ry="4"></rect><path d="M8 12h16M8 16h16M8 20h16"></path></svg> AI Tool Picks</span>
-            <button class="mobile-menu-close" id="mobileMenuClose" aria-label="关闭菜单">✕</button>
-        </div>
-        <nav class="mobile-nav" role="navigation" aria-label="移动端导航">
-            <a href="../../" class="mobile-nav-link">首页</a>
-            <a href="./writing.html" class="mobile-nav-link">写作工具</a>
-            <a href="./coding.html" class="mobile-nav-link">编程工具</a>
-            <a href="./video.html" class="mobile-nav-link">视频工具</a>
-            <a href="./seo.html" class="mobile-nav-link">SEO 工具</a>
-        </nav>
-    </div>
-    <div class="mobile-menu-overlay" id="mobileMenuOverlay" aria-hidden="true"></div>
+    <!-- 工具卡片展示区 -->
+    <main class="grid-container">
 
-    <main role="main">
-        <!-- 页面头部 -->
-        <header class="category-header" aria-labelledby="category-title">
-            <div class="container">
-                <h1 id="category-title" class="category-title">写作与生产力工具</h1>
-                <p class="category-description">精选全球顶尖 AI 写作辅助与文本优化工具</p>
-            </div>
-        </header>
-
-        <div class="container">
-            <div class="disclosure-banner" role="note">
-                <strong>免责声明：</strong> 本页面包含联盟链接。如果您通过这些链接购买，我们可能会获得佣金，但这不会增加您的任何额外成本。我们仅推荐经过实际测试、真心认可的工具。
-            </div>
-
-            <section class="section" aria-labelledby="articles-heading">
-                <h2 id="articles-heading" class="sr-only">AI 写作工具评测</h2>
-                <div class="posts-grid">
-                    <article class="card post-card stagger-1">
-                        <div class="card-image">
-                            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad994?w=800&h=450&fit=crop" alt="Grammarly 编辑界面" loading="lazy">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-badge"><span class="badge">语法检查</span></div>
-                            <h3 class="card-title"><a href="../../tools/grammarly.html">Grammarly</a></h3>
-                            <p class="card-excerpt">全球领先的 AI 语法检查与写作助手，实时纠正语法、拼写、标点与语气，支持浏览器扩展、桌面端与移动端。</p>
-                            <div class="card-meta"><span class="badge">语法检查</span> <span class="badge secondary">写作助手</span></div>
-                            <a href="../../tools/grammarly.html" class="card-link">查看详情 <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"></svg></a>
-                        </div>
-                    </article>
-
-                    <article class="card post-card stagger-2">
-                        <div class="card-image">
-                            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=450&fit=crop" alt="DeepL 翻译界面" loading="lazy">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-badge"><span class="badge">翻译工具</span></div>
-                            <h3 class="card-title"><a href="../../tools/deepl.html">DeepL</a></h3>
-                            <p class="card-excerpt">全球最准确的 AI 翻译工具，支持 30+ 语言，神经网络翻译质量逼近人工，提供文档翻译与 API 接口。</p>
-                            <div class="card-meta"><time datetime="2026-06-10">2026-06-10</time> · <span>5 min read</span></div>
-                            <a href="../../tools/deepl.html" class="card-link">查看详情 <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"></svg></a>
-                        </div>
-                    </article>
-
-                    <article class="card post-card stagger-3">
-                        <div class="card-image">
-                            <img src="https://images.unsplash.com/photo-1611746872915-64382b5c76da?w=800&h=450&fit=crop" alt="Notion AI 界面" loading="lazy">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-badge"><span class="badge">生产力工具</span></div>
-                            <h3 class="card-title"><a href="../../tools/notion-ai.html">Notion AI</a></h3>
-                            <p class="card-excerpt">内嵌于 Notion 的 AI 写作助手，支持续写、总结、改写、翻译、生成大纲等，无缝融入知识管理工作流。</p>
-                            <div class="card-meta"><time datetime="2026-06-08">2026-06-08</time> · <span>6 min read</span></div>
-                            <a href="../../tools/notion-ai.html" class="card-link">查看详情 <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"></svg></a>
-                        </div>
-                    </article>
-
-                    <article class="card post-card stagger-4">
-                        <div class="card-image">
-                            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad994?w=800&h=450&fit=crop" alt="Jasper 界面" loading="lazy">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-badge"><span class="badge">内容生成</span></div>
-                            <h3 class="card-title"><a href="../../tools/jasper.html">Jasper</a></h3>
-                            <p class="card-excerpt">面向营销团队的 AI 内容平台，提供 50+ 模板、品牌语音训练、SEO 模式与团队协作功能，适合规模化内容生产。</p>
-                            <div class="card-meta"><time datetime="2026-06-12">2026-06-12</time> · <span>7 min read</span></div>
-                            <a href="../../tools/jasper.html" class="card-link">查看详情 <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"></svg></a>
-                        </div>
-                    </article>
-
-                    <article class="card post-card stagger-5">
-                        <div class="card-image">
-                            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=450&fit=crop" alt="Writesonic 界面" loading="lazy">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-badge"><span class="badge">内容生成</span></div>
-                            <h3 class="card-title"><a href="../../tools/writesonic.html">Writesonic</a></h3>
-                            <p class="card-excerpt">面向 SEO 的 AI 写作平台，提供文章生成、改写、扩展、Chatsonic 对话模式，内置 SEO 优化建议。</p>
-                            <div class="card-meta"><time datetime="2026-06-15">2026-06-15</time> · <span>6 min read</span></div>
-                            <a href="../../tools/writesonic.html" class="card-link">查看详情 <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"></svg></a>
-                        </div>
-                    </article>
-
-                    <article class="card post-card stagger-6">
-                        <div class="card-image">
-                            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=450&fit=crop" alt="Copy.ai 界面" loading="lazy">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-badge"><span class="badge">营销文案</span></div>
-                            <h3 class="card-title"><a href="../../tools/copy-ai.html">Copy.ai</a></h3>
-                            <p class="card-excerpt">专注营销文案生成的 AI 工具，提供 90+ 模板覆盖广告、邮件、社交媒体、产品描述等场景，团队协作友好。</p>
-                            <div class="card-meta"><time datetime="2026-06-18">2026-06-18</time> · <span>5 min read</span></div>
-                            <a href="../../tools/copy-ai.html" class="card-link">查看详情 <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"></svg></a>
-                        </div>
-                    </article>
-
-                    <article class="card post-card stagger-7">
-                        <div class="card-image">
-                            <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&h=450&fit=crop" alt="Rytr 界面" loading="lazy">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-badge"><span class="badge">性价比</span></div>
-                            <h3 class="card-title"><a href="../../tools/rytr.html">Rytr</a></h3>
-                            <p class="card-excerpt">高性价比 AI 写作助手，支持 30+ 语言、40+ 场景模板，内置抄袭检测，适合预算有限的个人创作者与小团队。</p>
-                            <div class="card-meta"><time datetime="2026-06-20">2026-06-20</time> · <span>4 min read</span></div>
-                            <a href="../../tools/rytr.html" class="card-link">查看详情 <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"></svg></a>
-                        </div>
-                    </article>
-
-                    <article class="card post-card stagger-8">
-                        <div class="card-image">
-                            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=450&fit=crop" alt="QuillBot 界面" loading="lazy">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-badge"><span class="badge">改写润色</span></div>
-                            <h3 class="card-title"><a href="../../tools/quillbot.html">QuillBot</a></h3>
-                            <p class="card-excerpt">专业的 AI 改写与润色工具，提供 7 种改写模式、语法检查、引用生成、抄袭检测，学术写作与内容优化首选。</p>
-                            <div class="card-meta"><time datetime="2026-06-22">2026-06-22</time> · <span>5 min read</span></div>
-                            <a href="../../tools/quillbot.html" class="card-link">查看详情 <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"></svg></a>
-                        </div>
-                    </article>
-
-                    <article class="card post-card stagger-9">
-                        <div class="card-image">
-                            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad994?w=800&h=450&fit=crop" alt="LanguageTool 界面" loading="lazy">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-badge"><span class="badge">多语言</span></div>
-                            <h3 class="card-title"><a href="../../tools/languagetool.html">LanguageTool</a></h3>
-                            <p class="card-excerpt">开源多语言语法检查工具，支持 30+ 语言，浏览器扩展、编辑器插件全覆盖，注重隐私保护，适合多语言写作场景。</p>
-                            <div class="card-meta"><time datetime="2026-06-25">2026-06-25</time> · <span>4 min read</span></div>
-                            <a href="../../tools/languagetool.html" class="card-link">查看详情 <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"></svg></a>
-                        </div>
-                    </article>
-
-                    <article class="card post-card stagger-10">
-                        <div class="card-image">
-                            <img src="https://images.unsplash.com/photo-1611746872915-64382b5c76da?w=800&h=450&fit=crop" alt="Hemingway Editor 界面" loading="lazy">
-                        </div>
-                        <div class="card-body">
-                            <div class="card-badge"><span class="badge">可读性</span></div>
-                            <h3 class="card-title"><a href="../../tools/hemingway.html">Hemingway Editor</a></h3>
-                            <p class="card-excerpt">专注可读性分析的编辑器，高亮长句、被动语态、副词滥用等问题，给出年级等级评分，助你写出清晰有力的文字。</p>
-                            <div class="card-meta"><time datetime="2026-06-28">2026-06-28</time> · <span>4 min read</span></div>
-                            <a href="../../tools/hemingway.html" class="card-link">查看详情 <svg class="icon icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"></svg></a>
-                        </div>
-                    </article>
-                </div>
-            </section>
-
-            <section class="section" style="background: var(--color-bg-secondary);" aria-labelledby="category-links">
-                <div class="container">
-                    <header class="text-center" style="margin-bottom: var(--space-8);">
-                        <h2 id="category-links" style="font-size: clamp(1.75rem, 3.5vw, 2.25rem); font-weight: 700; margin-bottom: var(--space-2);">探索其他分类</h2>
-                        <p style="font-size: var(--text-lg); color: var(--color-text-secondary); max-width: 36rem; margin: 0 auto;">探索我们精选的全方位 AI 工具对比评测</p>
-                    </header>
-
-                    <div class="posts-grid">
-                        <a href="./coding.html" class="card" style="text-decoration: none; color: inherit; display: block;">
-                            <div class="card-image">
-                                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=300&fit=crop" alt="AI 编程工具" loading="lazy">
-                            </div>
-                            <div class="card-body">
-                                <h3 style="font-size: var(--text-xl); font-weight: 700; margin-bottom: var(--space-2);">编程开发工具</h3>
-                                <p style="color: var(--color-text-secondary);">GitHub Copilot、Cursor、Windsurf、Codex — 真实开发工作流测评</p>
-                            </div>
-                        </a>
-
-                        <a href="./video.html" class="card" style="text-decoration: none; color: inherit; display: block;">
-                            <div class="card-image">
-                                <img src="https://images.unsplash.com/photo-1611746872915-64382b5c76da?w=600&h=300&fit=crop" alt="AI 视频工具" loading="lazy">
-                            </div>
-                            <div class="card-body">
-                                <h3 style="font-size: var(--text-xl); font-weight: 700; margin-bottom: var(--space-2);">视频生成工具</h3>
-                                <p style="color: var(--color-text-secondary);">Sora、Runway Gen-3、Pika、HeyGen、Synthesia — 画质、可控性与工作流实测</p>
-                            </div>
-                        </a>
-
-                        <a href="./seo.html" class="card" style="text-decoration: none; color: inherit; display: block;">
-                            <div class="card-image">
-                                <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&h=300&fit=crop" alt="AI SEO 工具" loading="lazy">
-                            </div>
-                            <div class="card-body">
-                                <h3 style="font-size: var(--text-xl); font-weight: 700; margin-bottom: var(--space-2);">SEO 优化工具</h3>
-                                <p style="color: var(--color-text-secondary);">Surfer、Frase、NeuronWriter、MarketMuse、Scalenut、Originality.ai — 排名实测</p>
-                            </div>
-                        </a>
+        <!-- 1. Grammarly -->
+        <a href="../../tools/grammarly.html" target="_blank" class="tool-card">
+            <div>
+                <div class="card-top">
+                    <div class="card-icon">
+                        <i data-lucide="file-text"></i>
+                    </div>
+                    <div class="card-info">
+                        <h3>Grammarly</h3>
                     </div>
                 </div>
-            </section>
+                <p class="card-desc">全球领先的 AI 语法检查与写作助手，实时纠正语法、拼写、标点与语气，支持浏览器扩展、桌面端与移动端。</p>
+            </div>
+            <div class="card-footer">
+                <span>访问工具 →</span>
+            </div>
+        </a>
 
-            <section class="section" aria-labelledby="newsletter">
-                <div class="container" style="max-width: 36rem; margin: 0 auto; text-align: center; padding: 48px; background: linear-gradient(135deg, #1d1d1f 0%, #2c2c2e 100%); border-radius: 20px; color: #fff;">
-                    <h3 style="font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 700; margin-bottom: 16px;">不错过任何一篇深度评测</h3>
-                    <p style="font-size: 1.125rem; opacity: 0.9; margin-bottom: 32px;">加入 1000+ 创作者，获取手把手的 AI 工具深度评测与选型指南。无垃圾邮件，随时退订。</p>
-                    <form class="newsletter-form" action="https://formspree.io/f/your-form-id" method="POST" style="max-width: 28rem; margin: 0 auto;">
-                        <input type="email" class="newsletter-input" placeholder="your@email.com" required aria-label="邮箱地址">
-                        <button type="submit" class="btn btn-primary">订阅周报</button>
-                    </form>
-                    <p style="font-size: var(--text-xs); opacity: 0.7; margin-top: 16px;">订阅即表示同意我们的 <a href="../../privacy.html" style="color: inherit; text-decoration: underline;">隐私政策</a>。</p>
+        <!-- 2. DeepL -->
+        <a href="../../tools/deepl.html" target="_blank" class="tool-card">
+            <div>
+                <div class="card-top">
+                    <div class="card-icon">
+                        <i data-lucide="languages"></i>
+                    </div>
+                    <div class="card-info">
+                        <h3>DeepL</h3>
+                    </div>
                 </div>
-            </section>
-        </div>
+                <p class="card-desc">全球最准确的 AI 翻译工具，支持 30+ 语言，神经网络翻译质量逼近人工，提供文档翻译与 API 接口。</p>
+            </div>
+            <div class="card-footer">
+                <span>访问工具 →</span>
+            </div>
+        </a>
+
+        <!-- 3. Notion AI -->
+        <a href="../../tools/notion-ai.html" target="_blank" class="tool-card">
+            <div>
+                <div class="card-top">
+                    <div class="card-icon">
+                        <i data-lucide="layout-dashboard"></i>
+                    </div>
+                    <div class="card-info">
+                        <h3>Notion AI</h3>
+                    </div>
+                </div>
+                <p class="card-desc">内嵌于 Notion 的 AI 写作助手，支持续写、总结、改写、翻译、生成大纲等，无缝融入知识管理工作流。</p>
+            </div>
+            <div class="card-footer">
+                <span>访问工具 →</span>
+            </div>
+        </a>
+
+        <!-- 4. Jasper -->
+        <a href="../../tools/jasper.html" target="_blank" class="tool-card">
+            <div>
+                <div class="card-top">
+                    <div class="card-icon">
+                        <i data-lucide="sparkles"></i>
+                    </div>
+                    <div class="card-info">
+                        <h3>Jasper</h3>
+                    </div>
+                </div>
+                <p class="card-desc">面向营销团队的 AI 内容平台，提供 50+ 模板、品牌语音训练、SEO 模式与团队协作功能，适合规模化内容生产。</p>
+            </div>
+            <div class="card-footer">
+                <span>访问工具 →</span>
+            </div>
+        </a>
+
+        <!-- 5. Writesonic -->
+        <a href="../../tools/writesonic.html" target="_blank" class="tool-card">
+            <div>
+                <div class="card-top">
+                    <div class="card-icon">
+                        <i data-lucide="pen-tool"></i>
+                    </div>
+                    <div class="card-info">
+                        <h3>Writesonic</h3>
+                    </div>
+                </div>
+                <p class="card-desc">面向 SEO 的 AI 写作平台，提供文章生成、改写、扩展、Chatsonic 对话模式，内置 SEO 优化建议。</p>
+            </div>
+            <div class="card-footer">
+                <span>访问工具 →</span>
+            </div>
+        </a>
+
+        <!-- 6. Copy.ai -->
+        <a href="../../tools/copy-ai.html" target="_blank" class="tool-card">
+            <div>
+                <div class="card-top">
+                    <div class="card-icon">
+                        <i data-lucide="clipboard-copy"></i>
+                    </div>
+                    <div class="card-info">
+                        <h3>Copy.ai</h3>
+                    </div>
+                </div>
+                <p class="card-desc">专注营销文案生成的 AI 工具，提供 90+ 模板覆盖广告、邮件、社交媒体、产品描述等场景，团队协作友好。</p>
+            </div>
+            <div class="card-footer">
+                <span>访问工具 →</span>
+            </div>
+        </a>
+
+        <!-- 7. Rytr -->
+        <a href="../../tools/rytr.html" target="_blank" class="tool-card">
+            <div>
+                <div class="card-top">
+                    <div class="card-icon">
+                        <i data-lucide="dollar-sign"></i>
+                    </div>
+                    <div class="card-info">
+                        <h3>Rytr</h3>
+                    </div>
+                </div>
+                <p class="card-desc">高性价比 AI 写作助手，支持 30+ 语言、40+ 场景模板，内置抄袭检测，适合预算有限的个人创作者与小团队。</p>
+            </div>
+            <div class="card-footer">
+                <span>访问工具 →</span>
+            </div>
+        </a>
+
+        <!-- 8. QuillBot -->
+        <a href="../../tools/quillbot.html" target="_blank" class="tool-card">
+            <div>
+                <div class="card-top">
+                    <div class="card-icon">
+                        <i data-lucide="rotate-ccw"></i>
+                    </div>
+                    <div class="card-info">
+                        <h3>QuillBot</h3>
+                    </div>
+                </div>
+                <p class="card-desc">专业的 AI 改写与润色工具，提供 7 种改写模式、语法检查、引用生成、抄袭检测，学术写作与内容优化首选。</p>
+            </div>
+            <div class="card-footer">
+                <span>访问工具 →</span>
+            </div>
+        </a>
+
+        <!-- 9. LanguageTool -->
+        <a href="../../tools/languagetool.html" target="_blank" class="tool-card">
+            <div>
+                <div class="card-top">
+                    <div class="card-icon">
+                        <i data-lucide="globe"></i>
+                    </div>
+                    <div class="card-info">
+                        <h3>LanguageTool</h3>
+                    </div>
+                </div>
+                <p class="card-desc">开源多语言语法检查工具，支持 30+ 语言，浏览器扩展、编辑器插件全覆盖，注重隐私保护，适合多语言写作场景。</p>
+            </div>
+            <div class="card-footer">
+                <span>访问工具 →</span>
+            </div>
+        </a>
+
+        <!-- 10. Hemingway Editor -->
+        <a href="../../tools/hemingway.html" target="_blank" class="tool-card">
+            <div>
+                <div class="card-top">
+                    <div class="card-icon">
+                        <i data-lucide="type"></i>
+                    </div>
+                    <div class="card-info">
+                        <h3>Hemingway Editor</h3>
+                    </div>
+                </div>
+                <p class="card-desc">专注可读性分析的编辑器，高亮长句、被动语态、副词滥用等问题，给出年级等级评分，助你写出清晰有力的文字。</p>
+            </div>
+            <div class="card-footer">
+                <span>访问工具 →</span>
+            </div>
+        </a>
+
     </main>
 
-    <footer class="site-footer" role="contentinfo">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <a href="../../" class="footer-logo"><svg class="brand-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4" ry="4"></rect><path d="M8 12h16M8 16h16M8 20h16"></path></svg>AI Tool Picks</a>
-                    <p class="footer-desc">专业的 AI 工具深度评测与选型指南。实测实评，拒绝营销话术。</p>
-                    <div class="footer-social">
-                        <a href="#" aria-label="关注我们的 Twitter"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a>
-                        <a href="#" aria-label="关注我们的 GitHub"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.536-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg></a>
-                        <a href="#" aria-label="关注我们的 GitHub"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.536-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg></a>
-                        <a href="#" aria-label="关注我们的 LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
-                    </div>
-                </div>
-
-                <div class="footer-column">
-                    <h4>分类</h4>
-                    <ul class="footer-links">
-                        <li><a href="./writing.html">写作工具</a></li>
-                        <li><a href="./coding.html">编程工具</a></li>
-                        <li><a href="./video.html">视频工具</a></li>
-                        <li><a href="./seo.html">SEO 工具</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-column">
-                    <h4>热门评测</h4>
-                    <ul class="footer-links">
-                        <li><a href="../../tools/grammarly.html">Grammarly</a></li>
-                        <li><a href="../../tools/deepl.html">DeepL</a></li>
-                        <li><a href="../../tools/notion-ai.html">Notion AI</a></li>
-                        <li><a href="../../tools/jasper.html">Jasper</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-column">
-                    <h4>资源</h4>
-                    <ul class="footer-links">
-                        <li><a href="../../affiliate-disclosure.html">联盟免责声明</a></li>
-                        <li><a href="../../privacy.html">隐私政策</a></li>
-                        <li><a href="#newsletter">邮件订阅</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2026 AI Tool Picks. 保留所有权利.</p>
-                <div class="flex gap-md">
-                    <a href="../../privacy.html">隐私政策</a>
-                    <a href="../../affiliate-disclosure.html">联盟免责声明</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="../../scripts.js"></script>
+    <!-- 激活极简线条图标库 -->
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 </html>
