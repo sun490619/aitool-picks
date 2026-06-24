@@ -4,358 +4,245 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>写作与生产力工具 - AI Tool Picks</title>
-    <!-- 引入大厂最爱的高级极简线条图标库 -->
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <style>
-        /* 全局大厂风重置 */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-        }
-
-        body {
-            background-color: #fafafa;
-            color: #1d1d1f;
-            padding-bottom: 60px;
-        }
-
-        /* 导航栏样式 */
-        .navbar {
-            background-color: rgba(255, 255, 255, 0.8);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-            padding: 15px 30px;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-
-        .navbar-brand {
-            font-weight: 600;
-            font-size: 16px;
-            color: #1d1d1f;
-            text-decoration: none;
-        }
-
-        /* 页面头部：苹果风大标题 */
-        .header-section {
-            max-width: 1100px;
-            margin: 60px auto 40px auto;
-            padding: 0 20px;
-            text-align: left;
-        }
-
-        .header-section h1 {
-            font-size: 40px;
-            font-weight: 700;
-            letter-spacing: -0.5px;
-            color: #1d1d1f;
-            margin-bottom: 12px;
-        }
-
-        .header-section p {
-            font-size: 19px;
-            color: #86868b;
-            font-weight: 400;
-        }
-
-        /* 工具卡片网格布局 */
-        .grid-container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 0 20px;
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-            gap: 24px;
-        }
-
-        /* 高级工具卡片组件 */
-        .tool-card {
-            background-color: #f5f5f7; /* 苹果标准高级灰底色 */
-            border-radius: 14px;
-            padding: 24px;
-            text-decoration: none;
-            color: inherit;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
-            border: 1px solid transparent;
-        }
-
-        /* 鼠标悬停时的优雅动效 */
-        .tool-card:hover {
-            background-color: #ffffff;
-            transform: translateY(-5px);
-            border-color: rgba(0, 0, 0, 0.04);
-            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
-        }
-
-        .card-top {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 16px;
-        }
-
-        /* 精致的单色图标样式 */
-        .card-icon {
-            background-color: rgba(0, 0, 0, 0.04);
-            color: #1d1d1f;
-            padding: 10px;
-            border-radius: 10px;
-            margin-right: 16px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .card-info h3 {
-            font-size: 18px;
-            font-weight: 600;
-            color: #1d1d1f;
-            margin-bottom: 4px;
-        }
-
-        .card-desc {
-            font-size: 14px;
-            color: #515154;
-            line-height: 1.5;
-        }
-
-        /* 卡片右下角的精致小箭头 */
-        .card-footer {
-            display: flex;
-            justify-content: flex-end;
-            margin-top: 20px;
-            color: #0066cc; /* 经典科技蓝 */
-            font-size: 14px;
-            font-weight: 500;
-            transition: transform 0.2s;
-        }
-
-        .tool-card:hover .card-footer {
-            transform: translateX(3px);
-        }
-
-        /* 手机端完美适配 */
-        @media (max-width: 768px) {
-            .header-section h1 {
-                font-size: 32px;
-            }
-            .header-section p {
-                font-size: 16px;
-            }
-            .grid-container {
-                grid-template-columns: 1fr;
-                gap: 16px;
-            }
-        }
-    </style>
+    <meta name="description" content="Best AI writing tools compared: Grammarly, Jasper, Writesonic, Copy.ai, Rytr, QuillBot, and more.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/aitool-picks/styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%232563eb'/><path d='M8 12h16M8 16h16M8 20h16' stroke='white' stroke-width='2' stroke-linecap='round'/></svg>">
 </head>
 <body>
-
-    <!-- 顶栏导航（防404使用相对路径） -->
-    <nav class="navbar">
-        <a href="../../" class="navbar-brand">← 返回首页</a>
-    </nav>
-
-    <!-- 苹果风头部区 -->
-    <header class="header-section">
-        <h1>写作与生产力工具</h1>
-        <p>精选全球顶尖 AI 写作辅助、内容创作与文本优化工具</p>
+    <header class="site-header" id="siteHeader" role="banner">
+        <div class="container header-inner">
+            <a href="/aitool-picks/" class="brand" aria-label="AI Tool Picks - Home">
+                <span class="brand-mark"></span>
+                <span>AI Tool Picks</span>
+            </a>
+            <nav class="nav-desktop" role="navigation" aria-label="Main navigation">
+                <a href="/aitool-picks/" class="nav-link">Home</a>
+                <a href="/aitool-picks/category/writing.html" class="nav-link" aria-current="page">AI Writing</a>
+                <a href="/aitool-picks/category/coding.html" class="nav-link">AI Coding</a>
+                <a href="/aitool-picks/category/video.html" class="nav-link">AI Video</a>
+                <a href="/aitool-picks/category/seo.html" class="nav-link">AI SEO</a>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+            </button>
+        </div>
     </header>
 
-    <!-- 工具卡片展示区 -->
-    <main class="grid-container">
-
-        <!-- 1. Grammarly -->
-        <a href="../tools/grammarly.html" class="tool-card">
+    <!-- Mobile drawer -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-labelledby="mobileMenuTitle">
+        <div class="mobile-menu-header">
+            <span class="brand" id="mobileMenuTitle"><span class="brand-mark"></span> AI Tool Picks</span>
+            <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+        </div>
+        <nav class="mobile-nav" role="navigation" aria-label="Mobile navigation">
+            <a href="/aitool-picks/" class="mobile-nav-link">Home</a>
+            <a href="/aitool-picks/category/writing.html" class="mobile-nav-link" aria-current="page">AI Writing</a>
+            <a href="/aitool-picks/category/coding.html" class="mobile-nav-link">AI Coding</a>
+            <a href="/aitool-picks/category/video.html" class="mobile-nav-link">AI Video</a>
+            <a href="/aitool-picks/category/seo.html" class="mobile-nav-link">AI SEO</a>
+        </nav>
+        <div class="mobile-drawer-footer">
             <div>
-                <div class="card-top">
-                    <div class="card-icon">
-                        <i data-lucide="file-text"></i>
-                    </div>
-                    <div class="card-info">
-                        <h3>Grammarly</h3>
-                    </div>
+                <div class="drawer-section-label">Language</div>
+                <div class="pill-switch" id="langSwitch">
+                    <button class="active" data-lang="en" aria-pressed="true">EN</button>
+                    <button data-lang="zh" aria-pressed="false">中文</button>
                 </div>
-                <p class="card-desc">全球领先的 AI 语法检查与写作助手，实时纠正语法、拼写、标点与语气，支持浏览器扩展、桌面端与移动端。</p>
             </div>
-            <div class="card-footer">
-                <span>访问工具 →</span>
-            </div>
-        </a>
-
-        <!-- 2. DeepL -->
-        <a href="../tools/deepl.html" class="tool-card">
             <div>
-                <div class="card-top">
-                    <div class="card-icon">
-                        <i data-lucide="languages"></i>
-                    </div>
-                    <div class="card-info">
-                        <h3>DeepL</h3>
-                    </div>
-                </div>
-                <p class="card-desc">全球最准确的 AI 翻译工具，支持 30+ 语言，神经网络翻译质量逼近人工，提供文档翻译与 API 接口。</p>
+                <div class="drawer-section-label">Theme</div>
+                <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle dark mode">
+                    <svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><g stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></g></svg>
+                    <span id="themeLabel">Light</span>
+                </button>
             </div>
-            <div class="card-footer">
-                <span>访问工具 →</span>
-            </div>
-        </a>
+        </div>
+    </div>
 
-        <!-- 3. Notion AI -->
-        <a href="../tools/notion-ai.html" class="tool-card">
-            <div>
-                <div class="card-top">
-                    <div class="card-icon">
-                        <i data-lucide="layout-dashboard"></i>
-                    </div>
-                    <div class="card-info">
-                        <h3>Notion AI</h3>
-                    </div>
-                </div>
-                <p class="card-desc">内嵌于 Notion 的 AI 写作助手，支持续写、总结、改写、翻译、生成大纲等，无缝融入知识管理工作流。</p>
+    <main role="main">
+        <!-- Header section -->
+        <section class="hero" aria-labelledby="category-title">
+            <div class="container hero-inner">
+                <h1 id="category-title" class="hero-title">Writing & Productivity <span>AI Tools</span></h1>
+                <p class="hero-subtitle">精选全球顶尖 AI 写作辅助、内容创作与文本优化工具</p>
             </div>
-            <div class="card-footer">
-                <span>访问工具 →</span>
-            </div>
-        </a>
+        </section>
 
-        <!-- 4. Jasper -->
-        <a href="../tools/jasper.html" class="tool-card">
-            <div>
-                <div class="card-top">
-                    <div class="card-icon">
-                        <i data-lucide="sparkles"></i>
-                    </div>
-                    <div class="card-info">
-                        <h3>Jasper</h3>
-                    </div>
-                </div>
-                <p class="card-desc">面向营销团队的 AI 内容平台，提供 50+ 模板、品牌语音训练、SEO 模式与团队协作功能，适合规模化内容生产。</p>
+        <div class="container">
+            <div class="disclosure-banner" role="note">
+                <strong>Disclosure:</strong> Some links on this site are affiliate links. If you click and make a purchase, we may earn a commission at no extra cost to you.
             </div>
-            <div class="card-footer">
-                <span>访问工具 →</span>
-            </div>
-        </a>
+        </div>
 
-        <!-- 5. Writesonic -->
-        <a href="../tools/writesonic.html" class="tool-card">
-            <div>
-                <div class="card-top">
-                    <div class="card-icon">
-                        <i data-lucide="pen-tool"></i>
-                    </div>
-                    <div class="card-info">
-                        <h3>Writesonic</h3>
-                    </div>
-                </div>
-                <p class="card-desc">面向 SEO 的 AI 写作平台，提供文章生成、改写、扩展、Chatsonic 对话模式，内置 SEO 优化建议。</p>
-            </div>
-            <div class="card-footer">
-                <span>访问工具 →</span>
-            </div>
-        </a>
+        <!-- Tool cards using global grid -->
+        <section class="section" aria-labelledby="tools">
+            <div class="container">
+                <div class="posts-grid">
 
-        <!-- 6. Copy.ai -->
-        <a href="../tools/copy-ai.html" class="tool-card">
-            <div>
-                <div class="card-top">
-                    <div class="card-icon">
-                        <i data-lucide="clipboard-copy"></i>
-                    </div>
-                    <div class="card-info">
-                        <h3>Copy.ai</h3>
-                    </div>
-                </div>
-                <p class="card-desc">专注营销文案生成的 AI 工具，提供 90+ 模板覆盖广告、邮件、社交媒体、产品描述等场景，团队协作友好。</p>
-            </div>
-            <div class="card-footer">
-                <span>访问工具 →</span>
-            </div>
-        </a>
+                    <!-- 1. Grammarly -->
+                    <a href="/aitool-picks/tools/grammarly.html" class="card">
+                        <div class="card-body">
+                            <div class="post-card-badge"><span class="badge">Grammar</span></div>
+                            <h3 class="card-title">Grammarly</h3>
+                            <p class="card-excerpt">全球领先的 AI 语法检查与写作助手，实时纠正语法、拼写、标点与语气，支持浏览器扩展、桌面端与移动端。</p>
+                            <a href="/aitool-picks/tools/grammarly.html" class="card-link">Read full review →</a>
+                        </div>
+                    </a>
 
-        <!-- 7. Rytr -->
-        <a href="../tools/rytr.html" class="tool-card">
-            <div>
-                <div class="card-top">
-                    <div class="card-icon">
-                        <i data-lucide="dollar-sign"></i>
-                    </div>
-                    <div class="card-info">
-                        <h3>Rytr</h3>
-                    </div>
-                </div>
-                <p class="card-desc">高性价比 AI 写作助手，支持 30+ 语言、40+ 场景模板，内置抄袭检测，适合预算有限的个人创作者与小团队。</p>
-            </div>
-            <div class="card-footer">
-                <span>访问工具 →</span>
-            </div>
-        </a>
+                    <!-- 2. DeepL -->
+                    <a href="/aitool-picks/tools/deepl.html" class="card">
+                        <div class="card-body">
+                            <div class="post-card-badge"><span class="badge">Translation</span></div>
+                            <h3 class="card-title">DeepL</h3>
+                            <p class="card-excerpt">全球最准确的 AI 翻译工具，支持 30+ 语言，神经网络翻译质量逼近人工，提供文档翻译与 API 接口。</p>
+                            <a href="/aitool-picks/tools/deepl.html" class="card-link">Read full review →</a>
+                        </div>
+                    </a>
 
-        <!-- 8. QuillBot -->
-        <a href="../tools/quillbot.html" class="tool-card">
-            <div>
-                <div class="card-top">
-                    <div class="card-icon">
-                        <i data-lucide="rotate-ccw"></i>
-                    </div>
-                    <div class="card-info">
-                        <h3>QuillBot</h3>
-                    </div>
-                </div>
-                <p class="card-desc">专业的 AI 改写与润色工具，提供 7 种改写模式、语法检查、引用生成、抄袭检测，学术写作与内容优化首选。</p>
-            </div>
-            <div class="card-footer">
-                <span>访问工具 →</span>
-            </div>
-        </a>
+                    <!-- 3. Notion AI -->
+                    <a href="/aitool-picks/tools/notion-ai.html" class="card">
+                        <div class="card-body">
+                            <div class="post-card-badge"><span class="badge">Workspace</span></div>
+                            <h3 class="card-title">Notion AI</h3>
+                            <p class="card-excerpt">内嵌于 Notion 的 AI 写作助手，支持续写、总结、改写、翻译、生成大纲等，无缝融入知识管理工作流。</p>
+                            <a href="/aitool-picks/tools/notion-ai.html" class="card-link">Read full review →</a>
+                        </div>
+                    </a>
 
-        <!-- 9. LanguageTool -->
-        <a href="../tools/languagetool.html" class="tool-card">
-            <div>
-                <div class="card-top">
-                    <div class="card-icon">
-                        <i data-lucide="globe"></i>
-                    </div>
-                    <div class="card-info">
-                        <h3>LanguageTool</h3>
-                    </div>
-                </div>
-                <p class="card-desc">开源多语言语法检查工具，支持 30+ 语言，浏览器扩展、编辑器插件全覆盖，注重隐私保护，适合多语言写作场景。</p>
-            </div>
-            <div class="card-footer">
-                <span>访问工具 →</span>
-            </div>
-        </a>
+                    <!-- 4. Jasper -->
+                    <a href="/aitool-picks/tools/jasper.html" class="card">
+                        <div class="card-body">
+                            <div class="post-card-badge"><span class="badge">Marketing</span></div>
+                            <h3 class="card-title">Jasper</h3>
+                            <p class="card-excerpt">面向营销团队的 AI 内容平台，提供 50+ 模板、品牌语音训练、SEO 模式与团队协作功能。</p>
+                            <a href="/aitool-picks/tools/jasper.html" class="card-link">Read full review →</a>
+                        </div>
+                    </a>
 
-        <!-- 10. Hemingway Editor -->
-        <a href="../tools/hemingway.html" class="tool-card">
-            <div>
-                <div class="card-top">
-                    <div class="card-icon">
-                        <i data-lucide="type"></i>
-                    </div>
-                    <div class="card-info">
-                        <h3>Hemingway Editor</h3>
-                    </div>
-                </div>
-                <p class="card-desc">专注可读性分析的编辑器，高亮长句、被动语态、副词滥用等问题，给出年级等级评分，助你写出清晰有力的文字。</p>
-            </div>
-            <div class="card-footer">
-                <span>访问工具 →</span>
-            </div>
-        </a>
+                    <!-- 5. Writesonic -->
+                    <a href="/aitool-picks/tools/writesonic.html" class="card">
+                        <div class="card-body">
+                            <div class="post-card-badge"><span class="badge">SEO</span></div>
+                            <h3 class="card-title">Writesonic</h3>
+                            <p class="card-excerpt">面向 SEO 的 AI 写作平台，提供文章生成、改写、扩展、Chatsonic 对话模式。</p>
+                            <a href="/aitool-picks/tools/writesonic.html" class="card-link">Read full review →</a>
+                        </div>
+                    </a>
 
+                    <!-- 6. Copy.ai -->
+                    <a href="/aitool-picks/tools/copy-ai.html" class="card">
+                        <div class="card-body">
+                            <div class="post-card-badge"><span class="badge">Copywriting</span></div>
+                            <h3 class="card-title">Copy.ai</h3>
+                            <p class="card-excerpt">专注营销文案生成的 AI 工具，提供 90+ 模板覆盖广告、邮件、社交媒体。</p>
+                            <a href="/aitool-picks/tools/copy-ai.html" class="card-link">Read full review →</a>
+                        </div>
+                    </a>
+
+                    <!-- 7. Rytr -->
+                    <a href="/aitool-picks/tools/rytr.html" class="card">
+                        <div class="card-body">
+                            <div class="post-card-badge"><span class="badge">Affordable</span></div>
+                            <h3 class="card-title">Rytr</h3>
+                            <p class="card-excerpt">高性价比 AI 写作助手，支持 30+ 语言，内置抄袭检测，适合预算有限的个人创作者。</p>
+                            <a href="/aitool-picks/tools/rytr.html" class="card-link">Read full review →</a>
+                        </div>
+                    </a>
+
+                    <!-- 8. QuillBot -->
+                    <a href="/aitool-picks/tools/quillbot.html" class="card">
+                        <div class="card-body">
+                            <div class="post-card-badge"><span class="badge">Paraphrasing</span></div>
+                            <h3 class="card-title">QuillBot</h3>
+                            <p class="card-excerpt">专业的 AI 改写与润色工具，7 种改写模式、语法检查、引用生成。</p>
+                            <a href="/aitool-picks/tools/quillbot.html" class="card-link">Read full review →</a>
+                        </div>
+                    </a>
+
+                    <!-- 9. LanguageTool -->
+                    <a href="/aitool-picks/tools/languagetool.html" class="card">
+                        <div class="card-body">
+                            <div class="post-card-badge"><span class="badge">Open Source</span></div>
+                            <h3 class="card-title">LanguageTool</h3>
+                            <p class="card-excerpt">开源多语言语法检查工具，支持 30+ 语言，注重隐私保护。</p>
+                            <a href="/aitool-picks/tools/languagetool.html" class="card-link">Read full review →</a>
+                        </div>
+                    </a>
+
+                    <!-- 10. Hemingway -->
+                    <a href="/aitool-picks/tools/hemingway.html" class="card">
+                        <div class="card-body">
+                            <div class="post-card-badge"><span class="badge">Readability</span></div>
+                            <h3 class="card-title">Hemingway Editor</h3>
+                            <p class="card-excerpt">专注可读性分析，高亮长句、被动语态、副词滥用，给出年级等级评分。</p>
+                            <a href="/aitool-picks/tools/hemingway.html" class="card-link">Read full review →</a>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
     </main>
 
-    <!-- 激活极简线条图标库 -->
-    <script>
-        lucide.createIcons();
-    </script>
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="/aitool-picks/" class="footer-logo"><span class="brand-mark"></span>AI Tool Picks</a>
+                    <p class="footer-desc">Honest comparisons & reviews of the best AI tools. Hand-tested, independently written, zero fluff.</p>
+                                        <div class="footer-social">
+                        <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="X">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.536-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="/aitool-picks/category/writing.html">AI Writing Tools</a></li>
+                        <li><a href="/aitool-picks/category/coding.html">AI Coding Assistants</a></li>
+                        <li><a href="/aitool-picks/category/video.html">AI Video Generators</a></li>
+                        <li><a href="/aitool-picks/category/seo.html">AI SEO Tools</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Popular Reviews</h4>
+                    <ul class="footer-links">
+                        <li><a href="/aitool-picks/posts/jasper-vs-writesonic.html">Jasper vs Writesonic</a></li>
+                        <li><a href="/aitool-picks/posts/best-ai-seo-tools-2026.html">Best AI SEO Tools</a></li>
+                        <li><a href="/aitool-picks/posts/koalawriter-review-2026.html">KoalaWriter Review</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="/aitool-picks/affiliate-disclosure.html">Affiliate Disclosure</a></li>
+                        <li><a href="/aitool-picks/privacy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 AI Tool Picks. All rights reserved.</p>
+                <div class="flex gap-3">
+                    <a href="/aitool-picks/privacy.html">Privacy Policy</a>
+                    <a href="/aitool-picks/affiliate-disclosure.html">Affiliate Disclosure</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/aitool-picks/scripts.js"></script>
 </body>
 </html>
