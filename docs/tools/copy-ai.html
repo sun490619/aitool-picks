@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy.ai 评测 2026 - AI Tool Picks</title>
+    <meta name="description" content="Copy.ai 评测：专注 GTM (Go-to-Market) 的 AI 写作平台。Workflows、Brand Voice、Infobase、团队协作。$49/月起。适合营销团队、销售赋能、内容运营。">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+        body { background-color: #fafafa; color: #1d1d1f; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; line-height: 1.5; }
+        .navbar { background: rgba(255,255,255,0.8); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(0,0,0,0.08); padding: 15px 30px; position: sticky; top: 0; z-index: 100; display: flex; justify-content: space-between; align-items: center; }
+        .navbar-brand { font-weight: 600; font-size: 16px; color: #1d1d1f; text-decoration: none; display: flex; align-items: center; gap: 8px; }
+        .navbar-brand:hover { color: #0066cc; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+        .tool-hero { padding: 60px 0 40px; text-align: center; background: #fafafa; }
+        .tool-hero h1 { font-size: clamp(28px, 4vw, 40px); font-weight: 700; letter-spacing: -0.5px; color: #1d1d1f; margin-bottom: 12px; }
+        .tool-hero .meta { color: #86868b; font-size: 15px; margin-bottom: 28px; }
+        .meta-item { display: inline-flex; align-items: center; gap: 6px; color: #86868b; font-size: 13px; }
+        .cta-primary { display: inline-flex; align-items: center; gap: 10px; padding: 16px 32px; background: #0066cc; color: white; font-size: 17px; font-weight: 600; border-radius: 12px; text-decoration: none; box-shadow: 0 4px 20px rgba(0,102,204,0.3); transition: all 0.2s ease; }
+        .cta-primary:hover { background: #0077ed; transform: translateY(-2px); box-shadow: 0 8px 30px rgba(0,102,204,0.4); color: white; }
+
+        .badge { display: inline-flex; align-items: center; padding: 4px 12px; font-size: 12px; font-weight: 600; border-radius: 100px; background: #f5f5f7; color: #1d1d1f; }
+        .badge-primary { background: #e8f5e9; color: #34c759; }
+        .badge-accent { background: #fff4e5; color: #ff9f0a; }
+
+        .section { padding: 56px 0; }
+        .section-title { font-size: 24px; font-weight: 700; color: #1d1d1f; margin-bottom: 8px; text-align: center; }
+        .section-subtitle { color: #86868b; text-align: center; margin-bottom: 32px; font-size: 17px; }
+
+        .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; max-width: 1100px; margin: 0 auto; }
+        .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; max-width: 1100px; margin: 0 auto; }
+        @media (max-width: 900px) { .grid-2, .grid-3 { grid-template-columns: 1fr; } }
+
+        .card { background: #ffffff; border: 1px solid #e8e8ed; border-radius: 14px; padding: 28px; transition: all 0.3s ease; height: 100%; }
+        .card:hover { border-color: #d2d2d7; box-shadow: 0 12px 32px rgba(0,0,0,0.08); transform: translateY(-4px); }
+        .card-icon { width: 40px; height: 40px; background: #f5f5f7; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #1d1d1f; margin-bottom: 16px; }
+        .card h3 { font-size: 18px; font-weight: 600; color: #1d1d1f; margin-bottom: 10px; }
+        .card p { color: #515154; line-height: 1.6; font-size: 15px; }
+        .card ul { list-style: none; padding: 0; }
+        .card li { padding: 6px 0; color: #515154; position: relative; padding-left: 20px; font-size: 14px; }
+        .card li::before { content: "✓"; color: #34c759; font-weight: 600; position: absolute; left: 0; }
+
+        .pros-cons-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; max-width: 1100px; margin: 0 auto 40px; }
+        @media (max-width: 768px) { .pros-cons-grid { grid-template-columns: 1fr; } }
+        .pros-card { background: #f0fdf4; border: 1px solid #dcfce7; border-radius: 14px; padding: 28px; }
+        .cons-card { background: #fef2f2; border: 1px solid #fecaca; border-radius: 14px; padding: 28px; }
+        .pros-card h3, .cons-card h3 { display: flex; align-items: center; gap: 10px; font-size: 18px; font-weight: 600; margin-bottom: 16px; }
+        .pros-card h3 { color: #166534; }
+        .cons-card h3 { color: #991b1b; }
+        .pros-card ul, .cons-card ul { list-style: none; padding: 0; }
+        .pros-card li, .cons-card li { padding: 8px 0; color: #515154; position: relative; padding-left: 24px; font-size: 14px; }
+        .pros-card li::before { content: "✓"; color: #22c55e; font-weight: 700; left: 0; }
+        .cons-card li::before { content: "✕"; color: #ef4444; font-weight: 700; left: 0; }
+
+        .pricing-card { background: #ffffff; border: 1px solid #e8e8ed; border-radius: 14px; padding: 28px; transition: all 0.3s; position: relative; }
+        .pricing-card.popular { border-color: #0066cc; box-shadow: 0 0 0 2px rgba(0,102,204,0.2); }
+        .pricing-card .popular-tag { position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: #0066cc; color: white; padding: 4px 16px; border-radius: 100px; font-size: 11px; font-weight: 600; }
+        .pricing-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.08); }
+        .pricing-name { font-size: 16px; font-weight: 600; color: #1d1d1f; margin-bottom: 4px; }
+        .pricing-price { font-size: 28px; font-weight: 700; color: #1d1d1f; margin-bottom: 4px; }
+        .pricing-period { color: #86868b; font-size: 14px; margin-bottom: 20px; }
+        .pricing-features { list-style: none; padding: 0; margin-bottom: 24px; }
+        .pricing-features li { padding: 8px 0; color: #515154; position: relative; padding-left: 24px; font-size: 14px; border-bottom: 1px solid #f5f5f7; }
+        .pricing-features li::before { content: "✓"; color: #22c55e; font-weight: 700; left: 0; }
+        .btn-secondary { display: block; text-align: center; padding: 12px 24px; background: #f5f5f7; color: #1d1d1f; font-weight: 600; border-radius: 10px; text-decoration: none; border: 1px solid #d2d2d7; transition: all 0.15s; }
+        .btn-secondary:hover { background: #0066cc; color: white; border-color: #0066cc; }
+
+        .usecase-card { background: #f5f5f7; border: 1px solid #e8e8ed; border-radius: 12px; padding: 24px; text-align: center; transition: all 0.3s; }
+        .usecase-card:hover { background: #ffffff; border-color: #d2d2d7; transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.06); }
+        .usecase-icon { width: 48px; height: 48px; background: #f5f5f7; border-radius: 12px; display: inline-flex; align-items: center; justify-content: center; color: #1d1d1f; margin-bottom: 12px; }
+        .usecase-card h4 { font-size: 16px; font-weight: 600; color: #1d1d1f; margin-bottom: 8px; }
+        .usecase-card p { color: #86868b; font-size: 13px; }
+
+        .footer-cta { background: #1d1d1f; color: white; padding: 48px 0; text-align: center; margin-top: 60px; }
+        .footer-cta h3 { font-size: 22px; font-weight: 700; margin-bottom: 12px; }
+        .footer-cta p { opacity: 0.8; margin-bottom: 24px; max-width: 400px; margin-left: auto; margin-right: auto; }
+        .footer-cta .cta-primary { background: white; color: #1d1d1f; }
+        .footer-cta .cta-primary:hover { background: #f5f5f7; }
+
+        .footer { background: #1d1d1f; color: rgba(255,255,255,0.7); padding: 40px 0 20px; margin-top: 40px; }
+        .footer-grid { max-width: 1100px; margin: 0 auto; padding: 0 20px; display: grid; grid-template-columns: 2fr repeat(3, 1fr); gap: 40px; }
+        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
+        .footer-brand { max-width: 200px; }
+        .footer-logo { display: flex; align-items: center; gap: 8px; font-size: 18px; font-weight: 700; color: white; margin-bottom: 12px; }
+        .footer-desc { font-size: 13px; line-height: 1.6; margin-bottom: 20px; }
+        .footer-social { display: flex; gap: 10px; }
+        .footer-social a { width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; border-radius: 8px; background: rgba(255,255,255,0.1); color: rgba(255,255,255,0.7); transition: all 0.15s; }
+        .footer-social a:hover { background: #0066cc; color: white; }
+        .footer-column h4 { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: white; margin-bottom: 12px; }
+        .footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+        .footer-links a { font-size: 13px; color: rgba(255,255,255,0.6); transition: color 0.15s; }
+        .footer-links a:hover { color: #0066cc; }
+        .footer-bottom { max-width: 1100px; margin: 32px auto 0; padding-top: 24px; border-top: 1px solid #38383a; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; font-size: 13px; }
+        .footer-bottom a { color: inherit; }
+        .footer-bottom a:hover { color: #0066cc; }
+
+        .icon { width: 20px; height: 20px; stroke-width: 2; }
+        .icon-lg { width: 24px; height: 24px; }
+
+        @media (max-width: 768px) {
+            .pros-cons-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="../../" class="navbar-brand">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="4" ry="4"></rect>
+            <path d="M8 12h16M8 16h16M8 20h16"></path>
+        </svg>
+        AI Tool Picks
+    </nav>
+
+<div class="container">
+
+<header class="tool-hero">
+    <h1>Copy.ai</h1>
+    <div class="meta">
+        <span class="meta-item"><i data-lucide="megaphone" class="icon-lg" style="vertical-align:middle"></i> GTM AI / 营销销售</span>
+        <span class="meta-item"><i data-lucide="star" class="icon-lg" style="vertical-align:middle"></i> 评分 4.5/5</span>
+        <span class="meta-item"><i data-lucide="dollar-sign" class="icon-lg" style="vertical-align:middle"></i> $49/月起 (Starter)</span>
+    </div>
+    <a href="https://www.copy.ai/" target="_blank" rel="nofollow" class="cta-primary">
+        <i data-lucide="external-link" class="icon-lg"></i>
+        直达 Copy.ai 官网
+    </a>
+    <div style="margin-top: 16px; display: flex; justify-content: center; gap: 8px; flex-wrap: wrap;">
+        <span class="badge badge-primary"><i data-lucide="check-circle" class="icon"></i> 免费版 2000 字/月</span>
+        <span class="badge"><i data-lucide="git-branch" class="icon"></i> Workflows</span>
+        <span class="badge"><i data-lucide="database" class="icon"></i> Infobase</span>
+        <span class="badge-accent"><i data-lucide="users" class="icon"></i> 团队协作</span>
+    </div>
+</header>
+
+</div>
+
+<main style="padding-bottom: 30px;">
+
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">核心功能</h2>
+        <p class="section-subtitle">Copy.ai 为何是 GTM 团队的选择？</p>
+        <div class="grid-3">
+            <article class="card">
+                <div class="card-icon"><i data-lucide="git-branch" class="icon-lg"></i></div>
+                <h3>Workflows (工作流)</h3>
+                <p>可视化拖拽构建多步骤 AI 流程：研究 → 大纲 → 写作 → 优化 → 审核 → 发布。预置 100+ 模板：博客生产线、冷邮序列、内容再利用、竞品调研。可 API 触发、定时运行、批量处理。</p>
+            </article>
+            <article class="card">
+                <div class="card-icon"><i data-lucide="database" class="icon-lg"></i></div>
+                <h3>Infobase (知识库)</h3>
+                <p>上传 PDF、网页、文档、Notion 页面 → 向量化存储 → 所有生成内容自动检索引用。品牌指南、产品手册、客户证言、合规文档永不过时。支持版本控制、权限隔离。</p>
+            </article>
+            <article class="card">
+                <div class="card-icon"><i data-lucide="user-check" class="icon-lg"></i></div>
+                <h3>Brand Voice</h3>
+                <p>输入网站/文档 → 提取语调、受众、术语、禁用词 → 生成品牌档案。支持多品牌、子品牌、地域变体。所有 Workflow、Chat、模板自动应用。</p>
+            </article>
+            <article class="card">
+                <div class="card-icon"><i data-lucide="message-square" class="icon-lg"></i></div>
+                <h3>Chat by Copy.ai</h3>
+                <p>联网搜索 + 文件分析 + Infobase 检索 + Brand Voice。并行多模型 (GPT-4, Claude, Gemini) 自动路由最优。引用来源、事实核查、导出为文档/Workflow 输入。</p>
+            </article>
+            <article class="card">
+                <div class="card-icon"><i data-lucide="users" class="icon-lg"></i></div>
+                <h3>团队协作与审批</h3>
+                <p>工作区、项目、文件夹三级权限。评论、@提及、版本历史、审批流 (提交 → 审核 → 发布)。Slack/Teams 通知、共享模板库、使用量仪表盘。</p>
+            </article>
+            <article class="card">
+                <div class="card-icon"><i data-lucide="zap" class="icon-lg"></i></div>
+                <h3>90+ 专用模板</h3>
+                <p>冷邮序列、LinkedIn 帖子、产品发布、案例研究、新闻稿、广告变体、SEO 博客、着陆页、视频脚本、销售脚本。按行业/角色/漏斗阶段分类。</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">优缺点速览</h2>
+        <div class="pros-cons-grid">
+            <div class="pros-card">
+                <h3><i data-lucide="check-circle-2" class="icon-lg"></i> 优点</h3>
+                <ul>
+                    <li>Workflows 可视化编排，复杂流程零代码</li>
+                    <li>Infobase 知识库检索，幻觉率极低</li>
+                    <li>GTM 专用模板库最全 (销售/营销/运营)</li>
+                    <li>团队协作、审批流、权限企业级</li>
+                    <li>多模型并行路由，质量自动优化</li>
+                    <li>API + Zapier/Make 深度集成</li>
+                    <li>SOC 2 Type II、GDPR 合规</li>
+                </ul>
+            </div>
+            <div class="cons-card">
+                <h3><i data-lucide="x-circle" class="icon-lg"></i> 缺点</h3>
+                <ul>
+                    <li>价格偏高 ($49/月起，无中间档)</li>
+                    <li>免费版仅 2000 字/月</li>
+                    <li>学习曲线陡峭 (Workflows 需适应)</li>
+                    <li>长文 SEO 深度不如 Jasper/Writesonic</li>
+                    <li>中文模板相对较少</li>
+                    <li>界面偶有卡顿</li>
+                    <li>无内置图像/音频生成</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">价格方案 (2026)</h2>
+        <div class="grid-3">
+            <article class="pricing-card">
+                <h4 class="pricing-name">Free</h4>
+                <div class="pricing-price">$0</div>
+                <p class="pricing-period">永久免费</p>
+                <ul class="pricing-features">
+                    <li>2,000 字/月</li>
+                    <li>1 个席位</li>
+                    <li>Chat by Copy.ai</li>
+                    <li>90+ 模板</li>
+                    <li>Infobase (基础)</li>
+                </ul>
+                <a href="https://www.copy.ai/" target="_blank" rel="nofollow" class="btn-secondary">免费开始</a>
+            </article>
+            <article class="pricing-card popular">
+                <span class="popular-tag">最热门</span>
+                <h4 class="pricing-name">Starter</h4>
+                <div class="pricing-price">$49<span style="font-size:16px;font-weight:400;color:#86868b">/月</span></div>
+                <p class="pricing-period">按年付费，1 席位</p>
+                <ul class="pricing-features">
+                    <li>无限字数 (公平使用)</li>
+                    <li>Workflows 无限</li>
+                    <li>Infobase 完整版</li>
+                    <li>Brand Voice (无限)</li>
+                    <li>优先支持</li>
+                    <li>API 访问</li>
+                </ul>
+                <a href="https://www.copy.ai/" target="_blank" rel="nofollow" class="btn-secondary" style="background:#0066cc;color:white;border-color:#0066cc;">立即升级</a>
+            </article>
+            <article class="pricing-card">
+                <h4 class="pricing-name">Advanced</h4>
+                <div class="pricing-price">$249<span style="font-size:16px;font-weight:400;color:#86868b">/月</span></div>
+                <p class="pricing-period">按年付费，5 席位</p>
+                <ul class="pricing-features">
+                    <li>5 用户席位</li>
+                    <li>团队工作区 / 权限</li>
+                    <li>审批流 / 共享模板</li>
+                    <li>使用量仪表盘</li>
+                    <li>SSO / SCIM</li>
+                    <li>专属客户经理</li>
+                </ul>
+                <a href="https://www.copy.ai/" target="_blank" rel="nofollow" class="btn-secondary">联系销售</a>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">适用场景</h2>
+        <div class="grid-3">
+            <article class="usecase-card">
+                <div class="usecase-icon"><i data-lucide="mail" class="icon-lg"></i></div>
+                <h4>冷邮外联序列</h4>
+                <p>潜在客户调研 → 个性化首封 → 跟进 3-5 封 → A/B 测试 → 入 CRM</p>
+            </article>
+            <article class="usecase-card">
+                <div class="usecase-icon"><i data-lucide="linkedin" class="icon-lg"></i></div>
+                <h4>LinkedIn 思想领袖内容</h4>
+                <p>话题挖掘 → 个人品牌语音 → 周更 3-5 条 → 互动回复模板</p>
+            </article>
+            <article class="usecase-card">
+                <div class="usecase-icon"><i data-lucide="file-text" class="icon-lg"></i></div>
+                <h4>产品发布全套素材</h4>
+                <p>新闻稿 + 博客 + 社媒 + 邮件 + 落地页 + 销售话术 → 一键全渠道</p>
+            </article>
+            <article class="usecase-card">
+                <div class="usecase-icon"><i data-lucide="refresh-cw" class="icon-lg"></i></div>
+                <h4>内容再利用流水线</h4>
+                <p>长视频/播客/白皮书 → 切片 → 博客 + 社媒 + 邮件 + 短视频脚本</p>
+            </article>
+            <article class="usecase-card">
+                <div class="usecase-icon"><i data-lucide="users" class="icon-lg"></i></div>
+                <h4>销售赋能内容库</h4>
+                <p>案例研究、竞品对比、异议处理、ROI 计算器 → 知识库统一维护</p>
+            </article>
+            <article class="usecase-card">
+                <div class="usecase-icon"><i data-lucide="search" class="icon-lg"></i></div>
+                <h4>竞品情报自动化</h4>
+                <p>监控竞品博客/更新/定价 → Workflow 自动摘要 → 每日简报推送 Slack</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<div class="footer-cta">
+    <h3>用 Copy.ai 把 GTM 内容产出自动化</h3>
+    <p>免费版 2000 字/月体验 Workflows + Infobase。升级解锁无限字数、团队协作、API。</p>
+    <a href="https://www.copy.ai/" target="_blank" rel="nofollow" class="cta-primary">
+        <i data-lucide="external-link" class="icon-lg"></i>
+        立即免费开始
+    </a>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="/" class="footer-logo"><svg class="brand-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4" ry="4"></rect><path d="M8 12h16M8 16h16M8 20h16"></path></svg>AI Tool Picks</a>
+                <p class="footer-desc">专业的 AI 工具深度评测与选型指南。实测实评，拒绝营销话术。</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Twitter"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a>
+                    <a href="#" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.536-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg></a>
+                    <a href="#" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>分类</h4>
+                <ul class="footer-links">
+                    <li><a href="../../category/writing.html">AI Writing</a></li>
+                    <li><a href="../../category/coding.html">AI Coding</a></li>
+                    <li><a href="../../category/video.html">AI Video</a></li>
+                    <li><a href="../../category/seo.html">AI SEO</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Popular</h4>
+                <ul class="footer-links">
+                    <li><a href="../../posts/koalawriter-review-2026.html">KoalaWriter Review</a></li>
+                    <li><a href="../../posts/jasper-vs-writesonic.html">Jasper vs Writesonic</a></li>
+                    <li><a href="../../posts/best-ai-seo-tools-2026.html">Best AI SEO Tools</a></li>
+                    <li><a href="../../category/seo.html">All SEO Tools</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Resources</h4>
+                <ul class="footer-links">
+                    <li><a href="../../affiliate-disclosure.html">Affiliate Disclosure</a></li>
+                    <li><a href="../../privacy.html">Privacy Policy</a></li>
+                    <li><a href="#newsletter">Newsletter</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 AI Tool Picks. All rights reserved.</p>
+            <div class="flex gap-md">
+                <a href="../../privacy.html">Privacy Policy</a>
+                <a href="../../affiliate-disclosure.html">Affiliate Disclosure</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    lucide.createIcons();
+</script>
+</body>
+</html>

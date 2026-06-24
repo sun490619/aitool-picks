@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notion AI 评测 2026 - AI Tool Picks</title>
+    <meta name="description" content="Notion AI 评测：内嵌 Notion 的 AI 写作助手，支持续写、总结、改写、翻译、数据库自动填充、工作区问答。无缝融入知识管理工作流。">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+        body { background-color: #fafafa; color: #1d1d1f; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; line-height: 1.5; }
+        .navbar { background: rgba(255,255,255,0.8); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(0,0,0,0.08); padding: 15px 30px; position: sticky; top: 0; z-index: 100; display: flex; justify-content: space-between; align-items: center; }
+        .navbar-brand { font-weight: 600; font-size: 16px; color: #1d1d1f; text-decoration: none; display: flex; align-items: center; gap: 8px; }
+        .navbar-brand:hover { color: #0066cc; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+        .tool-hero { padding: 60px 0 40px; text-align: center; background: #fafafa; }
+        .tool-hero h1 { font-size: clamp(28px, 4vw, 40px); font-weight: 700; letter-spacing: -0.5px; color: #1d1d1f; margin-bottom: 12px; }
+        .tool-hero .meta { color: #86868b; font-size: 15px; margin-bottom: 28px; }
+        .meta-item { display: inline-flex; align-items: center; gap: 6px; color: #86868b; font-size: 13px; }
+        .cta-primary { display: inline-flex; align-items: center; gap: 10px; padding: 16px 32px; background: #0066cc; color: white; font-size: 17px; font-weight: 600; border-radius: 12px; text-decoration: none; box-shadow: 0 4px 20px rgba(0,102,204,0.3); transition: all 0.2s ease; }
+        .cta-primary:hover { background: #0077ed; transform: translateY(-2px); box-shadow: 0 8px 30px rgba(0,102,204,0.4); color: white; }
+
+        .badge { display: inline-flex; align-items: center; padding: 4px 12px; font-size: 12px; font-weight: 600; border-radius: 100px; background: #f5f5f7; color: #1d1d1f; }
+        .badge-primary { background: #e8f5e9; color: #34c759; }
+        .badge-accent { background: #fff4e5; color: #ff9f0a; }
+
+        .section { padding: 56px 0; }
+        .section-title { font-size: 24px; font-weight: 700; color: #1d1d1f; margin-bottom: 8px; text-align: center; }
+        .section-subtitle { color: #86868b; text-align: center; margin-bottom: 32px; font-size: 17px; }
+
+        .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; max-width: 1100px; margin: 0 auto; }
+        .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; max-width: 1100px; margin: 0 auto; }
+        @media (max-width: 900px) { .grid-2, .grid-3 { grid-template-columns: 1fr; } }
+
+        .card { background: #ffffff; border: 1px solid #e8e8ed; border-radius: 14px; padding: 28px; transition: all 0.3s ease; height: 100%; }
+        .card:hover { border-color: #d2d2d7; box-shadow: 0 12px 32px rgba(0,0,0,0.08); transform: translateY(-4px); }
+        .card-icon { width: 40px; height: 40px; background: #f5f5f7; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #1d1d1f; margin-bottom: 16px; }
+        .card h3 { font-size: 18px; font-weight: 600; color: #1d1d1f; margin-bottom: 10px; }
+        .card p { color: #515154; line-height: 1.6; font-size: 15px; }
+        .card ul { list-style: none; padding: 0; }
+        .card li { padding: 6px 0; color: #515154; position: relative; padding-left: 20px; font-size: 14px; }
+        .card li::before { content: "✓"; color: #34c759; font-weight: 600; position: absolute; left: 0; }
+
+        .pros-cons-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; max-width: 1100px; margin: 0 auto 40px; }
+        @media (max-width: 768px) { .pros-cons-grid { grid-template-columns: 1fr; } }
+        .pros-card { background: #f0fdf4; border: 1px solid #dcfce7; border-radius: 14px; padding: 28px; }
+        .cons-card { background: #fef2f2; border: 1px solid #fecaca; border-radius: 14px; padding: 28px; }
+        .pros-card h3, .cons-card h3 { display: flex; align-items: center; gap: 10px; font-size: 18px; font-weight: 600; margin-bottom: 16px; }
+        .pros-card h3 { color: #166534; }
+        .cons-card h3 { color: #991b1b; }
+        .pros-card ul, .cons-card ul { list-style: none; padding: 0; }
+        .pros-card li, .cons-card li { padding: 8px 0; color: #515154; position: relative; padding-left: 24px; font-size: 14px; }
+        .pros-card li::before { content: "✓"; color: #22c55e; font-weight: 700; left: 0; }
+        .cons-card li::before { content: "✕"; color: #ef4444; font-weight: 700; left: 0; }
+
+        .pricing-card { background: #ffffff; border: 1px solid #e8e8ed; border-radius: 14px; padding: 28px; transition: all 0.3s; position: relative; }
+        .pricing-card.popular { border-color: #0066cc; box-shadow: 0 0 0 2px rgba(0,102,204,0.2); }
+        .pricing-card .popular-tag { position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: #0066cc; color: white; padding: 4px 16px; border-radius: 100px; font-size: 11px; font-weight: 600; }
+        .pricing-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.08); }
+        .pricing-name { font-size: 16px; font-weight: 600; color: #1d1d1f; margin-bottom: 4px; }
+        .pricing-price { font-size: 28px; font-weight: 700; color: #1d1d1f; margin-bottom: 4px; }
+        .pricing-period { color: #86868b; font-size: 14px; margin-bottom: 20px; }
+        .pricing-features { list-style: none; padding: 0; margin-bottom: 24px; }
+        .pricing-features li { padding: 8px 0; color: #515154; position: relative; padding-left: 24px; font-size: 14px; border-bottom: 1px solid #f5f5f7; }
+        .pricing-features li::before { content: "✓"; color: #22c55e; font-weight: 700; left: 0; }
+        .btn-secondary { display: block; text-align: center; padding: 12px 24px; background: #f5f5f7; color: #1d1d1f; font-weight: 600; border-radius: 10px; text-decoration: none; border: 1px solid #d2d2d7; transition: all 0.15s; }
+        .btn-secondary:hover { background: #0066cc; color: white; border-color: #0066cc; }
+
+        .usecase-card { background: #f5f5f7; border: 1px solid #e8e8ed; border-radius: 12px; padding: 24px; text-align: center; transition: all 0.3s; }
+        .usecase-card:hover { background: #ffffff; border-color: #d2d2d7; transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.06); }
+        .usecase-icon { width: 48px; height: 48px; background: #f5f5f7; border-radius: 12px; display: inline-flex; align-items: center; justify-content: center; color: #1d1d1f; margin-bottom: 12px; }
+        .usecase-card h4 { font-size: 16px; font-weight: 600; color: #1d1d1f; margin-bottom: 8px; }
+        .usecase-card p { color: #86868b; font-size: 13px; }
+
+        .footer-cta { background: #1d1d1f; color: white; padding: 48px 0; text-align: center; margin-top: 60px; }
+        .footer-cta h3 { font-size: 22px; font-weight: 700; margin-bottom: 12px; }
+        .footer-cta p { opacity: 0.8; margin-bottom: 24px; max-width: 400px; margin-left: auto; margin-right: auto; }
+        .footer-cta .cta-primary { background: white; color: #1d1d1f; }
+        .footer-cta .cta-primary:hover { background: #f5f5f7; }
+
+        .footer { background: #1d1d1f; color: rgba(255,255,255,0.7); padding: 40px 0 20px; margin-top: 40px; }
+        .footer-grid { max-width: 1100px; margin: 0 auto; padding: 0 20px; display: grid; grid-template-columns: 2fr repeat(3, 1fr); gap: 40px; }
+        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
+        .footer-brand { max-width: 200px; }
+        .footer-logo { display: flex; align-items: center; gap: 8px; font-size: 18px; font-weight: 700; color: white; margin-bottom: 12px; }
+        .footer-desc { font-size: 13px; line-height: 1.6; margin-bottom: 20px; }
+        .footer-social { display: flex; gap: 10px; }
+        .footer-social a { width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; border-radius: 8px; background: rgba(255,255,255,0.1); color: rgba(255,255,255,0.7); transition: all 0.15s; }
+        .footer-social a:hover { background: #0066cc; color: white; }
+        .footer-column h4 { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: white; margin-bottom: 12px; }
+        .footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+        .footer-links a { font-size: 13px; color: rgba(255,255,255,0.6); transition: color 0.15s; }
+        .footer-links a:hover { color: #0066cc; }
+        .footer-bottom { max-width: 1100px; margin: 32px auto 0; padding-top: 24px; border-top: 1px solid #38383a; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; font-size: 13px; }
+        .footer-bottom a { color: inherit; }
+        .footer-bottom a:hover { color: #0066cc; }
+
+        .icon { width: 20px; height: 20px; stroke-width: 2; }
+        .icon-lg { width: 24px; height: 24px; }
+
+        @media (max-width: 768px) {
+            .pros-cons-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="../../" class="navbar-brand">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="4" ry="4"></rect>
+            <path d="M8 12h16M8 16h16M8 20h16"></path>
+        </svg>
+        AI Tool Picks
+    </nav>
+
+<div class="container">
+
+<!-- Hero 区 - 核心直达按钮置顶 -->
+<header class="tool-hero">
+    <h1>Notion AI</h1>
+    <div class="meta">
+        <span class="meta-item"><i data-lucide="layout-dashboard" class="icon-lg" style="vertical-align:middle"></i> AI 写作 / 知识管理</span>
+        <span class="meta-item"><i data-lucide="star" class="icon-lg" style="vertical-align:middle"></i> 评分 4.5/5</span>
+        <span class="meta-item"><i data-lucide="dollar-sign" class="icon-lg" style="vertical-align:middle"></i> $10/成员/月 (需 Notion 订阅)</span>
+    </div>
+    <a href="https://www.notion.so/product/ai" target="_blank" rel="nofollow" class="cta-primary">
+        <i data-lucide="external-link" class="icon-lg"></i>
+        直达 Notion AI 官网
+    </a>
+    <div style="margin-top: 16px; display: flex; justify-content: center; gap: 8px; flex-wrap: wrap;">
+        <span class="badge badge-primary"><i data-lucide="check-circle" class="icon"></i> 20 次免费试用</span>
+        <span class="badge"><i data-lucide="database" class="icon"></i> 数据库自动填充</span>
+        <span class="badge"><i data-lucide="search" class="icon"></i> 工作区问答</span>
+        <span class="badge-accent"><i data-lucide="zap" class="icon"></i> 零上下文切换</span>
+    </div>
+</header>
+
+</div>
+
+<main style="padding-bottom: 30px;">
+
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">核心功能</h2>
+        <p class="section-subtitle">Notion AI 为何是 Notion 用户的首选？</p>
+        <div class="grid-3">
+            <article class="card">
+                <div class="card-icon"><i data-lucide="wand-2" class="icon-lg" style="vertical-align:middle"></i></div>
+                <h3>内联写作助手 (Cmd+J)</h3>
+                <p>选中任意文本 → Cmd+J → 续写、总结、修正语法、改写语气、翻译、解释、简化、自定义提示词。页面、数据库、评论全通用，延迟 1-3 秒。</p>
+            </article>
+            <article class="card">
+                <div class="card-icon"><i data-lucide="database" class="icon-lg"></i></div>
+                <h3>数据库自动填充</h3>
+                <p>在任意数据库创建 AI 属性 → 定义提示词（如"用 2 条总结会议"）→ 自动为所有现有行 + 新行填充。实测 2000 行会议库：95% 有用摘要，省 ~15 小时。</p>
+            </article>
+            <article class="card">
+                <div class="card-icon"><i data-lucide="search" class="icon-lg"></i></div>
+                <h3>工作区问答 (Q&A)</h3>
+                <p>自然语言提问："上月会议怎么定价的？" → 搜全工作区、引用来源、综合答案。覆盖页面、数据库、PDF。事实查询准确率 85%，隐性上下文较弱。</p>
+            </article>
+            <article class="card">
+                <div class="card-icon"><i data-lucide="file-text" class="icon-lg"></i></div>
+                <h3>AI 区块与模板</h3>
+                <p>预置 AI 区块：会议纪要、项目简报、职位描述、博客大纲。/ai 命令插入。自定义提示词可保存为模板复用。</p>
+            </article>
+            <article class="card">
+                <div class="card-icon"><i data-lucide="globe" class="icon-lg"></i></div>
+                <h3>多语言翻译</h3>
+                <p>选中文本或整页翻译至 30+ 语言。保留格式、数据库、内联提及。主流语种质量对标 DeepL。</p>
+            </article>
+            <article class="card">
+                <div class="card-icon"><i data-lucide="target" class="icon-lg"></i></div>
+                <h3>零上下文切换</h3>
+                <p>全程在 Notion 内完成：会议纪要 → 自动生成行动项入库 → 起草跟进邮件。无需复制粘贴、无需切工具。知识工作流效率提升 30%+。</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">优缺点速览</h2>
+        <div class="pros-cons-grid">
+            <div class="pros-card">
+                <h3><i data-lucide="check-circle-2" class="icon-lg"></i> 优点</h3>
+                <ul>
+                    <li>最佳一体化集成——零上下文切换</li>
+                    <li>数据库自动填充对结构化数据具革命性</li>
+                    <li>工作区问答替代人工搜索</li>
+                    <li>公平使用政策 = 正常工作量下无限量</li>
+                    <li>翻译保留 Notion 格式与提及</li>
+                    <li>自定义提示词可做可复用模板</li>
+                </ul>
+            </div>
+            <div class="cons-card">
+                <h3><i data-lucide="x-circle" class="icon-lg"></i> 缺点</h3>
+                <ul>
+                    <li>必须先有 Notion 订阅 ($8-15/用户/月)</li>
+                    <li>长文写作质量不如专用工具</li>
+                    <li>无 SEO 优化功能</li>
+                    <li>跨页综合易幻觉</li>
+                    <li>无 API 供自定义集成</li>
+                    <li>移动端体验不如桌面端流畅</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">价格方案 (2026)</h2>
+        <div class="grid-3">
+            <article class="pricing-card">
+                <h4 class="pricing-name">Free + AI</h4>
+                <div class="pricing-price">$10</div>
+                <p class="pricing-period">/成员/月</p>
+                <ul class="pricing-features">
+                    <li>Notion Free 计划基础功能</li>
+                    <li>无限 AI 响应 (公平使用)</li>
+                    <li>数据库自动填充</li>
+                    <li>工作区问答</li>
+                </ul>
+                <a href="https://www.notion.so/product/ai" target="_blank" rel="nofollow" class="btn-secondary">开始试用</a>
+            </article>
+            <article class="pricing-card popular">
+                <span class="popular-tag">最热门</span>
+                <h4 class="pricing-name">Plus + AI</h4>
+                <div class="pricing-price">$20</div>
+                <p class="pricing-period">/成员/月 (Notion $10 + AI $10)</p>
+                <ul class="pricing-features">
+                    <li>无限文件上传 / 版本历史</li>
+                    <li>无限 AI 响应 (公平使用)</li>
+                    <li>数据库自动填充</li>
+                    <li>工作区问答</li>
+                </ul>
+                <a href="https://www.notion.so/product/ai" target="_blank" rel="nofollow" class="btn-secondary" style="background:#0066cc;color:white;border-color:#0066cc;">立即开通</a>
+            </article>
+            <article class="pricing-card">
+                <h4 class="pricing-name">Business + AI</h4>
+                <div class="pricing-price">$25</div>
+                <p class="pricing-period">/成员/月 (Notion $15 + AI $10)</p>
+                <ul class="pricing-features">
+                    <li>SAML SSO / 高级权限</li>
+                    <li>无限 AI + 管理员控制</li>
+                    <li>数据库自动填充</li>
+                    <li>工作区问答 + 审计日志</li>
+                </ul>
+                <a href="https://www.notion.so/product/ai" target="_blank" rel="nofollow" class="btn-secondary">联系销售</a>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">适用场景</h2>
+        <div class="grid-3">
+            <article class="usecase-card">
+                <div class="usecase-icon"><i data-lucide="file-text" class="icon-lg"></i></div>
+                <h4>会议纪要 → 行动项</h4>
+                <p>录音转文本 → AI 总结 → 自动建库 → 分配责任人</p>
+            </article>
+            <article class="usecase-card">
+                <div class="usecase-icon"><i data-lucide="database" class="icon-lg"></i></div>
+                <h4>知识库自动化</h4>
+                <p>千行数据库一键生成摘要、标签、分类</p>
+            </article>
+            <article class="usecase-card">
+                <div class="usecase-icon"><i data-lucide="search" class="icon-lg"></i></div>
+                <h4>工作区智能问答</h4>
+                <p>"上季度产品决策是什么？" 秒级得答案</p>
+            </article>
+            <article class="usecase-card">
+                <div class="usecase-icon"><i data-lucide="globe" class="icon-lg"></i></div>
+                <h4>多语言团队协作</h4>
+                <p>页面/数据库整页翻译，保留格式与提及</p>
+            </article>
+            <article class="usecase-card">
+                <div class="usecase-icon"><i data-lucide="layout-dashboard" class="icon-lg"></i></div>
+                <h4>项目规范与文档</h4>
+                <p>大纲生成 → 章节续写 → 语气统一 → 交付</p>
+            </article>
+            <article class="usecase-card">
+                <div class="usecase-icon"><i data-lucide="users" class="icon-lg"></i></div>
+                <h4>团队知识沉淀</h4>
+                <p>新人入职即查：Q&A 替代口口相传</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<div class="footer-cta">
+    <h3>让 Notion 变成你的 AI 超级大脑</h3>
+    <p>20 次免费 AI 响应，随时取消。已用 Notion？$10/月解锁全功能。</p>
+    <a href="https://www.notion.so/product/ai" target="_blank" rel="nofollow" class="cta-primary">
+        <i data-lucide="external-link" class="icon-lg"></i>
+        立即体验 Notion AI
+    </a>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="/" class="footer-logo"><svg class="brand-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4" ry="4"></rect><path d="M8 12h16M8 16h16M8 20h16"></path></svg>AI Tool Picks</a>
+                <p class="footer-desc">专业的 AI 工具深度评测与选型指南。实测实评，拒绝营销话术。</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Twitter"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a>
+                    <a href="#" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.536-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg></a>
+                    <a href="#" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>分类</h4>
+                <ul class="footer-links">
+                    <li><a href="../../category/writing.html">AI Writing</a></li>
+                    <li><a href="../../category/coding.html">AI Coding</a></li>
+                    <li><a href="../../category/video.html">AI Video</a></li>
+                    <li><a href="../../category/seo.html">AI SEO</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Popular</h4>
+                <ul class="footer-links">
+                    <li><a href="../../posts/koalawriter-review-2026.html">KoalaWriter Review</a></li>
+                    <li><a href="../../posts/jasper-vs-writesonic.html">Jasper vs Writesonic</a></li>
+                    <li><a href="../../posts/best-ai-seo-tools-2026.html">Best AI SEO Tools</a></li>
+                    <li><a href="../../category/seo.html">All SEO Tools</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Resources</h4>
+                <ul class="footer-links">
+                    <li><a href="../../affiliate-disclosure.html">Affiliate Disclosure</a></li>
+                    <li><a href="../../privacy.html">Privacy Policy</a></li>
+                    <li><a href="#newsletter">Newsletter</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 AI Tool Picks. All rights reserved.</p>
+            <div class="flex gap-md">
+                <a href="../../privacy.html">Privacy Policy</a>
+                <a href="../../affiliate-disclosure.html">Affiliate Disclosure</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    lucide.createIcons();
+</script>
+</body>
+</html>

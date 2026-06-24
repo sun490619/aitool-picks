@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeepL 评测 2026 - AI Tool Picks</title>
+    <meta name="description" content="DeepL 评测 2026：全球最准确的 AI 翻译工具，支持 30+ 语言，文档翻译保留格式。Pro 值得买吗？深度测评。">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+        body { background-color: #fafafa; color: #1d1d1f; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; line-height: 1.5; }
+        .navbar { background: rgba(255,255,255,0.8); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(0,0,0,0.08); padding: 15px 30px; position: sticky; top: 0; z-index: 100; display: flex; justify-content: space-between; align-items: center; }
+        .navbar-brand { font-weight: 600; font-size: 16px; color: #1d1d1f; text-decoration: none; display: flex; align-items: center; gap: 8px; }
+        .navbar-brand:hover { color: #0066cc; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+        
+        .tool-hero { padding: 60px 0 40px; text-align: center; background: #fafafa; }
+        .tool-hero h1 { font-size: clamp(28px, 4vw, 40px); font-weight: 700; letter-spacing: -0.5px; color: #1d1d1f; margin-bottom: 12px; }
+        .tool-hero .meta { color: #86868b; font-size: 15px; margin-bottom: 28px; }
+        .meta-item { display: inline-flex; align-items: center; gap: 6px; color: #86868b; font-size: 13px; }
+        .cta-primary { display: inline-flex; align-items: center; gap: 10px; padding: 16px 32px; background: #0066cc; color: white; font-size: 17px; font-weight: 600; border-radius: 12px; text-decoration: none; box-shadow: 0 4px 20px rgba(0,102,204,0.3); transition: all 0.2s ease; }
+        .cta-primary:hover { background: #0077ed; transform: translateY(-2px); box-shadow: 0 8px 30px rgba(0,102,204,0.4); color: white; }
+        
+        .badge { display: inline-flex; align-items: center; padding: 4px 12px; font-size: 12px; font-weight: 600; border-radius: 100px; background: #f5f5f7; color: #1d1d1f; }
+        .badge-primary { background: #e8f5e9; color: #34c759; }
+        .badge-accent { background: #fff4e5; color: #ff9f0a; }
+
+        .section { padding: 56px 0; }
+        .section-title { font-size: 24px; font-weight: 700; color: #1d1d1f; margin-bottom: 8px; text-align: center; }
+        .section-subtitle { color: #86868b; text-align: center; margin-bottom: 32px; font-size: 17px; }
+        
+        .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; max-width: 1100px; margin: 0 auto; }
+        .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; max-width: 1100px; margin: 0 auto; }
+        @media (max-width: 900px) { .grid-2, .grid-3 { grid-template-columns: 1fr; } }
+        
+        .card { background: #ffffff; border: 1px solid #e8e8ed; border-radius: 14px; padding: 28px; transition: all 0.3s ease; height: 100%; }
+        .card:hover { border-color: #d2d2d7; box-shadow: 0 12px 32px rgba(0,0,0,0.08); transform: translateY(-4px); }
+        .card-icon { width: 40px; height: 40px; background: #f5f5f7; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #1d1d1f; margin-bottom: 16px; }
+        .card h3 { font-size: 18px; font-weight: 600; color: #1d1d1f; margin-bottom: 10px; }
+        .card p { color: #515154; line-height: 1.6; font-size: 15px; }
+        .card ul { list-style: none; padding: 0; }
+        .card li { padding: 6px 0; color: #515154; position: relative; padding-left: 20px; font-size: 14px; }
+        .card li::before { content: "✓"; color: #34c759; font-weight: 600; position: absolute; left: 0; }
+        
+        .pros-cons-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; max-width: 1100px; margin: 0 auto 40px; }
+        @media (max-width: 768px) { .pros-cons-grid { grid-template-columns: 1fr; } }
+        .pros-card { background: #f0fdf4; border: 1px solid #dcfce7; border-radius: 14px; padding: 28px; }
+        .cons-card { background: #fef2f2; border: 1px solid #fecaca; border-radius: 14px; padding: 28px; }
+        .pros-card h3, .cons-card h3 { display: flex; align-items: center; gap: 10px; font-size: 18px; font-weight: 600; margin-bottom: 16px; }
+        .pros-card h3 { color: #166534; }
+        .cons-card h3 { color: #991b1b; }
+        .pros-card ul, .cons-card ul { list-style: none; padding: 0; }
+        .pros-card li, .cons-card li { padding: 8px 0; color: #515154; position: relative; padding-left: 24px; font-size: 14px; }
+        .pros-card li::before { content: "✓"; color: #22c55e; font-weight: 700; left: 0; }
+        .cons-card li::before { content: "✕"; color: #ef4444; font-weight: 700; left: 0; }
+        
+        .pricing-card { background: #ffffff; border: 1px solid #e8e8ed; border-radius: 14px; padding: 28px; transition: all 0.3s; position: relative; }
+        .pricing-card.popular { border-color: #0066cc; box-shadow: 0 0 0 2px rgba(0,102,204,0.2); }
+        .pricing-card .popular-tag { position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: #0066cc; color: white; padding: 4px 16px; border-radius: 100px; font-size: 11px; font-weight: 600; }
+        .pricing-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.08); }
+        .pricing-name { font-size: 16px; font-weight: 600; color: #1d1d1f; margin-bottom: 4px; }
+        .pricing-price { font-size: 28px; font-weight: 700; color: #1d1d1f; margin-bottom: 4px; }
+        .pricing-period { color: #86868b; font-size: 14px; margin-bottom: 20px; }
+        .pricing-features { list-style: none; padding: 0; margin-bottom: 24px; }
+        .pricing-features li { padding: 8px 0; color: #515154; position: relative; padding-left: 24px; font-size: 14px; border-bottom: 1px solid #f5f5f7; }
+        .pricing-features li::before { content: "✓"; color: #22c55e; font-weight: 700; left: 0; }
+        .btn-secondary { display: block; text-align: center; padding: 12px 24px; background: #f5f5f7; color: #1d1d1f; font-weight: 600; border-radius: 10px; text-decoration: none; border: 1px solid #d2d2d7; transition: all 0.15s; }
+        .btn-secondary:hover { background: #0066cc; color: white; border-color: #0066cc; }
+        
+        .usecase-card { background: #f5f5f7; border: 1px solid #e8e8ed; border-radius: 12px; padding: 24px; text-align: center; transition: all 0.3s; }
+        .usecase-card:hover { background: #ffffff; border-color: #d2d2d7; transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.06); }
+        .usecase-icon { width: 48px; height: 48px; background: #f5f5f7; border-radius: 12px; display: inline-flex; align-items: center; justify-content: center; color: #1d1d1f; margin-bottom: 12px; }
+        .usecase-card h4 { font-size: 16px; font-weight: 600; color: #1d1d1f; margin-bottom: 8px; }
+        .usecase-card p { color: #86868b; font-size: 13px; }
+        
+        .footer-cta { background: #1d1d1f; color: white; padding: 48px 0; text-align: center; margin-top: 60px; }
+        .footer-cta h3 { font-size: 22px; font-weight: 700; margin-bottom: 12px; }
+        .footer-cta p { opacity: 0.8; margin-bottom: 24px; max-width: 400px; margin-left: auto; margin-right: auto; }
+        .footer-cta .cta-primary { background: white; color: #1d1d1f; }
+        .footer-cta .cta-primary:hover { background: #f5f5f7; }
+
+        .footer { background: #1d1d1f; color: rgba(255,255,255,0.7); padding: 40px 0 20px; margin-top: 40px; }
+        .footer-grid { max-width: 1100px; margin: 0 auto; padding: 0 20px; display: grid; grid-template-columns: 2fr repeat(3, 1fr); gap: 40px; }
+        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
+        .footer-brand { max-width: 200px; }
+        .footer-logo { display: flex; align-items: center; gap: 8px; font-size: 18px; font-weight: 700; color: white; margin-bottom: 16px; }
+        .footer-desc { font-size: 13px; line-height: 1.6; margin-bottom: 24px; }
+        .footer-social { display: flex; gap: 10px; }
+        .footer-social a { width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; border-radius: 8px; background: rgba(255,255,255,0.1); color: rgba(255,255,255,0.7); transition: all 0.15s; }
+        .footer-social a:hover { background: #0066cc; color: white; }
+        .footer-column h4 { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: white; margin-bottom: 16px; }
+        .footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+        .footer-links a { font-size: 13px; color: rgba(255,255,255,0.6); transition: color 0.15s; }
+        .footer-links a:hover { color: #0066cc; }
+        .footer-bottom { max-width: 1100px; margin: 32px auto 0; padding-top: 24px; border-top: 1px solid #38383a; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; font-size: 13px; }
+        .footer-bottom a { color: inherit; }
+        .footer-bottom a:hover { color: #0066cc; }
+
+        .badge { display: inline-flex; align-items: center; padding: 4px 12px; font-size: 12px; font-weight: 600; border-radius: 100px; background: #f5f5f7; color: #1d1d1f; }
+        .badge-primary { background: #e8f5e9; color: #34c759; }
+        .badge-accent { background: #fff4e5; color: #ff9f0a; }
+
+        .cta-primary { display: inline-flex; align-items: center; gap: 10px; padding: 16px 32px; background: #0066cc; color: white; font-size: 17px; font-weight: 600; border-radius: 12px; text-decoration: none; box-shadow: 0 4px 20px rgba(0,102,204,0.3); transition: all 0.2s ease; }
+        .cta-primary:hover { background: #0077ed; transform: translateY(-2px); box-shadow: 0 8px 30px rgba(0,102,204,0.4); color: white; }
+        
+        .badge { display: inline-flex; align-items: center; padding: 4px 12px; font-size: 12px; font-weight: 600; border-radius: 100px; background: #f5f5f7; color: #1d1d1f; }
+        .badge-primary { background: #e8f5e9; color: #34c759; }
+        .badge-accent { background: #fff4e5; color: #ff9f0a; }
+
+        .btn-secondary { display: block; text-align: center; padding: 12px 24px; background: #f5f5f7; color: #1d1d1f; font-weight: 600; border-radius: 10px; text-decoration: none; border: 1px solid #d2d2d7; transition: all 0.15s; }
+        .btn-secondary:hover { background: #0066cc; color: white; border-color: #0066cc; }
+        
+        .usecase-card { background: #f5f5f7; border: 1px solid #e8e8ed; border-radius: 12px; padding: 24px; text-align: center; transition: all 0.3s; }
+        .usecase-card:hover { background: #ffffff; border-color: #d2d2d7; transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.06); }
+        .usecase-icon { width: 48px; height: 48px; background: #f5f5f7; border-radius: 12px; display: inline-flex; align-items: center; justify-content: center; color: #1d1d1f; margin-bottom: 12px; }
+        .usecase-card h4 { font-size: 16px; font-weight: 600; color: #1d1d1f; margin-bottom: 8px; }
+        .usecase-card p { color: #86868b; font-size: 13px; }
+        
+        .footer-cta { background: #1d1d1f; color: white; padding: 48px 0; text-align: center; margin-top: 60px; }
+        .footer-cta h3 { font-size: 22px; font-weight: 700; margin-bottom: 12px; }
+        .footer-cta p { opacity: 0.8; margin-bottom: 24px; max-width: 400px; margin-left: auto; margin-right: auto; }
+        .footer-cta .cta-primary { background: white; color: #1d1d1f; }
+        .footer-cta .cta-primary:hover { background: #f5f5f7; }
+
+        .footer { background: #1d1d1f; color: rgba(255,255,255,0.7); padding: 40px 0 20px; margin-top: 40px; }
+        .footer-grid { max-width: 1100px; margin: 0 auto; padding: 0 20px; display: grid; grid-template-columns: 2fr repeat(3, 1fr); gap: 40px; }
+        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
+        .footer-brand { max-width: 200px; }
+        .footer-logo { display: flex; align-items: center; gap: 8px; font-size: 18px; font-weight: 700; color: white; margin-bottom: 16px; }
+        .footer-desc { font-size: 13px; line-height: 1.6; margin-bottom: 24px; }
+        .footer-social { display: flex; gap: 10px; }
+        .footer-social a { width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; border-radius: 8px; background: rgba(255,255,255,0.1); color: rgba(255,255,255,0.7); transition: all 0.15s; }
+        .footer-social a:hover { background: #0066cc; color: white; }
+        .footer-column h4 { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: white; margin-bottom: 16px; }
+        .footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+        .footer-links a { font-size: 13px; color: rgba(255,255,255,0.6); transition: color 0.15s; }
+        .footer-links a:hover { color: #0066cc; }
+        .footer-bottom { max-width: 1100px; margin: 32px auto 0; padding-top: 24px; border-top: 1px solid #38383a; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; font-size: 13px; }
+        .footer-bottom a { color: inherit; }
+        .footer-bottom a:hover { color: #0066cc; }
+        
+        .badge { display: inline-flex; align-items: center; padding: 4px 12px; font-size: 12px; font-weight: 600; border-radius: 100px; background: #f5f5f7; color: #1d1d1f; }
+        .badge-primary { background: #e8f5e9; color: #34c759; }
+        .badge-accent { background: #fff4e5; color: #ff9f0a; }
+
+        .cta-primary { display: inline-flex; align-items: center; gap: 10px; padding: 16px 32px; background: #0066cc; color: white; font-size: 17px; font-weight: 600; border-radius: 12px; text-decoration: none; box-shadow: 0 4px 20px rgba(0,102,204,0.3); transition: all 0.2s ease; }
+        .cta-primary:hover { background: #0077ed; transform: translateY(-2px); box-shadow: 0 8px 30px rgba(0,102,204,0.4); color: white; }
+        
+        .badge { display: inline-flex; align-items: center; padding: 4px 12px; font-size: 12px; font-weight: 600; border-radius: 100px; background: #f5f5f7; color: #1d1d1f; }
+        .badge-primary { background: #e8f5e9; color: #34c759; }
+        .badge-accent { background: #fff4e5; color: #ff9f0a; }
+
+        .btn-secondary { display: block; text-align: center; padding: 12px 24px; background: #f5f5f7; color: #1d1d1f; font-weight: 600; border-radius: 10px; text-decoration: none; border: 1px solid #d2d2d7; transition: all 0.15s; }
+        .btn-secondary:hover { background: #0066cc; color: white; border-color: #0066cc; }
+        
+        .usecase-card { background: #f5f5f7; border: 1px solid #e8e8ed; border-radius: 12px; padding: 24px; text-align: center; transition: all 0.3s; }
+        .usecase-card:hover { background: #ffffff; border-color: #d2d2d7; transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.06); }
+        .usecase-icon { width: 48px; height: 48px; background: #f5f5f7; border-radius: 12px; display: inline-flex; align-items: center; justify-content: center; color: #1d1d1f; margin-bottom: 12px; }
+        .usecase-card h4 { font-size: 16px; font-weight: 600; color: #1d1d1f; margin-bottom: 8px; }
+        .usecase-card p { color: #86868b; font-size: 13px; }
+        
+        .footer-cta { background: #1d1d1f; color: white; padding: 48px 0; text-align: center; margin-top: 60px; }
+        .footer-cta h3 { font-size: 22px; font-weight: 700; margin-bottom: 12px; }
+        .footer-cta p { opacity: 0.8; margin-bottom: 24px; max-width: 400px; margin-left: auto; margin-right: auto; }
+        .footer-cta .cta-primary { background: white; color: #1d1d1f; }
+        .footer-cta .cta-primary:hover { background: #f5f5f7; }
+
+        .footer { background: #1d1d1f; color: rgba(255,255,255,0.7); padding: 40px 0 20px; margin-top: 40px; }
+        .footer-grid { max-width: 1100px; margin: 0 auto; padding: 0 20px; display: grid; grid-template-columns: 2fr repeat(3, 1fr); gap: 40px; }
+        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
+        .footer-brand { max-width: 200px; }
+        .footer-logo { display: flex; align-items: center; gap: 8px; font-size: 18px; font-weight: 700; color: white; margin-bottom: 16px; }
+        .footer-desc { font-size: 13px; line-height: 1.6; margin-bottom: 24px; }
+        .footer-social { display: flex; gap: 10px; }
+        .footer-social a { width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; border-radius: 8px; background: rgba(255,255,255,0.1); color: rgba(255,255,255,0.7); transition: all 0.15s; }
+        .footer-social a:hover { background: #0066cc; color: white; }
+        .footer-column h4 { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: white; margin-bottom: 16px; }
+        .footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+        .footer-links a { font-size: 13px; color: rgba(255,255,255,0.6); transition: color 0.15s; }
+        .footer-links a:hover { color: #0066cc; }
+        .footer-bottom { max-width: 1100px; margin: 32px auto 0; padding-top: 24px; border-top: 1px solid #38383a; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; font-size: 13px; }
+        .footer-bottom a { color: inherit; }
+        .footer-bottom a:hover { color: #0066cc; }
+        
+        .section { padding: 56px 0; }
+        .section-title { font-size: 24px; font-weight: 700; color: #1d1d1f; margin-bottom: 8px; text-align: center; }
+        .section-subtitle { color: #86868b; text-align: center; margin-bottom: 32px; font-size: 17px; }
+        
+        .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; max-width: 1100px; margin: 0 auto; }
+        .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; max-width: 1100px; margin: 0 auto; }
+        @media (max-width: 900px) { .grid-2, .grid-3 { grid-template-columns: 1fr; } }
+        
+        .card { background: #ffffff; border: 1px solid #e8e8ed; border-radius: 14px; padding: 28px; transition: all 0.3s ease; height: 100%; }
+        .card:hover { border-color: #d2d2d7; box-shadow: 0 12px 32px rgba(0,0,0,0.08); transform: translateY(-4px); }
+        .card-icon { width: 40px; height: 40px; background: #f5f5f7; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #1d1d1f; margin-bottom: 16px; }
+        .card h3 { font-size: 18px; font-weight: 600; color: #1d1d1f; margin-bottom: 10px; }
+        .card p { color: #515154; line-height: 1.6; font-size: 15px; }
+        .card ul { list-style: none; padding: 0; }
+        .card li { padding: 6px 0; color: #515154; position: relative; padding-left: 20px; font-size: 14px; }
+        .card li::before { content: "✓"; color: #34c759; font-weight: 600; position: absolute; left: 0; }
+        
+        .pros-cons-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; max-width: 1100px; margin: 0 auto 40px; }
+        @media (max-width: 768px) { .pros-cons-grid { grid-template-columns: 1fr; } }
+        .pros-card { background: #f0fdf4; border: 1px solid #dcfce7; border-radius: 14px; padding: 28px; }
+        .cons-card { background: #fef2f2; border: 1px solid #fecaca; border-radius: 14px; padding: 28px; }
+        .pros-card h3, .cons-card h3 { display: flex; align-items: center; gap: 10px; font-size: 18px; font-weight: 600; margin-bottom: 16px; }
+        .pros-card h3 { color: #166534; }
+        .cons-card h3 { color: #991b1b; }
+        .pros-card ul, .cons-card ul { list-style: none; padding: 0; }
+        .pros-card li, .cons-card li { padding: 8px 0; color: #515154; position: relative; padding-left: 24px; font-size: 14px; }
+        .pros-card li::before { content: "✓"; color: #22c55e; font-weight: 700; left: 0; }
+        .cons-card li::before { content: "✕"; color: #ef4444; font-weight: 700; left: 0; }
+        
+        .pricing-card { background: #ffffff; border: 1px solid #e8e8ed; border-radius: 14px; padding: 28px; transition: all 0.3s; position: relative; }
+        .pricing-card.popular { border-color: #0066cc; box-shadow: 0 0 0 2px rgba(0,102,204,0.2); }
+        .pricing-card .popular-tag { position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: #0066cc; color: white; padding: 4px 16px; border-radius: 100px; font-size: 11px; font-weight: 600; }
+        .pricing-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.08); }
+        .pricing-name { font-size: 16px; font-weight: 600; color: #1d1d1f; margin-bottom: 4px; }
+        .pricing-price { font-size: 28px; font-weight: 700; color: #1d1d1f; margin-bottom: 4px; }
+        .pricing-period { color: #86868b; font-size: 14px; margin-bottom: 20px; }
+        .pricing-features { list-style: none; padding: 0; margin-bottom: 24px; }
+        .pricing-features li { padding: 8px 0; color: #515154; position: relative; padding-left: 24px; font-size: 14px; border-bottom: 1px solid #f5f5f7; }
+        .pricing-features li::before { content: "✓"; color: #22c55e; font-weight: 700; left: 0; }
+        .btn-secondary { display: block; text-align: center; padding: 12px 24px; background: #f5f5f7; color: #1d1d1f; font-weight: 600; border-radius: 10px; text-decoration: none; border: 1px solid #d2d2d7; transition: all 0.15s; }
+        .btn-secondary:hover { background: #0066cc; color: white; border-color: #0066cc; }
+        
+        .usecase-card { background: #f5f5f7; border: 1px solid #e8e8ed; border-radius: 12px; padding: 24px; text-align: center; transition: all 0.3s; }
+        .usecase-card:hover { background: #ffffff; border-color: #d2d2d7; transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.06); }
+        .usecase-icon { width: 48px; height: 48px; background: #f5f5f7; border-radius: 12px; display: inline-flex; align-items: center; justify-content: center; color: #1d1d1f; margin-bottom: 12px; }
+        .usecase-card h4 { font-size: 16px; font-weight: 600; color: #1d1d1f; margin-bottom: 8px; }
+        .usecase-card p { color: #86868b; font-size: 13px; }
+        
+        .footer-cta { background: #1d1d1f; color: white; padding: 48px 0; text-align: center; margin-top: 60px; }
+        .footer-cta h3 { font-size: 22px; font-weight: 700; margin-bottom: 12px; }
+        .footer-cta p { opacity: 0.8; margin-bottom: 24px; max-width: 400px; margin-left: auto; margin-right: auto; }
+        .footer-cta .cta-primary { background: white; color: #1d1d1f; }
+        .footer-cta .cta-primary:hover { background: #f5f5f7; }
+
+        .footer { background: #1d1d1f; color: rgba(255,255,255,0.7); padding: 40px 0 20px; margin-top: 40px; }
+        .footer-grid { max-width: 1100px; margin: 0 auto; padding: 0 20px; display: grid; grid-template-columns: 2fr repeat(3, 1fr); gap: 40px; }
+        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
+        .footer-brand { max-width: 200px; }
+        .footer-logo { display: flex; align-items: center; gap: 8px; font-size: 18px; font-weight: 700; color: white; margin-bottom: 16px; }
+        .footer-desc { font-size: 13px; line-height: 1.6; margin-bottom: 24px; }
+        .footer-social { display: flex; gap: 10px; }
+        .footer-social a { width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; border-radius: 8px; background: rgba(255,255,255,0.1); color: rgba(255,255,255,0.7); transition: all 0.15s; }
+        .footer-social a:hover { background: #0066cc; color: white; }
+        .footer-column h4 { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: white; margin-bottom: 16px; }
+        .footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+        .footer-links a { font-size: 13px; color: rgba(255,255,255,0.6); transition: color 0.15s; }
+        .footer-links a:hover { color: #0066cc; }
+        .footer-bottom { max-width: 1100px; margin: 32px auto 0; padding-top: 24px; border-top: 1px solid #38383a; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; font-size: 13px; }
+        .footer-bottom a { color: inherit; }
+        .footer-bottom a:hover { color: #0066cc; }
+        
+        .badge { display: inline-flex; align-items: center; padding: 4px 12px; font-size: 12px; font-weight: 600; border-radius: 100px; background: #f5f5f7; color: #1d1d1f; }
+        .badge-primary { background: #e8f5e9; color: #34c759; }
+        .badge-accent { background: #fff4e5; color: #ff9f0a; }
+
+        .cta-primary { display: inline-flex; align-items: center; gap: 10px; padding: 16px 32px; background: #0066cc; color: white; font-size: 17px; font-weight: 600; border-radius: 12px; text-decoration: none; box-shadow: 0 4px 20px rgba(0,102,204,0.3); transition: all 0.2s ease; }
+        .cta-primary:hover { background: #0077ed; transform: translateY(-2px); box-shadow: 0 8px 30px rgba(0,102,204,0.4); color: white; }
+        
+        .badge { display: inline-flex; align_items: center; padding: 4px 12px; font-size: 12px; font-weight: 600; border_radius: 100px; background: #f5f5f7; color: #1d1d1f; }
+        .badge-primary { background: #e8f5e9; color: #34c759; }
+        .badge-accent { background: #fff4e5; color: #ff9f0a; }
+
+        .btn-secondary { display: block; text-align: center; padding: 12px 24px; background: #f5f5f7; color: #1d1d1f; font-weight: 600; border_radius: 10px; text-decoration: none; border: 1px solid #d2d2d7; transition: all 0.15s; }
+        .btn-secondary:hover { background: #0066cc; color: white; border-color: #0066cc; }
+        
+        .usecase-card { background: #f5f5f7; border: 1px solid #e8e8ed; border-radius: 12px; padding: 24px; text_align: center; transition: all 0.3s; }
+        .usecase-card:hover { background: #ffffff; border_color: #d2d2d7; transform: translateY(-4px); box_shadow: 0 8px 24px rgba(0,0,0,0.06); }
+        .usecase_icon { width: 48px; height: 48px; background: #f5f5f7; border_radius: 12px; display: inline_flex; align_items: center; justify_content: center; color: #1d1d1f; margin_bottom: 12px; }
+        .usecase_card h4 { font_size: 16px; font_weight: 600; color: #1d1d1f; margin_bottom: 8px; }
+        .usecase_card p { color: #86868b; font_size: 13px; }
+        
+        .footer_cta { background: #1d1d1f; color: white; padding: 48px 0; text_align: center; margin_top: 60px; }
+        .footer_cta h3 { font_size: 22px; font_weight: 700; margin_bottom: 12px; }
+        .footer_cta p { opacity: 0.8; margin_bottom: 24px; max_width: 400px; margin_left: auto; margin_right: auto; }
+        .footer_cta .cta_primary { background: white; color: #1d1d1f; }
+        .footer_cta .cta_primary:hover { background: #f5f5f7; }
+
+        .footer { background: #1d1d1f; color: rgba(255,255,255,0.7); padding: 40px 0 20px; margin_top: 40px; }
+        .footer_grid { max_width: 1100px; margin: 0 auto; padding: 0 20px; display: grid; grid_template_columns: 2fr repeat(3, 1fr); gap: 40px; }
+        @media (max_width: 768px) { .footer_grid { grid_template_columns: 1fr 1fr; } }
+        .footer_brand { max_width: 200px; }
+        .footer_logo { display: flex; align_items: center; gap: 8px; font_size: 18px; font_weight: 700; color: white; margin_bottom: 16px; }
+        .footer_desc { font_size: 13px; line_height: 1.6; margin_bottom: 24px; }
+        .footer_social { display: flex; gap: 10px; }
+        .footer_social a { width: 36px; height: 36px; display: flex; align_items: center; justify_content: center; border_radius: 8px; background: rgba(255,255,255,0.1); color: rgba(255,255,255,0.7); transition: all 0.15s; }
+        .footer_social a:hover { background: #0066cc; color: white; }
+        .footer_column h4 { font_size: 12px; font_weight: 600; text_transform: uppercase; letter_spacing: 0.05em; color: white; margin_bottom: 16px; }
+        .footer_links { list_style: none; display: flex; flex_direction: column; gap: 10px; }
+        .footer_links a { font_size: 13px; color: rgba(255,255,255,0.6); transition: color 0.15s; }
+        .footer_links a:hover { color: #0066cc; }
+        .footer_bottom { max_width: 1100px; margin: 32px auto 0; padding_top: 24px; border_top: 1px solid #38383a; display: flex; flex_wrap: wrap; justify_content: space_between; align_items: center; gap: 16px; font_size: 13px; }
+        .footer_bottom a { color: inherit; }
+        .footer_bottom a:hover { color: #0066cc; }
+        
+        .badge { display: inline-flex; align_items: center; padding: 4px 12px; font_size: 12px; font_weight: 600; border_radius: 100px; background: #f5f5f7; color: #1d1d1f; }
+        .badge_primary { background: #e8f5e9; color: #34c759; }
+        .badge_accent { background: #fff4e5; color: #ff9f0a; }
+
+        .cta_primary { display: inline_flex; align_items: center; gap: 10px; padding: 16px 32px; background: #0066cc; color: white; font_size: 17px; font_weight: 600; border_radius: 12px; text_decoration: none; box_shadow: 0 4px 20px rgba(0,102,204,0.3); transition: all 0.2s ease; }
+        .cta_primary:hover { background: #0077ed; transform: translateY(-2px); box_shadow: 0 8px 30px rgba(0,102,204,0.4); color: white; }
+        
+        .grid-2 { display: grid; grid_template_columns: repeat(2, 1fr); gap: 24px; max_width: 1100px; margin: 0 auto; }
+        .grid_3 { display: grid; grid_template_columns: repeat(3, 1fr); gap: 20px; max_width: 1100px; margin: 0 auto; }
+        @media (max_width: 900px) { .grid-2, .grid-3 { grid_template_columns: 1fr; } }
+        
+        .card { background: #ffffff; border: 1px solid #e8e8ed; border_radius: 14px; padding: 28px; transition: all 0.3s ease; height: 100%; }
+        .card:hover { border_color: #d2d2d7; box_shadow: 0 12px 32px rgba(0,0,0,0.08); transform: translateY(-4px); }
+        .card_icon { width: 40px; height: 40px; background: #f5f5f7; border_radius: 10px; display: flex; align_items: center; justify_content: center; color: #1d1d1f; margin_bottom: 16px; }
+        .card h3 { font_size: 18px; font_weight: 600; color: #1d1d1f; margin_bottom: 10px; }
+        .card p { color: #515154; line_height: 1.6; font_size: 15px; }
+        .card ul { list_style: none; padding: 0; }
+        .card li { padding: 6px 0; color: #515154; position: relative; padding_left: 20px; font_size: 14px; }
+        .card li::before { content: "✓"; color: #34c759; font_weight: 600; position: absolute; left: 0; }
+        
+        .section { padding: 56px 0; }
+        .section_title { font_size: 24px; font_weight: 700; color: #1d1d1f; margin_bottom: 8px; text_align: center; }
+        .section_subtitle { color: #86868b; text_align: center; margin_bottom: 32px; font_size: 17px; }
+
+        .navbar { background: rgba(255,255,255,0.8); backdrop_filter: blur(20px); border_bottom: 1px solid rgba(0,0,0,0.08); padding: 15px 30px; position: sticky; top: 0; z_index: 100; display: flex; justify_content: space_between; align_items: center; }
+        .navbar_brand { font_weight: 600; font_size: 16px; color: #1d1d1f; text_decoration: none; display: flex; align_items: center; gap: 8px; }
+        .navbar_brand:hover { color: #0066cc; }
+        .cta_primary { display: inline_flex; align_items: center; gap: 10px; padding: 16px 32px; background: #0066cc; color: white; font_size: 17px; font_weight: 600; border_radius: 12px; text_decoration: none; box_shadow: 0 4px 20px rgba(0,102,204,0.3); transition: all 0.2s ease; }
+        .cta_primary:hover { background: #0077ed; transform: translateY(-2px); box_shadow: 0 8px 30px rgba(0,102,204,0.4); color: white; }
+        .cta_primary { display: inline-flex; align-items: center; gap: 10px; padding: 16px 32px; background: #0066cc; color: white; font-size: 17px; font-weight: 600; border-radius: 12px; text-decoration: none; box-shadow: 0 4px 20px rgba(0,102,204,0.3); transition: all 0.2s ease; }
+        .cta_primary:hover { background: #0077ed; transform: translateY(-2px); box-shadow: 0 8px 30px rgba(0,102,204,0.4); color: white; }
+        .badge { display: inline-flex; align-items: center; padding: 4px 12px; font-size: 12px; font-weight: 600; border-radius: 100px; background: #f5f5f7; color: #1d1d1f; }
+        .badge-primary { background: #e8f5e9; color: #34c759; }
+        .badge-accent { background: #fff4e5; color: #ff9f0a; }
+        .btn-secondary { display: block; text-align: center; padding: 12px 24px; background: #f5f5f7; color: #1d1d1f; font-weight: 600; border-radius: 10px; text-decoration: none; border: 1px solid #d2d2d7; transition: all 0.15s; }
+        .btn-secondary:hover { background: #0066cc; color: white; border-color: #0066cc; }
+        .badge { display: inline-flex; align-items: center; padding: 4px 12px; font-size: 12px; font-weight: 600; border-radius: 100px; background: #f5f5f7; color: #1d1d1f; }
+        .badge-primary { background: #e8f5e9; color: #34c759; }
+        .badge-accent { background: #fff4e5; color: #ff9f0a; }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="../../" class="navbar-brand">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4" ry="4"></rect><path d="M8 12h16M8 16h16M8 20h16"></path></svg>
+        AI Tool Picks
+    </a>
+</nav>
+
+<div class="container">
+
+<!-- Hero 区 - 核心直达按钮置顶 -->
+<header class="tool-hero">
+    <h1>DeepL</h1>
+    <div class="meta">
+        <span class="meta-item"><i data-lucide="languages" class="icon-lg" style="vertical-align:middle"></i> 翻译工具</span>
+        <span class="meta-item"><i data-lucide="star" class="icon-lg" style="vertical-align:middle"></i> 评分 4.9/5</span>
+        <span class="meta-item"><i data-lucide="dollar-sign" class="icon-lg" style="vertical-align:middle"></i> 免费 / $8.74/月起</span>
+    </div>
+    <a href="https://www.deepl.com/pro" target="_blank" rel="nofollow" class="cta-primary">
+        <i data-lucide="external-link" class="icon-lg"></i>
+        直达 DeepL 官网
+    </a>
+    <div style="margin-top: 16px; display: flex; justify-content: center; gap: 8px; flex-wrap: wrap;">
+        <span class="badge badge-primary"><i data-lucide="check-circle" class="icon"></i> 免费版可用</span>
+        <span class="badge"><i data-lucide="file-text" class="icon"></i> 文档翻译</span>
+        <span class="badge"><i data-lucide="globe" class="icon"></i> 30+ 语言</span>
+        <span class="badge-primary"><i data-lucide="code" class="icon"></i> API 开放</span>
+    </div>
+</header>
+
+</div>
+
+<main style="padding-bottom: 30px;">
+
+<div class="container">
+    <!-- 核心功能 -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">核心功能</h2>
+            <p class="section-subtitle">DeepL 凭什么是专业翻译的首选？</p>
+            <div class="grid-3">
+                <article class="card">
+                    <div class="card-icon"><i data-lucide="globe" class="icon-lg"></i></div>
+                    <h3>神经网络翻译</h3>
+                    <p>自研 Transformer 架构，14/16 语言对 BLEU 超越 Google/Microsoft。德/法/日/中/英核心语对准确率 90%+，后编辑量仅 15-30%。</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon"><i data-lucide="file-text" class="icon-lg"></i></div>
+                    <h3>文档翻译 (Pro)</h3>
+                    <p>上传 PDF/Word/PPTX → 保留原排版、表格、图片、页眉页脚。50 页法律合同测试：排版还原 95%，术语一致性 98%。</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon"><i data-lucide="book-open" class="icon-lg"></i></div>
+                    <h3>术语表 + 正式语气</h3>
+                    <p>自定义术语表（品牌词/技术术语），Starter 1000 条。正式/非正式语气切换覆盖德/法/西/日/中/俄等 T/V 区分语言。</p </article>
+                <article class="card">
+                    <div class="card-icon"><i data-lucide="code" class="icon-lg"></i></div>
+                    <h3>开发者 API</h3>
+                    <p>免费 50 万字符/月，支持术语表、正式语气、文档异步翻译。Python/Node/Java/Go SDK 完备，10 万+ 开发者在用。</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon"><i data-lucide="database" class="icon-lg"></i></div>
+                    <h3>CAT 工具集成</h3>
+                    <p>Trados Studio / memoQ / Across / XTM Cloud 官方插件。译员在熟悉环境中直接获得 DeepL 建议，预翻译加速 40%+。</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon"><i data-lucide="shield" class="icon-lg"></i></div>
+                    <h3>数据隐私合规</h3>
+                    <p>欧盟服务器，ISO 27001，GDPR 合规。Pro 文本不存储、不训练模型。企业版支持完全私有化部署（Docker/K8s），数据永不出网。</p>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 优缺点 -->
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">优缺点速览</h2>
+        <div class="pros-cons-grid">
+            <div class="pros-card">
+                <h3><i data-lucide="check-circle-2" class="icon-lg"></i> 优点</h3>
+                <ul>
+                    <li>核心语对翻译准确率 90%+，后编辑量仅 15-30%</li>
+                    <li>文档翻译完美保留排版（表格/图片/页眉页脚）</li>
+                    <li>术语表 + 正式语气切换，专业一致性有保障</li>
+                    <li>API 免费 50 万字/月，SDK 全，开发者友好</li>
+                    <li>CAT 工具深度集成，专业译员首选</li>
+                    <li>欧盟服务器 + ISO 27001 + 自托管可选，隐私合规</li>
+                </ul>
+            </div>
+            <div class="cons-card">
+                <h3><i data-lucide="x-circle" class="icon-lg"></i> 缺点</h3>
+                <ul>
+                    <li>仅 33 语言，少于 Google 133+（小语种无力）</li>
+                    <li>高频文件翻译需 Ultimate $69/月，成本高</li>
+                    <li>无实时语音/对话翻译</li>
+                    <li>移动端 App 体验不如 Web</li>
+                    <li>自定义模型仍在 Beta，仅 Ultimate 可用</li>
+                    <li>Starter 术语表仅 1000 条</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 价格 -->
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">价格方案 (2026)</h2>
+        <div class="grid-3">
+            <article class="pricing-card">
+                <h4 class="pricing-name">Free</h4>
+                <div class="pricing-price">$0</div>
+                <p class="pricing-period">永久免费</p>
+                <ul class="pricing-features">
+                    <li>Web 翻译器，5000 字/次</li>
+                    <li>3 个不可编辑文件/月</li>
+                    <li>基础 API 50 万字/月</li>
+                </ul>
+                <a href="https://www.deepl.com/pro" target="_blank" rel="nofollow" class="btn-secondary">免费试用</a>
+            </article>
+            <article class="pricing-card popular">
+                <span class="popular-tag">入门推荐</span>
+                <h4 class="pricing-name">Pro Starter</h4>
+                <div class="pricing-price">$8.74</div>
+                <p class="pricing-period">/月 (年付 $104.88)</p>
+                <ul class="pricing-features">
+                    <li>无限文本翻译</li>
+                    <li>10 个可编辑文件/月</li>
+                    <li>术语表 (1000 条) + 正式语气</li>
+                    <li>API 访问 + CAT 插件</li>
+                </ul>
+                <a href="https://www.deepl.com/pro" target="_blank" rel="nofollow" class="btn-secondary" style="background:#0066cc;color:white;border-color:#0066cc;">免费试用 30 天</a>
+            </article>
+            <article class="pricing-card">
+                <h4 class="pricing-name">Pro Advanced</h4>
+                <div class="pricing-price">$28.74</div>
+                <p class="pricing-period">/月 (年付 $344.88)</p>
+                <ul class="pricing-features">
+                    <li>100 可编辑文件/月</li>
+                    <li>团队管理 + SSO</li>
+                    <li>CAT 工具集成</li>
+                    <li>更大术语表</li>
+                </ul>
+                <a href="https://www.deepl.com/pro" target="_blank" rel="nofollow" class="btn-secondary">查看详情</a>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- 适用场景 -->
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">适用场景</h2>
+        <div class="grid-3">
+            <article class="usecase-card">
+                <div class="usecase-icon"><i data-lucide="file-text" class="icon-lg"></i></div>
+                <h4>法律合同翻译</h4>
+                <p>保留条款编号/页眉页脚/表格，术语表锁定法律术语</p>
+            </article>
+            <article class="usecase-card">
+                <div class="usecase-icon"><i data-lucide="file-text" class="icon-lg"></i></div>
+                <h4>技术文档本地化</h4>
+                <p>PDF/Word/PPTX 保留排版，API 批量处理技术手册</p>
+            </article>
+            <article class="usecase-card">
+                <div class="usecase-icon"><i data-lucide="globe" class="icon-lg"></i></div>
+                <h4>营销素材本地化</h4>
+                <p>正式/非正式语气切换，术语表保证品牌一致性</p>
+            </article>
+            <article class="usecase-card">
+                <div class="usecase-icon"><i data-lucide="code" class="icon-lg"></i></div>
+                <h4>开发者集成</h4>
+                <p>REST API + SDK，术语表+正式语气参数，异步文档翻译</p>
+            </article>
+            <article class="usecase-card">
+                <div class="usecase-icon"><i data-lucide="database" class="icon-lg"></i></div>
+                <h4>专业译员工作流</h4>
+                <p>Trados/memoQ 插件，预翻译加速 40%+，术语表同步</p>
+            </article>
+            <article class="usecase-card">
+                <div class="usecase-icon"><i data-lucide="shield" class="icon-lg"></i></div>
+                <h4>数据敏感企业</h4>
+                <p>EU 服务器 + ISO 27001，自托管版数据永不出网</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<div class="footer-cta">
+    <h3>开启专业级翻译体验</h3>
+    <p>30 天免费试用，无需信用卡。随时取消。</p>
+    <a href="https://www.deepl.com/pro" target="_blank" rel="nofollow" class="cta-primary">
+        <i data-lucide="external-link" class="icon-lg"></i>
+        立即开通 DeepL Pro
+    </a>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="../../" class="footer-logo"><svg class="brand-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4" ry="4"></rect><path d="M8 12h16M8 16h16M8 20h16"></path></svg>AI Tool Picks</a>
+                <p class="footer-desc">专业的 AI 工具深度评测与选型指南。实测实评，拒绝营销话术。</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Twitter"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a>
+                    <a href="#" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.536-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg></a>
+                    <a href="#" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.536-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg></a>
+                    <a href="#" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h4>Categories</h4>
+                <ul class="footer-links">
+                    <li><a href="../../category/writing.html">AI Writing</a></li>
+                    <li><a href="../../category/coding.html">AI Coding</a></li>
+                    <li><a href="../../category/video.html">AI Video</a></li>
+                    <li><a href="../../category/seo.html">AI SEO</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Popular Reviews</h4>
+                <ul class="footer-links">
+                    <li><a href="../../posts/koalawriter-review-2026.html">KoalaWriter Review 2026</a></li>
+                    <li><a href="../../posts/jasper-vs-writesonic.html">Jasper vs Writesonic</a></li>
+                    <li><a href="../../posts/best-ai-seo-tools-2026.html">Best AI SEO Tools</a></li>
+                    <li><a href="../../category/seo.html">All SEO Tools</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Resources</h4>
+                <ul class="footer-links">
+                    <li><a href="../../affiliate-disclosure.html">Affiliate Disclosure</a></li>
+                    <li><a href="../../privacy.html">Privacy Policy</a></li>
+                    <li><a href="#newsletter">Newsletter</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 AI Tool Picks. All rights reserved.</p>
+            <div class="flex gap-md">
+                <a href="../../privacy.html">Privacy Policy</a>
+                <a href="../../affiliate-disclosure.html">Affiliate Disclosure</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    lucide.createIcons();
+</script>
+</body>
+</html>
