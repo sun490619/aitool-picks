@@ -38,7 +38,9 @@
                 <span class="brand-mark"></span>
                 <span>AI Tool Picks</span>
             </a>
-            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+    
+            <nav class="nav-desktop" aria-label="Primary"><a href="/aitool-picks/" class="nav-link" aria-current="page">Home</a><a href="/aitool-picks/category/writing.html" class="nav-link">AI Writing</a><a href="/aitool-picks/category/coding.html" class="nav-link">AI Coding</a><a href="/aitool-picks/category/video.html" class="nav-link">AI Video</a><a href="/aitool-picks/category/seo.html" class="nav-link">AI SEO</a></nav>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
             </button>
         </div>
@@ -107,10 +109,10 @@
                         <p style="font-size: var(--text-lg); color: var(--color-text-secondary); max-width: 36rem; margin: 0 auto;">Explore our full range of AI tool comparisons</p>
                     </header>
 
-                    <div class="posts-grid">
+                    <div class="category-grid">
                         <a href="./writing.html" class="card" style="text-decoration: none; color: inherit; display: block;">
                             <div class="card-image">
-                                <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&h=300&fit=crop" alt="AI Writing tools" loading="lazy">
+                                <img onerror="this.style.display='none';this.parentElement.classList.add('img-failed')" src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&h=300&fit=crop" alt="AI Writing tools" loading="lazy">
                             </div>
                             <div class="card-body">
                                 <h3 style="font-size: var(--text-xl); font-weight: 700; margin-bottom: var(--space-sm);">AI Writing Tools</h3>
@@ -121,7 +123,7 @@
 
                     <a href="./coding.html" class="card" style="text-decoration: none; color: inherit; display: block;" aria-current="page">
                         <div class="card-image">
-                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=300&fit=crop" alt="AI Coding tools" loading="lazy">
+                            <img onerror="this.style.display='none';this.parentElement.classList.add('img-failed')" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=300&fit=crop" alt="AI Coding tools" loading="lazy">
                         </div>
                         <div class="card-body">
                             <h3 style="font-size: var(--text-xl); font-weight: 700; margin-bottom: var(--space-sm);">AI Coding Assistants</h3>
@@ -131,7 +133,7 @@
 
                     <a href="./video.html" class="card" style="text-decoration: none; color: inherit; display: block;">
                         <div class="card-image">
-                            <img src="https://images.unsplash.com/photo-1611746872915-64382b5c76da?w=600&h=300&fit=crop" alt="AI Video tools" loading="lazy">
+                            <img onerror="this.style.display='none';this.parentElement.classList.add('img-failed')" src="https://images.unsplash.com/photo-1611746872915-64382b5c76da?w=600&h=300&fit=crop" alt="AI Video tools" loading="lazy">
                         </div>
                         <div class="card-body">
                             <h3 style="font-size: var(--text-xl); font-weight: 700; margin-bottom: var(--space-sm);">AI Video Generators</h3>
@@ -141,7 +143,7 @@
 
                     <a href="./seo.html" class="card" style="text-decoration: none; color: inherit; display: block;">
                         <div class="card-image">
-                            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&h=300&fit=crop" alt="AI SEO tools" loading="lazy">
+                            <img onerror="this.style.display='none';this.parentElement.classList.add('img-failed')" src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&h=300&fit=crop" alt="AI SEO tools" loading="lazy">
                         </div>
                         <div class="card-body">
                             <h3 style="font-size: var(--text-xl); font-weight: 700; margin-bottom: var(--space-sm);">AI SEO Tools</h3>
@@ -155,9 +157,9 @@
                 <div class="container" style="max-width: 36rem; margin: 0 auto; text-align: center;">
                     <h3 style="font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 800; margin-bottom: var(--space-md);">Don't Miss the Next Review</h3>
                     <p style="font-size: var(--text-lg); opacity: 0.9; margin-bottom: var(--space-xl);">Join 1,000+ developers getting hands-on AI coding tool comparisons. No spam, unsubscribe anytime.</p>
-                    <form class="newsletter-form" action="https://formspree.io/f/your-form-id" method="POST" style="max-width: 28rem; margin: 0 auto;">
-                        <input type="email" class="newsletter-input" placeholder="your@email.com" required aria-label="Email address">
-                        <button type="submit" class="btn newsletter-btn" style="background: white; color: var(--color-primary);">Subscribe</button>
+                    <form class="newsletter-form" action="https://formspree.io/f/your-form-id" method="POST">
+                        <input type="email" class="newsletter-input" placeholder="you@example.com" required aria-label="Email address">
+                        <button type="submit" class="btn newsletter-btn">Subscribe</button>
                     </form>
                     <p style="font-size: var(--text-xs); opacity: 0.7; margin-top: var(--space-md);">By subscribing, you agree to our <a href="/aitool-picks/privacy.html" style="color: inherit; text-decoration: underline;">Privacy Policy</a>.</p>
                 </div>
@@ -165,9 +167,9 @@
         </div>
     </main>
 
-    <section class="section"><div class="container"><header class="text-center"><h2>Top tools</h2></header><div class="posts-grid">
+    <section class="section"><div class="container"><header class="text-center"><h2>Top tools</h2></header><div class="category-grid">
                 <article class="card">
-                    <div class="card-image"><img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=340&fit=crop" alt="GitHub Copilot" loading="lazy"></div>
+                    <div class="card-image"><img onerror="this.style.display='none';this.parentElement.classList.add('img-failed')" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=340&fit=crop" alt="GitHub Copilot" loading="lazy"></div>
                     <div class="card-body">
                         <div class="post-card-badge"><span class="badge">AI Coding</span></div>
                         <h3 class="post-card-title"><a href="/aitool-picks/posts/github-copilot-review-2026.html">GitHub Copilot Review 2026</a></h3>
@@ -175,7 +177,7 @@
                     </div>
                 </article>
                 <article class="card">
-                    <div class="card-image"><img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=600&h=340&fit=crop" alt="Cursor" loading="lazy"></div>
+                    <div class="card-image"><img onerror="this.style.display='none';this.parentElement.classList.add('img-failed')" src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=600&h=340&fit=crop" alt="Cursor" loading="lazy"></div>
                     <div class="card-body">
                         <div class="post-card-badge"><span class="badge">AI Coding</span></div>
                         <h3 class="post-card-title"><a href="/aitool-picks/posts/cursor-ide-review-2026.html">Cursor IDE Review 2026</a></h3>
@@ -183,7 +185,7 @@
                     </div>
                 </article>
                 <article class="card">
-                    <div class="card-image"><img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&h=340&fit=crop" alt="Replit Agent" loading="lazy"></div>
+                    <div class="card-image"><img onerror="this.style.display='none';this.parentElement.classList.add('img-failed')" src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&h=340&fit=crop" alt="Replit Agent" loading="lazy"></div>
                     <div class="card-body">
                         <div class="post-card-badge"><span class="badge">AI Coding</span></div>
                         <h3 class="post-card-title"><a href="/aitool-picks/posts/replit-agent-review-2026.html">Replit Agent Review 2026</a></h3>
@@ -191,7 +193,7 @@
                     </div>
                 </article>
                 <article class="card">
-                    <div class="card-image"><img src="https://images.unsplash.com/photo-1611746872915-64382b5c76da?w=600&h=340&fit=crop" alt="Codeium" loading="lazy"></div>
+                    <div class="card-image"><img onerror="this.style.display='none';this.parentElement.classList.add('img-failed')" src="https://images.unsplash.com/photo-1611746872915-64382b5c76da?w=600&h=340&fit=crop" alt="Codeium" loading="lazy"></div>
                     <div class="card-body">
                         <div class="post-card-badge"><span class="badge">AI Coding</span></div>
                         <h3 class="post-card-title"><a href="/aitool-picks/posts/codeium-review-2026.html">Codeium Review 2026</a></h3>
@@ -199,7 +201,7 @@
                     </div>
                 </article>
                 <article class="card">
-                    <div class="card-image"><img src="https://images.unsplash.com/photo-1677442136019-21780ecad994?w=600&h=340&fit=crop" alt="Aider / open-source AI coding" loading="lazy"></div>
+                    <div class="card-image"><img onerror="this.style.display='none';this.parentElement.classList.add('img-failed')" src="https://images.unsplash.com/photo-1677442136019-21780ecad994?w=600&h=340&fit=crop" alt="Aider / open-source AI coding" loading="lazy"></div>
                     <div class="card-body">
                         <div class="post-card-badge"><span class="badge">AI Coding</span></div>
                         <h3 class="post-card-title"><a href="/aitool-picks/posts/aider-review-2026.html">Aider Review 2026</a></h3>
