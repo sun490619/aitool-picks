@@ -1,118 +1,67 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grammarly 评测 2026 - AI Tool Picks</title>
-    <meta name="description" content="Grammarly 评测：全球领先的 AI 语法检查与写作助手，实时纠正语法、拼写、标点与语气。免费版 vs Premium 深度测评。">
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
-        body { background-color: #fafafa; color: #1d1d1f; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; line-height: 1.5; }
-        .navbar { background: rgba(255,255,255,0.8); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(0,0,0,0.08); padding: 15px 30px; position: sticky; top: 0; z-index: 100; display: flex; justify-content: space-between; align-items: center; }
-        .navbar-brand { font-weight: 600; font-size: 16px; color: #1d1d1f; text-decoration: none; display: flex; align-items: center; gap: 8px; }
-        .navbar-brand:hover { color: #0066cc; }
-        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
-        
-        /* 首屏 Hero 区 - 核心直达按钮 */
-        .tool-hero { padding: 60px 0 40px; text-align: center; background: #fafafa; }
-        .tool-hero h1 { font-size: clamp(28px, 4vw, 40px); font-weight: 700; letter-spacing: -0.5px; color: #1d1d1f; margin-bottom: 12px; }
-        .tool-hero .meta { color: #86868b; font-size: 15px; margin-bottom: 28px; }
-        .meta-item { display: inline-flex; align-items: center; gap: 6px; color: #86868b; font-size: 13px; }
-        .cta-primary { display: inline-flex; align-items: center; gap: 10px; padding: 16px 32px; background: #0066cc; color: white; font-size: 17px; font-weight: 600; border-radius: 12px; text-decoration: none; box-shadow: 0 4px 20px rgba(0,102,204,0.3); transition: all 0.2s ease; }
-        .cta-primary:hover { background: #0077ed; transform: translateY(-2px); box-shadow: 0 8px 30px rgba(0,102,204,0.4); color: white; }
-        
-        .badge { display: inline-flex; align-items: center; padding: 4px 12px; font-size: 12px; font-weight: 600; border-radius: 100px; background: #f5f5f7; color: #1d1d1f; }
-        .badge-primary { background: #e8f5e9; color: #34c759; }
-        .badge-accent { background: #fff4e5; color: #ff9f0a; }
-
-        /* 双栏卡片网格 */
-        .section { padding: 56px 0; }
-        .section-title { font-size: 24px; font-weight: 700; color: #1d1d1f; margin-bottom: 8px; text-align: center; }
-        .section-subtitle { color: #86868b; text-align: center; margin-bottom: 32px; font-size: 17px; }
-        
-        .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; max-width: 1100px; margin: 0 auto; }
-        .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; max-width: 1100px; margin: 0 auto; }
-        @media (max-width: 900px) { .grid-2, .grid-3 { grid-template-columns: 1fr; } }
-        
-        .card { background: #ffffff; border: 1px solid #e8e8ed; border-radius: 14px; padding: 28px; transition: all 0.3s ease; height: 100%; }
-        .card:hover { border-color: #d2d2d7; box-shadow: 0 12px 32px rgba(0,0,0,0.08); transform: translateY(-4px); }
-        .card-icon { width: 40px; height: 40px; background: #f5f5f7; border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #1d1d1f; margin-bottom: 16px; }
-        .card h3 { font-size: 18px; font-weight: 600; color: #1d1d1f; margin-bottom: 10px; }
-        .card p { color: #515154; line-height: 1.6; font-size: 15px; }
-        .card ul { list-style: none; padding: 0; }
-        .card li { padding: 6px 0; color: #515154; position: relative; padding-left: 20px; font-size: 14px; }
-        .card li::before { content: "✓"; color: #34c759; font-weight: 600; position: absolute; left: 0; }
-        
-        /* 优缺点卡片 */
-        .pros-cons-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; max-width: 1100px; margin: 0 auto 40px; }
-        @media (max-width: 768px) { .pros-cons-grid { grid-template-columns: 1fr; } }
-        .pros-card { background: #f0fdf4; border: 1px solid #dcfce7; border-radius: 14px; padding: 28px; }
-        .cons-card { background: #fef2f2; border: 1px solid #fecaca; border-radius: 14px; padding: 28px; }
-        .pros-card h3, .cons-card h3 { display: flex; align-items: center; gap: 10px; font-size: 18px; font-weight: 600; margin-bottom: 16px; }
-        .pros-card h3 { color: #166534; }
-        .cons-card h3 { color: #991b1b; }
-        .pros-card ul, .cons-card ul { list-style: none; padding: 0; }
-        .pros-card li, .cons-card li { padding: 8px 0; color: #515154; position: relative; padding-left: 24px; font-size: 14px; }
-        .pros-card li::before { content: "✓"; color: #22c55e; font-weight: 700; left: 0; }
-        .cons-card li::before { content: "✕"; color: #ef4444; font-weight: 700; left: 0; }
-        
-        /* 价格卡片 */
-        .pricing-card { background: #ffffff; border: 1px solid #e8e8ed; border-radius: 14px; padding: 28px; transition: all 0.3s; position: relative; }
-        .pricing-card.popular { border-color: #0066cc; box-shadow: 0 0 0 2px rgba(0,102,204,0.2); }
-        .pricing-card .popular-tag { position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: #0066cc; color: white; padding: 4px 16px; border-radius: 100px; font-size: 11px; font-weight: 600; }
-        .pricing-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.08); }
-        .pricing-name { font-size: 16px; font-weight: 600; color: #1d1d1f; margin-bottom: 4px; }
-        .pricing-price { font-size: 28px; font-weight: 700; color: #1d1d1f; margin-bottom: 4px; }
-        .pricing-period { color: #86868b; font-size: 14px; margin-bottom: 20px; }
-        .pricing-features { list-style: none; padding: 0; margin-bottom: 24px; }
-        .pricing-features li { padding: 8px 0; color: #515154; position: relative; padding-left: 24px; font-size: 14px; border-bottom: 1px solid #f5f5f7; }
-        .pricing-features li::before { content: "✓"; color: #22c55e; font-weight: 700; left: 0; }
-        .btn-secondary { display: block; text-align: center; padding: 12px 24px; background: #f5f5f7; color: #1d1d1f; font-weight: 600; border-radius: 10px; text-decoration: none; border: 1px solid #d2d2d7; transition: all 0.15s; }
-        .btn-secondary:hover { background: #0066cc; color: white; border-color: #0066cc; }
-        
-        /* 使用场景卡片 */
-        .usecase-card { background: #f5f5f7; border: 1px solid #e8e8ed; border-radius: 12px; padding: 24px; text-align: center; transition: all 0.3s; }
-        .usecase-card:hover { background: #ffffff; border-color: #d2d2d7; transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.06); }
-        .usecase-icon { width: 48px; height: 48px; background: #f5f5f7; border-radius: 12px; display: inline-flex; align-items: center; justify-content: center; color: #1d1d1f; margin-bottom: 12px; }
-        .usecase-card h4 { font-size: 16px; font-weight: 600; color: #1d1d1f; margin-bottom: 8px; }
-        .usecase-card p { color: #86868b; font-size: 13px; }
-        
-        /* 底部 CTA */
-        .footer-cta { background: #1d1d1f; color: white; padding: 48px 0; text-align: center; margin-top: 60px; }
-        .footer-cta h3 { font-size: 22px; font-weight: 700; margin-bottom: 12px; }
-        .footer-cta p { opacity: 0.8; margin-bottom: 24px; max-width: 400px; margin-left: auto; margin-right: auto; }
-        .footer-cta .cta-primary { background: white; color: #1d1d1f; }
-        .footer-cta .cta-primary:hover { background: #f5f5f7; }
-
-        /* Footer */
-        .footer { background: #1d1d1f; color: rgba(255,255,255,0.7); padding: 40px 0 20px; margin-top: 40px; }
-        .footer-grid { max-width: 1100px; margin: 0 auto; padding: 0 20px; display: grid; grid-template-columns: 2fr repeat(3, 1fr); gap: 40px; }
-        @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
-        .footer-brand { max-width: 200px; }
-        .footer-logo { display: flex; align-items: center; gap: 8px; font-size: 18px; font-weight: 700; color: white; margin-bottom: 12px; }
-        .footer-desc { font-size: 13px; line-height: 1.6; margin-bottom: 20px; }
-        .footer-social { display: flex; gap: 10px; }
-        .footer-social a { width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; border-radius: 8px; background: rgba(255,255,255,0.1); color: rgba(255,255,255,0.7); transition: all 0.15s; }
-        .footer-social a:hover { background: #0066cc; color: white; }
-        .footer-column h4 { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: white; margin-bottom: 12px; }
-        .footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
-        .footer-links a { font-size: 13px; color: rgba(255,255,255,0.6); transition: color 0.15s; }
-        .footer-links a:hover { color: #0066cc; }
-        .footer-bottom { max-width: 1100px; margin: 32px auto 0; padding-top: 24px; border-top: 1px solid #38383a; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; font-size: 13px; }
-        .footer-bottom a { color: inherit; }
-        .footer-bottom a:hover { color: #0066cc; }
-        
-        /* 图标统一 */
-        .icon { width: 20px; height: 20px; stroke-width: 2; }
-        .icon-lg { width: 24px; height: 24px; }
-        
-        @media (max-width: 768px) {
-            .pros-cons-grid { grid-template-columns: 1fr; }
-        }
-    </style>
+    <title>Rytr Review 2026: Best Budget AI Writing Tool? — AI Tool Picks</title>
+    <meta name="description" content="Rytr review: 40+ templates, 30+ languages, built-in plagiarism checker, AI images included. Plans from Free/$9/$29. Perfect for creators on a budget.">
+    <link rel="stylesheet" href="/aitool-picks/styles.css">
 </head>
 <body>
+    <header class="site-header" id="siteHeader" role="banner">
+        <div class="container header-inner">
+            <a href="/aitool-picks/" class="brand" aria-label="AI Tool Picks - Home">
+                <span class="brand-mark">ATP</span>
+                <span>AI Tool Picks</span>
+            </a>
+            <nav class="nav-desktop" role="navigation" aria-label="Main navigation">
+                <a href="/aitool-picks/" class="nav-link">Home</a>
+                <a href="/aitool-picks/category/writing.html" class="nav-link">AI Writing</a>
+                <a href="/aitool-picks/category/coding.html" class="nav-link">AI Coding</a>
+                <a href="/aitool-picks/category/video.html" class="nav-link">AI Video</a>
+                <a href="/aitool-picks/category/seo.html" class="nav-link">AI SEO</a>
+            </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+            </button>
+        </div>
+    </header>
+
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-labelledby="mobileMenuTitle">
+        <div class="mobile-menu-header">
+            <span class="brand" id="mobileMenuTitle"><span class="brand-mark">ATP</span> AI Tool Picks</span>
+            <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+        </div>
+        <nav class="mobile-nav" role="navigation" aria-label="Mobile navigation">
+            <a href="/aitool-picks/" class="mobile-nav-link">Home</a>
+            <a href="/aitool-picks/category/writing.html" class="mobile-nav-link">AI Writing</a>
+            <a href="/aitool-picks/category/coding.html" class="mobile-nav-link">AI Coding</a>
+            <a href="/aitool-picks/category/video.html" class="mobile-nav-link">AI Video</a>
+            <a href="/aitool-picks/category/seo.html" class="mobile-nav-link">AI SEO</a>
+        </nav>
+        <div class="mobile-drawer-footer">
+            <div>
+                <div class="drawer-section-label">Language</div>
+                <div class="pill-switch" id="langSwitch">
+                    <button class="active" data-lang="en" aria-pressed="true">EN</button>
+                    <button data-lang="zh" aria-pressed="false">中文</button>
+                </div>
+            </div>
+            <div>
+                <div class="drawer-section-label">Theme</div>
+                <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle dark mode">
+                    <svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><g stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></g></svg>
+                    <span id="themeLabel">Light</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <main>
+
 
 <nav class="navbar">
     <a href="../../" class="navbar-brand">
@@ -360,5 +309,8 @@
 <script>
     lucide.createIcons();
 </script>
+
+    </main>
+</main>
 </body>
 </html>
