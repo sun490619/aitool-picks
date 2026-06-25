@@ -32,20 +32,18 @@
 <body>
     
 
-        <header class="site-header" id="siteHeader" role="banner">
+            <header class="site-header" id="siteHeader" role="banner">
         <div class="container header-inner">
             <a href="/aitool-picks/" class="brand" aria-label="AI Tool Picks - Home">
                 <span class="brand-mark"></span>
                 <span>AI Tool Picks</span>
             </a>
-
-                        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
             </button>
         </div>
     </header>
 
-    <!-- Mobile drawer -->
     <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
     <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-labelledby="mobileMenuTitle">
         <div class="mobile-menu-header">
@@ -54,8 +52,8 @@
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
             </button>
         </div>
-        <nav class="mobile-nav" role="navigation" aria-label="Mobile navigation">
-            <a href="/aitool-picks/" class="mobile-nav-link">Home</a>
+        <nav class="mobile-nav" role="navigation" aria-label="Main Navigation">
+            <a href="/aitool-picks/" class="mobile-nav-link" aria-current="page">Home</a>
             <a href="/aitool-picks/category/writing.html" class="mobile-nav-link">AI Writing</a>
             <a href="/aitool-picks/category/coding.html" class="mobile-nav-link">AI Coding</a>
             <a href="/aitool-picks/category/video.html" class="mobile-nav-link">AI Video</a>
@@ -78,15 +76,15 @@
             </div>
         </div>
     </div>
-<nav class="mobile-nav" role="navigation" aria-label="Mobile navigation">
-            <a href="/aitool-picks/" class="mobile-nav-link"> Home</a>
-            <a href="../category/writing.html" class="mobile-nav-link"> AI Writing</a>
-            <a href="../category/coding.html" class="mobile-nav-link"> AI Coding</a>
-            <a href="../category/video.html" class="mobile-nav-link"> AI Video</a>
-            <a href="/aitool-picks/category/seo.html" class="mobile-nav-link"> AI SEO</a>
+<nav class="drawer-nav" role="navigation" aria-label="Mobile navigation">
+            <a href="/aitool-picks/" class="drawer-nav-link"> Home</a>
+            <a href="../category/writing.html" class="drawer-nav-link"> AI Writing</a>
+            <a href="../category/coding.html" class="drawer-nav-link"> AI Coding</a>
+            <a href="../category/video.html" class="drawer-nav-link"> AI Video</a>
+            <a href="/aitool-picks/category/seo.html" class="drawer-nav-link"> AI SEO</a>
         </nav>
     </div>
-    <div class="mobile-menu-overlay" id="mobileMenuOverlay" aria-hidden="true"></div>
+    <div class="drawer-overlay" id="drawerOverlay" aria-hidden="true"></div>
 
     <main role="main">
         <header class="article-header" aria-labelledby="article-title">

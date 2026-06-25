@@ -19,32 +19,64 @@
     </script>
 </head>
 <body>
-    <header class="site-header" id="siteHeader" role="banner">
+        <header class="site-header" id="siteHeader" role="banner">
         <div class="container header-inner">
             <a href="/aitool-picks/" class="brand" aria-label="AI Tool Picks - Home">
                 <span class="brand-mark"></span>
                 <span>AI Tool Picks</span>
             </a>
-                        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
-                <span>☰</span>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
             </button>
         </div>
     </header>
-    <div class="mobile-menu-overlay" id="mobileMenuOverlay" aria-hidden="true"></div>
+
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
     <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-labelledby="mobileMenuTitle">
         <div class="mobile-menu-header">
             <span class="brand" id="mobileMenuTitle"><span class="brand-mark"></span> AI Tool Picks</span>
-            <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">✕</button>
+            <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
         </div>
-        <nav class="mobile-nav" role="navigation" aria-label="Mobile navigation">
-            <a href="/aitool-picks/" class="mobile-nav-link">Home</a>
-            <a href="/category/writing.html" class="mobile-nav-link">AI Writing</a>
-            <a href="/category/coding.html" class="mobile-nav-link">AI Coding</a>
-            <a href="/category/video.html" class="mobile-nav-link">AI Video</a>
-            <a href="/category/seo.html" class="mobile-nav-link">AI SEO</a>
+        <nav class="mobile-nav" role="navigation" aria-label="Main Navigation">
+            <a href="/aitool-picks/" class="mobile-nav-link" aria-current="page">Home</a>
+            <a href="/aitool-picks/category/writing.html" class="mobile-nav-link">AI Writing</a>
+            <a href="/aitool-picks/category/coding.html" class="mobile-nav-link">AI Coding</a>
+            <a href="/aitool-picks/category/video.html" class="mobile-nav-link">AI Video</a>
+            <a href="/aitool-picks/category/seo.html" class="mobile-nav-link">AI SEO</a>
+        </nav>
+        <div class="mobile-drawer-footer">
+            <div>
+                <div class="drawer-section-label">Language</div>
+                <div class="pill-switch" id="langSwitch">
+                    <button class="active" data-lang="en" aria-pressed="true">EN</button>
+                    <button data-lang="zh" aria-pressed="false">中文</button>
+                </div>
+            </div>
+            <div>
+                <div class="drawer-section-label">Theme</div>
+                <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle dark mode">
+                    <svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><g stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></g></svg>
+                    <span id="themeLabel">Light</span>
+                </button>
+            </div>
+        </div>
+    </div><div class="drawer-overlay" id="drawerOverlay" aria-hidden="true"></div>
+    <div class="drawer" id="drawerMenu" role="dialog" aria-modal="true" aria-labelledby="drawerTitle">
+        <div class="drawer-head">
+            <span class="brand" id="drawerTitle"><span class="brand-mark"></span> AI Tool Picks</span>
+            <button class="drawer-close" id="drawerClose" aria-label="Close menu">✕</button>
+        </div>
+        <nav class="drawer-nav" role="navigation" aria-label="Mobile navigation">
+            <a href="/aitool-picks/" class="drawer-nav-link">Home</a>
+            <a href="/category/writing.html" class="drawer-nav-link">AI Writing</a>
+            <a href="/category/coding.html" class="drawer-nav-link">AI Coding</a>
+            <a href="/category/video.html" class="drawer-nav-link">AI Video</a>
+            <a href="/category/seo.html" class="drawer-nav-link">AI SEO</a>
         </nav>
     </div>
-    <div class="mobile-menu-overlay" id="mobileMenuOverlay" aria-hidden="true"></div>
+    <div class="drawer-overlay" id="drawerOverlay" aria-hidden="true"></div>
     <main role="main">
         <header class="article-header" aria-labelledby="article-title">
             <div class="container">
