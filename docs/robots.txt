@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sun490619.github.io/aitool-picks/sitemap.xml
