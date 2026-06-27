@@ -169,7 +169,7 @@
   const style = document.createElement('style');
   style.textContent = `
     .toc-link.toc-active {
-      color: var(--color-primary);
+      color: var(--accent);
       background: rgba(99, 102, 241, 0.1);
       font-weight: 600;
     }
