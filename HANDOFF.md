@@ -77,18 +77,20 @@
 
 ---
 
-## 6. 已有专属联盟链接（变现重点）
-| 工具 | 链接 | 佣金模式 | 当前状态 |
-|------|------|----------|----------|
-| KoalaWriter | https://koala.sh?via=aitoolpicks | 30% lifetime | ✅ review post 已含链接 |
-| NeuronWriter | https://app.neuronwriter.com/ar/86caf47723d8ee35eebcf5248d139467 | 30% lifetime | ❌ 无专用页面，待补 |
-| Originality.ai | https://originality.ai/?via=sun490619 | 25% recurring 12mo | ✅ review post 已写 |
-| Writesonic | https://writesonic.com?via=aitoolpicks | 待确认 | ❌ 无专用页面，待补 |
-| Notion AI | https://www.notion.so?via=sun490619 | $10/次 | ❌ 无专用页面，待补 |
-| DeepL | https://www.deepl.com/pro?...&via=aff-o11039&... | 待确认 | ❌ 无专用页面，待补 |
+## 6. 联盟链接真实状态（按截图确认）
+| 工具 | 状态 | 截图证据 |
+|------|------|----------|
+| KoalaWriter | ❌ 被拒绝 | Connor 邮件："We are not interested. Your articles contain way too much incorrect information." |
+| Writesonic | ⏳ 审核中 | FirstPromoter 页面：Pending，未批准 |
+| Rytr | ✅ 已获批 | `affiliates.rytr.me`，30% commission，Joined June 20, 2026 |
+| Originality.ai | ✅ 已获批 | `originality-ai-1.getrewardful.com`，25% 12个月，Joined June 16, 2026 |
+| Frase | ✅ 已获批 | `affiliates.frase.io`，30% for 12 months 截图确认 |
+| NeuronWriter | ✅ 已获批 | `app.neuronwriter.com/ucp/affiliate`，30% lifetime，截图确认 |
+| Notion AI | ❓ 未验证 | 用户提供链接，无截图证明 |
+| DeepL | ❓ 未验证 | 用户提供链接，无截图证明 |
 
-**尚未拿到专属链接，暂不补内容：**
-Grammarly、Jasper、Copy.ai、QuillBot、LanguageTool、Hemingway、Rytr
+**未申请的常见平台：**
+Grammarly、Jasper、Copy.ai、QuillBot、LanguageTool、Hemingway
 
 ---
 
