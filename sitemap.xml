@@ -1,6 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<!-- Main Pages -->
 <url><loc>https://sun490619.github.io/aitool-picks/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+<url><loc>https://sun490619.github.io/aitool-picks/about.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+<url><loc>https://sun490619.github.io/aitool-picks/contact.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+<url><loc>https://sun490619.github.io/aitool-picks/privacy.html</loc><changefreq>monthly</changefreq><priority>0.3</priority></url>
+<url><loc>https://sun490619.github.io/aitool-picks/affiliate-disclosure.html</loc><changefreq>monthly</changefreq><priority>0.3</priority></url>
+<!-- Categories -->
+<url><loc>https://sun490619.github.io/aitool-picks/category/writing.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+<url><loc>https://sun490619.github.io/aitool-picks/category/coding.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://sun490619.github.io/aitool-picks/category/video.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<url><loc>https://sun490619.github.io/aitool-picks/category/seo.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+<!-- Tool Pages -->
+<url><loc>https://sun490619.github.io/aitool-picks/tools/grammarly.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://sun490619.github.io/aitool-picks/tools/deepl.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://sun490619.github.io/aitool-picks/tools/notion-ai.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://sun490619.github.io/aitool-picks/tools/jasper.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://sun490619.github.io/aitool-picks/tools/writesonic.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://sun490619.github.io/aitool-picks/tools/copy-ai.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://sun490619.github.io/aitool-picks/tools/rytr.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://sun490619.github.io/aitool-picks/tools/quillbot.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://sun490619.github.io/aitool-picks/tools/languagetool.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://sun490619.github.io/aitool-picks/tools/hemingway.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<!-- Blog Posts -->
+<url><loc>https://sun490619.github.io/aitool-picks/posts/koalawriter-review-2026.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://sun490619.github.io/aitool-picks/posts/jasper-vs-writesonic.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://sun490619.github.io/aitool-picks/posts/best-ai-seo-tools-2026.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://sun490619.github.io/aitool-picks/posts/originality-ai-review-2026.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://sun490619.github.io/aitool-picks/posts/best-ai-email-writing-tools-2026.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://sun490619.github.io/aitool-picks/posts/copy-ai-review-2026.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://sun490619.github.io/aitool-picks/posts/frase-review-2026.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://sun490619.github.io/aitool-picks/posts/wordtune-review-2026.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://sun490619.github.io/aitool-picks/posts/notion-ai-review-2026.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://sun490619.github.io/aitool-picks/posts/writesonic-review-2026.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://sun490619.github.io/aitool-picks/posts/rytr-review-2026.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://sun490619.github.io/aitool-picks/posts/deepl-review-2026.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://sun490619.github.io/aitool-picks/posts/best-free-ai-tools-students-2026.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://sun490619.github.io/aitool-picks/posts/best-free-ai-tools-content-creators-2026.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+<url><loc>https://sun490619.github.io/aitool-picks/posts/best-free-ai-tools-freelancers-2026.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>
