@@ -627,6 +627,7 @@
     'nav_coding':      { en: 'AI Coding', zh: 'AI 编程' },
     'nav_video':       { en: 'AI Video', zh: 'AI 视频' },
     'nav_seo':         { en: 'AI SEO', zh: 'AI SEO' },
+    'hero_title': { en: 'Honest AI Tool Reviews & Comparisons', zh: '真实 AI 工具评测与对比' },
     'hero_title_line1': { en: 'Honest', zh: '真实的' },
     'hero_title_line2': { en: 'AI Tool Reviews', zh: 'AI 工具评测' },
     'hero_title_line3': { en: '& Comparisons', zh: '与对比' },
