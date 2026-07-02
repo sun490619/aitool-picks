@@ -331,7 +331,6 @@ html.dark .theme-toggle-btn:hover { background: rgba(255, 255, 255, .16); }
   font-weight: 800;
   color: #111827;
 }
-.hero-title span { color: var(--accent); }
 html.dark .hero-title { color: #F9FAFB; }
 
 .hero-subtitle {
@@ -339,22 +338,6 @@ html.dark .hero-title { color: #F9FAFB; }
   font-size: clamp(16px, 1.8vw, 18px);
   color: var(--text2);
   line-height: 1.55;
-}
-
-/* Hero Badge */
-.hero-badge {
-  display: inline-block;
-  padding: 5px 14px;
-  background: #EFF6FF;
-  color: #2563EB;
-  border-radius: 999px;
-  font-size: .8rem;
-  font-weight: 600;
-  margin-bottom: 16px;
-}
-html.dark .hero-badge {
-  background: rgba(59, 130, 246, .18);
-  color: #60A5FA;
 }
 
 /* Hero CTA */
