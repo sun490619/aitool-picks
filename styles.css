@@ -882,3 +882,212 @@ html.dark .btn-secondary:hover { background: #60A5FA; }
   opacity: 0.4;
   cursor: not-allowed;
 }
+
+/* ============================================================
+   Wirecutter / PCMag Comparison Table Components
+   ============================================================ */
+.atp-compare {
+  margin: 36px 0 56px;
+}
+.atp-compare__section-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text);
+  margin: 32px 0 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.atp-compare__section-title:first-child {
+  margin-top: 0;
+}
+.atp-compare__table-wrapper {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--card);
+}
+.atp-compare__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+  min-width: 720px;
+}
+.atp-compare__row--header th {
+  background: #F9FAFB;
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 700;
+  color: var(--text);
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+html.dark .atp-compare__row--header th {
+  background: #111111;
+  color: #EDEDED;
+}
+.atp-compare__row td {
+  padding: 11px 16px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+  vertical-align: middle;
+}
+.atp-compare__row:last-child td {
+  border-bottom: none;
+}
+.atp-compare__row--alt td {
+  background: #F9FAFB;
+}
+html.dark .atp-compare__row--alt td {
+  background: rgba(255,255,255,.03);
+}
+.atp-compare__label {
+  font-weight: 600;
+  color: var(--text2);
+  white-space: nowrap;
+}
+.atp-compare__winner {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(16,185,129,.12);
+  color: #065F46;
+  border: 1px solid #A7F3D0;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+html.dark .atp-compare__winner {
+  background: rgba(16,185,129,.18);
+  color: #A7F3D0;
+  border-color: #065F46;
+}
+.atp-compare__value--win {
+  color: #059669;
+  font-weight: 700;
+}
+html.dark .atp-compare__value--win {
+  color: #34D399;
+}
+.atp-compare__badge {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: #EFF6FF;
+  color: #2563EB;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+html.dark .atp-compare__badge {
+  background: rgba(59,130,246,.15);
+  color: #60A5FA;
+}
+
+/* Quick specs */
+.atp-specs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin: 22px 0 28px;
+}
+.atp-specs__item {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  background: var(--card);
+}
+.atp-specs__item dt {
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: var(--text2);
+  margin-bottom: 6px;
+}
+.atp-specs__item dd {
+  margin: 0;
+  font-size: 0.98rem;
+  color: var(--text);
+  font-weight: 600;
+  line-height: 1.35;
+}
+.atp-verdict {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #111827;
+  color: #FFFFFF;
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+.atp-verdict strong {
+  font-weight: 800;
+}
+html.dark .atp-verdict {
+  background: #F9FAFB;
+  color: #0A0A0A;
+}
+
+/* Feature breakdown */
+.atp-features {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--card);
+  margin: 14px 0 28px;
+}
+.atp-features__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0;
+  border-bottom: 1px solid var(--border);
+}
+.atp-features__row:last-child {
+  border-bottom: none;
+}
+.atp-features__cell {
+  padding: 14px 16px;
+}
+.atp-features__cell--label {
+  font-weight: 700;
+  color: var(--text);
+}
+.atp-features__cell--rating {
+  color: var(--text2);
+  font-size: 0.95rem;
+}
+.atp-features__row--alt .atp-features__cell {
+  background: #F9FAFB;
+}
+html.dark .atp-features__row--alt .atp-features__cell {
+  background: rgba(255,255,255,.03);
+}
+.atp-features__header {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+  color: var(--text2);
+  background: #F9FAFB;
+  border-bottom: 1px solid var(--border);
+}
+html.dark .atp-features__header {
+  background: #111111;
+  color: #9CA3AF;
+}
+
+@media (max-width: 640px) {
+  .atp-features__row {
+    grid-template-columns: 1fr;
+  }
+  .atp-features__header {
+    display: none;
+  }
+  .atp-features__cell {
+    padding: 10px 12px;
+  }
+}

@@ -78,8 +78,7 @@
         </div>
     </div>
 
-    <main>
-
+    <nav class="page-nav" aria-label="Page sections" style="display:flex;gap:8px;justify-content:center;padding:12px 0;flex-wrap:wrap;"><a href="#features" style="padding:6px 12px;border:1px solid var(--color-border);border-radius:999px;font-size:0.875rem;text-decoration:none;">Features</a><a href="#pros-cons" style="padding:6px 12px;border:1px solid var(--color-border);border-radius:999px;font-size:0.875rem;text-decoration:none;">Pros / Cons</a><a href="#pricing" style="padding:6px 12px;border:1px solid var(--color-border);border-radius:999px;font-size:0.875rem;text-decoration:none;">Pricing</a><a href="#verdict" style="padding:6px 12px;border:1px solid var(--color-border);border-radius:999px;font-size:0.875rem;text-decoration:none;">Verdict</a></nav>
 <div class="container">
 
 <!-- Hero 区 - 核心直达按钮置顶 -->
@@ -111,7 +110,7 @@
     <!-- 核心功能 -->
     <section class="section">
         <div class="container">
-            <h2 class="section-title">核心功能</h2>
+            <h2 class="section-title" id="features">核心功能</h2>
             <p class="section-subtitle">DeepL 凭什么是专业翻译的首选？</p>
             <div class="grid-3">
                 <article class="card">
@@ -151,9 +150,9 @@
 <!-- 优缺点 -->
 <section class="section">
     <div class="container">
-        <h2 class="section-title">优缺点速览</h2>
+        <h2 class="section-title" id="pros-cons">优缺点速览</h2>
         <div class="pros-cons-grid">
-            <div class="pros-card">
+            <div class="pros-card" style="background:#f0fdf4;border:1px solid #bbf7d0;border-radius:12px;padding:20px;">
                 <h3><i data-lucide="check-circle-2" class="icon-lg"></i> 优点</h3>
                 <ul>
                     <li>核心语对翻译准确率 90%+，后编辑量仅 15-30%</li>
@@ -164,7 +163,7 @@
                     <li>欧盟服务器 + ISO 27001 + 自托管可选，隐私合规</li>
                 </ul>
             </div>
-            <div class="cons-card">
+            <div class="cons-card" style="background:#fef2f2;border:1px solid #fecaca;border-radius:12px;padding:20px;">
                 <h3><i data-lucide="x-circle" class="icon-lg"></i> 缺点</h3>
                 <ul>
                     <li>仅 33 语言，少于 Google 133+（小语种无力）</li>
@@ -182,9 +181,9 @@
 <!-- 价格 -->
 <section class="section">
     <div class="container">
-        <h2 class="section-title">价格方案 (2026)</h2>
+        <h2 class="section-title" id="pricing">价格方案 (2026)</h2>
         <div class="grid-3">
-            <article class="pricing-card">
+            <article class="pricing-card" style="border-radius:12px;box-shadow:0 1px 3px rgba(0,0,0,0.08);">
                 <h4 class="pricing-name">Free</h4>
                 <div class="pricing-price">$0</div>
                 <p class="pricing-period">永久免费</p>
@@ -208,7 +207,7 @@
                 </ul>
                 <a href="https://www.deepl.com/pro" target="_blank" rel="nofollow" class="btn-secondary" style="background:#0066cc;color:white;border-color:#0066cc;">免费试用 30 天</a>
             </article>
-            <article class="pricing-card">
+            <article class="pricing-card" style="border-radius:12px;box-shadow:0 1px 3px rgba(0,0,0,0.08);">
                 <h4 class="pricing-name">Pro Advanced</h4>
                 <div class="pricing-price">$28.74</div>
                 <p class="pricing-period">/月 (年付 $344.88)</p>
@@ -227,7 +226,7 @@
 <!-- 适用场景 -->
 <section class="section">
     <div class="container">
-        <h2 class="section-title">适用场景</h2>
+        <h2 class="section-title" id="verdict">适用场景</h2>
         <div class="grid-3">
             <article class="usecase-card">
                 <div class="usecase-icon"><i data-lucide="file-text" class="icon-lg"></i></div>
