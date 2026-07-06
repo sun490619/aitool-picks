@@ -279,3 +279,82 @@ window.AIToolPicks = {
     document.body.style.overflow = '';
   }
 };
+// Filter + Pagination for article grid
+(() => {
+  const grid = document.getElementById('postsGrid');
+  const pagination = document.getElementById('pagination');
+  if (!grid || !pagination) return;
+
+  const cards = Array.from(grid.querySelectorAll('article.post-card'));
+  const categories = ['writing', 'coding', 'video', 'seo'];
+  const PER_PAGE = 6;
+  let currentCategory = 'all';
+  let currentPage = 1;
+
+  function assignCategory(card, idx) {
+    const link = card.querySelector('.post-card-title a');
+    if (!link) return;
+    const href = link.getAttribute('href') || '';
+    if (href.includes('coding') || href.includes('deepseek') || href.includes('cursor')) {
+      card.dataset.category = 'coding';
+    } else if (href.includes('video') || href.includes('kling') || href.includes('runway')) {
+      card.dataset.category = 'video';
+    } else if (href.includes('seo') || href.includes('frase') || href.includes('originality')) {
+      card.dataset.category = 'seo';
+    } else {
+      card.dataset.category = 'writing';
+    }
+  }
+  cards.forEach((c, i) => assignCategory(c, i));
+
+  function render() {
+    let filtered = currentCategory === 'all' ? cards : cards.filter(c => c.dataset.category === currentCategory);
+    filtered.forEach(c => c.style.display = '');
+    cards.forEach(c => {
+      if (currentCategory !== 'all' && c.dataset.category !== currentCategory) {
+        c.style.display = 'none';
+      }
+    });
+    const totalPages = Math.max(1, Math.ceil(filtered.length / PER_PAGE));
+    if (currentPage > totalPages) currentPage = totalPages;
+    const start = (currentPage - 1) * PER_PAGE;
+    filtered.forEach((c, i) => {
+      if (currentCategory === 'all') {
+        c.style.display = (i >= start && i < start + PER_PAGE) ? '' : 'none';
+      } else {
+        const idx = filtered.indexOf(c);
+        c.style.display = (idx >= start && idx < start + PER_PAGE) ? '' : 'none';
+      }
+    });
+    renderPagination(totalPages);
+  }
+
+  function renderPagination(totalPages) {
+    if (totalPages <= 1) { pagination.innerHTML = ''; return; }
+    let html = '';
+    html += `<button class="page-btn" data-page="${currentPage - 1}" ${currentPage === 1 ? 'disabled' : ''}">Prev</button>`;
+    for (let i = 1; i <= totalPages; i++) {
+      html += `<button class="page-btn ${i === currentPage ? 'active' : ''}" data-page="${i}">${i}</button>`;
+    }
+    html += `<button class="page-btn" data-page="${currentPage + 1}" ${currentPage === totalPages ? 'disabled' : ''}>Next</button>`;
+    pagination.innerHTML = html;
+    pagination.querySelectorAll('.page-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const p = parseInt(btn.dataset.page, 10);
+        if (p >= 1 && p <= totalPages) { currentPage = p; render(); }
+      });
+    });
+  }
+
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentCategory = btn.dataset.category;
+      currentPage = 1;
+      render();
+    });
+  });
+
+  render();
+})();
