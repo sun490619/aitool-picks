@@ -164,7 +164,7 @@
     'KoalaWriter is the best value AI writer for SEO content in 2026. At $9/mo, it produces 80% publish-ready articles with real-time SERP data, auto internal linking, and WordPress publishing.': 'KoalaWriter 是 2026 年 SEO 内容性价比最高的 AI 写手。$9/月，利用实时 SERP 数据、自动内链和 WordPress 发布，产出 80% 可直接发布的文章。',
     'Jasper AI vs Writesonic: Which AI Writer Wins in 2026?': 'Jasper AI vs Writesonic：2026 年哪个 AI 写手胜出？',
     'We tested both tools head-to-head on blog posts, ad copy, and long-form content. Here\'s our honest take on which one deserves your money.': '我们对博客文章、广告文案和长文内容进行了正面交锋测试。以下是哪个值得你花钱的诚实看法。',
-    '5 Best AI SEO Tools to Rank Higher in 2026': '2026 年 5 款最佳 AI SEO 工具提升排名',
+    '6 Best AI SEO Tools to Rank Higher in 2026': '2026 年 6 款最佳 AI SEO 工具提升排名',
     'From Surfer SEO to Frase, we break down the top AI-powered SEO tools that actually move the needle on your rankings.': '从 Surfer SEO 到 Frase，我们拆解了真正能提升你排名的顶级 AI SEO 工具。',
 
     // === Footer ===
