@@ -358,3 +358,33 @@ window.AIToolPicks = {
 
   render();
 })();
+
+// ---- Post "Was this helpful?" vote widget (zero-backend, per-URL localStorage) ----
+(function () {
+  var article = document.querySelector('article.post');
+  if (!article) return;
+  var key = 'atp_vote_' + location.pathname;
+  var box = document.createElement('div');
+  box.style.cssText = 'margin:30px 0 8px;padding:18px 20px;border:1px solid #e2e8f0;border-radius:14px;background:#f8fafc;text-align:center;';
+  box.innerHTML = '<div style="font-weight:700;margin-bottom:10px;">Was this review helpful?</div>' +
+    '<button id="voteUp" style="cursor:pointer;font:inherit;font-weight:600;padding:9px 18px;border-radius:10px;border:1px solid #22c55e;background:#22c55e;color:#fff;margin:0 6px;">👍 Yes</button>' +
+    '<button id="voteDown" style="cursor:pointer;font:inherit;font-weight:600;padding:9px 18px;border-radius:10px;border:1px solid #cbd5e1;background:#fff;color:#334155;margin:0 6px;">👎 Not really</button>' +
+    '<div id="voteMsg" style="margin-top:10px;font-size:.9rem;color:#64748b;"></div>';
+  article.appendChild(box);
+  var up = document.getElementById('voteUp'), down = document.getElementById('voteDown'), msg = document.getElementById('voteMsg');
+  var saved = localStorage.getItem(key);
+  if (saved) {
+    msg.textContent = saved === 'up' ? 'Thanks — you found this helpful.' : 'Thanks for the feedback — it helps us improve.';
+    up.disabled = true; down.disabled = true;
+  }
+  up.addEventListener('click', function () {
+    localStorage.setItem(key, 'up');
+    msg.textContent = 'Thanks — you found this helpful.';
+    up.disabled = true; down.disabled = true;
+  });
+  down.addEventListener('click', function () {
+    localStorage.setItem(key, 'down');
+    msg.textContent = 'Thanks for the feedback — it helps us improve.';
+    up.disabled = true; down.disabled = true;
+  });
+})();
