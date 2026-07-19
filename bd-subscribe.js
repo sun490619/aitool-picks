@@ -88,7 +88,7 @@
       '<h3 class="bd-subscribe__title">' + c.title + '</h3>' +
       '<p class="bd-subscribe__sub">' + c.sub + '</p>' +
       '<form class="bd-subscribe__form" id="bd-subscribe-form" ' +
-        'action="https://buttondown.email/api/emails/subscribe/" method="POST" target="bd_hidden_iframe" novalidate>' +
+        'action="https://buttondown.com/api/emails/embed-subscribe/sun490619" method="POST" target="bd_hidden_iframe" novalidate>' +
         '<input class="bd-subscribe__input" type="email" name="email" id="bd-subscribe-email" ' +
           'placeholder="you@example.com" autocomplete="email" required>' +
         '<input type="hidden" name="tag" value="web-signup">' +
