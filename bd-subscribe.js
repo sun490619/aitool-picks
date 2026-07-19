@@ -1,6 +1,7 @@
 /**
  * 三站通用邮件订阅框（自包含）
- * 后端：https://bd-subscribe.sun490619.workers.dev （藏好 Buttondown key + 开 CORS）
+ * 直接 POST 到 Buttondown 公开订阅端点（无需 API key、不受 Worker 数据中心 IP 信誉拦截、
+ * 请求来自访客真实浏览器/IP）。用隐藏 iframe 表单提交，规避跨域 CORS 限制。
  * 按域名自动适配品牌色与页脚位置，注入到每个页面页脚之前。
  * 接入方式：在 </body> 前加 <script src="/bd-subscribe.js" defer></script>
  */
@@ -70,6 +71,13 @@
   ].join('');
   document.head.appendChild(style);
 
+  // 隐藏 iframe 作为表单提交目标（跨域表单提交不受 CORS 限制）
+  var iframe = document.createElement('iframe');
+  iframe.name = 'bd_hidden_iframe';
+  iframe.style.display = 'none';
+  iframe.setAttribute('aria-hidden', 'true');
+  document.body.appendChild(iframe);
+
   // 构建组件
   var wrap = document.createElement('section');
   wrap.className = 'bd-subscribe';
@@ -79,9 +87,11 @@
     '<div class="bd-subscribe__inner">' +
       '<h3 class="bd-subscribe__title">' + c.title + '</h3>' +
       '<p class="bd-subscribe__sub">' + c.sub + '</p>' +
-      '<form class="bd-subscribe__form" id="bd-subscribe-form" novalidate>' +
+      '<form class="bd-subscribe__form" id="bd-subscribe-form" ' +
+        'action="https://buttondown.email/api/emails/subscribe/" method="POST" target="bd_hidden_iframe" novalidate>' +
         '<input class="bd-subscribe__input" type="email" name="email" id="bd-subscribe-email" ' +
           'placeholder="you@example.com" autocomplete="email" required>' +
+        '<input type="hidden" name="tag" value="web-signup">' +
         '<button class="bd-subscribe__btn" type="submit">Subscribe</button>' +
       '</form>' +
       '<p class="bd-subscribe__msg" id="bd-subscribe-msg" role="status" aria-live="polite"></p>' +
@@ -95,44 +105,29 @@
     document.body.appendChild(wrap);
   }
 
-  // 表单逻辑
+  // 表单逻辑：先做前端校验，再提交（提交走隐藏 iframe，规避 CORS）
   var form = document.getElementById('bd-subscribe-form');
   var input = document.getElementById('bd-subscribe-email');
   var btn = form.querySelector('button');
   var msg = document.getElementById('bd-subscribe-msg');
-  var ENDPOINT = 'https://bd-subscribe.sun490619.workers.dev';
 
   form.addEventListener('submit', function (e) {
-    e.preventDefault();
     var email = (input.value || '').trim();
     if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) {
+      e.preventDefault();
       msg.textContent = 'Please enter a valid email.';
       msg.className = 'bd-subscribe__msg is-err';
       return;
     }
+    // 校验通过：允许表单提交到隐藏 iframe，并乐观提示成功
     btn.disabled = true;
     msg.textContent = 'Subscribing…';
     msg.className = 'bd-subscribe__msg';
-    fetch(ENDPOINT, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email: email, tags: ['web-signup'] })
-    })
-      .then(function (r) { return r.json().then(function (d) { return { ok: r.ok, d: d }; }); })
-      .then(function (res) {
-        if (res.ok && res.d && res.d.ok) {
-          msg.textContent = "You're in! Check your inbox to confirm.";
-          msg.className = 'bd-subscribe__msg is-ok';
-          input.value = '';
-        } else {
-          msg.textContent = 'Something went wrong. Please try again.';
-          msg.className = 'bd-subscribe__msg is-err';
-        }
-      })
-      .catch(function () {
-        msg.textContent = 'Network error. Please try again.';
-        msg.className = 'bd-subscribe__msg is-err';
-      })
-      .finally(function () { btn.disabled = false; });
+    setTimeout(function () {
+      msg.textContent = "You're in! Check your inbox to confirm.";
+      msg.className = 'bd-subscribe__msg is-ok';
+      input.value = '';
+      btn.disabled = false;
+    }, 1200);
   });
 })();
