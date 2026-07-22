@@ -333,8 +333,19 @@ window.AIToolPicks = {
     if (totalPages <= 1) { pagination.innerHTML = ''; return; }
     let html = '';
     html += `<button class="page-btn" data-page="${currentPage - 1}" ${currentPage === 1 ? 'disabled' : ''}">Prev</button>`;
-    for (let i = 1; i <= totalPages; i++) {
-      html += `<button class="page-btn ${i === currentPage ? 'active' : ''}" data-page="${i}">${i}</button>`;
+    // 省略号逻辑：始终显示首尾，当前页左右各1，其余用 …
+    const pages = new Set();
+    pages.add(1);
+    pages.add(totalPages);
+    pages.add(currentPage);
+    if (currentPage - 1 >= 1) pages.add(currentPage - 1);
+    if (currentPage + 1 <= totalPages) pages.add(currentPage + 1);
+    const sorted = Array.from(pages).sort((a, b) => a - b);
+    let prev = 0;
+    for (const p of sorted) {
+      if (p - prev > 1) html += `<span class="page-ellipsis">…</span>`;
+      html += `<button class="page-btn ${p === currentPage ? 'active' : ''}" data-page="${p}">${p}</button>`;
+      prev = p;
     }
     html += `<button class="page-btn" data-page="${currentPage + 1}" ${currentPage === totalPages ? 'disabled' : ''}>Next</button>`;
     pagination.innerHTML = html;

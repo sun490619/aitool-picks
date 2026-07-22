@@ -482,7 +482,11 @@ html.dark .card-image { background: rgba(255, 255, 255, .04); }
   grid-template-columns: repeat(1, 1fr);
   gap: 24px;
   padding: 24px 0 40px;
+  align-items: stretch;
 }
+/* 分类卡描述行数不同导致高度不齐：统一 card-body 最小高度让卡片等高 */
+.category-grid > .card { height: 100%; }
+.category-grid > .card > .card-body { min-height: 132px; }
 @media (min-width: 640px) { .category-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (min-width: 1024px) { .category-grid { grid-template-columns: repeat(4, 1fr); } }
 
@@ -857,6 +861,12 @@ html.dark .btn-secondary:hover { background: #60A5FA; }
 .pagination {
   display: flex;
   gap: 0.25rem;
+  align-items: center;
+}
+.page-ellipsis {
+  padding: 0 0.25rem;
+  color: var(--text2);
+  user-select: none;
 }
 .page-btn {
   min-width: 2rem;
