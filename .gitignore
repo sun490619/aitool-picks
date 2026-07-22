@@ -1,0 +1,4 @@
+
+# local test artifacts
+node_modules/
+_perf_check.js
