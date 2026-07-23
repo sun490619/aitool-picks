@@ -857,6 +857,26 @@ html.dark .btn-secondary:hover { background: #60A5FA; }
   color: white;
   border-color: var(--color-primary);
 }
+.filter-search {
+  flex: 1 1 220px;
+  min-width: 180px;
+  max-width: 320px;
+}
+.filter-search input[type="search"] {
+  width: 100%;
+  padding: 0.55rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  font-size: 0.9rem;
+  background: white;
+  color: var(--color-text);
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.filter-search input[type="search"]:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-primary) 20%, transparent);
+}
 .pagination {
   display: flex;
   gap: 0.25rem;

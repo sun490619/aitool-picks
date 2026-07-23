@@ -290,6 +290,7 @@ window.AIToolPicks = {
   const PER_PAGE = 6;
   let currentCategory = 'all';
   let currentPage = 1;
+  let currentSearch = '';
 
   function assignCategory(card, idx) {
     const link = card.querySelector('.post-card-title a');
@@ -307,14 +308,21 @@ window.AIToolPicks = {
   }
   cards.forEach((c, i) => assignCategory(c, i));
 
+  function matchesSearch(card) {
+    if (!currentSearch) return true;
+    const q = currentSearch.toLowerCase();
+    const title = (card.querySelector('.post-card-title')?.textContent || '').toLowerCase();
+    const excerpt = (card.querySelector('.post-card-excerpt')?.textContent || '').toLowerCase();
+    return title.includes(q) || excerpt.includes(q);
+  }
+
   function render() {
-    let filtered = currentCategory === 'all' ? cards : cards.filter(c => c.dataset.category === currentCategory);
-    filtered.forEach(c => c.style.display = '');
-    cards.forEach(c => {
-      if (currentCategory !== 'all' && c.dataset.category !== currentCategory) {
-        c.style.display = 'none';
-      }
+    let filtered = cards.filter(c => {
+      const catOk = currentCategory === 'all' || c.dataset.category === currentCategory;
+      return catOk && matchesSearch(c);
     });
+    cards.forEach(c => { c.style.display = 'none'; });
+    filtered.forEach(c => { c.style.display = ''; });
     const totalPages = Math.max(1, Math.ceil(filtered.length / PER_PAGE));
     if (currentPage > totalPages) currentPage = totalPages;
     const start = (currentPage - 1) * PER_PAGE;
@@ -366,6 +374,15 @@ window.AIToolPicks = {
       render();
     });
   });
+
+  const searchInput = document.getElementById('postSearch');
+  if (searchInput) {
+    searchInput.addEventListener('input', () => {
+      currentSearch = searchInput.value.trim();
+      currentPage = 1;
+      render();
+    });
+  }
 
   render();
 })();
