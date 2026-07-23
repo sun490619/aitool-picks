@@ -389,10 +389,12 @@ window.AIToolPicks = {
 
 // ---- Post "Was this helpful?" vote widget (zero-backend, per-URL localStorage) ----
 (function () {
-  // 覆盖所有文章页正文容器：老页用 article.post，新页用 article.article-content，
-  // 兜底 article / main.post。同一段代码 = 63 篇投票组件样式与行为完全一致。
-  var article = document.querySelector('article.post, article.article-content')
-    || document.querySelector('main article, article, main.post');
+  // 投票框只出现在【文章详情页】（/posts/ 下的页面）。
+  // 列表页（首页 /category/）的卡片也用 <article class="post-card">，
+  // 绝不能在列表页注入投票框——否则会污染卡片、挤掉 Read 链接。
+  if (location.pathname.indexOf('/posts/') === -1) return;
+  // 文章详情页正文容器：老页 article.post，新页 article.article-content。
+  var article = document.querySelector('article.post, article.article-content');
   if (!article) return;
   // 防重复注入（若脚本被加载两次）
   if (article.querySelector('#voteUp')) return;
