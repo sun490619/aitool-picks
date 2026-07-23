@@ -1,24 +1,14 @@
-<!DOCTYPE html><html lang="en"><head>
-    <!-- Google Analytics 4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D53DQ3JKKL"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-D53DQ3JKKL');
-    </script>
-    <!-- Microsoft Clarity -->
-    <script type="text/javascript">
-      (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-      })(window, document, "clarity", "script", "xavbiwb9dt");
-    </script>
-<meta charset="UTF-8">
-    <meta property="og:image" content="/images/og-site-free-resources.jpg"><meta http-equiv="refresh" content="0; url=https://sunshine4255.gumroad.com/"><link rel="canonical" href="https://sunshine4255.gumroad.com/"><meta name="author" content="https://www.amazon.com/author/gagewhitlock?tag=sun490619-20">
-</head><body>Redirecting to Gumroad store...<script src="/bd-subscribe.js" defer></script>
-        <footer class="site-footer" role="contentinfo">
+#!/usr/bin/env python3
+"""Batch fix footers across all aitool-picks HTML files to match index.html standard."""
+
+import os
+import re
+import glob
+
+BASE = "/Users/dawei/CodeBuddy/aitool-picks"
+
+# Standard footer from index.html (5 columns: brand + 4 columns + bottom)
+STD_FOOTER = '''    <footer class="site-footer" role="contentinfo">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
@@ -86,6 +76,96 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer>'''
 
-</body></html>
+
+def fix_contact_html(path):
+    """Special handling for contact.html: move form back into main, then replace footer."""
+    with open(path, 'r', encoding='utf-8') as f:
+        content = f.read()
+
+    # Extract the orphaned form section (everything between </footer> and </body>)
+    # Pattern: </footer> ... </body>
+    match = re.search(r'(</footer>\s*)(.*?)(\s*</body>)', content, re.DOTALL)
+    if match:
+        orphaned = match.group(2).strip()
+        # Remove the orphaned section from after footer
+        content = content[:match.start(1)] + match.group(1) + match.group(3)
+        # Insert the form before </main>
+        content = content.replace('</main>', orphaned + '\n    </main>')
+
+    # Now replace the old footer with standard footer
+    content = replace_footer(content)
+    return content
+
+
+def replace_footer(content):
+    """Replace any existing <footer>...</footer> with standard footer."""
+    # Match any <footer ...>...</footer> tag (covers class="site-footer", class="footer", style="...", etc.)
+    pattern = re.compile(r'<footer\b[^>]*>.*?</footer>', re.DOTALL)
+    if pattern.search(content):
+        return pattern.sub(STD_FOOTER, content)
+    return content
+
+
+def insert_footer(content):
+    """Insert standard footer before </body> if no footer exists."""
+    if not re.search(r'<footer\b', content, re.IGNORECASE):
+        # Insert before </body> or </body > (with possible spaces)
+        content = re.sub(r'(\s*</body\s*>)', '\n' + STD_FOOTER + '\n\\1', content, count=1)
+    return content
+
+
+def process_file(filepath):
+    """Process a single HTML file."""
+    relpath = os.path.relpath(filepath, BASE)
+
+    with open(filepath, 'r', encoding='utf-8') as f:
+        content = f.read()
+
+    original = content
+
+    if relpath == 'contact.html':
+        content = fix_contact_html(filepath)
+    else:
+        content = replace_footer(content)
+        content = insert_footer(content)
+
+    if content != original:
+        with open(filepath, 'w', encoding='utf-8') as f:
+            f.write(content)
+        return True
+    return False
+
+
+def main():
+    # Find all HTML files excluding images/samples
+    html_files = []
+    for root, dirs, files in os.walk(BASE):
+        # Skip images directory
+        if 'images' in root:
+            continue
+        for f in files:
+            if f.endswith('.html'):
+                html_files.append(os.path.join(root, f))
+
+    fixed = []
+    skipped = []
+
+    for filepath in sorted(html_files):
+        relpath = os.path.relpath(filepath, BASE)
+        if process_file(filepath):
+            fixed.append(relpath)
+        else:
+            skipped.append(relpath)
+
+    print(f"Fixed {len(fixed)} files:")
+    for f in fixed:
+        print(f"  + {f}")
+    print(f"\nUnchanged {len(skipped)} files:")
+    for f in skipped:
+        print(f"  - {f}")
+
+
+if __name__ == '__main__':
+    main()
