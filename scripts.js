@@ -372,8 +372,13 @@ window.AIToolPicks = {
 
 // ---- Post "Was this helpful?" vote widget (zero-backend, per-URL localStorage) ----
 (function () {
-  var article = document.querySelector('article.post');
+  // 覆盖所有文章页正文容器：老页用 article.post，新页用 article.article-content，
+  // 兜底 article / main.post。同一段代码 = 63 篇投票组件样式与行为完全一致。
+  var article = document.querySelector('article.post, article.article-content')
+    || document.querySelector('main article, article, main.post');
   if (!article) return;
+  // 防重复注入（若脚本被加载两次）
+  if (article.querySelector('#voteUp')) return;
   var key = 'atp_vote_' + location.pathname;
   var box = document.createElement('div');
   box.style.cssText = 'margin:30px 0 8px;padding:18px 20px;border:1px solid #e2e8f0;border-radius:14px;background:#f8fafc;text-align:center;';
