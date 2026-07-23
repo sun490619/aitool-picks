@@ -811,7 +811,6 @@ html.dark .btn-secondary:hover { background: #60A5FA; }
     display: block;
 }
 .category-grid .card {
-    min-height: 320px;
     display: flex;
     flex-direction: column;
 }
