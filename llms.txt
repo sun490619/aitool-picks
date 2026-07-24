@@ -9,6 +9,26 @@ An independent, global review site for AI tools — tested comparisons, buying g
 - Best AI Coding Assistants in 2026 — https://aitool-picks.com/posts/best-ai-coding-assistants-2026.html
 - Best AI Video Tools in 2026 — https://aitool-picks.com/posts/best-ai-video-tools-2026.html
 - Best AI Image Upscalers in 2026 — https://aitool-picks.com/posts/best-ai-image-upscalers-2026.html
+- Best AI Tools for Content Marketing — https://aitool-picks.com/posts/best-ai-tools-for-content-marketing-2026.html
+- Best AI Tools for Email Marketing — https://aitool-picks.com/posts/best-ai-tools-for-email-marketing-2026.html
+- Best AI Tools for Podcasters — https://aitool-picks.com/posts/best-ai-tools-for-podcasters-2026.html
+- Best AI Tools for Small Business — https://aitool-picks.com/posts/best-ai-tools-for-small-business-2026.html
+- Best AI Tools for Social Media Managers — https://aitool-picks.com/posts/best-ai-tools-for-social-media-managers-2026.html
+- Best AI Tools for Students — https://aitool-picks.com/posts/best-ai-tools-for-students-2026.html
+- Best AI Tools for YouTube Creators — https://aitool-picks.com/posts/best-ai-tools-for-youtube-creators-2026.html
+- Best AI Tools for Faceless YouTube — https://aitool-picks.com/posts/best-ai-tools-faceless-youtube-2026.html
+- Best Free AI Tools for Content Creators — https://aitool-picks.com/posts/best-free-ai-tools-content-creators-2026.html
+- Best Free AI Tools for Students — https://aitool-picks.com/posts/best-free-ai-tools-students-2026.html
+- Best AI Grammar Tools — https://aitool-picks.com/posts/best-ai-grammar-tools-2026.html
+- Best AI Note-Taking Tools — https://aitool-picks.com/posts/best-ai-note-taking-tools-2026.html
+- Best AI Paraphrasing Tools — https://aitool-picks.com/posts/best-ai-paraphrasing-tools-2026.html
+- Best AI Translation Tools — https://aitool-picks.com/posts/best-ai-translation-tools-2026.html
+- Best AI Presentation Tools — https://aitool-picks.com/posts/best-ai-presentation-tools-2026.html
+- Best AI Music Generators — https://aitool-picks.com/posts/best-ai-music-generators-2026.html
+- Best AI Avatar Video Tools — https://aitool-picks.com/posts/best-ai-avatar-video-tools-2026.html
+- Best AI Email Writing Tools — https://aitool-picks.com/posts/best-ai-email-writing-tools-2026.html
+- Best AI Voice Generator Tools — https://aitool-picks.com/posts/best-ai-voice-generator-tools-2026.html
+- Best AI Video Editing Tools — https://aitool-picks.com/posts/best-ai-video-editing-tools-2026.html
 
 ## Tool Reviews
 - Grammarly — https://aitool-picks.com/tools/grammarly.html
@@ -28,11 +48,34 @@ An independent, global review site for AI tools — tested comparisons, buying g
 - DeepSeek vs Claude — https://aitool-picks.com/posts/deepseek-vs-claude-2026.html
 - GitHub Copilot Review — https://aitool-picks.com/posts/github-copilot-ai-review-2026.html
 - Cursor Review — https://aitool-picks.com/posts/cursor-ai-code-editor-review-2026.html
+- Midjourney v7 Review — https://aitool-picks.com/posts/midjourney-v7-review-2026.html
+- Descript Review — https://aitool-picks.com/posts/descript-ai-review-2026.html
+- Canva AI Review — https://aitool-picks.com/posts/canva-ai-review-2026.html
+- Kling AI Review — https://aitool-picks.com/posts/kling-ai-review-2026.html
+- KoalaWriter Review — https://aitool-picks.com/posts/koalawriter-review-2026.html
+- Mem AI Review — https://aitool-picks.com/posts/mem-ai-review-2026.html
+- LangChain Review — https://aitool-picks.com/posts/langchain-ai-review-2026.html
+- GrammarlyGo Review — https://aitool-picks.com/posts/grammarlygo-review-2026.html
+- Originality.ai Review — https://aitool-picks.com/posts/originality-ai-review-2026.html
+- Frase Review — https://aitool-picks.com/posts/frase-review-2026.html
+- GetGenie Review — https://aitool-picks.com/posts/getgenie-review-2026.html
+- Make.com Review — https://aitool-picks.com/posts/make-com-review-2026.html
+- Gumroad Review — https://aitool-picks.com/posts/gumroad-review-2026.html
+- Hugging Face Review — https://aitool-picks.com/posts/hugging-face-ai-review-2026.html
 
 ## Guides
 - Generative Engine Optimization Guide 2026 — https://aitool-picks.com/posts/generative-engine-optimization-guide-2026.html
 - Track Brand Visibility in AI Search — https://aitool-picks.com/posts/track-brand-visibility-ai-search-2026.html
 - New Open-Source AI Models on Hugging Face (2026 Tracker) — https://aitool-picks.com/posts/hugging-face-new-models-2026.html
+- Open-Source AI Models Guide — https://aitool-picks.com/posts/open-source-ai-models-2026.html
+- AI Side Hustle Guide — https://aitool-picks.com/posts/ai-side-hustle-2026.html
+- AI Tools for Dropshipping — https://aitool-picks.com/posts/ai-tools-dropshipping-2026.html
+- AI Customer Support Setup — https://aitool-picks.com/posts/ai-customer-support-setup-2026.html
+- AI Productivity Tools — https://aitool-picks.com/posts/ai-productivity-tools-2026.html
+- AI Transcriber for Meeting Notes — https://aitool-picks.com/posts/ai-transcriber-meeting-notes-2026.html
+- AI Trip Planner Review — https://aitool-picks.com/posts/ai-trip-planner-review-2026.html
+- Market Data Analysis with AI — https://aitool-picks.com/posts/market-data-analysis-ai-2026.html
+- AI Coding Review — https://aitool-picks.com/posts/ai-coding-review-2026.html
 
 ## About
 - About — https://aitool-picks.com/about
