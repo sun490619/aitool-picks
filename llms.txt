@@ -32,6 +32,7 @@ An independent, global review site for AI tools — tested comparisons, buying g
 ## Guides
 - Generative Engine Optimization Guide 2026 — https://aitool-picks.com/posts/generative-engine-optimization-guide-2026.html
 - Track Brand Visibility in AI Search — https://aitool-picks.com/posts/track-brand-visibility-ai-search-2026.html
+- New Open-Source AI Models on Hugging Face (2026 Tracker) — https://aitool-picks.com/posts/hugging-face-new-models-2026.html
 
 ## About
 - About — https://aitool-picks.com/about

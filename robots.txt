@@ -1,7 +1,9 @@
 User-agent: *
 Allow: /
 
-# Explicitly allow AI answer engines to read and cite this site
+# Explicitly allow AI answer engines and agents to read and cite this site.
+# Listed crawlers are welcomed by name; the "*" rule above already permits all
+# other bots to read public pages, so this is an open, cite-friendly policy.
 User-agent: GPTBot
 Allow: /
 User-agent: Google-Extended
@@ -11,6 +13,26 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 User-agent: Bingbot
+Allow: /
+User-agent: Applebot
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+User-agent: Bytespider
+Allow: /
+User-agent: Meta-ExternalAgent
+Allow: /
+User-agent: Meta-ExternalFetcher
+Allow: /
+User-agent: Cohere-AI
+Allow: /
+User-agent: Omgili
+Allow: /
+User-agent: Omgilibot
+Allow: /
+User-agent: Diffbot
+Allow: /
+User-agent: GPTBot-Extended
 Allow: /
 
 Sitemap: https://aitool-picks.com/sitemap.xml
