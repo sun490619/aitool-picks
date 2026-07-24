@@ -1,0 +1,39 @@
+# AI Tool Picks
+
+An independent, global review site for AI tools — tested comparisons, buying guides, and plain-English explainers. No pay-to-rank, no US-only bias.
+
+## Top Tool Roundups
+- 6 Best AI SEO Tools to Rank Higher in 2026 — https://aitool-picks.com/posts/best-ai-seo-tools-2026.html
+- Best AI Writing Tools in 2026 — https://aitool-picks.com/posts/best-ai-writing-tools-non-native-english-2026.html
+- Best Free AI Tools for Freelancers — https://aitool-picks.com/posts/best-free-ai-tools-freelancers-2026.html
+- Best AI Coding Assistants in 2026 — https://aitool-picks.com/posts/best-ai-coding-assistants-2026.html
+- Best AI Video Tools in 2026 — https://aitool-picks.com/posts/best-ai-video-tools-2026.html
+- Best AI Image Upscalers in 2026 — https://aitool-picks.com/posts/best-ai-image-upscalers-2026.html
+
+## Tool Reviews
+- Grammarly — https://aitool-picks.com/tools/grammarly.html
+- Rytr — https://aitool-picks.com/tools/rytr.html
+- Notion AI — https://aitool-picks.com/tools/notion-ai.html
+- Jasper — https://aitool-picks.com/tools/jasper.html
+- Copy.ai — https://aitool-picks.com/tools/copy-ai.html
+- QuillBot — https://aitool-picks.com/tools/quillbot.html
+- DeepL — https://aitool-picks.com/tools/deepl.html
+- Writesonic — https://aitool-picks.com/tools/writesonic.html
+- Hemingway — https://aitool-picks.com/tools/hemingway.html
+- LanguageTool — https://aitool-picks.com/tools/languagetool.html
+
+## Comparisons
+- Jasper vs Writesonic — https://aitool-picks.com/posts/jasper-vs-writesonic.html
+- ChatGPT vs Claude vs Gemini — https://aitool-picks.com/posts/chatgpt-vs-claude-vs-gemini-2026.html
+- DeepSeek vs Claude — https://aitool-picks.com/posts/deepseek-vs-claude-2026.html
+- GitHub Copilot Review — https://aitool-picks.com/posts/github-copilot-ai-review-2026.html
+- Cursor Review — https://aitool-picks.com/posts/cursor-ai-code-editor-review-2026.html
+
+## Guides
+- Generative Engine Optimization Guide 2026 — https://aitool-picks.com/posts/generative-engine-optimization-guide-2026.html
+- Track Brand Visibility in AI Search — https://aitool-picks.com/posts/track-brand-visibility-ai-search-2026.html
+
+## About
+- About — https://aitool-picks.com/about
+- Privacy — https://aitool-picks.com/privacy
+- Affiliate Disclosure — https://aitool-picks.com/affiliate-disclosure
