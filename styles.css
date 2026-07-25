@@ -1127,8 +1127,6 @@ html.dark .atp-features__header {
   padding: 28px 24px;
   background: var(--card, #fff);
   border: 1px solid var(--line, #e6e8ec);
-
-/* ============================================================
   border-radius: 16px;
 }
 .related-articles h2 {
