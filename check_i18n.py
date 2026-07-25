@@ -31,7 +31,7 @@ for f in glob.glob(os.path.join(ROOT, '**', '*.html'), recursive=True):
         continue
     m = re.search(r'<html[^>]*\sdata-zh-url="([^"]*)"', t)
     has_zh = bool(m and m.group(1).strip())
-    is_article = ('/posts/' in rel) or ('article-content' in t) or ('<article' in t)
+    is_article = rel.startswith('posts/') or ('/posts/' in rel)
 
     if rel.endswith('-zh.html'):
         zh_pages.append(rel)
