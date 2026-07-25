@@ -1183,8 +1183,11 @@ html.dark .atp-features__header {
 .article-header { padding: 52px 0 26px; border-bottom: 1px solid var(--border); }
 .article-header img,
 .article-title,
-.article-meta { max-width: 760px; margin-left: auto; margin-right: auto; }
-.article-breadcrumb { font-size: .85rem; color: var(--text2); margin-bottom: 16px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.article-meta,
+.article-breadcrumb { max-width: 760px; margin-left: auto; margin-right: auto; }
+.article-breadcrumb { font-size: .85rem; color: var(--text2); margin-bottom: 16px; display: flex; flex-wrap: wrap; align-items: center; gap: 0; }
+/* slash separators between crumbs (Home / AI Writing / ...) — matches common convention */
+.article-breadcrumb > * + *::before { content: "/"; margin: 0 8px; color: #94a3b8; }
 .article-breadcrumb a { color: var(--text2); text-decoration: none; }
 .article-breadcrumb a:hover { color: var(--accent); }
 .article-breadcrumb span[aria-current] { color: var(--text); font-weight: 600; }
@@ -1192,10 +1195,11 @@ html.dark .atp-features__header {
 .article-meta { font-size: .9rem; color: var(--text2); display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; margin-bottom: 8px; }
 .article-meta .article-meta-sep { opacity: .5; }
 
-/* full-width hero (override any inline max-width) */
-.article-header .card-image { width: 100%; border-radius: 16px; overflow: hidden; margin-top: 6px; box-shadow: 0 12px 34px rgba(0,0,0,.10); }
-.article-header .card-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
-.article-header img { width: 100% !important; max-width: 760px !important; aspect-ratio: 16/9 !important; object-fit: cover !important; border-radius: 16px !important; box-shadow: 0 12px 34px rgba(0,0,0,.10); display: block; margin: 6px auto 0; }
+/* hero constrained to the 760px reading column so it aligns flush with the
+   body below. Was width:100%, so the gray .card-image gradient background +
+   box-shadow stuck out on both sides of the shrunk image. */
+.article-header .card-image { width: 100%; max-width: 760px; margin: 6px auto 0; border-radius: 16px; overflow: hidden; box-shadow: 0 12px 34px rgba(0,0,0,.10); background: linear-gradient(135deg, #F3F4F6, #E5E7EB); }
+.article-header .card-image img { width: 100%; height: auto; aspect-ratio: 16/9; object-fit: cover; display: block; }
 
 /* ---- Reading column & prose rhythm ---- */
 .article-content { max-width: 760px; margin: 0 auto; }
