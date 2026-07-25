@@ -1127,6 +1127,156 @@ html.dark .atp-features__header {
   padding: 28px 24px;
   background: var(--card, #fff);
   border: 1px solid var(--line, #e6e8ec);
+
+/* ============================================================
+   ARTICLE DESIGN SYSTEM  (added 2026-07-25)
+   Root cause fixed: article prose, title, meta, TOC, cta-box,
+   affiliate-note, tool-card, how-we-test, rating were all
+   unstyled (browser defaults) -> flat/sloppy feel. Now every
+   article reads like a designed resource.
+   ============================================================ */
+
+/* ---- Article shell & hero ---- */
+.article-header { padding: 52px 0 26px; border-bottom: 1px solid var(--border); }
+.article-breadcrumb { font-size: .85rem; color: var(--text2); margin-bottom: 16px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.article-breadcrumb a { color: var(--text2); text-decoration: none; }
+.article-breadcrumb a:hover { color: var(--accent); }
+.article-breadcrumb span[aria-current] { color: var(--text); font-weight: 600; }
+.article-title { font-size: clamp(1.9rem, 4vw, 2.7rem); line-height: 1.15; font-weight: 800; letter-spacing: -.02em; margin: 0 0 14px; }
+.article-meta { font-size: .9rem; color: var(--text2); display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; margin-bottom: 8px; }
+.article-meta .article-meta-sep { opacity: .5; }
+
+/* full-width hero (override any inline max-width) */
+.article-header .card-image { width: 100%; border-radius: 16px; overflow: hidden; margin-top: 6px; box-shadow: 0 12px 34px rgba(0,0,0,.10); }
+.article-header .card-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.article-header img { width: 100% !important; max-width: 100% !important; aspect-ratio: 16/9 !important; object-fit: cover !important; border-radius: 16px !important; box-shadow: 0 12px 34px rgba(0,0,0,.10); display: block; margin-top: 6px; }
+
+/* ---- Reading column & prose rhythm ---- */
+.article-content { max-width: 760px; margin: 0 auto; }
+.article-content > * + * { margin-top: 1.2rem; }
+.article-content p { font-size: 1.06rem; line-height: 1.75; color: var(--text); }
+.article-content h2 { font-size: 1.55rem; font-weight: 700; letter-spacing: -.01em; line-height: 1.25; margin-top: 2.6rem; padding-bottom: .5rem; border-bottom: 2px solid var(--border); }
+.article-content h2::before { content: ""; display: inline-block; width: 7px; height: 1.05em; background: var(--accent); border-radius: 3px; margin-right: 11px; vertical-align: -.1em; }
+.article-content h3 { font-size: 1.22rem; font-weight: 700; margin-top: 1.9rem; }
+.article-content ul, .article-content ol { padding-left: 1.35rem; }
+.article-content li { font-size: 1.04rem; line-height: 1.7; margin-top: .5rem; }
+.article-content ul li::marker { color: var(--accent); }
+.article-content a:not(.btn):not(.r-title):not(.post-card-title a):not(.footer-logo) { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; text-decoration-thickness: 1px; }
+.article-content a:hover { text-decoration-thickness: 2px; }
+.article-content strong { font-weight: 700; }
+.article-content blockquote { border-left: 4px solid var(--accent); background: var(--color-bg-muted); padding: 14px 18px; border-radius: 0 12px 12px 0; color: var(--text); font-style: italic; }
+.article-content code { font-family: var(--mono, "JetBrains Mono", monospace); background: var(--color-bg-muted); padding: 2px 6px; border-radius: 5px; font-size: .92em; }
+.article-content img { max-width: 100%; border-radius: 12px; }
+.article-content table:not(.atp-compare__table) { width: 100%; border-collapse: collapse; font-size: .95rem; margin: 1.2rem 0; }
+.article-content table:not(.atp-compare__table) th, .article-content table:not(.atp-compare__table) td { border: 1px solid var(--border); padding: 10px 12px; text-align: left; }
+.article-content table:not(.atp-compare__table) th { background: var(--color-bg-muted); font-weight: 600; }
+
+/* ---- Table of contents ---- */
+.article-toc, .toc { background: var(--color-bg-muted); border: 1px solid var(--border); border-radius: 14px; padding: 18px 22px; margin: 30px auto; max-width: 760px; }
+.article-toc .toc-title, .toc .toc-title { font-size: .78rem; text-transform: uppercase; letter-spacing: .09em; color: var(--text2); font-weight: 700; margin: 0 0 10px; }
+.article-toc .toc-list, .toc ul { list-style: none; padding: 0; margin: 0; }
+.article-toc .toc-list li, .toc ul li { margin: 7px 0; font-size: .96rem; }
+.article-toc .toc-link, .toc ul a { color: var(--text2); text-decoration: none; }
+.article-toc .toc-link:hover, .toc ul a:hover { color: var(--accent); }
+
+/* ---- Quick verdict / CTA box (styled callout) ---- */
+.cta-box { background: linear-gradient(135deg, rgba(37,99,235,.09), rgba(37,99,235,.02)); border: 1px solid rgba(37,99,235,.28); border-left: 4px solid var(--accent); border-radius: 14px; padding: 18px 22px; margin: 30px auto; max-width: 760px; }
+.cta-box h3 { font-size: 1.05rem; font-weight: 700; margin: 0 0 8px; color: var(--accent); }
+.cta-box p { margin: 0 0 8px; font-size: 1rem; line-height: 1.6; }
+.cta-box p:last-child { margin-bottom: 0; }
+.cta-box .cta-box-title { font-size: 1.05rem; font-weight: 700; margin: 0 0 8px; color: var(--accent); }
+.cta-box .cta-box-text { margin: 0; font-size: 1rem; line-height: 1.6; }
+
+/* ---- Affiliate / disclosure notes ---- */
+.affiliate-note { font-size: .82rem; color: var(--text2); border-top: 1px dashed var(--border); padding-top: 14px; margin: 36px auto 0; max-width: 760px; }
+.affiliate-note p { margin: 0; line-height: 1.6; }
+
+/* ---- Tool cards (tracker / listicle articles) ---- */
+.tool-card { border: 1px solid var(--border); border-radius: 14px; padding: 16px 20px; margin: 16px 0; background: var(--card, #fff); }
+.tool-card .price { font-size: .85rem; color: var(--text2); margin: 0 0 8px; font-weight: 600; }
+.tool-card p { margin: 0 0 8px; }
+.tool-card p:last-child { margin-bottom: 0; }
+
+/* ---- Star rating spans ---- */
+.rating { color: #F59E0B; letter-spacing: 1px; white-space: nowrap; }
+
+/* ---- How we test ---- */
+.how-we-test { background: var(--color-bg-muted); border: 1px solid var(--border); border-radius: 14px; padding: 18px 22px; margin: 30px auto; max-width: 760px; }
+.how-we-test h2 { margin-top: 0; border: none; padding: 0; font-size: 1.15rem; }
+.how-we-test h2::before { display: none; }
+.how-we-test p { margin: 0; font-size: .98rem; color: var(--text2); line-height: 1.6; }
+
+/* ============================================================
+   CALLOUT SYSTEM — long rectangular boxes with different content
+   (tip / note / warning / takeaway / stat). The "明暗交替" blocks.
+   ============================================================ */
+.atp-callout { display: flex; gap: 14px; border-radius: 14px; padding: 16px 20px; margin: 28px auto; max-width: 760px; border: 1px solid transparent; align-items: flex-start; }
+.atp-callout .ico { flex: 0 0 auto; width: 30px; height: 30px; border-radius: 8px; display: grid; place-items: center; font-size: 1rem; font-weight: 700; }
+.atp-callout .body { flex: 1; }
+.atp-callout .body > * + * { margin-top: .5rem; }
+.atp-callout .body p { margin: 0; font-size: 1rem; line-height: 1.6; }
+.atp-callout .c-title { font-weight: 700; font-size: 1rem; margin: 0 0 4px; }
+
+.atp-callout.tip { background: rgba(37,99,235,.07); border-color: rgba(37,99,235,.22); }
+.atp-callout.tip .ico { background: var(--accent); color: #fff; }
+.atp-callout.tip .c-title { color: var(--accent); }
+
+.atp-callout.note { background: rgba(245,158,11,.09); border-color: rgba(245,158,11,.3); }
+.atp-callout.note .ico { background: #F59E0B; color: #fff; }
+.atp-callout.note .c-title { color: #B45309; }
+
+.atp-callout.warning { background: rgba(239,68,68,.08); border-color: rgba(239,68,68,.3); }
+.atp-callout.warning .ico { background: #EF4444; color: #fff; }
+.atp-callout.warning .c-title { color: #B91C1C; }
+
+.atp-callout.takeaway { background: rgba(16,185,129,.08); border-color: rgba(16,185,129,.32); border-left: 4px solid #10B981; }
+.atp-callout.takeaway .ico { background: #10B981; color: #fff; }
+.atp-callout.takeaway .c-title { color: #047857; }
+
+.atp-callout.stat { background: var(--text); color: #fff; border: none; }
+.atp-callout.stat .ico { background: rgba(255,255,255,.18); color: #fff; }
+.atp-callout.stat .c-title { color: #fff; }
+.atp-callout.stat .body p { color: rgba(255,255,255,.9); }
+.atp-callout.stat .big { font-size: 2rem; font-weight: 800; line-height: 1; }
+
+/* ============================================================
+   RATING BARS — visual score (Futurepedia-style)
+   ============================================================ */
+.atp-rating { background: var(--color-bg-muted); border: 1px solid var(--border); border-radius: 14px; padding: 18px 22px; margin: 28px auto; max-width: 760px; }
+.atp-rating .r-head { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 12px; gap: 12px; }
+.atp-rating .r-title { font-weight: 700; font-size: 1.05rem; }
+.atp-rating .r-score { font-size: 1.5rem; font-weight: 800; color: var(--accent); white-space: nowrap; }
+.atp-rating .r-score small { font-size: .8rem; color: var(--text2); font-weight: 600; }
+.atp-rating .r-row { display: grid; grid-template-columns: 140px 1fr auto; gap: 12px; align-items: center; margin: 9px 0; }
+.atp-rating .r-label { font-size: .9rem; color: var(--text2); }
+.atp-rating .r-track { height: 8px; background: var(--border); border-radius: 99px; overflow: hidden; }
+.atp-rating .r-fill { height: 100%; background: linear-gradient(90deg, var(--accent), #60A5FA); border-radius: 99px; }
+.atp-rating .r-val { font-size: .82rem; color: var(--text2); min-width: 34px; text-align: right; }
+
+/* dark mode tweaks */
+html.dark .atp-callout.stat { background: #1c1c1c; }
+html.dark .atp-rating, html.dark .article-toc, html.dark .toc, html.dark .cta-box, html.dark .how-we-test { background: rgba(255,255,255,.03); }
+html.dark .tool-card { background: #161616; }
+
+/* ============================================================
+   MIRROR for older templates (.post-article and bare <article>)
+   so every post inherits the same design system.
+   ============================================================ */
+.post-article, main > article.article-content { max-width: 760px; margin: 0 auto; }
+.post-article > * + *, main > article.article-content > * + * { margin-top: 1.2rem; }
+.post-article p, main > article.article-content p { font-size: 1.06rem; line-height: 1.75; color: var(--text); }
+.post-article h2, main > article.article-content h2 { font-size: 1.55rem; font-weight: 700; letter-spacing: -.01em; line-height: 1.25; margin-top: 2.6rem; padding-bottom: .5rem; border-bottom: 2px solid var(--border); }
+.post-article h2::before, main > article.article-content h2::before { content: ""; display: inline-block; width: 7px; height: 1.05em; background: var(--accent); border-radius: 3px; margin-right: 11px; vertical-align: -.1em; }
+.post-article h3, main > article.article-content h3 { font-size: 1.22rem; font-weight: 700; margin-top: 1.9rem; }
+.post-article ul, .post-article ol, main > article.article-content ul, main > article.article-content ol { padding-left: 1.35rem; }
+.post-article li, main > article.article-content li { font-size: 1.04rem; line-height: 1.7; margin-top: .5rem; }
+.post-article ul li::marker, main > article.article-content ul li::marker { color: var(--accent); }
+.post-article a, main > article.article-content a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+.post-article strong, main > article.article-content strong { font-weight: 700; }
+.post-article .post-lead, main > article.article-content .post-lead { font-size: 1.15rem; color: var(--text2); line-height: 1.7; }
+.post-article .post-meta, main > article.article-content .post-meta { color: var(--text2); font-size: .9rem; margin-bottom: 20px; }
+.post-article .breadcrumb, main > article.article-content .breadcrumb { font-size: .85rem; color: var(--text2); margin-bottom: 16px; }
+.post-article .breadcrumb a:hover, main > article.article-content .breadcrumb a:hover { color: var(--accent); }
   border-radius: 16px;
 }
 .related-articles h2 {
