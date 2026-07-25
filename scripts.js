@@ -287,7 +287,7 @@ window.AIToolPicks = {
 
   const cards = Array.from(grid.querySelectorAll('article.post-card'));
   const categories = ['writing', 'coding', 'video', 'seo'];
-  const PER_PAGE = 6;
+  const PER_PAGE = 8;
   let currentCategory = 'all';
   let currentPage = 1;
   let currentSearch = '';
