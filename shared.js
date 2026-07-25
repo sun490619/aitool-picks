@@ -681,6 +681,13 @@
   function switchLang(lang) {
     localStorage.setItem(LANG_KEY, lang);
     updateLangButtons(lang);
+    // If this page has a dedicated counterpart in the other language, navigate to it
+    var zhUrl = document.documentElement.getAttribute('data-zh-url');
+    if (zhUrl && lang !== document.documentElement.lang) {
+      window.location.href = zhUrl;
+      return;
+    }
+    // Otherwise fall back to in-place mapping translation (non-article pages)
     applyFullTranslation(lang);
   }
 
@@ -690,11 +697,19 @@
 
   // Apply translation after DOM is ready
   function initLang() {
-    if (savedLang === 'zh') {
+    var hasZh = !!document.documentElement.getAttribute('data-zh-url');
+    var isArticle = !!document.querySelector('.article-content, article') ||
+                    (location.pathname.indexOf('/posts/') !== -1);
+    var langSwitch = document.getElementById('langSwitch');
+    // Hide the language switch on article pages that have NO Chinese counterpart yet,
+    // so users never see a "switched" page that is still English (the mixed-language bug).
+    if (langSwitch && isArticle && !hasZh) {
+      langSwitch.style.display = 'none';
+    }
+    // Pages with a dedicated counterpart are already in their own language; no in-place translation.
+    // Pages without one (home/category/tool pages) fall back to the in-place mapping translation.
+    if (!hasZh && savedLang === 'zh') {
       applyFullTranslation('zh');
-    } else {
-      // Even for 'en', update the html lang attribute
-      document.documentElement.lang = 'en';
     }
   }
 
