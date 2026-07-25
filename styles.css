@@ -1177,7 +1177,13 @@ html.dark .atp-features__header {
 /* === ARTICLE DESIGN SYSTEM (moved out of .related-articles block, 2026-07-25) — added 2026-07-25: fixes previously-unstyled article prose/title/meta/TOC/cta-box/affiliate-note/tool-card/how-we-test/rating === */
 
 /* ---- Article shell & hero ---- */
+/* Header sits in the same 1140px .container as the body; we center the
+   hero/title/meta to a 760px column so they align flush with the body below
+   (instead of protruding at full container width). */
 .article-header { padding: 52px 0 26px; border-bottom: 1px solid var(--border); }
+.article-header img,
+.article-title,
+.article-meta { max-width: 760px; margin-left: auto; margin-right: auto; }
 .article-breadcrumb { font-size: .85rem; color: var(--text2); margin-bottom: 16px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
 .article-breadcrumb a { color: var(--text2); text-decoration: none; }
 .article-breadcrumb a:hover { color: var(--accent); }
@@ -1189,7 +1195,7 @@ html.dark .atp-features__header {
 /* full-width hero (override any inline max-width) */
 .article-header .card-image { width: 100%; border-radius: 16px; overflow: hidden; margin-top: 6px; box-shadow: 0 12px 34px rgba(0,0,0,.10); }
 .article-header .card-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
-.article-header img { width: 100% !important; max-width: 100% !important; aspect-ratio: 16/9 !important; object-fit: cover !important; border-radius: 16px !important; box-shadow: 0 12px 34px rgba(0,0,0,.10); display: block; margin-top: 6px; }
+.article-header img { width: 100% !important; max-width: 760px !important; aspect-ratio: 16/9 !important; object-fit: cover !important; border-radius: 16px !important; box-shadow: 0 12px 34px rgba(0,0,0,.10); display: block; margin: 6px auto 0; }
 
 /* ---- Reading column & prose rhythm ---- */
 .article-content { max-width: 760px; margin: 0 auto; }
