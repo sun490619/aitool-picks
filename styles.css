@@ -49,6 +49,12 @@ html.dark {
   padding: 0;
 }
 
+/* 全局图片响应式兜底：防止任何固定宽图(如文章 hero 图)在移动端撑破布局 */
+img { max-width: 100%; height: auto; }
+.article-content { overflow-x: auto; }
+.article-content table { table-layout: fixed; }
+.article-content pre { overflow-x: auto; max-width: 100%; }
+
 html {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
