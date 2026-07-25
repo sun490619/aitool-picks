@@ -1176,13 +1176,7 @@ html.dark .atp-features__header {
   .related-articles .grid { grid-template-columns: 1fr; }
 }
 
-/* === ARTICLE DESIGN SYSTEM (moved out of .related-articles block, 2026-07-25) === */
-   ARTICLE DESIGN SYSTEM  (added 2026-07-25)
-   Root cause fixed: article prose, title, meta, TOC, cta-box,
-   affiliate-note, tool-card, how-we-test, rating were all
-   unstyled (browser defaults) -> flat/sloppy feel. Now every
-   article reads like a designed resource.
-   ============================================================ */
+/* === ARTICLE DESIGN SYSTEM (moved out of .related-articles block, 2026-07-25) — added 2026-07-25: fixes previously-unstyled article prose/title/meta/TOC/cta-box/affiliate-note/tool-card/how-we-test/rating === */
 
 /* ---- Article shell & hero ---- */
 .article-header { padding: 52px 0 26px; border-bottom: 1px solid var(--border); }
