@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 <!-- Main Pages -->
-<url><loc>https://aitool-picks.com/</loc><changefreq>weekly</changefreq><lastmod>2026-07-05</lastmod><priority>1.0</priority></url>
+<url><loc>https://aitool-picks.com/</loc><changefreq>weekly</changefreq><lastmod>2026-07-05</lastmod><priority>1.0</priority>  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/index-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/"/>
+</url>
 <url><loc>https://aitool-picks.com/about.html</loc><changefreq>monthly</changefreq><lastmod>2026-07-05</lastmod><priority>0.5</priority>  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/about.html"/>
   <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/about-zh.html"/>
   <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/about.html"/>
@@ -23,11 +26,26 @@
   <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/tools-we-use.html"/>
 </url>
 <!-- Categories -->
-<url><loc>https://aitool-picks.com/category/writing.html</loc><changefreq>weekly</changefreq><lastmod>2026-07-05</lastmod><priority>0.9</priority></url>
-<url><loc>https://aitool-picks.com/category/coding.html</loc><changefreq>weekly</changefreq><lastmod>2026-07-05</lastmod><priority>0.8</priority></url>
-<url><loc>https://aitool-picks.com/category/video.html</loc><changefreq>weekly</changefreq><lastmod>2026-07-05</lastmod><priority>0.8</priority></url>
-<url><loc>https://aitool-picks.com/category/seo.html</loc><changefreq>weekly</changefreq><lastmod>2026-07-05</lastmod><priority>0.8</priority></url>
-<url><loc>https://aitool-picks.com/category/productivity.html</loc><changefreq>weekly</changefreq><lastmod>2026-07-16</lastmod><priority>0.8</priority></url>
+<url><loc>https://aitool-picks.com/category/writing.html</loc><changefreq>weekly</changefreq><lastmod>2026-07-05</lastmod><priority>0.9</priority>  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/category/writing.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/category/writing-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/category/writing.html"/>
+</url>
+<url><loc>https://aitool-picks.com/category/coding.html</loc><changefreq>weekly</changefreq><lastmod>2026-07-05</lastmod><priority>0.8</priority>  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/category/coding.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/category/coding-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/category/coding.html"/>
+</url>
+<url><loc>https://aitool-picks.com/category/video.html</loc><changefreq>weekly</changefreq><lastmod>2026-07-05</lastmod><priority>0.8</priority>  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/category/video.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/category/video-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/category/video.html"/>
+</url>
+<url><loc>https://aitool-picks.com/category/seo.html</loc><changefreq>weekly</changefreq><lastmod>2026-07-05</lastmod><priority>0.8</priority>  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/category/seo.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/category/seo-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/category/seo.html"/>
+</url>
+<url><loc>https://aitool-picks.com/category/productivity.html</loc><changefreq>weekly</changefreq><lastmod>2026-07-16</lastmod><priority>0.8</priority>  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/category/productivity.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/category/productivity-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/category/productivity.html"/>
+</url>
 <!-- Tool Pages -->
 <url><loc>https://aitool-picks.com/tools/grammarly.html</loc><changefreq>monthly</changefreq><lastmod>2026-07-05</lastmod><priority>0.7</priority></url>
 <url><loc>https://aitool-picks.com/tools/deepl.html</loc><changefreq>monthly</changefreq><lastmod>2026-07-05</lastmod><priority>0.7</priority></url>
@@ -408,6 +426,60 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/tools-we-use-zh.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/tools-we-use.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/tools-we-use.html"/>
+    <changefreq>weekly</changefreq>
+    <lastmod>2026-07-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aitool-picks.com/index-zh.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/index-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/"/>
+    <changefreq>weekly</changefreq>
+    <lastmod>2026-07-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aitool-picks.com/category/coding-zh.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/category/coding-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/category/coding.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/category/coding.html"/>
+    <changefreq>weekly</changefreq>
+    <lastmod>2026-07-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aitool-picks.com/category/productivity-zh.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/category/productivity-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/category/productivity.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/category/productivity.html"/>
+    <changefreq>weekly</changefreq>
+    <lastmod>2026-07-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aitool-picks.com/category/seo-zh.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/category/seo-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/category/seo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/category/seo.html"/>
+    <changefreq>weekly</changefreq>
+    <lastmod>2026-07-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aitool-picks.com/category/video-zh.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/category/video-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/category/video.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/category/video.html"/>
+    <changefreq>weekly</changefreq>
+    <lastmod>2026-07-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aitool-picks.com/category/writing-zh.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/category/writing-zh.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/category/writing.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/category/writing.html"/>
     <changefreq>weekly</changefreq>
     <lastmod>2026-07-26</lastmod>
     <priority>0.6</priority>
