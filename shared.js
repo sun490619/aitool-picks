@@ -130,9 +130,19 @@
   function initLang() {
     var hasZh = !!document.documentElement.getAttribute('data-zh-url');
     var langSwitch = document.getElementById('langSwitch');
-    // Only show the switch where a real Chinese counterpart exists.
-    if (langSwitch && !hasZh) {
-      langSwitch.style.display = 'none';
+    if (!langSwitch) return;
+    // aitool-picks is English-primary. The Language switch is only meaningful
+    // on the curated article pages that have a real, fully-translated Chinese
+    // counterpart (declared via data-zh-url). On every other page we hide the
+    // ENTIRE Language section (label + pill, i.e. its parent wrapper) so the
+    // drawer footer shows only the Theme toggle — no dangling dead "Language"
+    // label with nothing under it.
+    var section = langSwitch.parentElement;
+    if (hasZh) {
+      if (section) section.style.display = '';
+      langSwitch.style.display = '';
+    } else {
+      if (section) section.style.display = 'none';
     }
   }
 
