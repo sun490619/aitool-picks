@@ -47,16 +47,46 @@
   <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/category/productivity.html"/>
 </url>
 <!-- Tool Pages -->
-<url><loc>https://aitool-picks.com/tools/grammarly.html</loc><changefreq>monthly</changefreq><lastmod>2026-07-05</lastmod><priority>0.7</priority></url>
-<url><loc>https://aitool-picks.com/tools/deepl.html</loc><changefreq>monthly</changefreq><lastmod>2026-07-05</lastmod><priority>0.7</priority></url>
-<url><loc>https://aitool-picks.com/tools/notion-ai.html</loc><changefreq>monthly</changefreq><lastmod>2026-07-05</lastmod><priority>0.7</priority></url>
-<url><loc>https://aitool-picks.com/tools/jasper.html</loc><changefreq>monthly</changefreq><lastmod>2026-07-05</lastmod><priority>0.7</priority></url>
-<url><loc>https://aitool-picks.com/tools/writesonic.html</loc><changefreq>monthly</changefreq><lastmod>2026-07-05</lastmod><priority>0.7</priority></url>
-<url><loc>https://aitool-picks.com/tools/copy-ai.html</loc><changefreq>monthly</changefreq><lastmod>2026-07-05</lastmod><priority>0.7</priority></url>
-<url><loc>https://aitool-picks.com/tools/rytr.html</loc><changefreq>monthly</changefreq><lastmod>2026-07-05</lastmod><priority>0.7</priority></url>
-<url><loc>https://aitool-picks.com/tools/quillbot.html</loc><changefreq>monthly</changefreq><lastmod>2026-07-05</lastmod><priority>0.7</priority></url>
-<url><loc>https://aitool-picks.com/tools/languagetool.html</loc><changefreq>monthly</changefreq><lastmod>2026-07-05</lastmod><priority>0.7</priority></url>
-<url><loc>https://aitool-picks.com/tools/hemingway.html</loc><changefreq>monthly</changefreq><lastmod>2026-07-05</lastmod><priority>0.7</priority></url>
+<url><loc>https://aitool-picks.com/tools/grammarly.html</loc><changefreq>monthly</changefreq><lastmod>2026-07-05</lastmod><priority>0.7</priority>  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/tools/grammarly.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/tools/grammarly-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/tools/grammarly.html"/>
+</url>
+<url><loc>https://aitool-picks.com/tools/deepl.html</loc><changefreq>monthly</changefreq><lastmod>2026-07-05</lastmod><priority>0.7</priority>  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/tools/deepl.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/tools/deepl-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/tools/deepl.html"/>
+</url>
+<url><loc>https://aitool-picks.com/tools/notion-ai.html</loc><changefreq>monthly</changefreq><lastmod>2026-07-05</lastmod><priority>0.7</priority>  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/tools/notion-ai.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/tools/notion-ai-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/tools/notion-ai.html"/>
+</url>
+<url><loc>https://aitool-picks.com/tools/jasper.html</loc><changefreq>monthly</changefreq><lastmod>2026-07-05</lastmod><priority>0.7</priority>  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/tools/jasper.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/tools/jasper-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/tools/jasper.html"/>
+</url>
+<url><loc>https://aitool-picks.com/tools/writesonic.html</loc><changefreq>monthly</changefreq><lastmod>2026-07-05</lastmod><priority>0.7</priority>  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/tools/writesonic.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/tools/writesonic-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/tools/writesonic.html"/>
+</url>
+<url><loc>https://aitool-picks.com/tools/copy-ai.html</loc><changefreq>monthly</changefreq><lastmod>2026-07-05</lastmod><priority>0.7</priority>  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/tools/copy-ai.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/tools/copy-ai-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/tools/copy-ai.html"/>
+</url>
+<url><loc>https://aitool-picks.com/tools/rytr.html</loc><changefreq>monthly</changefreq><lastmod>2026-07-05</lastmod><priority>0.7</priority>  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/tools/rytr.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/tools/rytr-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/tools/rytr.html"/>
+</url>
+<url><loc>https://aitool-picks.com/tools/quillbot.html</loc><changefreq>monthly</changefreq><lastmod>2026-07-05</lastmod><priority>0.7</priority>  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/tools/quillbot.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/tools/quillbot-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/tools/quillbot.html"/>
+</url>
+<url><loc>https://aitool-picks.com/tools/languagetool.html</loc><changefreq>monthly</changefreq><lastmod>2026-07-05</lastmod><priority>0.7</priority>  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/tools/languagetool.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/tools/languagetool-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/tools/languagetool.html"/>
+</url>
+<url><loc>https://aitool-picks.com/tools/hemingway.html</loc><changefreq>monthly</changefreq><lastmod>2026-07-05</lastmod><priority>0.7</priority>  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/tools/hemingway.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/tools/hemingway-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/tools/hemingway.html"/>
+</url>
 <!-- Blog Posts -->
 <url><loc>https://aitool-picks.com/posts/best-ai-website-builders-2026.html</loc><changefreq>monthly</changefreq><lastmod>2026-07-25</lastmod><priority>0.8</priority>  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/best-ai-website-builders-2026.html"/>
   <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/best-ai-website-builders-2026-zh.html"/>
