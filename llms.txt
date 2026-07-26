@@ -81,3 +81,47 @@ An independent, global review site for AI tools — tested comparisons, buying g
 - About — https://aitool-picks.com/about
 - Privacy — https://aitool-picks.com/privacy
 - Affiliate Disclosure — https://aitool-picks.com/affiliate-disclosure
+
+## 中文版（Chinese / zh-CN）
+
+面向中文 AI 搜索引擎与中文用户的独立评测内容（简体中文，国际视角，无偏排名）。
+
+### 中文首页
+- AI 工具精选 — 最佳 AI 工具对比与评测 — https://aitool-picks.com/index-zh.html
+
+### 中文分类（按用途选工具）
+- AI 编程助手 — 评测与对比 — https://aitool-picks.com/category/coding-zh.html
+- AI 效率与综合工具 — 评测与对比 — https://aitool-picks.com/category/productivity-zh.html
+- AI SEO 工具 — 评测与对比 — https://aitool-picks.com/category/seo-zh.html
+- AI 视频生成器 — 评测与对比 — https://aitool-picks.com/category/video-zh.html
+- AI 写作工具 — 评测与对比 — https://aitool-picks.com/category/writing-zh.html
+
+### 中文静态页
+- 关于我们 — AI Tool Picks — https://aitool-picks.com/about-zh.html
+- 联盟披露 — AI Tool Picks — https://aitool-picks.com/affiliate-disclosure-zh.html
+- 联系我们 — AI Tool Picks — https://aitool-picks.com/contact-zh.html
+- 隐私政策 — AI Tool Picks — https://aitool-picks.com/privacy-zh.html
+- 我们实际在用的工具（真实工具栈） — https://aitool-picks.com/tools-we-use-zh.html
+
+### 中文文章（评测 / 对比 / 指南）
+- 2026 年最佳 AI 编程助手：实测排名 — https://aitool-picks.com/posts/best-ai-coding-assistants-2026-zh.html
+- 2026 年最佳 AI 文案工具（速度、排名与安全） — https://aitool-picks.com/posts/best-ai-copywriting-tools-2026-zh.html
+- 2026 年最佳 AI 改写与复述工具：实测排名 — https://aitool-picks.com/posts/best-ai-paraphrasing-tools-2026-zh.html
+- 2026 年最佳 AI 演示与幻灯片工具：实测排名 — https://aitool-picks.com/posts/best-ai-presentation-tools-2026-zh.html
+- 2026 年最佳 AI SEO 工具：实测对比 6 款帮你排名靠前 — https://aitool-picks.com/posts/best-ai-seo-tools-2026-zh.html
+- 2026 年内容营销的最佳 AI 工具 — https://aitool-picks.com/posts/best-ai-tools-for-content-marketing-2026-zh.html
+- 2026 年邮件营销的最佳 AI 工具 — https://aitool-picks.com/posts/best-ai-tools-for-email-marketing-2026-zh.html
+- 2026 年播客主的最佳 AI 工具：实测排名 — https://aitool-picks.com/posts/best-ai-tools-for-podcasters-2026-zh.html
+- 2026 年社交媒体运营者的最佳 AI 工具 — https://aitool-picks.com/posts/best-ai-tools-for-social-media-managers-2026-zh.html
+- 2026 年学生的最佳 AI 工具：实测排名 — https://aitool-picks.com/posts/best-ai-tools-for-students-2026-zh.html
+- 2026 年 YouTube 创作者的最佳 AI 工具 — https://aitool-picks.com/posts/best-ai-tools-for-youtube-creators-2026-zh.html
+- 2026 年最佳 AI 网站搭建工具（基于真实项目实测） — https://aitool-picks.com/posts/best-ai-website-builders-2026-zh.html
+- 非英语母语者最佳 AI 写作工具（2026）：Rytr、Grammarly、QuillBot、Originality.ai、DeepL、Hemingway 实测 — https://aitool-picks.com/posts/best-ai-writing-tools-non-native-english-2026-zh.html
+- Frase 评测 2026：做 SEO 内容提纲与研究最快的 AI 工具 — https://aitool-picks.com/posts/frase-review-2026-zh.html
+- GetGenie 评测 2026：藏在 WordPress 里的 AI 写作助手 — https://aitool-picks.com/posts/getgenie-review-2026-zh.html
+- 2026 年 Hugging Face 新模型：值得关注的方向 — https://aitool-picks.com/posts/hugging-face-new-models-2026-zh.html
+- Make（原 Integromat）评测 2026：可视化自动化平台 — https://aitool-picks.com/posts/make-com-review-2026-zh.html
+- Originality.ai 评测 2026：最准确的 AI 内容检测与查重工具？ — https://aitool-picks.com/posts/originality-ai-review-2026-zh.html
+- Rytr 评测 2026：便宜好用的 AI 写作助手（附真实结论） — https://aitool-picks.com/posts/rytr-review-2026-zh.html
+- Synthesia 评测 2026：无需摄像机的 AI 数字人视频 — https://aitool-picks.com/posts/synthesia-review-2026-zh.html
+- vidIQ 评测 2026：油管创作者的 SEO 套件 — https://aitool-picks.com/posts/vidiq-review-2026-zh.html

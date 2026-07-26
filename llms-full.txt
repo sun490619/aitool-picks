@@ -1,0 +1,150 @@
+# AI Tool Picks — Full Page Index
+
+Independent, global AI tool reviews. This file lists every public page (English + Simplified-Chinese).
+
+## Root pages
+- 关于我们 — AI Tool Picks — https://aitool-picks.com/about-zh.html
+- About — AI Tool Picks — https://aitool-picks.com/about.html
+- 联盟披露 — AI Tool Picks — https://aitool-picks.com/affiliate-disclosure-zh.html
+- Affiliate Disclosure — https://aitool-picks.com/affiliate-disclosure.html
+- best-ai-seo-tools.html — https://aitool-picks.com/best-ai-seo-tools.html
+- best-ai-writing-tools.html — https://aitool-picks.com/best-ai-writing-tools.html
+- 联系我们 — AI Tool Picks — https://aitool-picks.com/contact-zh.html
+- Contact — AI Tool Picks — https://aitool-picks.com/contact.html
+- free-resources.html — https://aitool-picks.com/free-resources.html
+- AI 工具精选 — 最佳 AI 工具对比与评测 — https://aitool-picks.com/index-zh.html
+- AI Tool Picks — Best AI Tools Compared & Reviewed — https://aitool-picks.com/index.html
+- jasper-vs-writesonic.html — https://aitool-picks.com/jasper-vs-writesonic.html
+- koala-writer-alternative.html — https://aitool-picks.com/koala-writer-alternative.html
+- 隐私政策 — AI Tool Picks — https://aitool-picks.com/privacy-zh.html
+- Privacy Policy — https://aitool-picks.com/privacy.html
+- Suggest an AI Tool — AI Tool Picks — https://aitool-picks.com/suggest-tool.html
+- Terms of Service — https://aitool-picks.com/terms.html
+- 我们实际在用的工具（真实工具栈） — https://aitool-picks.com/tools-we-use-zh.html
+- The Tools We Actually Use (Our Real Stack) — https://aitool-picks.com/tools-we-use.html
+
+## category
+- AI Audio Tools — Voice, Music, Podcasts & Transcription — https://aitool-picks.com/category/audio.html
+- AI 编程助手 — 评测与对比 — https://aitool-picks.com/category/coding-zh.html
+- AI Coding Tools — Developer Reviews — https://aitool-picks.com/category/coding.html
+- AI 效率与综合工具 — 评测与对比 — https://aitool-picks.com/category/productivity-zh.html
+- AI Productivity & General Tools — Reviews & Comparisons — https://aitool-picks.com/category/productivity.html
+- AI SEO 工具 — 评测与对比 — https://aitool-picks.com/category/seo-zh.html
+- AI SEO Tools — Reviews & Comparisons — https://aitool-picks.com/category/seo.html
+- AI 视频生成器 — 评测与对比 — https://aitool-picks.com/category/video-zh.html
+- AI Video Tools — Reviews & Comparisons — https://aitool-picks.com/category/video.html
+- AI 写作工具 — 评测与对比 — https://aitool-picks.com/category/writing-zh.html
+- AI Writing Tools — Reviews & Comparisons — https://aitool-picks.com/category/writing.html
+
+## images/samples
+- 图片样本预览 - AI Tool Picks — https://aitool-picks.com/images/samples/preview.html
+
+## posts
+- AI Coding Review: Cursor, Copilot, and Replit Compared for Solo Builders in 2026 — https://aitool-picks.com/posts/ai-coding-review-2026.html
+- AI Customer Support Setup: Chatbots That Actually Reduce Tickets Without Losing Trust — https://aitool-picks.com/posts/ai-customer-support-setup-2026.html
+- Best AI Productivity Tools 2026: 12 Apps That Actually Cut Busywork — AI Tool Picks — https://aitool-picks.com/posts/ai-productivity-tools-2026.html
+- How to Build an AI-Powered Side Hustle in 2026 — 7 Real Ideas That Actually Pay — https://aitool-picks.com/posts/ai-side-hustle-2026.html
+- Best AI Tools for dropshipping in 2026: Product Research, Copy and Automation — https://aitool-picks.com/posts/ai-tools-dropshipping-2026.html
+- AI Transcriber and Meeting Notes: Otter, Fireflies, and the New Standard — https://aitool-picks.com/posts/ai-transcriber-meeting-notes-2026.html
+- AI Trip Planner: Build an Itinerary in 15 Minutes Without Generic Recommendations — https://aitool-picks.com/posts/ai-trip-planner-review-2026.html
+- AI Video Editing Tools 2026: Descript, Runway, and Pika Compared — https://aitool-picks.com/posts/ai-video-editing-tools-2026.html
+- Best AI Avatar Video Tools in 2026 — HeyGen, D-ID, and Synthesia Compared — https://aitool-picks.com/posts/best-ai-avatar-video-tools-2026.html
+- 2026 年最佳 AI 编程助手：实测排名 — https://aitool-picks.com/posts/best-ai-coding-assistants-2026-zh.html
+- Best AI Coding Assistants in 2026 — https://aitool-picks.com/posts/best-ai-coding-assistants-2026.html
+- 2026 年最佳 AI 文案工具（速度、排名与安全） — https://aitool-picks.com/posts/best-ai-copywriting-tools-2026-zh.html
+- Best AI Copywriting Tools in 2026 (Speed, Ranking, and Safety) — https://aitool-picks.com/posts/best-ai-copywriting-tools-2026.html
+- Best AI Email Writing Tools in 2026: Tested & Ranked — https://aitool-picks.com/posts/best-ai-email-writing-tools-2026.html
+- Best AI Grammar & Editing Tools 2026: Grammarly vs QuillBot vs LanguageTool vs Wordtune — AI Tool Picks — https://aitool-picks.com/posts/best-ai-grammar-tools-2026.html
+- Best AI Image Upscalers in 2026 — Restore, Denoise & Enlarge Compared — https://aitool-picks.com/posts/best-ai-image-upscalers-2026.html
+- Best AI Music Generators in 2026 — Suno, Udio, and the Rest Compared — https://aitool-picks.com/posts/best-ai-music-generators-2026.html
+- Best AI Note-Taking &amp; Knowledge Tools in 2026 — https://aitool-picks.com/posts/best-ai-note-taking-tools-2026.html
+- 2026 年最佳 AI 改写与复述工具：实测排名 — https://aitool-picks.com/posts/best-ai-paraphrasing-tools-2026-zh.html
+- Best AI Paraphrasing &amp; Rewriting Tools in 2026 — https://aitool-picks.com/posts/best-ai-paraphrasing-tools-2026.html
+- 2026 年最佳 AI 演示与幻灯片工具：实测排名 — https://aitool-picks.com/posts/best-ai-presentation-tools-2026-zh.html
+- Best AI Presentation &amp; Slide Tools in 2026 — https://aitool-picks.com/posts/best-ai-presentation-tools-2026.html
+- 2026 年最佳 AI SEO 工具：实测对比 6 款帮你排名靠前 — https://aitool-picks.com/posts/best-ai-seo-tools-2026-zh.html
+- 6 Best AI SEO Tools to Rank Higher in 2026 — Tested & Compared — https://aitool-picks.com/posts/best-ai-seo-tools-2026.html
+- Best AI Tools to Start a Faceless YouTube Channel (2026) — https://aitool-picks.com/posts/best-ai-tools-faceless-youtube-2026.html
+- 2026 年内容营销的最佳 AI 工具 — https://aitool-picks.com/posts/best-ai-tools-for-content-marketing-2026-zh.html
+- Best AI Tools for Content Marketing in 2026 — https://aitool-picks.com/posts/best-ai-tools-for-content-marketing-2026.html
+- 2026 年邮件营销的最佳 AI 工具 — https://aitool-picks.com/posts/best-ai-tools-for-email-marketing-2026-zh.html
+- Best AI Tools for Email Marketing in 2026 — https://aitool-picks.com/posts/best-ai-tools-for-email-marketing-2026.html
+- 2026 年播客主的最佳 AI 工具：实测排名 — https://aitool-picks.com/posts/best-ai-tools-for-podcasters-2026-zh.html
+- Best AI Tools for Podcasters in 2026 — https://aitool-picks.com/posts/best-ai-tools-for-podcasters-2026.html
+- Best AI Tools for Small Business in 2026 — https://aitool-picks.com/posts/best-ai-tools-for-small-business-2026.html
+- 2026 年社交媒体运营者的最佳 AI 工具 — https://aitool-picks.com/posts/best-ai-tools-for-social-media-managers-2026-zh.html
+- Best AI Tools for Social Media Managers in 2026 — https://aitool-picks.com/posts/best-ai-tools-for-social-media-managers-2026.html
+- 2026 年学生的最佳 AI 工具：实测排名 — https://aitool-picks.com/posts/best-ai-tools-for-students-2026-zh.html
+- Best AI Tools for Students in 2026 — https://aitool-picks.com/posts/best-ai-tools-for-students-2026.html
+- 2026 年 YouTube 创作者的最佳 AI 工具 — https://aitool-picks.com/posts/best-ai-tools-for-youtube-creators-2026-zh.html
+- Best AI Tools for YouTube Creators in 2026 — https://aitool-picks.com/posts/best-ai-tools-for-youtube-creators-2026.html
+- Best AI Translation Tools in 2026 — Accurate, Context-Aware Compared — https://aitool-picks.com/posts/best-ai-translation-tools-2026.html
+- Best AI Video Generators in 2026 — Tested & Ranked — https://aitool-picks.com/posts/best-ai-video-tools-2026.html
+- Best AI Voice Generators in 2026 — Realistic Text-to-Speech Compared — https://aitool-picks.com/posts/best-ai-voice-generator-tools-2026.html
+- 2026 年最佳 AI 网站搭建工具（基于真实项目实测） — https://aitool-picks.com/posts/best-ai-website-builders-2026-zh.html
+- Best AI Website Builders in 2026 (Tested on Real Projects) — https://aitool-picks.com/posts/best-ai-website-builders-2026.html
+- 非英语母语者最佳 AI 写作工具（2026）：Rytr、Grammarly、QuillBot、Originality.ai、DeepL、Hemingway 实测 — https://aitool-picks.com/posts/best-ai-writing-tools-non-native-english-2026-zh.html
+- Best AI Writing Tools for Non-Native English Writers (2026) — https://aitool-picks.com/posts/best-ai-writing-tools-non-native-english-2026.html
+- Best Free AI Tools for Content Creators 2026 — AI Tool Picks — https://aitool-picks.com/posts/best-free-ai-tools-content-creators-2026.html
+- Best Free AI Tools for Freelancers 2026 — AI Tool Picks — https://aitool-picks.com/posts/best-free-ai-tools-freelancers-2026.html
+- Best Free AI Tools for Students 2026 — AI Tool Picks — https://aitool-picks.com/posts/best-free-ai-tools-students-2026.html
+- Canva AI Review 2026: Design Automation for Non-Designers — https://aitool-picks.com/posts/canva-ai-review-2026.html
+- ChatGPT vs Claude vs Gemini: Which AI Model Wins in 2026 — https://aitool-picks.com/posts/chatgpt-vs-claude-vs-gemini-2026.html
+- Copy AI Review 2026: Hands-On Test with AI Sales Emails & Workflows — https://aitool-picks.com/posts/copy-ai-review-2026.html
+- Cursor AI Code Editor Review 2026: Hands-On Test with Real Projects — https://aitool-picks.com/posts/cursor-ai-code-editor-review-2026.html
+- DeepL Review 2026: Best AI Translator for Accuracy & nuance? — AI Tool Picks — https://aitool-picks.com/posts/deepl-review-2026.html
+- DeepSeek vs Claude 2026: Which AI Model Wins on Coding, Reasoning, and Speed? — https://aitool-picks.com/posts/deepseek-vs-claude-2026.html
+- Descript AI Review 2026: Audio and Video Editing by Editing Text — https://aitool-picks.com/posts/descript-ai-review-2026.html
+- Frase 评测 2026：做 SEO 内容提纲与研究最快的 AI 工具 — https://aitool-picks.com/posts/frase-review-2026-zh.html
+- Frase Review 2026: Best AI for SEO Content Briefs & Research — https://aitool-picks.com/posts/frase-review-2026.html
+- Generative Engine Optimization (GEO): How to Get Cited by ChatGPT, Perplexity &amp; AI Search in 2026 — https://aitool-picks.com/posts/generative-engine-optimization-guide-2026.html
+- GetGenie 评测 2026：藏在 WordPress 里的 AI 写作助手 — https://aitool-picks.com/posts/getgenie-review-2026-zh.html
+- GetGenie Review 2026: AI Writer Inside WordPress — https://aitool-picks.com/posts/getgenie-review-2026.html
+- GitHub Copilot Review 2026: In-IDE AI Coding Assistant — https://aitool-picks.com/posts/github-copilot-ai-review-2026.html
+- GrammarlyGO Review 2026: AI Writing Assistant — Tested & Compared — https://aitool-picks.com/posts/grammarlygo-review-2026.html
+- Gumroad Review 2026: Digital Products, Creator Economics, and What Actually Sells — https://aitool-picks.com/posts/gumroad-review-2026.html
+- Hugging Face AI Review 2026: Open Models, Inference, and Community Tools — https://aitool-picks.com/posts/hugging-face-ai-review-2026.html
+- 2026 年 Hugging Face 新模型：值得关注的方向 — https://aitool-picks.com/posts/hugging-face-new-models-2026-zh.html
+- New Open-Source AI Models on Hugging Face (2026 Tracker) — What's Worth Your Time — https://aitool-picks.com/posts/hugging-face-new-models-2026.html
+- Jasper AI Review 2026: Long-Form Content at Scale — Tested & Ranked — https://aitool-picks.com/posts/jasper-ai-review-2026.html
+- Jasper AI vs Writesonic: Which AI Writer Wins in 2026? — https://aitool-picks.com/posts/jasper-vs-writesonic.html
+- Kling AI Review 2026: Best Free AI Image & Video Generator Tested — https://aitool-picks.com/posts/kling-ai-review-2026.html
+- KoalaWriter Review 2026: Honest Hands-On Test & Verdict — https://aitool-picks.com/posts/koalawriter-review-2026.html
+- LangChain AI Review 2026: Building LLM Applications with Modular Chains — https://aitool-picks.com/posts/langchain-ai-review-2026.html
+- Make（原 Integromat）评测 2026：可视化自动化平台 — https://aitool-picks.com/posts/make-com-review-2026-zh.html
+- Make.com Review 2026: Visual Automation Without Code — https://aitool-picks.com/posts/make-com-review-2026.html
+- Market Data Analysis with AI: From Raw CSV to Actionable Trade Ideas — https://aitool-picks.com/posts/market-data-analysis-ai-2026.html
+- Mem AI Review 2026: Second Brain with Automatic Linking and Search — https://aitool-picks.com/posts/mem-ai-review-2026.html
+- Midjourney V7 Review 2026: AI Image-Generation Quality and Speed — https://aitool-picks.com/posts/midjourney-v7-review-2026.html
+- Notion AI Review 2026: Workspace Writing, Database Summaries, and Knowledge Management — https://aitool-picks.com/posts/notion-ai-review-2026.html
+- Top Open Source AI Models in 2026: Llama, Mistral, and Stable Diffusion Compared — https://aitool-picks.com/posts/open-source-ai-models-2026.html
+- Originality.ai 评测 2026：最准确的 AI 内容检测与查重工具？ — https://aitool-picks.com/posts/originality-ai-review-2026-zh.html
+- Originality.ai Review 2026: Best AI Content Detector & Plagiarism Checker? — AI Tool Picks — https://aitool-picks.com/posts/originality-ai-review-2026.html
+- Perplexity AI Review 2026: The Research-First Search Engine — https://aitool-picks.com/posts/perplexity-ai-review-2026.html
+- Replit AI Review 2026: Browser-Based Coding with Agentic Assistance — https://aitool-picks.com/posts/replit-ai-review-2026.html
+- Runway AI Review 2026: Generative Video, Effects, and the Gen-3 Model — https://aitool-picks.com/posts/runway-ai-review-2026.html
+- Runway ML Review 2026: Best AI Video Generator for Creators in 2026 — https://aitool-picks.com/posts/runway-ml-review-2026.html
+- Rytr 评测 2026：便宜好用的 AI 写作助手（附真实结论） — https://aitool-picks.com/posts/rytr-review-2026-zh.html
+- Rytr Review 2026: Best Budget AI Writing Assistant? — AI Tool Picks — https://aitool-picks.com/posts/rytr-review-2026.html
+- Sora AI Review 2026: Text-to-Video That Finally Understands Camera Language — https://aitool-picks.com/posts/sora-ai-review-2026.html
+- Synthesia 评测 2026：无需摄像机的 AI 数字人视频 — https://aitool-picks.com/posts/synthesia-review-2026-zh.html
+- Synthesia Review 2026: AI Avatar Videos Without a Camera — https://aitool-picks.com/posts/synthesia-review-2026.html
+- How to Track and Improve Your Brand's Visibility in AI Answers (2026) — https://aitool-picks.com/posts/track-brand-visibility-ai-search-2026.html
+- vidIQ 评测 2026：油管创作者的 SEO 套件 — https://aitool-picks.com/posts/vidiq-review-2026-zh.html
+- VidIQ Review 2026: YouTube Growth That Shows Its Work — https://aitool-picks.com/posts/vidiq-review-2026.html
+- Wordtune Review 2026: Best AI Writing Assistant for Clarity & Tone — https://aitool-picks.com/posts/wordtune-review-2026.html
+- Writesonic Review 2026: Best AI Writing Tool for Marketers? — AI Tool Picks — https://aitool-picks.com/posts/writesonic-review-2026.html
+- Zapier AI Review 2026: Automate Without Code Across 7,000+ Apps — https://aitool-picks.com/posts/zapier-ai-review-2026.html
+
+## tools
+- Copy.ai Review 2026: Best AI Copywriting Tool for GTM Teams? — AI Tool Picks — https://aitool-picks.com/tools/copy-ai.html
+- DeepL Review 2026: Most Accurate AI Translation Tool? — AI Tool Picks — https://aitool-picks.com/tools/deepl.html
+- Grammarly Review 2026: Best AI Writing Assistant? — AI Tool Picks — https://aitool-picks.com/tools/grammarly.html
+- Hemingway Editor Review 2026: Best Tool for Clear, Bold Writing? — AI Tool Picks — https://aitool-picks.com/tools/hemingway.html
+- Jasper AI Review 2026: Best Enterprise AI Writing Tool for Marketing? — AI Tool Picks — https://aitool-picks.com/tools/jasper.html
+- LanguageTool Review 2026: Best Open-Source Grammar Checker? — AI Tool Picks — https://aitool-picks.com/tools/languagetool.html
+- Notion AI Review 2026: Best AI Inside Your Workspace? — AI Tool Picks — https://aitool-picks.com/tools/notion-ai.html
+- QuillBot Review 2026: Best AI Paraphrasing Tool for Academic Writing? — AI Tool Picks — https://aitool-picks.com/tools/quillbot.html
+- Rytr Review 2026: Best Budget AI Writing Tool? — AI Tool Picks — https://aitool-picks.com/tools/rytr.html
+- Writesonic Review 2026: Best AI Writer for SEO Content Teams? — AI Tool Picks — https://aitool-picks.com/tools/writesonic.html
+

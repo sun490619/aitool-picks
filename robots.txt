@@ -35,4 +35,33 @@ Allow: /
 User-agent: GPTBot-Extended
 Allow: /
 
+# Chinese AI search engines & LLM crawlers — welcomed by name so they can read
+# and cite the Simplified-Chinese pages (index-zh / category/*-zh / posts/*-zh).
+User-agent: Baiduspider
+Allow: /
+User-agent: Baiduboxapp
+Allow: /
+User-agent: ErnieBot
+Allow: /
+User-agent: YisouSpider
+Allow: /
+User-agent: TencentBot
+Allow: /
+User-agent: Sogou web spider
+Allow: /
+User-agent: 360Spider
+Allow: /
+User-agent: Bytespider
+Allow: /
+User-agent: DeepSeekBot
+Allow: /
+User-agent: MoonshotBot
+Allow: /
+User-agent: Tongyi
+Allow: /
+User-agent: ZhipuAI
+Allow: /
+User-agent: Baichuan
+Allow: /
+
 Sitemap: https://aitool-picks.com/sitemap.xml
