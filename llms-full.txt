@@ -148,3 +148,17 @@ Independent, global AI tool reviews. This file lists every public page (English 
 - Rytr Review 2026: Best Budget AI Writing Tool? — AI Tool Picks — https://aitool-picks.com/tools/rytr.html
 - Writesonic Review 2026: Best AI Writer for SEO Content Teams? — AI Tool Picks — https://aitool-picks.com/tools/writesonic.html
 
+## New additions (2026-07-27 · FAQPage JSON-LD + AEO direct-answer intros)
+- ElevenLabs Review 2026 — https://aitool-picks.com/posts/elevenlabs-review-2026.html
+- ElevenLabs 评测 2026 — https://aitool-picks.com/posts/elevenlabs-review-2026-zh.html
+- Fliki Review 2026 — https://aitool-picks.com/posts/fliki-review-2026.html
+- Fliki 评测 2026 — https://aitool-picks.com/posts/fliki-review-2026-zh.html
+- ChatGPT Alternatives 2026 — https://aitool-picks.com/posts/chatgpt-alternatives-2026.html
+- ChatGPT 替代品 2026 — https://aitool-picks.com/posts/chatgpt-alternatives-2026-zh.html
+- Notion Alternatives 2026 — https://aitool-picks.com/posts/notion-alternatives-2026.html
+- Notion 替代品 2026 — https://aitool-picks.com/posts/notion-alternatives-2026-zh.html
+- Jasper Alternatives 2026 — https://aitool-picks.com/posts/jasper-alternatives-2026.html
+- Jasper 替代品 2026 — https://aitool-picks.com/posts/jasper-alternatives-2026-zh.html
+- Grammarly Alternatives 2026 — https://aitool-picks.com/posts/grammarly-alternatives-2026.html
+- Grammarly 替代品 2026 — https://aitool-picks.com/posts/grammarly-alternatives-2026-zh.html
+

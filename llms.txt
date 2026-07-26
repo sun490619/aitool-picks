@@ -125,3 +125,21 @@ An independent, global review site for AI tools — tested comparisons, buying g
 - Rytr 评测 2026：便宜好用的 AI 写作助手（附真实结论） — https://aitool-picks.com/posts/rytr-review-2026-zh.html
 - Synthesia 评测 2026：无需摄像机的 AI 数字人视频 — https://aitool-picks.com/posts/synthesia-review-2026-zh.html
 - vidIQ 评测 2026：油管创作者的 SEO 套件 — https://aitool-picks.com/posts/vidiq-review-2026-zh.html
+
+## Affiliate Reviews (2026-07-27 · 含 FAQPage JSON-LD + AEO 直接回答型导语)
+- ElevenLabs Review 2026: Still the Best AI Voice Generator? — https://aitool-picks.com/posts/elevenlabs-review-2026.html
+- Fliki Review 2026: AI Video from Text in Minutes — https://aitool-picks.com/posts/fliki-review-2026.html
+
+## Alternatives (AEO — "Alternative to X"，为被 ChatGPT/Perplexity 引用而写)
+- ChatGPT Alternatives 2026 — https://aitool-picks.com/posts/chatgpt-alternatives-2026.html
+- Notion Alternatives 2026 — https://aitool-picks.com/posts/notion-alternatives-2026.html
+- Jasper Alternatives 2026 — https://aitool-picks.com/posts/jasper-alternatives-2026.html
+- Grammarly Alternatives 2026 — https://aitool-picks.com/posts/grammarly-alternatives-2026.html
+
+### 中文新增（2026-07-27 · 同上 FAQ + AEO）
+- ElevenLabs 评测 2026 — https://aitool-picks.com/posts/elevenlabs-review-2026-zh.html
+- Fliki 评测 2026 — https://aitool-picks.com/posts/fliki-review-2026-zh.html
+- ChatGPT 替代品 2026 — https://aitool-picks.com/posts/chatgpt-alternatives-2026-zh.html
+- Notion 替代品 2026 — https://aitool-picks.com/posts/notion-alternatives-2026-zh.html
+- Jasper 替代品 2026 — https://aitool-picks.com/posts/jasper-alternatives-2026-zh.html
+- Grammarly 替代品 2026 — https://aitool-picks.com/posts/grammarly-alternatives-2026-zh.html
