@@ -145,22 +145,34 @@
         <p style="color:#6B7280;font-size:14px;">Updated July 11, 2026 · 10 min read</p>
         <p>GitHub Copilot is the AI coding assistant most developers actually use by default. It sits inside your editor, suggests completions as you type, and can generate whole functions from a comment. In 2026, the product added chat, CLI, and multi-file edit modes. The question is whether those additions justify the monthly fee for developers who were already using the inline completion feature.</p>
 
-        <h2>Inline Completions</h2>
+                <div class="toc" aria-label="Table of contents">
+            <p class="toc-title">What we cover</p>
+            <ul>
+                <li><a href="#inline-completions">Inline Completions</a></li>
+                <li><a href="#chat-and-cli">Chat and CLI</a></li>
+                <li><a href="#multi-file-edit">Multi-File Edit</a></li>
+                <li><a href="#privacy-and-training">Privacy and Training</a></li>
+                <li><a href="#comparison">Comparison</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#final-verdict">Final Verdict</a></li>
+            </ul>
+        </div>
+<h2 id="inline-completions">Inline Completions</h2>
         <p>Inline completions remain the strongest feature. Copilot predicts the next line or block with reasonable accuracy. We tested it across Python, TypeScript, Rust, and SQL. Accuracy is highest in languages with strong open-source training data. It is weakest in private codebases with custom domain logic. The latency is low enough that suggestions rarely break typing flow.</p>
 
-        <h2>Chat and CLI</h2>
+        <h2 id="chat-and-cli">Chat and CLI</h2>
         <p>The chat interface lets you ask questions about the current file or selected code. It is useful for explaining legacy code, rewriting a function to a different style, and generating unit tests from function signatures. The CLI mode wraps GitHub Copilot into a terminal tool. It is convenient for quick asks, but the chat interface usually produces better results for longer tasks.</p>
 
-        <h2>Multi-File Edit</h2>
+        <h2 id="multi-file-edit">Multi-File Edit</h2>
         <p>The multi-file edit feature lets Copilot suggest coordinated changes across related files. We tested it on refactoring a small repository from class components to functional components. It saved time on the mechanical replacements, but we still needed manual review on state management and side-effect logic. For simple renames, it is excellent. For architectural changes, it is a starting point, not a finished migration.</p>
 
-        <h2>Privacy and Training</h2>
+        <h2 id="privacy-and-training">Privacy and Training</h2>
         <p>Copilot has improved its privacy options. Enterprise administrators can block code snippets from leaving the organization. Individual users can opt out of code suggestions being used for model training. These settings matter in regulated industries. If your employer handles sensitive data, verify the enterprise compliance posture before enabling Copilot broadly.</p>
 
-        <h2>Comparison</h2>
+        <h2 id="comparison">Comparison</h2>
         <p>Compared with Cursor, Copilot is less invasive because it lives inside your existing editor and does not try to replace your IDE. Compared with Windsurf, Copilot has deeper integrations but a less modern interface. Compared with Tabnine, Copilot generates longer, more context-aware completions. The main competitor is still Cursor, which offers a more opinionated AI-native coding experience.</p>
 
-        <h2>Pricing</h2>
+        <h2 id="pricing">Pricing</h2>
         <ul>
             <li><strong>Free</strong>: limited completions per month for open-source maintainers and students</li>
             <li><strong>Individual ($10/month)</strong>: unlimited completions, chat, CLI</li>
@@ -168,18 +180,18 @@
             <li><strong>Enterprise ($39/user/month)</strong>: custom models, private repo indexing, dedicated support</li>
         </ul>
 
-        <h2>Final Verdict</h2>
+        <h2 id="final-verdict">Final Verdict</h2>
         <p>GitHub Copilot is no longer a novelty; it is baseline tooling for professional developers. The inline completion feature alone justifies the individual plan for anyone who codes regularly. The chat, CLI, and multi-file features are valuable but not essential. If you already use VS Code and want the lowest-friction AI assistant, Copilot is the most reliable choice in 2026.</p>
         <p><strong>Verdict: Recommended as the default AI coding assistant for VS Code users.</strong></p>
     
                 <section class="how-we-test" aria-label="How we test">
-                    <h2>How we test</h2>
+                    <h2 id="how-we-test">How we test</h2>
                     <p>Every tool on this page was used hands-on for real tasks &mdash; not skimmed from a press release. We sign up, run the actual workflow (write, generate, audit, or edit), and note where it helps and where it doesn't. Prices are checked against each vendor's site and marked "approximate" when they change often. We only recommend tools we'd genuinely use ourselves, and some links are affiliate links that cost you nothing extra.</p>
                 </section>
         </article>
 
     <section class="related-articles" aria-label="Related articles">
-      <h2>Related articles</h2>
+      <h2 id="related-articles">Related articles</h2>
       <p class="sub">More hands-on comparisons you might find useful.</p>
       <div class="grid">
         <a href="../posts/cursor-ai-code-editor-review-2026.html">

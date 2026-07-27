@@ -145,40 +145,52 @@
         <p style="color:#6B7280;font-size:14px;">Updated July 11, 2026 · 12 min read</p>
         <p>LangChain remains the most widely used framework for building applications with large language models. Its modular design separates prompts, memory, retrieval, and tool use into reusable pieces. That modularity is both LangChain's main strength and its main source of confusion. This review covers the pieces that matter for teams building production LLM apps, not experimental notebooks.</p>
 
-        <h2>Chains and Pipelines</h2>
+                <div class="toc" aria-label="Table of contents">
+            <p class="toc-title">What we cover</p>
+            <ul>
+                <li><a href="#chains-and-pipelines">Chains and Pipelines</a></li>
+                <li><a href="#agents-and-tool-use">Agents and Tool Use</a></li>
+                <li><a href="#memory">Memory</a></li>
+                <li><a href="#retrieval-and-rag">Retrieval and RAG</a></li>
+                <li><a href="#comparison">Comparison</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#final-verdict">Final Verdict</a></li>
+            </ul>
+        </div>
+<h2 id="chains-and-pipelines">Chains and Pipelines</h2>
         <p>A chain is a sequence of calls. LangChain's historical chain abstractions have been replaced by LCEL, the LangChain Expression Language. LCEL lets you compose prompts, models, and output parsers with a pipe syntax. That syntax is cleaner than the old chain classes and works better with streaming and async execution. For most new projects, start with LCEL instead of legacy chains.</p>
 
-        <h2>Agents and Tool Use</h2>
+        <h2 id="agents-and-tool-use">Agents and Tool Use</h2>
         <p>Agents decide which tool to call based on user input. LangChain supports OpenAI function calling, Anthropic tool use, and custom tool wrappers. We tested agents on search, database lookup, and file parsing tasks. The agent loop works reliably when tools are well documented and have clear failure modes. It degrades when tools return ambiguous errors or when the prompt does not constrain the tool selection space. Good tool design matters more than the agent model.</p>
 
-        <h2>Memory</h2>
+        <h2 id="memory">Memory</h2>
         <p>Memory lets applications remember previous interactions. LangChain offers buffer memory, summary memory, and vector memory. Buffer memory is fine for short conversations. Summary memory compresses older turns into a running summary. Vector memory stores embeddings and retrieves relevant past messages. For chatbots that need context beyond four thousand tokens, vector memory is usually the right starting point.</p>
 
-        <h2>Retrieval and RAG</h2>
+        <h2 id="retrieval-and-rag">Retrieval and RAG</h2>
         <p>Retrieval-augmented generation is the most common production pattern. LangChain's retriever interface works with vector stores, keyword search, and hybrid search. The framework supports a wide range of vector backends, including Pinecone, Weaviate, pgvector, and Qdrant. The retrieval step is often where production apps need the most tuning: chunk size, overlap, reranking, and metadata filtering all affect answer quality.</p>
 
-        <h2>Comparison</h2>
+        <h2 id="comparison">Comparison</h2>
         <p>Compared with LlamaIndex, LangChain is more general-purpose and has stronger tool and agent abstractions. LlamaIndex is more opinionated about retrieval and is often easier for pure RAG use cases. Compared with Haystack, LangChain has a larger community and more integrations. Compared with building directly on an LLM SDK, LangChain removes boilerplate at the cost of abstraction overhead. For teams that are iterating quickly, LangChain reduces the time from idea to prototype.</p>
 
-        <h2>Pricing</h2>
+        <h2 id="pricing">Pricing</h2>
         <ul>
             <li><strong>Open source</strong>: LangChain core is free</li>
             <li><strong>LangSmith ($9/month starter)</strong>: tracing, evaluation, monitoring</li>
             <li><strong>LangServe</strong>: serving layer for LangChain apps, free for small deployments</li>
         </ul>
 
-        <h2>Final Verdict</h2>
+        <h2 id="final-verdict">Final Verdict</h2>
         <p>LangChain is the default starting point for developers building LLM applications in 2026. The ecosystem is large, the abstractions are useful, and the community support is strong. The downside is that the framework changes quickly and documentation sometimes lags behind releases. If you choose LangChain, pin your dependency version and isolate framework code from business logic so upgrades do not become risky.</p>
         <p><strong>Verdict: Recommended as the primary framework for production LLM applications, with the caveat to stabilize versions early.</strong></p>
     
                 <section class="how-we-test" aria-label="How we test">
-                    <h2>How we test</h2>
+                    <h2 id="how-we-test">How we test</h2>
                     <p>Every tool on this page was used hands-on for real tasks &mdash; not skimmed from a press release. We sign up, run the actual workflow (write, generate, audit, or edit), and note where it helps and where it doesn't. Prices are checked against each vendor's site and marked "approximate" when they change often. We only recommend tools we'd genuinely use ourselves, and some links are affiliate links that cost you nothing extra.</p>
                 </section>
         </article>
 
     <section class="related-articles" aria-label="Related articles">
-      <h2>Related articles</h2>
+      <h2 id="related-articles">Related articles</h2>
       <p class="sub">More hands-on comparisons you might find useful.</p>
       <div class="grid">
         <a href="../posts/cursor-ai-code-editor-review-2026.html">

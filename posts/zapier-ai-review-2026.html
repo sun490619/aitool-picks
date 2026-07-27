@@ -145,16 +145,27 @@
         <p style="color:#6B7280;font-size:14px;">Updated July 11, 2026 · 10 min read</p>
         <p>Zapier is the automation layer most non-technical operators actually use. Its value proposition is simple: if two apps have APIs, Zapier probably connects them. In 2026, the platform added AI Actions and smarter filtering, which means you can insert an LLM step into any workflow without switching contexts or writing integration code.</p>
 
-        <h2>Interface and Learning Curve</h2>
+                <div class="toc" aria-label="Table of contents">
+            <p class="toc-title">What we cover</p>
+            <ul>
+                <li><a href="#interface-and-learning-curve">Interface and Learning Curve</a></li>
+                <li><a href="#ai-actions">AI Actions</a></li>
+                <li><a href="#reliability-and-error-handling">Reliability and Error Handling</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#comparison">Comparison</a></li>
+                <li><a href="#final-verdict">Final Verdict</a></li>
+            </ul>
+        </div>
+<h2 id="interface-and-learning-curve">Interface and Learning Curve</h2>
         <p>The Zapier interface is functional without being elegant. Zaps are built as linear if-then chains. Triggers start the flow. Actions do the work. Filters split the flow based on conditions. For simple automations, you can build a working Zap in five minutes. For complex workflows with branching, loops, and error handling, the interface becomes harder to debug. The platform now offers a cleaner editor with better error messages, but workflows with more than twelve steps still require discipline to keep readable.</p>
 
-        <h2>AI Actions</h2>
+        <h2 id="ai-actions">AI Actions</h2>
         <p>AI Actions let you call an LLM inside a Zap and use the output in downstream steps. For example, when a support ticket arrives, Zapier can summarize the issue, classify urgency, suggest a response template, and write the result to your CRM. The built-in action reduces the need for a separate script or middleware. The main limitation is that advanced prompt engineering is still limited by the action form fields. If you need complex system prompts or function calling, you will still want a custom webhook to an LLM provider.</p>
 
-        <h2>Reliability and Error Handling</h2>
+        <h2 id="reliability-and-error-handling">Reliability and Error Handling</h2>
         <p>Zapier runs on shared infrastructure. Outages are rare but they happen. The platform now includes retry policies and dead-letter queuing for failed steps. We recommend adding a final "notify me" step on every critical Zap so you know within minutes when something breaks. Without notification, failed automations can fail silently and damage customer experience before you notice.</p>
 
-        <h2>Pricing</h2>
+        <h2 id="pricing">Pricing</h2>
         <ul>
             <li><strong>Free</strong>: 100 tasks per month, five Zaps, single-step Zaps only</li>
             <li><strong>Starter ($20/month)</strong>: 2,000 tasks, multi-step Zaps, basic filters</li>
@@ -163,21 +174,21 @@
 <li><strong>Enterprise (custom pricing)</strong>: higher task volume, advanced permissions, dedicated support</li>
         </ul>
 
-        <h2>Comparison</h2>
+        <h2 id="comparison">Comparison</h2>
         <p>Compared with Make.com, Zapier is more expensive per task but has better app coverage and simpler onboarding. Compared with Pabbly, Zapier is faster to set up but costs more at volume. Compared with custom webhook code, Zapier is slower and less flexible, but it is operational in hours instead of days. For operators who need reliability over customization, Zapier is still the default choice.</p>
 
-        <h2>Final Verdict</h2>
+        <h2 id="final-verdict">Final Verdict</h2>
         <p>Zapier costs more than self-hosted alternatives, but it removes the maintenance burden of integrations. If your workflow is standard and you value uptime over per-task cost, Zapier is justified. If you run high-volume workflows with custom logic, evaluate Make.com or a small set of webhooks. For most small to mid-size operations in 2026, Zapier is the safest starting point.</p>
         <p><strong>Verdict: Recommended for teams that prioritize reliability and breadth over lowest unit cost.</strong></p>
     
                 <section class="how-we-test" aria-label="How we test">
-                    <h2>How we test</h2>
+                    <h2 id="how-we-test">How we test</h2>
                     <p>Every tool on this page was used hands-on for real tasks &mdash; not skimmed from a press release. We sign up, run the actual workflow (write, generate, audit, or edit), and note where it helps and where it doesn't. Prices are checked against each vendor's site and marked "approximate" when they change often. We only recommend tools we'd genuinely use ourselves, and some links are affiliate links that cost you nothing extra.</p>
                 </section>
         </article>
 
     <section class="related-articles" aria-label="Related articles">
-      <h2>Related articles</h2>
+      <h2 id="related-articles">Related articles</h2>
       <p class="sub">More hands-on comparisons you might find useful.</p>
       <div class="grid">
         <a href="../posts/open-source-ai-models-2026.html">

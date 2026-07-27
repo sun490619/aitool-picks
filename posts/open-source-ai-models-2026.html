@@ -145,37 +145,48 @@
         <p style="color:#6B7280;font-size:14px;">Updated July 12, 2026 · 12 min read</p>
         <p>Open source AI models became practical for production in 2026. The latest Llama release improved reasoning and code generation. Mistral released a compact model competitive with larger closed models on language and math tasks. Stable Diffusion extended its lead in local image generation with better composition and prompt adherence. This review compares the models that are worth running locally or hosting privately in 2026.</p>
 
-        <h2>Llama Models</h2>
+                <div class="toc" aria-label="Table of contents">
+            <p class="toc-title">What we cover</p>
+            <ul>
+                <li><a href="#llama-models">Llama Models</a></li>
+                <li><a href="#mistral-models">Mistral Models</a></li>
+                <li><a href="#stable-diffusion">Stable Diffusion</a></li>
+                <li><a href="#deployment-considerations">Deployment Considerations</a></li>
+                <li><a href="#comparison-summary">Comparison Summary</a></li>
+                <li><a href="#final-verdict">Final Verdict</a></li>
+            </ul>
+        </div>
+<h2 id="llama-models">Llama Models</h2>
         <p>Meta's latest Llama release is a strong general-purpose model. It performs well on reasoning, coding, and long-context tasks. The weights are available for research and commercial use under a permissive license. The main advantage of Llama is ecosystem support: most local inference tools, fine-tuning frameworks, and quantization formats support it first. If you want a single model family for multiple use cases, Llama is the lowest-risk choice.</p>
 
-        <h2>Mistral Models</h2>
+        <h2 id="mistral-models">Mistral Models</h2>
         <p>Mistral's compact models punch above their weight. A smaller Mistral checkpoint can match much larger models on structured tasks when the prompt is well designed. The advantage is cost: smaller models run on consumer GPUs and use less memory, which lowers inference cost for private deployments. Mistral also offers a good mix of open weights and hosted APIs for teams that want flexibility.</p>
 
-        <h2>Stable Diffusion</h2>
+        <h2 id="stable-diffusion">Stable Diffusion</h2>
         <p>Stable Diffusion remains the default for local and self-hosted image generation. The latest versions improved face consistency, text rendering, and style control. Open source image models benefit from community fine-tunes, LoRA packs, and ControlNet extensions. If you want full control over the generation pipeline or need to run it offline, Stable Diffusion is still the most mature option.</p>
 
-        <h2>Deployment Considerations</h2>
+        <h2 id="deployment-considerations">Deployment Considerations</h2>
         <p>Open source models require infrastructure decisions. Quantization reduces VRAM usage at a small accuracy cost. Hosting options range from local CPUs to dedicated GPU servers. Cloud GPUs are convenient but expensive at scale. Private hosting removes data-privacy concerns but adds operational overhead. The right choice depends on traffic volume, latency requirements, and compliance constraints.</p>
 
-        <h2>Comparison Summary</h2>
+        <h2 id="comparison-summary">Comparison Summary</h2>
         <ul>
             <li><strong>Llama</strong>: best general-purpose open model for reasoning, coding, and long context</li>
             <li><strong>Mistral</strong>: best compact model for private deployments with limited hardware</li>
             <li><strong>Stable Diffusion</strong>: best local image generation stack with community extensions</li>
         </ul>
 
-        <h2>Final Verdict</h2>
+        <h2 id="final-verdict">Final Verdict</h2>
         <p>Open source models are now production-ready for teams that prioritize data control, cost control, or offline operation. Closed models still lead on raw capability and convenience, but the gap shrinks every release. The smartest strategy in 2026 is to use open models where control and cost matter and closed models where capability and integration speed matter.</p>
         <p><strong>Verdict: Recommended as viable alternatives to closed models for private hosting and offline workflows.</strong></p>
     
                 <section class="how-we-test" aria-label="How we test">
-                    <h2>How we test</h2>
+                    <h2 id="how-we-test">How we test</h2>
                     <p>Every tool on this page was used hands-on for real tasks &mdash; not skimmed from a press release. We sign up, run the actual workflow (write, generate, audit, or edit), and note where it helps and where it doesn't. Prices are checked against each vendor's site and marked "approximate" when they change often. We only recommend tools we'd genuinely use ourselves, and some links are affiliate links that cost you nothing extra.</p>
                 </section>
         </article>
 
     <section class="related-articles" aria-label="Related articles">
-      <h2>Related articles</h2>
+      <h2 id="related-articles">Related articles</h2>
       <p class="sub">More hands-on comparisons you might find useful.</p>
       <div class="grid">
         <a href="../posts/best-free-ai-tools-students-2026.html">

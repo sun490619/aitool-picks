@@ -148,42 +148,52 @@
                 <p class="post-meta">更新于 2026 年 7 月 26 日</p>
             </header>
 
-            <p><strong>披露：</strong>本文含<a href="/affiliate-disclosure.html">联盟链接</a>。若你通过它们注册，我们可能获得佣金，且不会增加你的任何额外费用。我们只推荐亲手实测、真心认可的工具。</p>
-
-            <h2>链与管道</h2>
+            <p><strong>披露：</strong>本文含<a href="/affiliate-disclosure.html">联盟链接</a>。若你通过它们注册，我们可能获得佣金，且不会增加你的任何额外费用。我们只推荐亲手实测、真心认可的工具。</p>        <div class="toc" aria-label="Table of contents">
+            <p class="toc-title">本文覆盖什么</p>
+            <ul>
+                <li><a href="#链与管道">链与管道</a></li>
+                <li><a href="#agent">Agent 与工具调用</a></li>
+                <li><a href="#记忆">记忆</a></li>
+                <li><a href="#rag">检索与 RAG</a></li>
+                <li><a href="#对比">对比</a></li>
+                <li><a href="#价格">价格</a></li>
+                <li><a href="#最终结论">最终结论</a></li>
+            </ul>
+        </div>
+<h2 id="链与管道">链与管道</h2>
             <p>链是一串调用。LangChain 历史的链抽象已被 LCEL（LangChain Expression Language）取代。LCEL 让你用管道语法组合提示、模型和输出解析器。这种语法比旧链类更干净，且和流式、异步执行配合更好。多数新项目，从 LCEL 起步而非旧链。</p>
 
-            <h2>Agent 与工具调用</h2>
+            <h2 id="agent">Agent 与工具调用</h2>
             <p>Agent 根据用户输决定调哪个工具。LangChain 支持 OpenAI function calling、Anthropic tool use 和自定义工具包装。我们在搜索、数据库查询、文件解析任务上测了 Agent。当工具文档清晰、失败模式明确时，Agent 循环可靠；当工具返回模糊错误、或提示没约束工具选择空间时，它会退化。好的工具设计比 Agent 模型更重要。</p>
 
-            <h2>记忆</h2>
+            <h2 id="记忆">记忆</h2>
             <p>记忆让应用记住之前的互动。LangChain 提供缓冲记忆、摘要记忆和向量记忆。缓冲记忆对短对话够用。摘要记忆把较早的轮次压成运行中的摘要。向量记忆存 embedding 并检索相关历史消息。对需要超过 4000 token 上下文的聊天机器人，向量记忆通常是正确的起点。</p>
 
-            <h2>检索与 RAG</h2>
+            <h2 id="rag">检索与 RAG</h2>
             <p>检索增强生成（RAG）是最常见的生产模式。LangChain 的检索接口兼容向量库、关键词搜索和混合搜索。框架支持广泛的向量后端，含 Pinecone、Weaviate、pgvector、Qdrant。检索这步往往是生产应用最需要调优的地方：分块大小、重叠、重排、元数据过滤，都影响答案质量。</p>
 
-            <h2>对比</h2>
+            <h2 id="对比">对比</h2>
             <p>相比 LlamaIndex，LangChain 更通用、工具和 Agent 抽象更强。LlamaIndex 对检索更有主见，纯 RAG 用例常更易上手。相比 Haystack，LangChain 社区更大、集成更多。相比直接在 LLM SDK 上构建，LangChain 以抽象开销为代价去掉了样板代码。对快速迭代的团队，LangChain 缩短了从想法到原型的时间。</p>
 
-            <h2>价格</h2>
+            <h2 id="价格">价格</h2>
             <ul>
                 <li><strong>开源：</strong>LangChain 核心免费</li>
                 <li><strong>LangSmith（$9/月 起步）：</strong>追踪、评估、监控</li>
                 <li><strong>LangServe：</strong>LangChain 应用的部署层，小规模部署免费</li>
             </ul>
 
-            <h2>最终结论</h2>
+            <h2 id="最终结论">最终结论</h2>
             <p>LangChain 是 2026 年开发者构建 LLM 应用的默认起点。生态大、抽象有用、社区支持强。缺点是框架变化快、文档有时落后于发版。如果你选 LangChain，固定依赖版本、把框架代码和业务逻辑隔离，这样升级不会变冒险。</p>
             <p><strong>结论：推荐作为生产级 LLM 应用的主框架，但前提是尽早稳定版本。</strong></p>
 
             <section class="how-we-test" aria-label="我们的测试方法">
-                <h2>我们的测试方法</h2>
+                <h2 id="我们的测试方法">我们的测试方法</h2>
                 <p>本页每个工具我们都亲手用于真实任务——而不是从新闻稿里扫一眼。我们注册、跑真实工作流（写、生成、审计或编辑），并记录它帮得上和帮不上的地方。价格均对照各厂商官网核实，频繁变动时标注"约"。我们只推荐自己真的会用的工具，部分链接为联盟链接，不会增加您的额外费用。</p>
             </section>
         </div>
     </article>
     <section class="related-articles" aria-label="相关文章">
-      <h2>相关文章</h2>
+      <h2 id="相关文章">相关文章</h2>
       <p class="sub">更多你可能感兴趣的实测对比。</p>
       <div class="grid">
         <a href="../posts/ai-coding-review-2026-zh.html">
