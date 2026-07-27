@@ -1229,6 +1229,7 @@ html.dark .atp-features__header {
 .article-content code { font-family: var(--mono, "JetBrains Mono", monospace); background: var(--color-bg-muted); padding: 2px 6px; border-radius: 5px; font-size: .92em; }
 .article-content img { max-width: 100%; border-radius: 12px; }
 .post-hero { display: block; width: 100%; max-width: 760px; height: auto; margin: 0 auto 1.75rem; border-radius: 12px; }
+.post-figure { display: block; width: 100%; max-width: 720px; height: auto; margin: 1.75rem auto; border-radius: 12px; }
 .article-content table:not(.atp-compare__table) { width: 100%; border-collapse: collapse; font-size: .95rem; margin: 1.2rem 0; }
 .article-content table:not(.atp-compare__table) th, .article-content table:not(.atp-compare__table) td { border: 1px solid var(--border); padding: 10px 12px; text-align: left; }
 .article-content table:not(.atp-compare__table) th { background: var(--color-bg-muted); font-weight: 600; }
