@@ -1286,6 +1286,13 @@ html.dark .atp-features__header {
 .atp-callout.note .ico { background: #F59E0B; color: #fff; }
 .atp-callout.note .c-title { color: #B45309; }
 
+/* FAQ section (visible, mirrors FAQPage JSON-LD for valid rich results) */
+.faq-section { margin: 36px 0; }
+.faq-section h2 { font-size: 1.5rem; margin: 0 0 18px; }
+.faq-item { border: 1px solid var(--border, #e5e7eb); border-radius: 14px; padding: 16px 20px; margin-bottom: 14px; background: var(--card, #fff); }
+.faq-item h3 { font-size: 1.05rem; margin: 0 0 8px; line-height: 1.4; }
+.faq-item p { margin: 0; color: var(--text2, #555); line-height: 1.6; }
+
 .atp-callout.warning { background: rgba(239,68,68,.08); border-color: rgba(239,68,68,.3); }
 .atp-callout.warning .ico { background: #EF4444; color: #fff; }
 .atp-callout.warning .c-title { color: #B91C1C; }
