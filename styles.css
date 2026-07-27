@@ -1250,6 +1250,16 @@ html.dark .atp-features__header {
 .cta-box .cta-box-title { font-size: 1.05rem; font-weight: 700; margin: 0 0 8px; color: var(--accent); }
 .cta-box .cta-box-text { margin: 0; font-size: 1rem; line-height: 1.6; }
 
+/* ---- Verdict (pros/cons) boxes ---- */
+.verdict { background: rgba(16,185,129,.07); border: 1px solid rgba(16,185,129,.35); border-left: 4px solid #10b981; border-radius: 14px; padding: 16px 22px; margin: 22px auto; max-width: 760px; }
+.verdict.bad { background: rgba(239,68,68,.06); border-color: rgba(239,68,68,.35); border-left-color: #ef4444; }
+.verdict h3 { margin: 0 0 10px; font-size: 1.02rem; border: none; padding: 0; }
+.verdict h3::before { display: none; }
+.verdict ul { margin: 0; padding-left: 20px; }
+.verdict ul li { margin: 6px 0; }
+html.dark .verdict { background: rgba(16,185,129,.08); }
+html.dark .verdict.bad { background: rgba(239,68,68,.08); }
+
 /* ---- Affiliate / disclosure notes ---- */
 .affiliate-note { font-size: .82rem; color: var(--text2); border-top: 1px dashed var(--border); padding-top: 14px; margin: 36px auto 0; max-width: 760px; }
 .affiliate-note p { margin: 0; line-height: 1.6; }
