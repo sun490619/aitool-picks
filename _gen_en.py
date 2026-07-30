@@ -114,8 +114,8 @@ def build(slug, title, desc, h1, dateline, main_html, faq_json=None, og_image=No
       "headline": __JHEAD__,
       "description": __JDESC__,
       "inLanguage": "en",
-      "datePublished": "2026-07-26",
-      "dateModified": "2026-07-26",
+      "datePublished": "__DATE__",
+      "dateModified": "__DATE__",
       "author": {"@type": "Organization", "name": "AI Tool Picks Team"},
       "publisher": {"@type": "Organization", "name": "AI Tool Picks"},
       "mainEntityOfPage": {"@type": "WebPage", "@id": __JENURL__}
@@ -152,6 +152,7 @@ __FOOTER__</body>
             .replace("__JHEAD__", json.dumps(title, ensure_ascii=False))
             .replace("__JDESC__", json.dumps(desc, ensure_ascii=False))
             .replace("__JENURL__", json.dumps(en_url, ensure_ascii=False))
+            .replace("__DATE__", dateline)
             .replace("__FAQ__", faq_block)
             .replace("__HEADER__", CHROME_HEADER_EN)
             .replace("__MAIN__", main_html)
