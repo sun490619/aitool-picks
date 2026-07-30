@@ -8,7 +8,7 @@
 | og-best-ai-tools-for-affiliate-marketers-2026.jpg | 联盟营销者评测文 og/hero/封面 | https://images.unsplash.com/photo-1460925895917-afdab827c52f (Unsplash, analytics dashboard 场景) | Unsplash License（免费商用，站点规则 §13.1 允许） |
 | og-best-ai-tools-for-solopreneurs-2026.jpg | 独立创业者评测文 og/hero/封面 | https://images.unsplash.com/photo-1517245386807-bb43f82c33c4 (Unsplash, 独处笔记本工作场景) | Unsplash License（免费商用，站点规则 §13.1 允许） |
 | og-taskade-review-2026.jpg | Taskade 评测文 og/hero/封面（en+zh 共用） | https://live.staticflickr.com/697/33286674502_4fa8d4e22f_b.jpg (Openverse/Flickr, 团队会议协作场景) | CC0（Openverse license=cc0 检索） |
-| og-mindmapai-review-2026.jpg | MindMapAI 评测文 og/hero/封面（en+zh 共用） | https://live.staticflickr.com/65535/51612081969_92a127258a_b.jpg (Openverse/Flickr, 头脑风暴场景) | CC0（Openverse license=cc0 检索） |
+| og-mindmapai-review-2026.jpg | MindMapAI 评测文 og/hero/封面（en+zh 共用） | 代码原绘思维导图（非外部素材、非 AI 生成图、无水印）：深蓝渐变底 + 右侧"AI 中心节点辐射展开 5 分支(Text In/Topics/Expand/Outline/Export)"示意，对应"从文字生成、AI 展开节点" | 原创绘制（站点自有，无授权风险） |
 
 > 说明：以上 og 图均为「真实场景图（Unsplash / Openverse CC0 免费商用）+ 品牌模板叠加（半透明渐变遮罩 alpha150 深蓝 #0f172a→#1e3a8a + 左侧品牌竖条 #60a5fa + 白色标题 46px + AI Tool Picks 标）」，非纯渐变、非 AI 生成图，符合 13.1「og 社交图…非纯渐变、含真实场景图」要求。
 
