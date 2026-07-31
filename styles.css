@@ -1176,6 +1176,15 @@ html.dark .atp-features__header {
   padding: 2px 8px;
   border-radius: 999px;
 }
+/* thumbnail variant (2026-07-31): pull to card edges, fill top */
+.related-articles .r-thumb {
+  display: block;
+  height: 140px;
+  margin: -16px -16px 14px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px 12px 0 0;
+}
 @media (max-width: 720px) {
   .related-articles .grid { grid-template-columns: 1fr; }
 }
