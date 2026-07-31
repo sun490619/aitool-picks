@@ -179,6 +179,12 @@
         <p>拿定制简历和岗位信息，起草一封一页信。第一版合格但偏套话（"我对这个机会感到兴奋"）；补一句关于公司语气的一行简介后，成稿明显更锋利。作为起点很好，但不是终稿。</p>
         <h3 id="interview">面试准备</h3>
         <p>从岗位信息生成可能的问题，外加干净的要点式回答。适合梳理框架，但答案偏安全、偏模板——你绝不会想在真实面试里照念。把它当备忘提纲，别当台词。</p>
+        <h3 id="auto-apply">自动投递</h3>
+        <p>除了帮你写，AIApply 还能替你投：它把你的资料匹配到合适的岗位，并自动提交定制化申请。量大时确实省事，但我们仍建议每份都扫一眼——让机器人一口气投出几百份而不检查，很容易让招聘方觉得"这人怎么哪都有"。</p>
+        <h3 id="ats">ATS 扫描</h3>
+        <p>内置的 ATS 扫描器会按真实招聘系统用的关键词过滤器检查你的简历，并标出薄弱处。它能帮你投递前做一遍预检，但不是保证——把分数当提示，别当圣旨。</p>
+        <h3 id="import">LinkedIn 导入与职位追踪</h3>
+        <p>你可以用 LinkedIn 账号直接导入背景信息，不必重填一遍；追踪看板则把每份申请的状态和后续动作集中在一处。实测中导入帮我们省下了不少前期时间。</p>
 
         <h2 id="pricing">价格</h2>
         <p>AIApply 采用积分/订阅模式。有少量免费额度可试用一次简历定制；付费档解锁无限定制、求职信与面试准备。我们不给具体数字——它们会变——但付费方案落在"比请简历写手一小时还便宜"的区间，如果你在大量投递，这才是该比的参照。</p>
@@ -194,6 +200,9 @@
             <li>简历定制读起来像你本人，不像模板</li>
             <li>求职信从空白页到像样初稿，一次搞定</li>
             <li>面试准备能快速框定该问的问题</li>
+            <li>自动投递能把定制能力放大到几百个岗位</li>
+            <li>ATS 扫描在发送前标出关键词缺口</li>
+            <li>LinkedIn 导入 + 追踪看板让一切集中在一处</li>
             <li>大量投递时，远比请真人简历写手便宜</li>
           </ul>
         </div>
@@ -202,7 +211,7 @@
           <ul>
             <li>面试答案偏模板，不该照念</li>
             <li>求职信第一版需要轻量润色</li>
-            <li>没有我们信得过的深度 ATS 评分说法</li>
+            <li>自动投递在发出前仍建议人工扫一眼</li>
             <li>质量取决于你基础简历的质量</li>
           </ul>
         </div>
@@ -269,21 +278,72 @@
     </section>
   </article>
 </main>
-    <footer class="site-footer">
-        <div class="container footer-inner">
-            <div class="footer-brand">
-                <a href="/" class="footer-logo"><span class="brand-mark">ATP</span>AI Tool Picks</a>
-                <p class="footer-desc">诚实、实手的 AI 工具评测。先测，再信。</p>
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="/" class="footer-logo"><span class="brand-mark">ATP</span>AI Tool Picks</a>
+                    <p class="footer-desc">对最佳 AI 工具诚实对比与评测。亲手实测、独立撰写、绝无废话。</p>
+                    <div class="footer-social">
+                        <a href="https://x.com/wangqwkl" target="_blank" rel="noopener noreferrer" aria-label="X">
+                            <svg viewbox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" /></svg>
+                        </a>
+                        <a href="https://github.com/sun490619" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <svg viewbox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.536-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" /></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4>分类</h4>
+                    <ul class="footer-links">
+                        <li><a href="/category/writing-zh.html">AI 写作工具</a></li>
+                        <li><a href="/category/coding-zh.html">AI 编程助手</a></li>
+                        <li><a href="/category/video-zh.html">AI 视频生成器</a></li>
+                        <li><a href="/category/seo-zh.html">AI SEO 工具</a></li>
+                        <li><a href="/category/productivity-zh.html">AI 效率与综合</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>热门评测</h4>
+                    <ul class="footer-links">
+                        <li><a href="/posts/jasper-vs-writesonic-zh.html">Jasper vs Writesonic</a></li>
+                        <li><a href="/posts/best-ai-seo-tools-2026-zh.html">最佳 AI SEO 工具</a></li>
+                        <li><a href="/category/writing-zh.html">全部写作工具</a></li>
+                        <li><a href="/category/seo-zh.html">全部 SEO 工具</a></li>
+                        <li><a href="/category/productivity-zh.html">全部效率与综合</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>更多站点</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://mintshovels.com/" target="_blank" rel="noopener">MintShovels — 免费 SEO 审计工具</a></li>
+                        <li><a href="https://makerearn.com/" target="_blank" rel="noopener">makerearn — 免费赚钱计算器</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>资源</h4>
+                    <ul class="footer-links">
+                        <li><a href="/suggest-tool-zh.html">推荐工具</a></li>
+                        <li><a href="/affiliate-disclosure-zh.html">联盟披露</a></li>
+                        <li><a href="/privacy-zh.html">隐私政策</a></li>
+                        <li><a href="#bd-subscribe">订阅通讯</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-links">
-                <a href="/about.html">About</a>
-                <a href="/contact.html">Contact</a>
-                <a href="/affiliate-disclosure.html">Affiliate Disclosure</a>
-                <a href="/privacy.html">Privacy</a>
+
+            <div class="footer-bottom">
+                <p>© 2026 AI Tool Picks. 保留所有权利。</p>
+            <p class="last-updated">Last updated: July 27, 2026</p>
+                <div class="flex gap-3">
+                    <a href="/privacy-zh.html">隐私政策</a>
+                    <a href="/affiliate-disclosure-zh.html">联盟披露</a>
+                </div>
             </div>
         </div>
-        <p class="copyright">© 2026 AI Tool Picks. Independent reviews.</p>
-        <p class="last-updated">最后更新：2026年7月31日</p>
     </footer>
     <script src="/shared.js"></script>
     <script src="/scripts.js"></script>
