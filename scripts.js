@@ -286,27 +286,13 @@ window.AIToolPicks = {
   if (!grid || !pagination) return;
 
   const cards = Array.from(grid.querySelectorAll('article.post-card'));
-  const categories = ['writing', 'coding', 'video', 'seo'];
+  // 分类由HTML的data-category属性决定（已在构建时正确标注），JS不再覆盖
   const PER_PAGE = 8;
   let currentCategory = 'all';
   let currentPage = 1;
   let currentSearch = '';
 
-  function assignCategory(card, idx) {
-    const link = card.querySelector('.post-card-title a');
-    if (!link) return;
-    const href = link.getAttribute('href') || '';
-    if (href.includes('coding') || href.includes('deepseek') || href.includes('cursor')) {
-      card.dataset.category = 'coding';
-    } else if (href.includes('video') || href.includes('kling') || href.includes('runway')) {
-      card.dataset.category = 'video';
-    } else if (href.includes('seo') || href.includes('frase') || href.includes('originality')) {
-      card.dataset.category = 'seo';
-    } else {
-      card.dataset.category = 'writing';
-    }
-  }
-  cards.forEach((c, i) => assignCategory(c, i));
+  // data-category 已在HTML中正确标注，无需JS再覆盖
 
   function matchesSearch(card) {
     if (!currentSearch) return true;
