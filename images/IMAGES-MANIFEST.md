@@ -9,6 +9,8 @@
 | og-best-ai-tools-for-solopreneurs-2026.jpg | 独立创业者评测文 og/hero/封面 | https://images.unsplash.com/photo-1517245386807-bb43f82c33c4 (Unsplash, 独处笔记本工作场景) | Unsplash License（免费商用，站点规则 §13.1 允许） |
 | og-taskade-review-2026.jpg | Taskade 评测文 og/hero/封面（en+zh 共用） | https://live.staticflickr.com/697/33286674502_4fa8d4e22f_b.jpg (Openverse/Flickr, 团队会议协作场景) | CC0（Openverse license=cc0 检索） |
 | og-mindmapai-review-2026.jpg | MindMapAI 评测文 og/hero/封面（en+zh 共用） | 真实思维导图照片(Wikimedia Commons: "A Mind Map on ICT and Pedagogy", 作者 MuPaily, CC BY-SA 4.0) → 灰度反相成深色底 + 轻量深蓝品牌遮罩(alpha110) + 左侧竖条 + 标题；线条可见、主题贴合"思维导图" | CC BY-SA 4.0（署名 MuPaily / Wikimedia Commons，免费商用，已记录） |
+| og-aiapply-review-2026.jpg | AIApply 评测文 og/hero/封面（en+zh 共用） | https://live.staticflickr.com/364/20065176482_8b862d0746_b.jpg (Openverse/Flickr, 求职面试场景照, 主题贴合"求职/简历") | CC0（Openverse license=cc0 检索, 作者 edward_rooks） |
+| og-mockey-review-2026.jpg | Mockey.ai 评测文 og/hero/封面（en+zh 共用） | https://live.staticflickr.com/65535/51330631769_0922d85d6e_b.jpg (Openverse/Flickr, 化妆品产品 mockup 场景照, 主题贴合"产品图/mockup 生成器") | CC0（Openverse license=cc0 检索） |
 
 > 说明：以上 og 图均为「真实场景图（Unsplash / Openverse CC0 免费商用）+ 品牌模板叠加（半透明渐变遮罩 alpha150 深蓝 #0f172a→#1e3a8a + 左侧品牌竖条 #60a5fa + 白色标题 46px + AI Tool Picks 标）」，非纯渐变、非 AI 生成图，符合 13.1「og 社交图…非纯渐变、含真实场景图」要求。
 
