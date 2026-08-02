@@ -218,7 +218,7 @@ def check_seo():
                 content = f.read()
             if 'canonical' not in content:
                 no_canonical.append(rel)
-            if 'G-D53DQ3JKKL' not in content:
+            if 'G-TX6NMK2GVX' not in content:
                 no_ga4.append(rel)
             if 'og:title' not in content:
                 no_og.append(rel)

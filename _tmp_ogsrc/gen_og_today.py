@@ -30,10 +30,10 @@ def make_og(out, scene_url, title):
     d = ImageDraw.Draw(overlay)
     for y in range(H):
         t = y / H
-        r = int(15 + (30 - 15) * t)
-        g = int(23 + (58 - 23) * t)
-        b = int(42 + (138 - 42) * t)
-        d.line([(0, y), (W, y)], fill=(r, g, b, 150))
+        r = int(8 + (20 - 8) * t)
+        g = int(14 + (40 - 14) * t)
+        b = int(30 + (110 - 30) * t)
+        d.line([(0, y), (W, y)], fill=(r, g, b, 188))
     img = Image.alpha_composite(base.convert("RGBA"), overlay)
     d = ImageDraw.Draw(img)
     d.rectangle([80, 90, 168, 630], fill=(96, 165, 250))
