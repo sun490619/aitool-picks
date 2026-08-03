@@ -86,6 +86,69 @@
   });
 
   // ========================================
+  // SHARE BUTTONS
+  // ========================================
+  // Article pages render three buttons tagged with data-share="twitter|linkedin|copy".
+  // They previously had no behaviour at all, so clicking them did nothing.
+
+  function flashCopied(button) {
+    var original = button.getAttribute('aria-label') || '';
+    button.classList.add('share-btn-copied');
+    button.setAttribute('aria-label', 'Link copied');
+    setTimeout(function() {
+      button.classList.remove('share-btn-copied');
+      button.setAttribute('aria-label', original);
+    }, 1600);
+  }
+
+  function copyLink(url, button) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(url).then(function() {
+        flashCopied(button);
+      }).catch(function() {
+        legacyCopy(url, button);
+      });
+    } else {
+      legacyCopy(url, button);
+    }
+  }
+
+  function legacyCopy(url, button) {
+    var field = document.createElement('textarea');
+    field.value = url;
+    field.setAttribute('readonly', '');
+    field.style.position = 'fixed';
+    field.style.opacity = '0';
+    document.body.appendChild(field);
+    field.select();
+    try { document.execCommand('copy'); flashCopied(button); } catch (err) {}
+    document.body.removeChild(field);
+  }
+
+  document.addEventListener('click', function(e) {
+    var button = e.target.closest('[data-share]');
+    if (!button) return;
+    e.preventDefault();
+    var url = window.location.href;
+    var title = document.title || '';
+    var action = button.getAttribute('data-share');
+    if (action === 'twitter') {
+      window.open(
+        'https://twitter.com/intent/tweet?url=' + encodeURIComponent(url) +
+        '&text=' + encodeURIComponent(title),
+        '_blank', 'noopener,width=600,height=460'
+      );
+    } else if (action === 'linkedin') {
+      window.open(
+        'https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(url),
+        '_blank', 'noopener,width=600,height=460'
+      );
+    } else if (action === 'copy') {
+      copyLink(url, button);
+    }
+  });
+
+  // ========================================
   // LANGUAGE: Switch between REAL bilingual pages only
   // ========================================
   // aitool-picks is English-primary. A curated set of article pages have a

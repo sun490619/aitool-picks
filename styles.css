@@ -327,6 +327,28 @@ html.dark .theme-toggle-btn:hover { background: rgba(255, 255, 255, .16); }
 /* Desktop header toggle: hidden on mobile (drawer has its own), compact on desktop */
 .theme-toggle-desktop { display: none; width: auto; padding: 8px 12px; margin-left: 8px; }
 
+/* ---- Article share buttons ---- */
+.share-buttons { display: flex; gap: 8px; align-items: center; }
+.share-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 1px solid var(--border, #E5E7EB);
+  border-radius: 10px;
+  background: transparent;
+  color: var(--text-muted, #6B7280);
+  cursor: pointer;
+  transition: background .15s ease, color .15s ease, border-color .15s ease;
+}
+.share-btn:hover { background: #F3F4F6; color: var(--accent, #2563EB); border-color: var(--accent, #2563EB); }
+.share-btn:focus-visible { outline: 2px solid var(--accent, #2563EB); outline-offset: 2px; }
+.share-btn-copied { background: rgba(16, 185, 129, .12); color: #059669; border-color: #059669; }
+html.dark .share-btn { border-color: rgba(255, 255, 255, .16); }
+html.dark .share-btn:hover { background: rgba(255, 255, 255, .08); }
+
 /* ---- Hero ---- */
 .hero {
   padding: 64px 0 32px;
