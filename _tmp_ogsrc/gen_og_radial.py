@@ -26,6 +26,10 @@ GAUSS_SIGMA = 35                # 高斯平滑半径(px)
 
 
 def download(url):
+    """加载底图：支持 HTTP URL 或本地文件路径"""
+    if url.startswith("file://") or url.startswith("/"):
+        path = url.replace("file://", "")
+        return Image.open(path).convert("RGB")
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
     return Image.open(io.BytesIO(urllib.request.urlopen(req, timeout=40).read())).convert("RGB")
 
@@ -58,9 +62,13 @@ def make_og(out_path, title, scene_url):
     overlay = radial_vignette_mask(W, H)
     img = Image.alpha_composite(base.convert("RGBA"), overlay)
 
-    # ③ 左侧竖条（品牌标识，细线 8px 宽，与 golden master 一致）
+    # ③ 左侧竖条（品牌标识·坐标铁律·2026-08-05 血的教训两次）
+    # ✅ 正确: [80, 90, 88, 540] — 宽8px, y从90到540(距底边90px,不触底!)
+    # ❌ 错误1: x2=168 (宽88px粗块,比GM粗11倍)
+    # ❌ 错误2: y2=630 (触底/"入地",比GM多90px)
+    # golden master 三张实测全一致: y=90→540, 距底边 exactly 90px
     draw = ImageDraw.Draw(img)
-    draw.rectangle([80, 90, 88, 630], fill=(96, 165, 250))
+    draw.rectangle([80, 90, 88, 540], fill=(96, 165, 250))
 
     # ④ 标题文字
     lines = textwrap.wrap(title, 30)[:5]
