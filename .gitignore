@@ -6,3 +6,8 @@ _perf_check.js
 # test artifacts
 _price_fetch.js
 node_modules/
+
+# 验证截图/本地备份不入库
+_preview/
+*.bak
+styles.css.bak*
