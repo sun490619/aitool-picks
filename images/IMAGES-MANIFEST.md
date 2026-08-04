@@ -10,7 +10,7 @@
 | og-taskade-review-2026.jpg | Taskade 评测文 og/hero/封面（en+zh 共用） | https://live.staticflickr.com/697/33286674502_4fa8d4e22f_b.jpg (Openverse/Flickr, 团队会议协作场景) | CC0（Openverse license=cc0 检索） |
 | og-mindmapai-review-2026.jpg | MindMapAI 评测文 og/hero/封面（en+zh 共用） | 真实思维导图照片(Wikimedia Commons: "A Mind Map on ICT and Pedagogy", 作者 MuPaily, CC BY-SA 4.0) → 灰度反相成深色底 + 轻量深蓝品牌遮罩(alpha110) + 左侧竖条 + 标题；线条可见、主题贴合"思维导图" | CC BY-SA 4.0（署名 MuPaily / Wikimedia Commons，免费商用，已记录） |
 | og-aiapply-review-2026.jpg | AIApply 评测文 og/hero/封面（en+zh 共用） | https://cdn.stocksnap.io/img-thumbs/960w/FBXB2DA8O7.jpg (Stocksnap CC0, 电脑笔记本办公桌场景照, 主题贴合"求职/在线工具/电脑工作") | CC0（Stocksnap, 免费商用） |
-| og-mockey-review-2026.jpg | Mockey.ai 评测文 og/hero/封面（en+zh 共用） | https://live.staticflickr.com/65535/51330631769_0922d85d6e_b.jpg (Openverse/Flickr, 化妆品产品 mockup 场景照, 主题贴合"产品图/mockup 生成器") | CC0（Openverse license=cc0 检索） |
+| og-mockey-review-2026.jpg | Mockey.ai 评测文 og/hero/封面（en+zh 共用） | https://cdn.stocksnap.io/img-thumbs/960w/13UNSPJHCZ.jpg (Openverse/Stocksnap, 工作桌/电商场景照, 主题贴合"产品图/mockup 生成器") | CC0（Openverse license=cc0 检索） | 2026-08-04 重做：原化妆品产品 mockup 照背景偏纯色(uniq=1129)触发留白铁律，换成更饱满场景照(uniq=4323) |
 | og-neuronwriter-review-2026.jpg | NeuronWriter 评测文 og/hero/封面（en+zh 共用） | https://live.staticflickr.com/65535/53879850453_0e3a779d51_b.jpg (Openverse/Flickr, 内容营销/SEO 写作场景照, 主题贴合"SEO 内容优化") | CC0（Openverse license=cc0 检索） |
 | og-coursebox-review-2026.jpg | Coursebox 评测文 og/hero/封面（en+zh 共用） | https://live.staticflickr.com/5169/5378305870_b02c3412da_b.jpg (Openverse/Flickr, 在线学习/课程场景照, 主题贴合"AI 课程生成") | CC0（Openverse license=cc0 检索） |
 
