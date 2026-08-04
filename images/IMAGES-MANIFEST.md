@@ -21,6 +21,22 @@
 | og-best-ai-tools-for-landing-pages-2026.jpg | 落地页&漏斗指南 og/hero/封面 | https://images.unsplash.com/photo-1547658719-da2b51169166 (Unsplash, 显示器展示"Designing landing pages for conversion"代码+网页设计稿+平板app概念图, 主题高度贴合"落地页开发/转化率优化") | Unsplash License（免费商用, 08-05 新增: 从纯蓝渐变❌违规→换为landing page代码设计工作站✅✅） |
 | og-chatgpt-alternatives-2026.jpg | ChatGPT替代品评测文 og/hero/封面（en+zh 共用） | https://images.unsplash.com/photo-1531746790095-e59a09f7c1c4 (Unsplash, 人指向笔记本屏幕/科技工作场景, 主题贴合"AI对话/聊天工具替代品") | Unsplash License（免费商用，08-05 从纯渐变重做为CC0真实照+径向暗角） |
 | og-jasper-alternatives-2026.jpg | Jasper AI替代品评测文 og/hero/封面（en+zh 共用） | https://images.unsplash.com/photo-1501504905252 (Unsplash, 笔记本屏幕显示CMS/文本编辑器界面/咖啡厅创作场景, 主题高度贴合"AI文案工具/Copy.ai-Writesonic数字内容创作工作区") | Unsplash License（免费商用, 08-05 第三次修正: 从钢笔(弱相关)→清单(仍analog)→最终换为CMS编辑器界面(digital✅)） |
+| og-best-ai-copywriting-tools-2026.jpg | 最佳AI文案工具指南 og/hero/封面（en+zh 共用） | https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d (Unsplash, MacBook屏幕显示文字/写作界面/数字写作工作区, 主题高度贴合"AI文案写作工具/内容创作") | Unsplash License（免费商用, 08-05 修正: 从纯蓝渐变❌违规→换为MacBook写作界面真实照✅+golden master模板; 标题亮度134.9 四角4/4蓝） |
+| og-grammarly-alternatives-2026.jpg | Grammarly替代品指南 og/hero/封面（en+zh 共用） | 现存真实照片(像素分析 uniq=5327 带golden master竖条, 08-05 核查保留未换) | 待补来源(现存真实照, 非渐变非AI, 按"能用就不换"保留) |
+| og-klap-review-2026.jpg | Klap 评测文 og/hero/封面（en+zh 共用） | 现存真实照片(uniq=81029, 08-05 核查保留未换) | 待补来源(现存真实照, 按"能用就不换"保留) |
+| og-palabra-review-2026.jpg | Palabra 评测文 og/hero/封面（en+zh 共用） | 现存真实照片(uniq=55876, 08-05 核查保留未换) | 待补来源(现存真实照, 按"能用就不换"保留) |
+| og-notion-alternatives-2026.jpg | Notion替代品指南 og/hero/封面（en+zh 共用） | 现存真实照片(uniq=5168 带golden master竖条, 08-05 核查保留未换) | 待补来源(现存真实照, 非渐变非AI, 按"能用就不换"保留) |
+| og-elevenlabs-review-2026.jpg | ElevenLabs 评测文 og/hero/封面（en+zh 共用） | 现存真实照片(uniq=105076, 08-05 核查保留未换) | 待补来源(现存真实照, 按"能用就不换"保留) |
+| og-simplified-review-2026.jpg | Simplified 评测文 og/hero/封面（en+zh 共用） | 现存真实照片(uniq=114044, 08-05 核查保留未换) | 待补来源(现存真实照, 按"能用就不换"保留) |
+| og-headlime-review-2026.jpg | Headlime 评测文 og/hero/封面（en+zh 共用） | 现存真实照片(uniq=94892, 08-05 核查保留未换) | 待补来源(现存真实照, 按"能用就不换"保留) |
+| og-fliki-review-2026.jpg | Fliki 评测文 og/hero/封面（en+zh 共用） | 现存真实照片(uniq=87619, 08-05 核查保留未换) | 待补来源(现存真实照, 按"能用就不换"保留) |
+| og-submagic-review-2026.jpg | Submagic 评测文 og/hero/封面（en+zh 共用） | 现存真实照片(uniq=54580, 08-05 核查保留未换) | 待补来源(现存真实照, 按"能用就不换"保留) |
+| og-customgpt-review-2026.jpg | CustomGPT 评测文 og/hero/封面（en+zh 共用） | 现存真实照片(uniq=51047, 08-05 核查保留未换) | 待补来源(现存真实照, 按"能用就不换"保留) |
+| og-rewardful-review-2026.jpg | Rewardful 评测文 og/hero/封面（en+zh 共用） | 现存真实照片(uniq=64339, 08-05 核查保留未换) | 待补来源(现存真实照, 按"能用就不换"保留) |
+| og-best-ai-website-builders-2026.jpg | 最佳AI建站工具指南 og/hero/封面（en+zh 共用） | 现存真实照片(uniq=67103, 08-05 核查保留未换) | 待补来源(现存真实照, 按"能用就不换"保留) |
+| og-synthesia-review-2026.jpg | Synthesia 评测文 og/hero/封面（en+zh 共用） | 现存真实照片(uniq=41636, 08-05 核查保留未换) | 待补来源(现存真实照, 按"能用就不换"保留) |
+| og-vidiq-review-2026.jpg | VidIQ 评测文 og/hero/封面（en+zh 共用） | 现存真实照片(uniq=55140, 08-05 核查保留未换) | 待补来源(现存真实照, 按"能用就不换"保留) |
+| og-getgenie-review-2026.jpg | GetGenie 评测文 og/hero/封面（en+zh 共用） | 现存真实照片(uniq=58679, 08-05 核查保留未换) | 待补来源(现存真实照, 按"能用就不换"保留) |
 
 > 说明：以上 og 图均为「真实场景图（Unsplash / Openverse CC0 免费商用）+ 品牌模板叠加（**深蓝径向暗角遮罩**：中心 alpha≈0.45 → 四角≈0.70，颜色 B>G>R 的干净蓝 RGB≈(25,38,58)；+ 左侧品牌竖条 #60a5fa + 白色标题 46px + AI Tool Picks 标）」，非纯渐变、非 AI 生成图，符合 13.1「og 社交图…非纯渐变、含真实场景图」要求。
 
@@ -56,6 +72,11 @@
 - `og-best-ai-tools-for-affiliate-marketers-2026.jpg`（Unsplash 仪表盘场景）
 - `og-best-ai-tools-for-solopreneurs-2026.jpg`（Unsplash 笔记本场景）
 任何新 og 图上线前，与这 3 张并排比：暗角形态一致？遮罩是干净蓝（非紫红）？白字清晰度一致？不一致即重做。
+
+**⑨ 同一篇文章 EN/ZH 共用一张 og 图（2026-08-05 用户确立·铁律）**：
+- 同一篇文章的英文页与中文页**必须引用同一个 og 文件**（如 `coursebox-review-2026.html` 与 `coursebox-review-2026-zh.html` 都引用 `og-coursebox-review-2026.jpg`）。
+- **改图即同步**：修改某篇文章的 og 图时，只需改那一个共享文件，EN/ZH 自动同步。**禁止为同一篇文章制造两张不同的 og 图**（历史遗留的 `og-*-zh.jpg` 孤儿文件若未被任何页面引用，不得当作"该文章的 ZH 图"使用，应保持与 EN 同一张）。
+- 不同文章之间：og 图底图必须互不相同（不重复铁律，见 ①）。
 
 **⑧ 部署前强制检查清单（2026-08-05 用户确立·每次生成/修改后必须逐条勾选，缺一不可部署）**
 
