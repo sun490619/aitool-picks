@@ -58,9 +58,9 @@ def make_og(out_path, title, scene_url):
     overlay = radial_vignette_mask(W, H)
     img = Image.alpha_composite(base.convert("RGBA"), overlay)
 
-    # ③ 左侧竖条
+    # ③ 左侧竖条（品牌标识，细线 8px 宽，与 golden master 一致）
     draw = ImageDraw.Draw(img)
-    draw.rectangle([80, 90, 168, 630], fill=(96, 165, 250))
+    draw.rectangle([80, 90, 88, 630], fill=(96, 165, 250))
 
     # ④ 标题文字
     lines = textwrap.wrap(title, 30)[:5]
