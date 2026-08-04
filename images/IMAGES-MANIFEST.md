@@ -14,7 +14,7 @@
 | og-neuronwriter-review-2026.jpg | NeuronWriter 评测文 og/hero/封面（en+zh 共用） | https://live.staticflickr.com/65535/53879850453_0e3a779d51_b.jpg (Openverse/Flickr, 内容营销/SEO 写作场景照, 主题贴合"SEO 内容优化") | CC0（Openverse license=cc0 检索） |
 | og-coursebox-review-2026.jpg | Coursebox 评测文 og/hero/封面（en+zh 共用） | https://live.staticflickr.com/5169/5378305870_b02c3412da_b.jpg (Openverse/Flickr, 在线学习/课程场景照, 主题贴合"AI 课程生成") | CC0（Openverse license=cc0 检索） |
 | og-chatgpt-alternatives-2026.jpg | ChatGPT替代品评测文 og/hero/封面（en+zh 共用） | https://images.unsplash.com/photo-1531746790095-e59a09f7c1c4 (Unsplash, 人指向笔记本屏幕/科技工作场景, 主题贴合"AI对话/聊天工具替代品") | Unsplash License（免费商用，08-05 从纯渐变重做为CC0真实照+径向暗角） |
-| og-jasper-alternatives-2026.jpg | Jasper AI替代品评测文 og/hero/封面（en+zh 共用） | https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b (Unsplash, 手写清单/内容规划场景, 主题贴合"AI写作工具/内容营销工作流") | Unsplash License（免费商用，08-05 从纯渐变重做+从钢笔(弱相关)换为清单照+径向暗角） |
+| og-jasper-alternatives-2026.jpg | Jasper AI替代品评测文 og/hero/封面（en+zh 共用） | https://images.unsplash.com/photo-1501504905252 (Unsplash, 笔记本屏幕显示CMS/文本编辑器界面/咖啡厅创作场景, 主题高度贴合"AI文案工具/Copy.ai-Writesonic数字内容创作工作区") | Unsplash License（免费商用, 08-05 第三次修正: 从钢笔(弱相关)→清单(仍analog)→最终换为CMS编辑器界面(digital✅)） |
 
 > 说明：以上 og 图均为「真实场景图（Unsplash / Openverse CC0 免费商用）+ 品牌模板叠加（**深蓝径向暗角遮罩**：中心 alpha≈0.45 → 四角≈0.70，颜色 B>G>R 的干净蓝 RGB≈(25,38,58)；+ 左侧品牌竖条 #60a5fa + 白色标题 46px + AI Tool Picks 标）」，非纯渐变、非 AI 生成图，符合 13.1「og 社交图…非纯渐变、含真实场景图」要求。
 
@@ -24,13 +24,16 @@
 
 生成脚本：`_tmp_ogsrc/gen_og_today.py`（带 Openverse 自动取 CC0 真实场景照版；**须把遮罩逻辑改为下方②径向暗角**，旧版 flat 遮罩已作废）。
 
-**① 底图（铁律·禁止 AI 生成图）**：必须用 Unsplash / Openverse CC0 真实场景照（主题贴合"工具在做什么"），LANCZOS 铺满 1200×630。❌ 绝不用 image_gen / AI 合成图（案例 13 🔴；今天 aiapply/mockey/mindmapai 误用 AI 底图，须改回 CC0，见待办）。
+**① 底图（铁律·禁止 AI 生成图·高度相关·不重复）**：必须用 Unsplash / Openverse CC0 真实场景照（**主题必须与文章高度相关**——AI 工具文章配数字化场景，绝不用 analog 手写/纸笔），LANCZOS 铺满 1200×630。❌ 绝不用 image_gen / AI 合成图（案例 13 🔴；今天 aiapply/mockey/mindmapai 误用 AI 底图，须改回 CC0，见待办）。⚠️ **2026-08-05 用户确立·相关性铁律**：每张 og 图底图必须与文章主题**高度相关**——反例：AI 写作工具文章配钢笔手写（传统 analog ≠ AI digital，用户明确拒绝两次）；正例：AI 聊天工具配人机交互屏幕、AI 文案工具配 CMS 编辑器界面。如果实在找不到高度相关的可降级但**必须向用户说明**。⚠️ **不重复铁律**：不同文章的 og 图底图不能看起来基本一样/类似——全站已有 N 张图时新图必须有视觉区分度（如已有"笔记本工作区"就不要再选类似的）。
 
 **② 品牌遮罩层（核心·颜色与形态硬约束）**：
 - **形态 = 深蓝径向暗角**：中心 alpha ≈ 0.45、向四角递增到 ≈ 0.70（高斯模糊 30–40px 平滑过渡），中心稍亮、四角压暗。❌ **禁止 flat 均匀遮罩**（会像"均匀紫黑毯子"、标题区被压太暗，今天 v6 即此错）。
 - **颜色 = 蓝色调，必须满足 B 通道 > G 通道 > R 通道**（R 最低）。✅ 验证值 RGB ≈ (25,38,58)（BGR 58,38,25）。❌ **绝不可用 R>B 的紫红/红调**（曾误做 RGB(35,18,25) → 用户评"发黑带红、不自然"）。判据口诀：遮罩色"蓝里发紫"=错；"干净蓝"=对。
 
-**③ 左侧竖条（品牌标识·宽度铁律）**：rect[80,90,**88**,540]（**宽 8px 细线**，不是 88px 粗块！），填充渐变蓝 (96,165,250) ↔ (108,161,236)（≈ #60a5fa）。⚠️ **2026-08-05 血的教训**：曾写成 [80,90,168,630]（宽88px=粗蓝色矩形块），用户在线上截图一眼识破——竖条比 golden master 粗 11 倍。**坐标必须死记：x2=88（不是168）。**
+**③ 左侧竖条（品牌标识·坐标铁律·2026-08-05 血的教训三次）**：rect[80, 90, **88**, **540**]（**宽 8px 细线，高 450px，距底边 90px 不触底！**），填充渐变蓝 (96,165,250) ↔ (108,161,236)（≈ #60a5fa）。⚠️ **2026-08-05 血的教训（累计 3 次错误）**：
+1. **x2=168**（宽 88px 粗块，比 GM 粗 11 倍）→ 用户截图一眼识破
+2. **y2=630**（触底/"入地"，比 GM 多 90px）→ 用户截图一眼识破  
+3. **两次都是"给了参照物还做不好"** → 坐标必须死记：**x2=88, y2=540**，golden master 三张实测全一致。
 
 **④ 文字**：标题白色 46px 从 y=200 起、行距 54、x=112、`textwrap.wrap(title, 30)` 最多 5 行；底部 (112,560) 品牌标 "AI Tool Picks" 26px (148,163,184)；JPEG quality=88。
 
