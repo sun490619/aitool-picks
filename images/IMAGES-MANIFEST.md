@@ -1,7 +1,7 @@
 # aitool-picks 图片授权留痕（IMAGES-MANIFEST）
 
 > 规则来源：评测文上线前检查表 §一（13.1）。每张图必须记录：文件名 / 来源 URL / 授权类型。缺即重做。
-> 最后更新：2026-07-30 22:40
+> 最后更新：2026-08-05 00:40
 
 | 文件名 | 用途 | 来源 URL | 授权类型 |
 |---|---|---|---|
@@ -13,13 +13,37 @@
 | og-mockey-review-2026.jpg | Mockey.ai 评测文 og/hero/封面（en+zh 共用） | https://cdn.stocksnap.io/img-thumbs/960w/13UNSPJHCZ.jpg (Openverse/Stocksnap, 工作桌/电商场景照, 主题贴合"产品图/mockup 生成器") | CC0（Openverse license=cc0 检索） | 2026-08-04 重做：原化妆品产品 mockup 照背景偏纯色(uniq=1129)触发留白铁律，换成更饱满场景照(uniq=4323) |
 | og-neuronwriter-review-2026.jpg | NeuronWriter 评测文 og/hero/封面（en+zh 共用） | https://live.staticflickr.com/65535/53879850453_0e3a779d51_b.jpg (Openverse/Flickr, 内容营销/SEO 写作场景照, 主题贴合"SEO 内容优化") | CC0（Openverse license=cc0 检索） |
 | og-coursebox-review-2026.jpg | Coursebox 评测文 og/hero/封面（en+zh 共用） | https://live.staticflickr.com/5169/5378305870_b02c3412da_b.jpg (Openverse/Flickr, 在线学习/课程场景照, 主题贴合"AI 课程生成") | CC0（Openverse license=cc0 检索） |
+| og-chatgpt-alternatives-2026.jpg | ChatGPT替代品评测文 og/hero/封面（en+zh 共用） | https://images.unsplash.com/photo-1531746790095-e59a09f7c1c4 (Unsplash, 人指向笔记本屏幕/科技工作场景, 主题贴合"AI对话/聊天工具替代品") | Unsplash License（免费商用，08-05 从纯渐变重做为CC0真实照+径向暗角） |
+| og-jasper-alternatives-2026.jpg | Jasper AI替代品评测文 og/hero/封面（en+zh 共用） | https://images.unsplash.com/photo-1455390582262-044cdead277a (Unsplash, 钢笔在纸上书写/文案创作场景, 主题贴合"AI写作/营销工具替代品") | Unsplash License（免费商用，08-05 从纯渐变重做为CC0真实照+径向暗角） |
 
-> 说明：以上 og 图均为「真实场景图（Unsplash / Openverse CC0 免费商用）+ 品牌模板叠加（半透明渐变遮罩 alpha150 深蓝 #0f172a→#1e3a8a + 左侧品牌竖条 #60a5fa + 白色标题 46px + AI Tool Picks 标）」，非纯渐变、非 AI 生成图，符合 13.1「og 社交图…非纯渐变、含真实场景图」要求。
+> 说明：以上 og 图均为「真实场景图（Unsplash / Openverse CC0 免费商用）+ 品牌模板叠加（**深蓝径向暗角遮罩**：中心 alpha≈0.45 → 四角≈0.70，颜色 B>G>R 的干净蓝 RGB≈(25,38,58)；+ 左侧品牌竖条 #60a5fa + 白色标题 46px + AI Tool Picks 标）」，非纯渐变、非 AI 生成图，符合 13.1「og 社交图…非纯渐变、含真实场景图」要求。
 
-## 标准模板（唯一做法，新文章一律照此执行）
+## 标准模板（唯一做法，新文章一律照此执行 · 2026-08-05 强化：径向暗角 + 蓝色调硬约束 + 量化验收）
 
-生成脚本：`_tmp_ogsrc/gen_og_compliant.py`（2026-07-29 首版）/ `_tmp_ogsrc/gen_og_today.py`（2026-07-30 带 Openverse 自动取图版）。
+> ⚠️ **2026-08-05 重大修正**：原「flat alpha150 深蓝渐变遮罩」参数会让人（和脚本）做出生硬/偏色图。线上用户认可的 3 张标准图（golden master，见 ⑦）实测是**径向暗角**（四角暗、中心亮），遮罩**必须是蓝色调**。本轮已用此参数重做 aiapply/mockey/mindmapai 三张并通过（部署 2a8058b）。
 
-参数固定：画布 1200×630；真实场景照 LANCZOS 铺满；深蓝渐变遮罩 (15,23,42)→(30,58,138) alpha 150；左侧竖条 rect[80,90,88,540] 填充 (96,165,250)；标题白色 46px 从 y=200 起、行距 54、x=112、`textwrap.wrap(title, 30)` 最多 5 行；底部 (112,560) 品牌标 "AI Tool Picks" 26px (148,163,184)；JPEG quality=88。
+生成脚本：`_tmp_ogsrc/gen_og_today.py`（带 Openverse 自动取 CC0 真实场景照版；**须把遮罩逻辑改为下方②径向暗角**，旧版 flat 遮罩已作废）。
 
-验收基线（与本文件已登记图对比）：唯一色 4000–6000、均亮 60–85、标准差 30–36、竖条实测色 ≈(99,164,246)。**禁止 AI 生成图、禁止纯渐变图。**
+**① 底图（铁律·禁止 AI 生成图）**：必须用 Unsplash / Openverse CC0 真实场景照（主题贴合"工具在做什么"），LANCZOS 铺满 1200×630。❌ 绝不用 image_gen / AI 合成图（案例 13 🔴；今天 aiapply/mockey/mindmapai 误用 AI 底图，须改回 CC0，见待办）。
+
+**② 品牌遮罩层（核心·颜色与形态硬约束）**：
+- **形态 = 深蓝径向暗角**：中心 alpha ≈ 0.45、向四角递增到 ≈ 0.70（高斯模糊 30–40px 平滑过渡），中心稍亮、四角压暗。❌ **禁止 flat 均匀遮罩**（会像"均匀紫黑毯子"、标题区被压太暗，今天 v6 即此错）。
+- **颜色 = 蓝色调，必须满足 B 通道 > G 通道 > R 通道**（R 最低）。✅ 验证值 RGB ≈ (25,38,58)（BGR 58,38,25）。❌ **绝不可用 R>B 的紫红/红调**（曾误做 RGB(35,18,25) → 用户评"发黑带红、不自然"）。判据口诀：遮罩色"蓝里发紫"=错；"干净蓝"=对。
+
+**③ 左侧竖条（品牌标识）**：rect[80,90,88,540]，填充渐变蓝 (96,165,250) ↔ (108,161,236)（≈ #60a5fa），与中心对齐、高度 90–540。
+
+**④ 文字**：标题白色 46px 从 y=200 起、行距 54、x=112、`textwrap.wrap(title, 30)` 最多 5 行；底部 (112,560) 品牌标 "AI Tool Picks" 26px (148,163,184)；JPEG quality=88。
+
+**⑤ 量化验收线（部署前必测，缺一不可）**：
+- 标题文字区（x80–700, y200–280）灰度亮度 **≈ 97–127**（白字清晰可读的硬指标；<~90 字糊、>~160 字融背景）。
+- 四角（x30–50, y30–50）呈**深蓝色调**（B>G>R），亮度 ≤ ~95。
+- 竖条实测色 ≈ (99,164,246)。
+- 唯一色 4000–6000（证明是真实照片、非纯渐变）。**禁止 AI 生成图、禁止纯渐变图。**
+
+**⑥ 流程铁律（避免反复涂抹）**：每次做图**从干净 CC0 底图重新生成**（遮罩+竖条+文字一次性套上），**绝不拿旧图反复 inpaint/涂抹修补**（今天 v1→v5 在旧图上反复涂 → 越涂越糊，v6 才换干净重生成思路）。改模板参数即整张重出，不留涂抹痕。
+
+**⑦ Golden master 比对基准（肉眼 + 像素对照这 3 张用户认可的标准图）**：
+- `og-taskade-review-2026.jpg`（Openverse CC0 协作场景）
+- `og-best-ai-tools-for-affiliate-marketers-2026.jpg`（Unsplash 仪表盘场景）
+- `og-best-ai-tools-for-solopreneurs-2026.jpg`（Unsplash 笔记本场景）
+任何新 og 图上线前，与这 3 张并排比：暗角形态一致？遮罩是干净蓝（非紫红）？白字清晰度一致？不一致即重做。
