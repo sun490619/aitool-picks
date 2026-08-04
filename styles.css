@@ -550,7 +550,7 @@ html.dark .card-image { background: rgba(255, 255, 255, .04); }
   flex-direction: column;
   flex: 1;
 }
-.post-card-content { display: flex; flex-direction: column; flex: 1; }
+.post-card-content { display: flex; flex-direction: column; flex: 1; padding: 18px; gap: 10px; }
 .post-card-cta { margin-top: auto; }
 /* 卡片封面图统一比例：防止大小不一/白边黑边（与 .card-image 同约束） */
 .post-card-image { aspect-ratio: 16/9; overflow: hidden; background: var(--bg2, #f3f4f6); }
