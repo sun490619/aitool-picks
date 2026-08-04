@@ -838,4 +838,405 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+<!-- Added 2026-08-04: pages missing from sitemap -->
+<url><loc>https://aitool-picks.com/category/audio-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/category/audio.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/category/audio-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/category/audio.html"/>
+</url>
+<url><loc>https://aitool-picks.com/category/audio.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/category/audio.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/category/audio-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/category/audio.html"/>
+</url>
+<url><loc>https://aitool-picks.com/category/image-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/category/image.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/category/image-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/category/image.html"/>
+</url>
+<url><loc>https://aitool-picks.com/category/image.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.7</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/category/image.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/category/image-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/category/image.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/ai-coding-review-2026-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/ai-coding-review-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/ai-coding-review-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/ai-coding-review-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/ai-customer-support-setup-2026-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/ai-customer-support-setup-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/ai-customer-support-setup-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/ai-customer-support-setup-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/ai-productivity-tools-2026-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/ai-productivity-tools-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/ai-productivity-tools-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/ai-productivity-tools-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/ai-side-hustle-2026-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/ai-side-hustle-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/ai-side-hustle-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/ai-side-hustle-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/ai-tools-dropshipping-2026-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/ai-tools-dropshipping-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/ai-tools-dropshipping-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/ai-tools-dropshipping-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/ai-transcriber-meeting-notes-2026-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/ai-transcriber-meeting-notes-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/ai-transcriber-meeting-notes-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/ai-transcriber-meeting-notes-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/ai-trip-planner-review-2026-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/ai-trip-planner-review-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/ai-trip-planner-review-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/ai-trip-planner-review-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/ai-video-editing-tools-2026-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/ai-video-editing-tools-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/ai-video-editing-tools-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/ai-video-editing-tools-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/best-ai-avatar-video-tools-2026-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/best-ai-avatar-video-tools-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/best-ai-avatar-video-tools-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/best-ai-avatar-video-tools-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/best-ai-email-writing-tools-2026-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/best-ai-email-writing-tools-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/best-ai-email-writing-tools-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/best-ai-email-writing-tools-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/best-ai-grammar-tools-2026-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/best-ai-grammar-tools-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/best-ai-grammar-tools-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/best-ai-grammar-tools-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/best-ai-image-upscalers-2026-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/best-ai-image-upscalers-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/best-ai-image-upscalers-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/best-ai-image-upscalers-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/best-ai-music-generators-2026-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/best-ai-music-generators-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/best-ai-music-generators-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/best-ai-music-generators-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/best-ai-note-taking-tools-2026-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/best-ai-note-taking-tools-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/best-ai-note-taking-tools-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/best-ai-note-taking-tools-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/best-ai-tools-faceless-youtube-2026-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/best-ai-tools-faceless-youtube-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/best-ai-tools-faceless-youtube-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/best-ai-tools-faceless-youtube-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/best-ai-tools-for-small-business-2026-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/best-ai-tools-for-small-business-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/best-ai-tools-for-small-business-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/best-ai-tools-for-small-business-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/best-ai-translation-tools-2026-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/best-ai-translation-tools-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/best-ai-translation-tools-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/best-ai-translation-tools-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/best-ai-video-tools-2026-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/best-ai-video-tools-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/best-ai-video-tools-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/best-ai-video-tools-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/best-ai-voice-generator-tools-2026-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/best-ai-voice-generator-tools-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/best-ai-voice-generator-tools-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/best-ai-voice-generator-tools-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/best-free-ai-tools-content-creators-2026-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/best-free-ai-tools-content-creators-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/best-free-ai-tools-content-creators-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/best-free-ai-tools-content-creators-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/best-free-ai-tools-freelancers-2026-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/best-free-ai-tools-freelancers-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/best-free-ai-tools-freelancers-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/best-free-ai-tools-freelancers-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/best-free-ai-tools-students-2026-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/best-free-ai-tools-students-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/best-free-ai-tools-students-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/best-free-ai-tools-students-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/canva-ai-review-2026-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/canva-ai-review-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/canva-ai-review-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/canva-ai-review-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/chatgpt-alternatives-2026-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/chatgpt-alternatives-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/chatgpt-alternatives-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/chatgpt-alternatives-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/chatgpt-alternatives-2026.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/chatgpt-alternatives-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/chatgpt-alternatives-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/chatgpt-alternatives-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/chatgpt-vs-claude-vs-gemini-2026-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/chatgpt-vs-claude-vs-gemini-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/chatgpt-vs-claude-vs-gemini-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/chatgpt-vs-claude-vs-gemini-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/copy-ai-review-2026-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/copy-ai-review-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/copy-ai-review-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/copy-ai-review-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/cursor-ai-code-editor-review-2026-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/cursor-ai-code-editor-review-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/cursor-ai-code-editor-review-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/cursor-ai-code-editor-review-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/deepl-review-2026-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/deepl-review-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/deepl-review-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/deepl-review-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/deepseek-vs-claude-2026-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/deepseek-vs-claude-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/deepseek-vs-claude-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/deepseek-vs-claude-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/descript-ai-review-2026-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/descript-ai-review-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/descript-ai-review-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/descript-ai-review-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/descript-ai-review-2026.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/descript-ai-review-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/descript-ai-review-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/descript-ai-review-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/generative-engine-optimization-guide-2026-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/generative-engine-optimization-guide-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/generative-engine-optimization-guide-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/generative-engine-optimization-guide-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/github-copilot-ai-review-2026-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/github-copilot-ai-review-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/github-copilot-ai-review-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/github-copilot-ai-review-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/grammarly-alternatives-2026-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/grammarly-alternatives-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/grammarly-alternatives-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/grammarly-alternatives-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/grammarly-alternatives-2026.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/grammarly-alternatives-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/grammarly-alternatives-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/grammarly-alternatives-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/grammarlygo-review-2026-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/grammarlygo-review-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/grammarlygo-review-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/grammarlygo-review-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/gumroad-review-2026-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/gumroad-review-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/gumroad-review-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/gumroad-review-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/hugging-face-ai-review-2026-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/hugging-face-ai-review-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/hugging-face-ai-review-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/hugging-face-ai-review-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/jasper-ai-review-2026-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/jasper-ai-review-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/jasper-ai-review-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/jasper-ai-review-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/jasper-alternatives-2026-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/jasper-alternatives-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/jasper-alternatives-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/jasper-alternatives-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/jasper-alternatives-2026.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/jasper-alternatives-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/jasper-alternatives-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/jasper-alternatives-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/jasper-vs-writesonic-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/jasper-vs-writesonic.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/jasper-vs-writesonic-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/jasper-vs-writesonic.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/kling-ai-review-2026-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/kling-ai-review-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/kling-ai-review-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/kling-ai-review-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/koalawriter-review-2026-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/koalawriter-review-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/koalawriter-review-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/koalawriter-review-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/langchain-ai-review-2026-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/langchain-ai-review-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/langchain-ai-review-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/langchain-ai-review-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/market-data-analysis-ai-2026-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/market-data-analysis-ai-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/market-data-analysis-ai-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/market-data-analysis-ai-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/mem-ai-review-2026-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/mem-ai-review-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/mem-ai-review-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/mem-ai-review-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/midjourney-v7-review-2026-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/midjourney-v7-review-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/midjourney-v7-review-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/midjourney-v7-review-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/notion-ai-review-2026-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/notion-ai-review-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/notion-ai-review-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/notion-ai-review-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/notion-alternatives-2026-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/notion-alternatives-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/notion-alternatives-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/notion-alternatives-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/notion-alternatives-2026.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/notion-alternatives-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/notion-alternatives-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/notion-alternatives-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/open-source-ai-models-2026-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/open-source-ai-models-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/open-source-ai-models-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/open-source-ai-models-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/perplexity-ai-review-2026-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/perplexity-ai-review-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/perplexity-ai-review-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/perplexity-ai-review-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/replit-ai-review-2026-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/replit-ai-review-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/replit-ai-review-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/replit-ai-review-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/runway-ai-review-2026-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/runway-ai-review-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/runway-ai-review-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/runway-ai-review-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/runway-ml-review-2026-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/runway-ml-review-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/runway-ml-review-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/runway-ml-review-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/sora-ai-review-2026-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/sora-ai-review-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/sora-ai-review-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/sora-ai-review-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/track-brand-visibility-ai-search-2026-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/track-brand-visibility-ai-search-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/track-brand-visibility-ai-search-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/track-brand-visibility-ai-search-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/wordtune-review-2026-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/wordtune-review-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/wordtune-review-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/wordtune-review-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/writesonic-review-2026-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/writesonic-review-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/writesonic-review-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/writesonic-review-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/posts/zapier-ai-review-2026-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/posts/zapier-ai-review-2026.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/posts/zapier-ai-review-2026-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/posts/zapier-ai-review-2026.html"/>
+</url>
+<url><loc>https://aitool-picks.com/suggest-tool-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.5</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/suggest-tool.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/suggest-tool-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/suggest-tool.html"/>
+</url>
+<url><loc>https://aitool-picks.com/suggest-tool.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.5</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/suggest-tool.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/suggest-tool-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/suggest-tool.html"/>
+</url>
+<url><loc>https://aitool-picks.com/terms-zh.html</loc><changefreq>yearly</changefreq><lastmod>2026-08-03</lastmod><priority>0.3</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/terms.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/terms-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/terms.html"/>
+</url>
+<url><loc>https://aitool-picks.com/terms.html</loc><changefreq>yearly</changefreq><lastmod>2026-08-03</lastmod><priority>0.3</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/terms.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/terms-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/terms.html"/>
+</url>
+<url><loc>https://aitool-picks.com/tools/copy-ai-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/tools/copy-ai.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/tools/copy-ai-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/tools/copy-ai.html"/>
+</url>
+<url><loc>https://aitool-picks.com/tools/deepl-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/tools/deepl.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/tools/deepl-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/tools/deepl.html"/>
+</url>
+<url><loc>https://aitool-picks.com/tools/grammarly-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/tools/grammarly.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/tools/grammarly-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/tools/grammarly.html"/>
+</url>
+<url><loc>https://aitool-picks.com/tools/hemingway-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/tools/hemingway.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/tools/hemingway-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/tools/hemingway.html"/>
+</url>
+<url><loc>https://aitool-picks.com/tools/jasper-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/tools/jasper.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/tools/jasper-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/tools/jasper.html"/>
+</url>
+<url><loc>https://aitool-picks.com/tools/languagetool-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/tools/languagetool.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/tools/languagetool-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/tools/languagetool.html"/>
+</url>
+<url><loc>https://aitool-picks.com/tools/notion-ai-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/tools/notion-ai.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/tools/notion-ai-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/tools/notion-ai.html"/>
+</url>
+<url><loc>https://aitool-picks.com/tools/quillbot-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/tools/quillbot.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/tools/quillbot-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/tools/quillbot.html"/>
+</url>
+<url><loc>https://aitool-picks.com/tools/rytr-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/tools/rytr.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/tools/rytr-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/tools/rytr.html"/>
+</url>
+<url><loc>https://aitool-picks.com/tools/writesonic-zh.html</loc><changefreq>monthly</changefreq><lastmod>2026-08-03</lastmod><priority>0.6</priority>
+  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/tools/writesonic.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/tools/writesonic-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/tools/writesonic.html"/>
+</url>
 </urlset>
