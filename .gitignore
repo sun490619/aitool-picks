@@ -11,3 +11,7 @@ node_modules/
 _preview/
 *.bak
 styles.css.bak*
+
+# temp/scratch dirs (not for deploy)
+_tmp_ogsrc/
+_backup_bluebar/
