@@ -42,6 +42,7 @@
 | og-best-ai-video-tools-2026.jpg | Best AI Video Generators 2026 指南 og/hero/封面（en+zh 共用） | 备用图片库 02_video-production_man-using-laptop.jpg（真实场景照: 男子用笔记本(视频编辑界面), 主题贴合"AI视频生成器/视频创作"） | 备用图片库真实场景照（免费商用, 08-05 新增: 从picsum随机图❌不贴合→换为备用图片库视频创作场景✅+golden master模板; 标题112 四角4/4蓝 bar=8px） |
 | og-market-data-analysis-ai-2026.jpg | Market Data Analysis with AI 评测文 og/hero/封面（en+zh 共用） | 备用图片库 05_seo_gray-laptop-analytics.jpg（真实场景照: 笔记本显示分析仪表盘+图表, 主题贴合"市场数据分析/AI交易策略"） | 备用图片库真实场景照（免费商用, 08-05 新增: 从picsum随机图❌不贴合→换为备用图片库数据分析场景✅+golden master模板; 标题137 四角4/4蓝 bar=8px） |
 | og-mem-ai-review-2026.jpg | Mem AI Review 2026 评测文 og/hero/封面（en+zh 共用） | 备用图片库 03_writing_person-using-laptop-wood-desk.jpg（真实场景照: 人物在木桌前用笔记本, 主题贴合"第二大脑/笔记应用/PKM"） | 备用图片库真实场景照（免费商用, 08-05 新增: 从picsum随机图❌不贴合→换为备用图片库笔记场景✅+golden master模板; 标题136 四角3/4蓝 bar=8px） |
+| og-best-ai-avatar-video-tools-2026.jpg | Best AI Avatar Video Tools 2026 指南 og/hero/封面（en+zh 共用） | 备用图片库 01_tech-workspace_apple-workstation.jpg（真实场景照: Apple工作站大屏显示视频缩略图网格, 主题贴合"AI虚拟人视频工具/HeyGen/D-ID/Synthesia"） | 备用图片库真实场景照（免费商用, 08-05 新增: 原图为卡通人物白底❌完全不匹配→换为备用图片库工作站视频创作场景✅+golden master模板; 标题133 四角4/4蓝 bar=8px deadR=0%） |
 
 > 说明：以上 og 图均为「真实场景图（Unsplash / Openverse CC0 免费商用）+ 品牌模板叠加（**深蓝径向暗角遮罩**：中心 alpha≈0.45 → 四角≈0.70，颜色 B>G>R 的干净蓝 RGB≈(25,38,58)；+ 左侧品牌竖条 #60a5fa + 白色标题 46px + AI Tool Picks 标）」，非纯渐变、非 AI 生成图，符合 13.1「og 社交图…非纯渐变、含真实场景图」要求。
 
