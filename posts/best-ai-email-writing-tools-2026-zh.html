@@ -26,6 +26,9 @@
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TX6NMK2GVX"></script>
     <script>
+if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp_owner_exclude=1')!==-1){window.dataLayer=window.dataLayer||[];window.gtag=function(){/* owner excluded */};}
+</script>
+<script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
