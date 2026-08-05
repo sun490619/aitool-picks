@@ -443,6 +443,15 @@ html.dark .disclosure-banner {
   color: #9CA3AF;
 }
 
+/* FIX 2026-08-05: 文章页 disclosure-banner 位于 .post-body 之前(在1200px容器内),
+   无 max-width 导致比760px正文/hero宽、移动端横向溢出、与正文不对齐。
+   仅对含 .post-body 的文章页(EN+ZH 均含)约束到760px并居中, 不影响首页/tools等全宽页。 */
+body:has(.post-body) .disclosure-banner {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* ---- Cards ---- */
 .card {
   display: flex;
