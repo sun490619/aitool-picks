@@ -45,7 +45,7 @@ def make_og(base_path, title, out_path):
     for y in range(0, H, step):
         for x in range(0, W, step):
             d = math.hypot(x - cx, y - cy) / maxd  # 0 center -> 1 corner
-            a = int((0.45 + d * (0.70 - 0.45)) * 255)
+            a = int((0.45 + d * (0.76 - 0.45)) * 255)
             mp[x, y] = a
     overlay = Image.new("RGB", (W, H), (25, 38, 58))  # 蓝色调 B>G>R
     img = Image.composite(overlay, base, mask)  # 中心=base(亮) 四角=overlay(暗蓝)
