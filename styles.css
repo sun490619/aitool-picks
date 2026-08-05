@@ -1274,6 +1274,10 @@ html.dark .atp-features__header {
    flush with the 760px header above it (avatar-video / music-generators were
    rendering body at 1200 while the header was 760). */
 .article-body { max-width: 760px; margin: 0 auto; }
+/* FIX 2026-08-05: 文章正文容器实际类名是 .post-body（非 .article-body），
+   旧选择器匹配不到导致正文继承 1200px 容器、与 760px hero 不对齐/溢出。
+   显式把 .post-body 约束到同一 760px 阅读栏，使其与 hero 对齐。 */
+.post-body { max-width: 760px; margin: 0 auto; }
 .article-content > * + * { margin-top: 1.2rem; }
 .article-content p { font-size: 1.06rem; line-height: 1.75; color: var(--text); }
 .article-content h2 { font-size: 1.55rem; font-weight: 700; letter-spacing: -.01em; line-height: 1.25; margin-top: 2.6rem; padding-bottom: .5rem; border-bottom: 2px solid var(--border); }
@@ -1290,9 +1294,17 @@ html.dark .atp-features__header {
 .article-content img { max-width: 100%; border-radius: 12px; }
 .post-hero { display: block; width: 100%; max-width: 760px; height: auto; margin: 0 auto 1.75rem; border-radius: 12px; }
 .post-figure { display: block; width: 100%; max-width: 760px; height: auto; margin: 1.75rem auto; border-radius: 12px; }
+.article-content table:not(.atp-compare__table),
+.post-body table { table-layout: fixed; }
 .article-content table:not(.atp-compare__table) { width: 100%; border-collapse: collapse; font-size: .95rem; margin: 1.2rem 0; }
 .article-content table:not(.atp-compare__table) th, .article-content table:not(.atp-compare__table) td { border: 1px solid var(--border); padding: 10px 12px; text-align: left; }
 .article-content table:not(.atp-compare__table) th { background: var(--color-bg-muted); font-weight: 600; }
+/* FIX 2026-08-05: 同上，.post-body 内的对比表(class="compare")此前未命中 .article-content 选择器，
+   导致表格无 width:100% / table-layout:fixed，移动端横向溢出。补 .post-body 版本使其跟随 760px 容器。 */
+.post-body table:not(.atp-compare__table) { width: 100%; border-collapse: collapse; font-size: .95rem; margin: 1.2rem 0; }
+.post-body table:not(.atp-compare__table) th,
+.post-body table:not(.atp-compare__table) td { border: 1px solid var(--border); padding: 10px 12px; text-align: left; }
+.post-body table:not(.atp-compare__table) th { background: var(--color-bg-muted); font-weight: 600; }
 
 /* ---- Table of contents ---- */
 .article-toc, .toc { background: var(--color-bg-muted); border: 1px solid var(--border); border-radius: 14px; padding: 18px 22px; margin: 30px auto; max-width: 760px; }
