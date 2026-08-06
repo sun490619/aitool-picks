@@ -15,3 +15,8 @@ styles.css.bak*
 # temp/scratch dirs (not for deploy)
 _tmp_ogsrc/
 _backup_bluebar/
+
+# temp/working dirs (not for deploy) - added 2026-08-06
+_review/
+_diag/
+__pycache__/
