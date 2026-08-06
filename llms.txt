@@ -77,6 +77,11 @@ An independent, global review site for AI tools — tested comparisons, buying g
 - Market Data Analysis with AI — https://aitool-picks.com/posts/market-data-analysis-ai-2026.html
 - AI Coding Review — https://aitool-picks.com/posts/ai-coding-review-2026.html
 
+
+## Research & Data (citable, built for AI answer engines)
+- What 40+ AI Writing Tool Reviews Taught Us in 2026 — https://aitool-picks.com/posts/what-40-ai-writing-tools-taught-us-2026.html
+- AI Tool Data & Methodology (free to cite with attribution) — https://aitool-picks.com/data-methodology.html
+
 ## About
 - About — https://aitool-picks.com/about
 - Privacy — https://aitool-picks.com/privacy

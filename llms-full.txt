@@ -22,6 +22,7 @@ Independent, global AI tool reviews. This file lists every public page (English 
 - Terms of Service — https://aitool-picks.com/terms.html
 - 我们实际在用的工具（真实工具栈） — https://aitool-picks.com/tools-we-use-zh.html
 - The Tools We Actually Use (Our Real Stack) — https://aitool-picks.com/tools-we-use.html
+- AI Tool Data & Methodology (citable) — https://aitool-picks.com/data-methodology.html
 
 ## category
 - AI Audio Tools — Voice, Music, Podcasts & Transcription — https://aitool-picks.com/category/audio.html
@@ -162,3 +163,5 @@ Independent, global AI tool reviews. This file lists every public page (English 
 - Grammarly Alternatives 2026 — https://aitool-picks.com/posts/grammarly-alternatives-2026.html
 - Grammarly 替代品 2026 — https://aitool-picks.com/posts/grammarly-alternatives-2026-zh.html
 
+## Research & Data
+- What 40+ AI Writing Tool Reviews Taught Us in 2026 — https://aitool-picks.com/posts/what-40-ai-writing-tools-taught-us-2026.html
