@@ -81,6 +81,46 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
             </button>
         </div>
     </header>
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-labelledby="mobileTitle">
+        <div class="mobile-menu-header">
+            <span class="brand" id="mobileTitle"><span class="brand-mark">ATP</span> AI Tool Picks</span>
+            <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+        </div>
+        <nav class="mobile-nav" role="navigation" aria-label="Main Navigation">
+            <a href="/" class="mobile-nav-link" aria-current="page" data-i18n="nav_home">首页</a>
+            <a href="/category/writing-zh.html" class="mobile-nav-link" data-i18n="nav_writing">AI 写作</a>
+            <a href="/category/coding-zh.html" class="mobile-nav-link" data-i18n="nav_coding">AI 编程</a>
+            <a href="/category/video-zh.html" class="mobile-nav-link" data-i18n="nav_video">AI 视频</a>
+            <a href="/category/seo-zh.html" class="mobile-nav-link" data-i18n="nav_seo">AI SEO</a>
+            <a href="/category/productivity-zh.html" class="mobile-nav-link">AI 生产力</a>
+                <a href="/category/image-zh.html" class="mobile-nav-link">AI 图像</a>
+                <a href="/posts/tool-selector-zh.html" class="mobile-nav-link">工具选型器</a>
+                <a href="/data-methodology.html" class="mobile-nav-link">数据与方法</a>
+            <a href="/about-zh.html" class="mobile-nav-link">关于</a>
+            <a href="/contact-zh.html" class="mobile-nav-link">联系</a>
+        </nav>
+        <div class="mobile-drawer-footer">
+            <div>
+                <div class="drawer-section-label" data-i18n="lang_label">语言</div>
+                <div class="pill-switch" id="langSwitch">
+                    <button class="active" data-lang="en" aria-pressed="true">EN</button>
+                    <button data-lang="zh" aria-pressed="false">中文</button>
+                </div>
+            </div>
+            <div>
+                <div class="drawer-section-label" data-i18n="theme_label">主题</div>
+                <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle dark mode">
+                    <svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><g stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></g></svg>
+                    <span id="themeLabel">Light</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    
 
   <nav class="article-breadcrumb" aria-label="Breadcrumb">
     <a href="/">首页</a> / <a href="/category/productivity-zh.html">AI 效率与综合</a> / <span>Chatbase 评测 2026</span>
@@ -291,5 +331,8 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
     </footer>
 
   <script src="../script.js?v=0625b" defer></script>
+    <script src="/shared.js"></script>
+    <script src="/scripts.js"></script>
+<script src="/bd-subscribe.js" defer></script>
 </body>
 </html>
