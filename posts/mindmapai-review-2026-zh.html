@@ -100,8 +100,18 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
                 <a href="/category/productivity-zh.html" class="nav-link">AI 生产力</a>
                 <a href="/category/image-zh.html" class="nav-link">AI 图像</a>
                 <a href="/posts/tool-selector-zh.html" class="nav-link">工具选型器</a>
-                <a href="/about-zh.html" class="nav-link">关于</a>
-                <a href="/contact-zh.html" class="nav-link">联系</a>
+                <div class="nav-dropdown">
+                    <button class="nav-dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                        资源 <span class="caret">&#9662;</span>
+                    </button>
+                    <div class="nav-dropdown-menu" role="menu">
+                        <a class="nav-dropdown-item" href="/data-methodology.html" role="menuitem">数据方法</a>
+                        <a class="nav-dropdown-item" href="/about-zh.html" role="menuitem">关于</a>
+                        <a class="nav-dropdown-item" href="/contact-zh.html" role="menuitem">联系</a>
+                        <a class="nav-dropdown-item" href="/media-kit.html" role="menuitem">媒体资料</a>
+                        <a class="nav-dropdown-item" href="/tools-we-use.html" role="menuitem">我们用过的工具</a>
+                    </div>
+                </div>
             </nav>
             <button class="theme-toggle-btn theme-toggle-desktop" data-theme-toggle type="button" aria-label="Toggle dark mode">
                 <svg data-theme-icon viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><g stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></g></svg>
@@ -131,6 +141,9 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
                 <a href="/posts/tool-selector-zh.html" class="mobile-nav-link">工具选型器</a>
             <a href="/about-zh.html" class="mobile-nav-link">关于</a>
             <a href="/contact-zh.html" class="mobile-nav-link">联系</a>
+            <a href="/data-methodology.html" class="mobile-nav-link">数据方法</a>
+            <a href="/media-kit.html" class="mobile-nav-link">媒体资料</a>
+            <a href="/tools-we-use.html" class="mobile-nav-link">我们用过的工具</a>
         </nav>
         <div class="drawer-section">
             <div class="drawer-section-label" data-i18n="lang_label">语言</div>
