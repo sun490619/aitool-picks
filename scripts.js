@@ -307,6 +307,18 @@ window.AIToolPicks = {
       const catOk = currentCategory === 'all' || c.dataset.category === currentCategory;
       return catOk && matchesSearch(c);
     });
+    // 固定排序：pinned 置顶（data-pinned="1"）→ 其余按 datetime 倒序（最新在前）
+    const dtOf = c => {
+      const t = c.querySelector('time');
+      const v = t ? t.getAttribute('datetime') : '';
+      return v ? new Date(v).getTime() : 0;
+    };
+    filtered.sort((a, b) => {
+      const pa = a.dataset.pinned === '1' ? 1 : 0;
+      const pb = b.dataset.pinned === '1' ? 1 : 0;
+      if (pa !== pb) return pb - pa;
+      return dtOf(b) - dtOf(a);
+    });
     cards.forEach(c => { c.style.display = 'none'; });
     filtered.forEach(c => { c.style.display = ''; });
     const totalPages = Math.max(1, Math.ceil(filtered.length / PER_PAGE));
