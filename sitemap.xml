@@ -5,6 +5,10 @@
   <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/index-zh.html"/>
   <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/"/>
 </url>
+<url><loc>https://aitool-picks.com/changelog.html</loc><changefreq>weekly</changefreq><lastmod>2026-08-08</lastmod><priority>0.5</priority>  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/changelog.html"/>
+  <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/changelog-zh.html"/>
+  <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/changelog.html"/>
+</url>
 <url><loc>https://aitool-picks.com/about.html</loc><changefreq>monthly</changefreq><lastmod>2026-07-05</lastmod><priority>0.5</priority>  <xhtml:link rel="alternate" hreflang="en" href="https://aitool-picks.com/about.html"/>
   <xhtml:link rel="alternate" hreflang="zh" href="https://aitool-picks.com/about-zh.html"/>
   <xhtml:link rel="alternate" hreflang="x-default" href="https://aitool-picks.com/about.html"/>

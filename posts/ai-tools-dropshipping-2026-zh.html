@@ -120,15 +120,17 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
             </button>
         </div>
-        <nav class="mobile-nav" role="navigation" aria-label="主导航">
-            <a href="/" class="mobile-nav-link" aria-current="page">首页</a>
-            <a href="/category/writing.html" class="mobile-nav-link">AI 写作</a>
-            <a href="/category/coding.html" class="mobile-nav-link">AI 编程</a>
-            <a href="/category/video.html" class="mobile-nav-link">AI 视频</a>
-            <a href="/category/seo.html" class="mobile-nav-link">AI SEO</a>
-            <a href="/category/productivity.html" class="mobile-nav-link">AI 效率</a>
-            <a href="/about.html" class="mobile-nav-link">关于</a>
-            <a href="/contact.html" class="mobile-nav-link">联系</a>
+        <nav class="mobile-nav" role="navigation" aria-label="Main Navigation">
+            <a href="/" class="mobile-nav-link" data-i18n="nav_home">首页</a>
+            <a href="/category/writing-zh.html" class="mobile-nav-link" data-i18n="nav_writing">AI 写作</a>
+            <a href="/category/coding-zh.html" class="mobile-nav-link" data-i18n="nav_coding">AI 编程</a>
+            <a href="/category/video-zh.html" class="mobile-nav-link" data-i18n="nav_video">AI 视频</a>
+            <a href="/category/seo-zh.html" class="mobile-nav-link" data-i18n="nav_seo">AI SEO</a>
+            <a href="/category/productivity-zh.html" class="mobile-nav-link">AI 生产力</a>
+                <a href="/category/image-zh.html" class="mobile-nav-link">AI 图像</a>
+                <a href="/posts/tool-selector-zh.html" class="mobile-nav-link">工具选型器</a>
+            <a href="/about-zh.html" class="mobile-nav-link">关于</a>
+            <a href="/contact-zh.html" class="mobile-nav-link">联系</a>
         </nav>
         <div class="drawer-section">
             <div class="drawer-section-label" data-i18n="lang_label">语言</div>
@@ -285,6 +287,7 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
                     <h4>资源</h4>
                     <ul class="footer-links">
                         <li><a href="/suggest-tool.html">推荐工具</a></li>
+                        <li><a href="/changelog-zh.html">更新日志</a></li>
                         <li><a href="/affiliate-disclosure-zh.html">联盟披露</a></li>
                         <li><a href="/privacy-zh.html">隐私政策</a></li>
                         <li><a href="#bd-subscribe">订阅资讯</a></li>
