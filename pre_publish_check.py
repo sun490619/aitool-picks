@@ -2,18 +2,16 @@
 """
 aitool-picks 发布前强制门禁（pre-publish gate）。
 
-目的：把"配图铁律"从人脑记忆变成机器强制。任何一次 push，如果包含
-【新增的 og/hero 图】或【新增/修改的文章引用了某张图】，则该图必须满足
-image_provenance.json 里的合规记录，否则拒绝推送。
+把三类反复犯规的"软约束"编译成机器强制：
+  ① 配图铁律（图库优先 / easyocr / 禁 tesseract / og=hero）
+  ② 文章结构铁律（面包屑 / hero / 单一 article-meta / related-articles 唯一）
+  ③ 日期 + JSON-LD 铁律（datePublished 必填且 = <time datetime> /
+     dateModified >= datePublished / 数值字段为数字禁引号）
 
-规则（详见 image_provenance.json _meta.rules）：
-  1. 新增图必须在 provenance 有记录，否则 FAIL。
-  2. ocr_tool 必须 = easyocr，tesseract 直接 FAIL。
-  3. source=openverse 时必须 library_checked=true + library_reason 非空，否则 FAIL。
-  4. og:image 与文章内 hero 图必须同一文件（脚本自动校验），否则 FAIL。
-  5. ocr_result 必须 = clean，否则 FAIL。
+任何一次 push，若改动涉及【新增图】或【新增/修改 posts 文章】，
+违规即拒绝推送。只检查本次改动的文件，不误伤存量已上线文章。
 
-历史已上线图不强制（不阻断），仅在报告中提示。
+自检：python3 pre_publish_check.py --file posts/xxx.html
 """
 import json
 import os
@@ -34,6 +32,8 @@ CATEGORY_MAP = {
     "image": "06_design",
     "audio": "07_audio",
 }
+
+NUMERIC_FIELDS = r"(?:ratingValue|bestRating|worstRating|ratingCount|reviewCount|price|wordCount)"
 
 
 def load_prov():
@@ -62,7 +62,6 @@ def changed_files():
 
 
 def new_images(files):
-    """本次新增的 og/hero 图（diff-filter=A）。"""
     imgs = []
     for f in files:
         if re.match(r"^images/og-.*\.(jpg|png)$", f) or re.match(r"^images/.*hero.*\.(jpg|png)$", f):
@@ -71,7 +70,6 @@ def new_images(files):
 
 
 def posts_referencing(files):
-    """本次新增/修改的 posts 文章。"""
     return [f for f in files if re.match(r"^posts/.*\.html$", f)]
 
 
@@ -83,7 +81,6 @@ def og_image_of(post_path):
         return None, None
     m = re.search(r'property="og:image"\s+content="([^"]+)"', html)
     og = m.group(1) if m else None
-    # hero img: 文章内第一个大图（data-hero 或 class 含 hero）
     hm = re.search(r'<img[^>]+class="[^"]*hero[^"]*"[^>]+src="([^"]+)"', html)
     if not hm:
         hm = re.search(r'<img[^>]+src="([^"]+)"[^>]+class="[^"]*hero[^"]*"', html)
@@ -107,13 +104,63 @@ def lib_has_category(cat):
     return False
 
 
+# ---------------------------------------------------------------------------
+# ② 文章结构门禁（对应"格式乱"根因）
+# ---------------------------------------------------------------------------
+def check_post_structure(rel):
+    errs = []
+    path = os.path.join(REPO, rel)
+    try:
+        h = open(path, encoding="utf-8").read()
+    except Exception:
+        return errs
+    name = os.path.basename(rel)
+    if "tool-selector" in name:
+        return errs  # 工具页豁免结构组件要求
+
+    if "article-breadcrumb" not in h:
+        errs.append(f"[FAIL] {rel}: 缺面包屑 article-breadcrumb（§13.12B 强制组件）")
+    if 'class="post-hero"' not in h:
+        errs.append(f"[FAIL] {rel}: 缺 hero 图 post-hero（每篇必选，固定顶部）")
+    meta = len(re.findall(r'class="article-meta"', h))
+    if meta > 1:
+        errs.append(f"[FAIL] {rel}: article-meta 重复({meta}个)，必须唯一")
+    if 'class="related-articles"' not in h:
+        errs.append(f"[FAIL] {rel}: 缺 related-articles 相关文章区块（§13.12B）")
+
+    # ③ 日期 + JSON-LD 门禁（对应"日期乱"根因）
+    dp = re.search(r'"datePublished"\s*:\s*"([^"]*)"', h)
+    td = re.search(r'<time[^>]*datetime="([^"]+)"', h)
+    dm = re.search(r'"dateModified"\s*:\s*"([^"]*)"', h)
+    if not dp or not dp.group(1):
+        errs.append(f"[FAIL] {rel}: JSON-LD 缺 datePublished 或为空白")
+    else:
+        if td and td.group(1) and dp.group(1) != td.group(1):
+            errs.append(f"[FAIL] {rel}: datePublished({dp.group(1)}) != <time datetime>({td.group(1)})")
+        if dm and dm.group(1) and dp.group(1) and dm.group(1) < dp.group(1):
+            errs.append(f"[FAIL] {rel}: dateModified({dm.group(1)}) 早于 datePublished({dp.group(1)})")
+    for m in re.finditer(r'"\s*' + NUMERIC_FIELDS + r'\s*"\s*:\s*"(\d+\.?\d*)"', h):
+        errs.append(f"[FAIL] {rel}: JSON-LD 数值字段 {m.group(1)} 被引号包裹(应为数字)")
+    return errs
+
+
 def main():
+    if len(sys.argv) >= 3 and sys.argv[1] == "--file":
+        files = [sys.argv[2]]
+    else:
+        files = changed_files()
+
     prov = load_prov().get("images", {})
-    files = changed_files()
     imgs_new = new_images(files)
     posts = posts_referencing(files)
 
-    # 收集需要合规校验的图：① 本次新增图 ② 被新增/改 posts 引用且其文件存在于 images/
+    # ---- ② 文章结构 + ③ 日期/JSON-LD 门禁 ----
+    struct_errors = []
+    for p in posts:
+        struct_errors += check_post_structure(p)
+    errors = list(struct_errors)
+
+    # ---- ① 配图门禁（保留既有逻辑）----
     need_check = set()
     for im in imgs_new:
         need_check.add(normalize(im))
@@ -126,7 +173,6 @@ def main():
             need_check.add(og_n)
         if hero_n and os.path.exists(os.path.join(REPO, "images", hero_n)):
             need_check.add(hero_n)
-        # 文章分类（用于图库优先提示）
         try:
             with open(os.path.join(REPO, p)) as f:
                 cm = re.search(r'data-category="([^"]+)"', f.read())
@@ -135,12 +181,10 @@ def main():
         except Exception:
             pass
 
-    errors = []
     warnings = []
     for img in sorted(need_check):
         rec = prov.get(img)
         if rec is None:
-            # 仅当该图是本次新增才 FAIL；历史图只警告
             if img in [normalize(i) for i in imgs_new]:
                 errors.append(f"[FAIL] 新增图 {img} 在 image_provenance.json 无登记记录 → 必须先登记再 push")
             else:
@@ -149,7 +193,6 @@ def main():
         if rec.get("status") == "legacy_violation":
             warnings.append(f"[WARN] {img} 是已知历史违规(legacy_violation)，不阻断，但待补正")
             continue
-        # 新图合规校验
         if rec.get("ocr_tool") == "tesseract":
             errors.append(f"[FAIL] {img}: ocr_tool=tesseract 被规则禁止，必须用 easyocr")
         if rec.get("ocr_result") != "clean":
@@ -161,18 +204,17 @@ def main():
         if not rec.get("og_hero_same"):
             errors.append(f"[FAIL] {img}: og:image 与 hero 图必须同文件")
 
-    # 图库优先提示：若文章归某类且图库该类有图，但 source=openverse，额外提示
     for img, cat in post_cats.items():
         rec = prov.get(img)
         if rec and rec.get("source") == "openverse" and lib_has_category(cat):
             errors.append(
                 f"[FAIL] {img}: 文章归 '{cat}' 类，备用图片库 {CATEGORY_MAP.get(cat)} 有可用图，"
-                f"必须先用语图库真实照（除非 library_reason 充分说明不贴题）"
+                f"必须先用图库真实照（除非 library_reason 充分说明不贴题）"
             )
 
     print("=" * 60)
-    print("aitool-picks 配图发布前门禁检查")
-    print(f"改动文件 {len(files)} 个 | 需校验图 {len(need_check)} 张")
+    print("aitool-picks 发布前门禁（配图 + 结构 + 日期/JSON-LD）")
+    print(f"改动文件 {len(files)} 个 | 需校验图 {len(need_check)} 张 | 文章 {len(posts)} 篇")
     print("=" * 60)
     for w in warnings:
         print(w)
@@ -182,7 +224,7 @@ def main():
         print("\n❌ 门禁未通过：存在规则违规，推送被拒绝。请先按上面提示修正。")
         print("   这是机器强制，不是'再注意点'——不修正就无法 push 上线。")
         sys.exit(1)
-    print("\n✅ 门禁通过：本次改动涉及的配图均符合配图铁律，可以推送。")
+    print("\n✅ 门禁通过：本次改动涉及的配图 / 结构 / 日期均符合铁律，可以推送。")
     sys.exit(0)
 
 
