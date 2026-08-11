@@ -1433,6 +1433,17 @@ html.dark .verdict.bad { background: rgba(239,68,68,.08); }
 .atp-callout.warning .c-title { color: #B91C1C; }
 
 .atp-callout.takeaway { background: rgba(16,185,129,.08); border-color: rgba(16,185,129,.32); border-left: 4px solid #10B981; }
+
+/* TL;DR / at-a-glance summary box */
+.at-a-glance { background: linear-gradient(135deg, rgba(37,99,235,.05), rgba(16,185,129,.04)); border: 1px solid rgba(37,99,235,.18); border-radius: 14px; padding: 20px 24px; margin: 28px auto; max-width: 760px; }
+.at-a-glance .glance-title { display: flex; align-items: center; gap: 8px; font-size: 1.05rem; font-weight: 700; color: var(--text); margin: 0 0 12px; }
+.at-a-glance .glance-title .badge { background: var(--accent); color: #fff; font-size: .8rem; font-weight: 700; border-radius: 6px; padding: 2px 9px; }
+.at-a-glance ul { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 8px 20px; }
+.at-a-glance li { font-size: .92rem; line-height: 1.5; color: var(--text2); padding-left: 22px; position: relative; }
+.at-a-glance li::before { content: "✓"; position: absolute; left: 0; color: #10B981; font-weight: 700; }
+.at-a-glance .glance-score { margin-top: 14px; padding-top: 12px; border-top: 1px solid rgba(37,99,235,.15); font-size: .95rem; color: var(--text2); }
+.at-a-glance .glance-score strong { color: var(--text); font-size: 1.1rem; }
+@media (max-width: 560px){ .at-a-glance ul { grid-template-columns: 1fr; } }
 .atp-callout.takeaway .ico { background: #10B981; color: #fff; }
 .atp-callout.takeaway .c-title { color: #047857; }
 
