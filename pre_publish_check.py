@@ -144,6 +144,42 @@ def check_post_structure(rel):
     return errs
 
 
+# ---------------------------------------------------------------------------
+# ④ 列表页排序门禁（对应"文章排序乱"根因）
+#    规则：置顶文章(data-pinned="1")必须排第1位；其余卡片按日期倒序
+#    （最新在上）。任何一次改动涉及首页/分类页都强制校验，杜绝"新文埋底"。
+# ---------------------------------------------------------------------------
+def check_listing_order(rel):
+    errs = []
+    path = os.path.join(REPO, rel)
+    try:
+        h = open(path, encoding="utf-8").read()
+    except Exception:
+        return errs
+    if "post-card" not in h:
+        return errs  # 非列表页跳过
+    cards = re.findall(r'<article class="card post-card".*?</article>', h, re.S)
+    if len(cards) < 2:
+        return errs
+    info = []
+    for c in cards:
+        pinned = 'data-pinned="1"' in c
+        # 以 data-date 为准（每次重排都更新）；无则回退 <time datetime>
+        tm = re.search(r'data-date="([^"]+)"', c) or re.search(r'<time[^>]*datetime="([^"]+)"', c)
+        d = tm.group(1) if tm else "0000-00-00"
+        info.append((pinned, d))
+    if any(p for p, _ in info) and not info[0][0]:
+        errs.append(f"[FAIL] {rel}: 置顶文章(data-pinned)必须排在第1位")
+    seq = [d for p, d in info if not p]
+    for i in range(1, len(seq)):
+        if seq[i] > seq[i - 1]:
+            errs.append(
+                f"[FAIL] {rel}: 列表未按日期倒序（第{i+1}张比前一张更新，违反'最新在上'规则）"
+            )
+            break
+    return errs
+
+
 def main():
     if len(sys.argv) >= 3 and sys.argv[1] == "--file":
         files = [sys.argv[2]]
@@ -159,6 +195,11 @@ def main():
     for p in posts:
         struct_errors += check_post_structure(p)
     errors = list(struct_errors)
+
+    # ---- ④ 列表页排序门禁 ----
+    for f in files:
+        if f == "index.html" or f == "index-zh.html" or re.match(r"^category/.*\.html$", f):
+            errors += check_listing_order(f)
 
     # ---- ① 配图门禁（保留既有逻辑）----
     need_check = set()
