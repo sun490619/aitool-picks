@@ -1388,13 +1388,15 @@ html.dark .verdict.bad { background: rgba(239,68,68,.08); }
 .how-we-test h2::before { display: none; }
 .how-we-test p { margin: 0; font-size: .98rem; color: var(--text2); line-height: 1.6; }
 
-/* per-dimension rating bars (used in review articles) */
-.rating-bars { max-width: 760px; margin: 24px auto; display: grid; gap: 12px; }
-.rating-row { display: grid; grid-template-columns: 1fr 150px; align-items: center; gap: 12px; font-size: .95rem; }
+/* per-dimension rating bars (used in review articles) — compact, left-aligned with body */
+.rating-bars { max-width: 480px; margin: 20px 0; display: grid; gap: 8px; }
+.rating-row { display: grid; grid-template-columns: 1fr 120px; align-items: center; gap: 10px; font-size: .9rem; }
 .rating-row span:first-child { color: var(--text); }
-.rating-row .bar { height: 9px; background: var(--color-bg-muted, #eef2f7); border-radius: 999px; overflow: hidden; }
+.rating-row .bar { height: 7px; background: var(--color-bg-muted, #eef2f7); border-radius: 999px; overflow: hidden; }
 .rating-row .fill { height: 100%; background: var(--accent, #2d7ff9); border-radius: 999px; }
-@media (max-width: 560px){ .rating-row{ grid-template-columns: 1fr 100px; font-size: .9rem; } }
+.rating-overall { margin: 0 0 14px; font-size: .95rem; color: var(--text2); }
+.rating-overall strong { color: var(--text); font-size: 1.05rem; }
+@media (max-width: 560px){ .rating-row{ grid-template-columns: 1fr 90px; font-size: .85rem; } }
 
 /* ============================================================
    CALLOUT SYSTEM — long rectangular boxes with different content
