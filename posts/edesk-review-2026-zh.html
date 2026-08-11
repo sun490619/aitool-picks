@@ -91,6 +91,31 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
             </button>
         </div>
     </header>
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-labelledby="mobileMenuTitle">
+      <div class="mobile-menu-header">
+          <span class="brand" id="mobileMenuTitle"><span class="brand-mark">ATP</span> AI Tool Picks</span>
+          <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+      </div>
+      <nav class="mobile-nav" role="navigation" aria-label="Main Navigation">
+          <a href="/" class="mobile-nav-link" data-i18n="nav_home">首页</a>
+          <a href="/category/writing-zh.html" class="mobile-nav-link" data-i18n="nav_writing">AI 写作</a>
+          <a href="/category/coding-zh.html" class="mobile-nav-link" data-i18n="nav_coding">AI 编程</a>
+          <a href="/category/video-zh.html" class="mobile-nav-link" data-i18n="nav_video">AI 视频</a>
+          <a href="/category/seo-zh.html" class="mobile-nav-link" data-i18n="nav_seo">AI SEO</a>
+          <a href="/category/productivity-zh.html" class="mobile-nav-link">AI 生产力</a>
+          <a href="/category/image-zh.html" class="mobile-nav-link">AI 图像</a>
+          <a href="/posts/tool-selector-zh.html" class="mobile-nav-link">工具选型器</a>
+          <a href="/data-methodology-zh.html" class="mobile-nav-link">数据方法</a>
+          <a href="/about-zh.html" class="mobile-nav-link">关于</a>
+          <a href="/contact-zh.html" class="mobile-nav-link">联系</a>
+          <a href="/media-kit-zh.html" class="mobile-nav-link">媒体资料</a>
+          <a href="/tools-we-use.html" class="mobile-nav-link">我们用过的工具</a>
+      </nav>
+  </div>
+
   <nav class="breadcrumb-nav" aria-label="Breadcrumb">
     <div class="container">
       <a href="/" class="breadcrumb">首页</a> <span class="sep">/</span>
@@ -279,5 +304,7 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
             </div>
         </div>
     </footer>
+<script src="/scripts.js"></script>
+<script src="/shared.js"></script>
 </body>
 </html>
