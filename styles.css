@@ -1392,14 +1392,15 @@ html.dark .verdict.bad { background: rgba(239,68,68,.08); }
 .how-we-test p { margin: 0; font-size: .98rem; color: var(--text2); line-height: 1.6; }
 
 /* per-dimension rating bars (used in review articles) — compact, left-aligned with body */
-.rating-bars { max-width: 480px; margin: 20px 0; display: grid; gap: 8px; }
-.rating-row { display: grid; grid-template-columns: 1fr 120px; align-items: center; gap: 10px; font-size: .9rem; }
+.rating-bars { max-width: 480px; margin: 20px 0; display: grid; gap: 6px; }
+.rating-row { display: grid; grid-template-columns: 1fr 80px 40px; align-items: center; gap: 10px; font-size: .9rem; }
 .rating-row span:first-child { color: var(--text); }
 .rating-row .bar { height: 7px; background: var(--color-bg-muted, #eef2f7); border-radius: 999px; overflow: hidden; }
 .rating-row .fill { height: 100%; background: var(--accent, #2d7ff9); border-radius: 999px; }
+.rating-row .rating-pct { font-weight: 600; font-size: .85rem; color: var(--text2); text-align: right; }
 .rating-overall { margin: 0 0 14px; font-size: .95rem; color: var(--text2); }
 .rating-overall strong { color: var(--text); font-size: 1.05rem; }
-@media (max-width: 560px){ .rating-row{ grid-template-columns: 1fr 90px; font-size: .85rem; } }
+@media (max-width: 560px){ .rating-row{ grid-template-columns: 1fr 70px 35px; font-size: .85rem; } }
 
 /* ============================================================
    CALLOUT SYSTEM — long rectangular boxes with different content
