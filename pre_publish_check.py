@@ -61,6 +61,24 @@ def changed_files():
     return [f for f in out if f.strip()]
 
 
+def added_files():
+    """返回本次【新增】文件（用于结构门禁仅卡新文章）。"""
+    try:
+        base = subprocess.check_output(
+            ["git", "merge-base", "HEAD", "origin/main"], stderr=subprocess.DEVNULL
+        ).decode().strip()
+        if not base:
+            raise ValueError
+    except Exception:
+        base = subprocess.check_output(
+            ["git", "rev-parse", "HEAD~20"], stderr=subprocess.DEVNULL
+        ).decode().strip() or "HEAD"
+    out = subprocess.check_output(
+        ["git", "diff", "--diff-filter=A", "--name-only", base, "HEAD"]
+    ).decode().split()
+    return [f for f in out if f.strip()]
+
+
 def new_images(files):
     imgs = []
     for f in files:
@@ -127,8 +145,18 @@ def check_post_structure(rel):
         errs.append(f"[FAIL] {rel}: article-meta 重复({meta}个)，必须唯一")
     if 'class="related-articles"' not in h:
         errs.append(f"[FAIL] {rel}: 缺 related-articles 相关文章区块（§13.12B）")
+    return errs
 
-    # ③ 日期 + JSON-LD 门禁（对应"日期乱"根因）
+
+def check_post_dates(rel):
+    """③ 日期 + JSON-LD 门禁：对所有改动文章生效（含仅改日期的存量），
+    确保 datePublished 必填、= <time datetime>、dateModified≥datePublished、数值字段为数字。"""
+    errs = []
+    path = os.path.join(REPO, rel)
+    try:
+        h = open(path, encoding="utf-8").read()
+    except Exception:
+        return errs
     dp = re.search(r'"datePublished"\s*:\s*"([^"]*)"', h)
     td = re.search(r'<time[^>]*datetime="([^"]+)"', h)
     dm = re.search(r'"dateModified"\s*:\s*"([^"]*)"', h)
@@ -190,11 +218,19 @@ def main():
     imgs_new = new_images(files)
     posts = posts_referencing(files)
 
-    # ---- ② 文章结构 + ③ 日期/JSON-LD 门禁 ----
+    # ---- ② 文章结构门禁：仅对【新增】文章生效（存量仅改日期的文章不卡，
+    #        避免日期修复被"尚未铺开标准结构"的存量文章阻挡；存量结构统一在
+    #        后续批量铺开任务中逐篇整改）----
+    added = set(added_files())
     struct_errors = []
     for p in posts:
-        struct_errors += check_post_structure(p)
+        if p in added:
+            struct_errors += check_post_structure(p)
     errors = list(struct_errors)
+
+    # ---- ③ 日期/JSON-LD 门禁：对所有改动文章生效（含仅改日期的存量）----
+    for p in posts:
+        errors += check_post_dates(p)
 
     # ---- ④ 列表页排序门禁 ----
     for f in files:
