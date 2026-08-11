@@ -1353,7 +1353,7 @@ html.dark .atp-features__header {
 
 /* ---- Quick verdict / CTA box (styled callout) ---- */
 /* CTA / action box — lightweight, non-intrusive */
-.cta-box { background: var(--color-bg-muted, #f8f9fb); border-left: 3px solid var(--accent, #2d7ff9); border-radius: 10px; padding: 16px 20px; margin: 24px auto; max-width: 480px; }
+    1356:.cta-box { background: var(--color-bg-muted, #f8f9fb); border-left: 3px solid var(--accent, #2d7ff9); border-radius: 10px; padding: 16px 20px; margin: 24px auto; max-width: 760px; }
 .cta-box h3 { font-size: 1rem; font-weight: 600; margin: 0 0 6px; color: var(--text); }
 .cta-box p { margin: 0 0 10px; font-size: .95rem; line-height: 1.55; color: var(--text2); }
 .cta-box p:last-child { margin-bottom: 0; }
