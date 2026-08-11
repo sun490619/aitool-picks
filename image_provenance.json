@@ -1,0 +1,25 @@
+{
+  "_meta": {
+    "purpose": "aitool-picks 配图溯源清单（强制）。每次新增 og/hero 图，必须在此登记一条合规记录，否则 pre-push 门禁会拒绝推送。这是把'配图铁律'从人脑记忆变成机器强制的关键文件。",
+    "rules": {
+      "source": "library(备用图片库真实照) | openverse(Openverse cc0 真实照)。首选 library；仅当 library 对应分类无合适图时才可用 openverse，且必须 library_checked=true + library_reason 说明查过哪些分类、为何不合适。",
+      "ocr_tool": "必须是 easyocr。严禁 tesseract（中文 OCR 假阴性会漏检水印，规则明文禁止）。",
+      "ocr_result": "必须是 clean（easyocr 未检出任何外部水印/标注）。",
+      "og_hero_same": "og:image 与文章内 hero 图必须为同一文件。",
+      "library_checked": "用 openverse 前必须先 ls 备用图片库/<对应分类> 确认无合适图，并填 reason。绝不允许'没查就直奔 openverse'。"
+    },
+    "note": "历史已上线图(2026-08-11 前)不强制回填；门禁只卡'本次新增/改动的图'。但 eDesk(og-edesk-review-2026.jpg)作为已知违规样本，已登记为 legacy_violation 待补正，仅警告不阻断。"
+  },
+  "images": {
+    "og-edesk-review-2026.jpg": {
+      "status": "legacy_violation",
+      "source": "openverse",
+      "library_checked": false,
+      "library_reason": "（历史违规）当时未先查图库，直接用的 Openverse。待用户同意后按规则重做。",
+      "ocr_tool": "tesseract",
+      "ocr_result": "clean_by_chance",
+      "og_hero_same": true,
+      "note": "已知违规样本，证明门禁逻辑；不阻断历史，但标记为待补正。"
+    }
+  }
+}
