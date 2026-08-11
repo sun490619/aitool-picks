@@ -145,6 +145,13 @@ def check_post_structure(rel):
         errs.append(f"[FAIL] {rel}: article-meta 重复({meta}个)，必须唯一")
     if 'class="related-articles"' not in h:
         errs.append(f"[FAIL] {rel}: 缺 related-articles 相关文章区块（§13.12B）")
+    # ---- §八 edesk 视觉范本：组件级样式铁律（仅卡新增文章）----
+    if '<script src="/scripts.js"' not in h:
+        errs.append(f"[FAIL] {rel}: 缺 <script src=\"/scripts.js\">（汉堡菜单必须可用，§八）")
+    if re.search(r'class="cta-box"[^>]*style=', h):
+        errs.append(f"[FAIL] {rel}: cta-box 含 inline style（必须改用共享 .cta-box 灰底样式，§八）")
+    if 'class="rating-bars"' in h and 'class="rating-pct"' not in h:
+        errs.append(f"[FAIL] {rel}: 含 rating-bars 但缺 rating-pct 显式百分比（§八）")
     return errs
 
 
