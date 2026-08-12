@@ -109,7 +109,9 @@ def og_image_of(post_path):
 def normalize(src):
     if not src:
         return None
-    return src.replace("/images/", "").split("?")[0].lstrip("/")
+    s = src.split("?")[0]
+    s = re.sub(r"^/?images/", "", s)  # 同时处理 /images/ 与 images/ 两种引用
+    return s.lstrip("/")
 
 
 def lib_has_category(cat):
