@@ -418,7 +418,16 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
                   <div class="faq-item"><h3>Does Cursor have a free plan?</h3><p>Yes — a free tier with limited fast requests, plus a Pro trial. Pro is $20/month and Business $40/month per user.</p></div>
                 </section>
 
-                <section class="how-we-test" aria-label="How we test">
+                <section class="expand-block">
+  <h2>How small teams standardize on Cursor: rules and conventions</h2>
+  <p>Solo use is great; team use gets messy when everyone's AI suggests different styles. We recommend an AGENTS.md or coding-standards doc in the repo so Cursor's Chat and Agent read the same conventions — naming, structure, test requirements spelled out, so multi-file edits stay consistent. It's effectively feeding team experience to the editor; new hires align instantly.</p>
+  <p>Another move is sharing common prompts and workflows. Turn "add error boundary," "write unit tests," "refactor to spec" into team-standard commands instead of everyone re-describing each time. Once standardized, code-review friction drops because both AI and humans follow one source of truth. Consistency in tooling is what lowers collaboration cost.</p>
+  <h2>The hidden costs of AI editors: tokens, privacy, dependency</h2>
+  <p>Cursor's Pro tier looks cheap, but heavy use — token burn, cross-file index memory, and Agent's multi-turn calls — quietly raises bills and machine load. Large repos are especially RAM-hungry and can stutter on older laptops. Estimate your team's daily volume and hardware before committing; don't just look at the monthly fee.</p>
+  <p>Privacy and dependency are the longer ledger. Sending the whole codebase to a cloud index means source leaves the local machine — enterprises must confirm privacy mode and data terms. Also, once a team leans on Agent auto-editing files, the skill of "read before you change" atrophies. Keep human review as a hard gate: AI proposes, humans decide. You keep efficiency without losing control.</p>
+</section>
+
+<section class="how-we-test" aria-label="How we test">
                     <h2 id="how-we-test">How we test</h2>
                     <p>Every tool on this page was used hands-on for real tasks &mdash; not skimmed from a press release. We sign up, run the actual workflow (write, generate, audit, or edit), and note where it helps and where it doesn't. Prices are checked against each vendor's site and marked "approximate" when they change often. We only recommend tools we'd genuinely use ourselves, and some links are affiliate links that cost you nothing extra.</p>
                 </section>

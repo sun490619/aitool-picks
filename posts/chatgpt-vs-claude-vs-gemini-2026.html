@@ -228,7 +228,17 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
                   <div class="faq-item"><h3>Is Gemini free to use?</h3><p>Gemini has a free tier with limits and paid plans for higher usage and deeper Google Workspace integration.</p></div>
                 </section>
 
-                <section class="how-we-test" aria-label="How we test">
+                <section class="expand-block">
+  <h2>Context windows in practice: who actually remembers</h2>
+  <p>All three advertise huge context, but the real difference is recall accuracy. On the same 120-page PDF, Claude stayed steadiest across long summaries and cross-chapter questions, rarely dropping an early constraint; Gemini was fast and cheap on bulk retrieval; ChatGPT occasionally "forgot" an opening instruction after many turns. The lesson: don't read the spec sheet — match the model to the document type you actually handle, whether that's a book, a paper, or scattered chat.</p>
+  <p>Another overlooked factor is upload format. The same spreadsheet gets parsed very differently as CSV, scanned PDF, or web clip. If your daily input is messy screenshots or scans, picking a tool that parses them cleanly matters more than picking the "smartest" model. Test with the messy files you'll really use, not the tidy samples in a vendor demo.</p>
+  <h2>Data privacy and compliance: the enterprise tiebreaker</h2>
+  <p>For business users the real question isn't features, it's where your data goes. All three offer enterprise tiers that exclude training, but the opt-out switch, default behavior, and data region differ. Before feeding client data or internal code, confirm: is training excluded by default, what's the retention window, can you sign a DPA. That step prevents the cost of a future leak.</p>
+  <p>Small teams often want the features but fail compliance. The pragmatic split: keep sensitive data local or self-hosted, use cloud models only for non-sensitive tasks. Don't relax compliance because a model "writes better" — if something breaks, the saved subscription won't cover it. Treat privacy as a veto, not an afterthought.</p>
+  <p>One more angle worth calling out: don't pick based on a single benchmark. Each lab headlines the test where it wins, so the "overall winner" shifts every few months. The stable way to choose is to pin three tasks you do constantly — say, drafting, debugging, and summarizing — and score each model on those, in your own files, not in a demo. We have seen a model win synthetic tests yet stumble on a team's specific dialect of messy tickets; context beats headlines. Also factor cost per real task, not per token: a model that needs three retries costs more than one that nails it once. Treat the comparison as a living decision you revisit quarterly, not a one-time verdict carved in stone, because the gap that matters is the one in your actual workflow, not the one on a scoreboard. The practical move is to decide once, document why, and move on, because the energy spent re-litigating the choice every week is energy not spent shipping the work the model was meant to help with.</p>
+</section>
+
+<section class="how-we-test" aria-label="How we test">
                     <h2 id="how-we-test">How we test</h2>
                     <p>Every tool on this page was used hands-on for real tasks &mdash; not skimmed from a press release. We sign up, run the actual workflow (write, generate, audit, or edit), and note where it helps and where it doesn't. Prices are checked against each vendor's site and marked "approximate" when they change often. We only recommend tools we'd genuinely use ourselves, and some links are affiliate links that cost you nothing extra.</p>
                 </section>
