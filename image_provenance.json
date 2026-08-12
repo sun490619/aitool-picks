@@ -20,6 +20,21 @@
       "ocr_result": "clean_by_chance",
       "og_hero_same": true,
       "note": "已知违规样本，证明门禁逻辑；不阻断历史，但标记为待补正。"
+    },
+    "og-deepl-review-2026.jpg": {
+      "status": "active",
+      "source": "openverse",
+      "source_url": "https://live.staticflickr.com/664/21713977623_7d69d4e6a8_b.jpg",
+      "license": "CC0 1.0",
+      "title": "Hands Typing on Laptop Keyboard (Flickr CC0)",
+      "used_in": [
+        "posts/deepl-review-2026-zh.html"
+      ],
+      "added_date": "2026-08-12",
+      "library_checked": true,
+      "library_reason": "翻译工具主题，备用图片库无打字/输入/语言类场景图",
+      "ocr_result": "clean",
+      "note": "替换旧彗星维基截图(完全不相关)，新图=CC0打字场景+品牌叠加层，贴合DeepL翻译工具主题"
     }
   }
 }
