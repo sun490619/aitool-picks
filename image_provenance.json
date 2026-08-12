@@ -54,6 +54,82 @@
       "ocr_result": "clean",
       "og_hero_same": true,
       "note": "替换原AI生成假文字背景图(含Hard Power/Soft Belief/Alexander等乱码)。改正此前违规：首版误用 openverse CC0 且伪造 library_checked。现严格按规则二.1 用备用图片库真实照作底图+品牌叠加层(深蓝渐变遮罩+左竖条#60a5fa+白标题+AI Tool Picks标)，easyocr复核0假文字0水印。"
+    },
+    "images/og-best-ai-tools-for-affiliate-marketers-2026.jpg": {
+      "status": "active",
+      "source": "picsum",
+      "source_detail": "Lorem Picsum 随机真实照(底图) + 本站品牌叠加层(深蓝渐变遮罩+左竖条#60a5fa+白标题+AI Tool Picks标)。底图来自 picsum(serve Unsplash 真实照片)，非备用图片库、非 Openverse CC0。属 2026-07-16 全站图片修复期生成的历史占位图(主题不贴)，按 _meta 不强制回填条款补登。",
+      "license": "picsum 随机真实照(非 CC0 标注，建议后续按现规则重做)",
+      "title": "Best AI Tools for Affiliate Marketers 2026 (品牌叠加层)",
+      "used_in": [
+        "posts/best-ai-tools-for-affiliate-marketers-2026.html",
+        "posts/best-ai-tools-for-affiliate-marketers-2026-zh.html"
+      ],
+      "added_date": "2026-08-12",
+      "library_checked": false,
+      "library_reason": "（历史占位图）2026-07-16 修复期用 picsum 生成，未按现规则查图库；待后续统一重做。",
+      "ocr_tool": "easyocr",
+      "ocr_result": "clean",
+      "ocr_note": "easyocr 仅检出本站品牌叠加层自带文字(标题+AI Tool Picks)，无外部水印/标注。",
+      "og_hero_same": true,
+      "note": "历史占位 OG 图，主题与 affiliate 营销不贴。建议后续按现规则改用备用图片库真实照重做底图(保留品牌叠加层)。"
+    },
+    "images/og-best-ai-tools-for-content-marketing-2026.jpg": {
+      "status": "active",
+      "source": "picsum",
+      "source_detail": "Lorem Picsum 随机真实照(底图) + 本站品牌叠加层(深蓝渐变遮罩+左竖条#60a5fa+白标题+AI Tool Picks标)。底图来自 picsum(serve Unsplash 真实照片)，非备用图片库、非 Openverse CC0。属 2026-07-16 全站图片修复期生成的历史占位图(主题不贴)，按 _meta 不强制回填条款补登。",
+      "license": "picsum 随机真实照(非 CC0 标注，建议后续按现规则重做)",
+      "title": "Best AI Tools for Content Marketing 2026 (品牌叠加层)",
+      "used_in": [
+        "posts/best-ai-tools-for-content-marketing-2026.html",
+        "posts/best-ai-tools-for-content-marketing-2026-zh.html"
+      ],
+      "added_date": "2026-08-12",
+      "library_checked": false,
+      "library_reason": "（历史占位图）2026-07-16 修复期用 picsum 生成，未按现规则查图库；待后续统一重做。",
+      "ocr_tool": "easyocr",
+      "ocr_result": "clean",
+      "ocr_note": "easyocr 仅检出本站品牌叠加层自带文字(标题+AI Tool Picks)，无外部水印/标注。",
+      "og_hero_same": true,
+      "note": "历史占位 OG 图，主题与内容营销不贴。建议后续按现规则改用备用图片库真实照重做底图(保留品牌叠加层)。"
+    },
+    "images/og-best-ai-tools-for-email-marketing-2026.jpg": {
+      "status": "active",
+      "source": "picsum",
+      "source_detail": "Lorem Picsum 随机真实照(底图) + 本站品牌叠加层(深蓝渐变遮罩+左竖条#60a5fa+白标题+AI Tool Picks标)。底图来自 picsum(serve Unsplash 真实照片)，非备用图片库、非 Openverse CC0。属 2026-07-16 全站图片修复期生成的历史占位图(主题不贴)，按 _meta 不强制回填条款补登。",
+      "license": "picsum 随机真实照(非 CC0 标注，建议后续按现规则重做)",
+      "title": "Best AI Tools for Email Marketing 2026 (品牌叠加层)",
+      "used_in": [
+        "posts/best-ai-tools-for-email-marketing-2026.html",
+        "posts/best-ai-tools-for-email-marketing-2026-zh.html"
+      ],
+      "added_date": "2026-08-12",
+      "library_checked": false,
+      "library_reason": "（历史占位图）2026-07-16 修复期用 picsum 生成，未按现规则查图库；待后续统一重做。",
+      "ocr_tool": "easyocr",
+      "ocr_result": "clean",
+      "ocr_note": "easyocr 仅检出本站品牌叠加层自带文字(标题+AI Tool Picks)，无外部水印/标注。",
+      "og_hero_same": true,
+      "note": "历史占位 OG 图，主题与邮件营销不贴。建议后续按现规则改用备用图片库真实照重做底图(保留品牌叠加层)。"
+    },
+    "images/og-best-ai-tools-for-landing-pages-2026.jpg": {
+      "status": "active",
+      "source": "picsum",
+      "source_detail": "Lorem Picsum 随机真实照(底图) + 本站品牌叠加层(深蓝渐变遮罩+左竖条#60a5fa+白标题+AI Tool Picks标)。底图来自 picsum(serve Unsplash 真实照片)，非备用图片库、非 Openverse CC0。属 2026-07-16 全站图片修复期生成的历史占位图(主题不贴)，按 _meta 不强制回填条款补登。",
+      "license": "picsum 随机真实照(非 CC0 标注，建议后续按现规则重做)",
+      "title": "Best AI Tools for Landing Pages 2026 (品牌叠加层)",
+      "used_in": [
+        "posts/best-ai-tools-for-landing-pages-2026.html",
+        "posts/best-ai-tools-for-landing-pages-2026-zh.html"
+      ],
+      "added_date": "2026-08-12",
+      "library_checked": false,
+      "library_reason": "（历史占位图）2026-07-16 修复期用 picsum 生成，未按现规则查图库；待后续统一重做。",
+      "ocr_tool": "easyocr",
+      "ocr_result": "clean",
+      "ocr_note": "easyocr 仅检出本站品牌叠加层自带文字(标题+AI Tool Picks)，无外部水印/标注。",
+      "og_hero_same": true,
+      "note": "历史占位 OG 图，主题与落地页不贴。建议后续按现规则改用备用图片库真实照重做底图(保留品牌叠加层)。"
     }
   }
 }

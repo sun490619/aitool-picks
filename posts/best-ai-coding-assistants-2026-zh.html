@@ -265,7 +265,13 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
                   <div class="faq-item"><h3>AI 编程助手能写出生产级代码吗？</h3><p>能写出不错的初稿。bug 集中在边界条件、并发和安全敏感代码，所以不管用哪款助手，代码审查和测试都不可省。</p></div>
                 </section>
 
-                <section class="how-we-test" aria-label="我们的测试方法">
+                <section class="expand-block">
+  <h2 id="expand-coding-daily-workflow">我们把四个助手塞进了一天</h2>
+  <p>光说"哪个最强"没意义，真实用法是<strong>在不同任务间切换</strong>：早上处理已知模式的样板代码，开 GitHub Copilot 最顺；写新模块、需要它理解整个仓库上下文时，切到 Cursor；要做跨文件重构或跑一段脚本，Claude Code 在终端里最省事；周末做个人项目，用 Codeium 把成本压到最低。关键不是选一个，而是让每个工具只干它擅长的事。</p>
+  <h2 id="expand-coding-traps">新手最容易踩的三个坑</h2>
+  <p>① <strong>盲接补全</strong>：AI 给的片段没看就 merge，常常引入静默 bug，单元测试过了、生产环境炸了。② <strong>把密钥贴进对话</strong>：有人把 .env 或 API key 直接粘进聊天窗口"让它帮我看"，等于明文外泄。③ <strong>长会话不清上下文</strong>：模型被前面错误的假设带偏，越聊越离谱。每隔一段用 /clear 或开新会话重置，输出质量立刻回来。</p>
+</section>
+<section class="how-we-test" aria-label="我们的测试方法">
                     <h2 id="我们的测试方法-2">我们的测试方法</h2>
                     <p>本页每个工具我们都亲手用于真实任务——而不是从新闻稿里扫一眼。我们注册、跑真实工作流，并记录它帮得上和帮不上的地方。价格均对照各厂商官网核实，频繁变动时标注"约"。我们只推荐自己真的会用的工具，部分链接为联盟链接，不会增加您的额外费用。</p>
                 </section>

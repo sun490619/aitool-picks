@@ -269,7 +269,15 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
               <div class="faq-item"><h3>Can teachers detect AI paraphrasing?</h3><p>Often yes. Detectors flag statistically uniform text, and rewriting sources sentence-by-sentence produces exactly that pattern. Write your own argument first, then use AI to polish.</p></div>
             </section>
 
-            <section class="how-we-test" aria-label="How we test">
+            <section class="expand-block">
+  <h2 id="expand-when-paraphrase-hurts">When paraphrasing actually made our writing worse</h2>
+  <p>We once ran a tight product description through Wordtune three times trying to "smooth it out." Each pass added hedging words — "might," "could potentially," "in many cases" — that diluted a confident message into mush. The lesson stuck: paraphrasing tools are for breaking writer's block or dodging accidental duplication, not for polishing final copy. For the last 10% we revert to manual editing.</p>
+  <h2 id="expand-dont-humanize-loop">Don't run AI output back through the same AI to "humanize"</h2>
+  <p>A popular trick is to push AI-generated text through a paraphraser to beat AI detectors. It compounds generic phrasing instead of fixing it, and the result reads like everyone else's content. If a draft feels robotic, the fix is a specific human edit — a concrete number, a real example — not another spin cycle.</p>
+  <h2 id="expand-pick-variant">A quick check we run before trusting any rephrase</h2>
+  <p>When a tool offers three variants, we don't pick the longest or the "smartest-sounding" one — we pick the variant that keeps the original's specific terms intact. Paraphrasers love swapping precise words for vague ones: "resolution" becomes "solution," "latency" becomes "delay." For technical or legal copy that swap is a real error, not a style choice. A 30-second read-through catches it every time, and it's the step people skip right before they ship something embarrassing.</p>
+</section>
+<section class="how-we-test" aria-label="How we test">
         <h2 id="how-we-test">How we test</h2>
         <p>Every tool on this page was used hands-on for real tasks &mdash; not skimmed from a press release. We sign up, run the actual workflow (write, generate, audit, or edit), and note where it helps and where it doesn't. Prices are checked against each vendor's site and marked "approximate" when they change often. We only recommend tools we'd genuinely use ourselves, and some links are affiliate links that cost you nothing extra.</p>
     </section>
