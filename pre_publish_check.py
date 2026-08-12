@@ -9,7 +9,9 @@ aitool-picks 发布前强制门禁（pre-publish gate）。
      dateModified >= datePublished / 数值字段为数字禁引号）
   ④ 列表页排序铁律（置顶第1 + 其余日期倒序）
   ⑤ 字数铁律（2026-08-13：正文 ≥1500 硬性下限，EN 计 word / ZH 计中文字符；
-     新增文章 <1500 FAIL，修改存量 <1500 WARN；>1800 仅 WARN 不卡）
+     新增文章 <1500 FAIL，修改存量 <1500 WARN；>1800 仅 WARN 不卡。
+     历史冻结集 _wordcount_frozen.json（39 篇，用户定死不再改动）字数检查全豁免）
+
 
 任何一次 push，若改动涉及【新增图】或【新增/修改 posts 文章】，
 违规即拒绝推送。只检查本次改动的文件，不误伤存量已上线文章。
@@ -44,6 +46,20 @@ def load_prov():
         return {"images": {}}
     with open(PROV_PATH) as f:
         return json.load(f)
+
+
+# 历史冻结集（2026-08-13 用户定死：以下 39 篇不再扩写/改动，字数检查豁免）
+FROZEN_PATH = os.path.join(REPO, "_wordcount_frozen.json")
+
+
+def load_frozen():
+    if not os.path.exists(FROZEN_PATH):
+        return set()
+    with open(FROZEN_PATH) as f:
+        return set(json.load(f).get("frozen", []))
+
+
+_FROZEN = load_frozen()
 
 
 def changed_files():
@@ -201,6 +217,8 @@ def check_word_count(rel, is_new):
         return errs, warns
     if "tool-selector" in os.path.basename(rel):
         return errs, warns  # 工具页豁免字数要求
+    if rel in _FROZEN:
+        return errs, warns  # 历史冻结集（用户定死不再改动）字数检查豁免
     is_zh = bool(re.search(r'<html[^>]*lang="zh"', h, re.I))
     body = re.sub(r'<script[\s\S]*?</script>', ' ', h, flags=re.I)
     body = re.sub(r'<style[\s\S]*?</style>', ' ', body, flags=re.I)
