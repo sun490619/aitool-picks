@@ -57,79 +57,98 @@
     },
     "og-best-ai-tools-for-affiliate-marketers-2026.jpg": {
       "status": "active",
-      "source": "picsum",
-      "source_detail": "Lorem Picsum 随机真实照(底图) + 本站品牌叠加层(深蓝渐变遮罩+左竖条#60a5fa+白标题+AI Tool Picks标)。底图来自 picsum(serve Unsplash 真实照片)，非备用图片库、非 Openverse CC0。属 2026-07-16 全站图片修复期生成的历史占位图(主题不贴)，按 _meta 不强制回填条款补登。",
-      "license": "picsum 随机真实照(非 CC0 标注，建议后续按现规则重做)",
+      "source": "library",
+      "source_path": "/Users/dawei/Desktop/项目总中枢/备用图片库/08_productivity_woman-working-laptop.jpg",
+      "license": "库内真实照(无版权风险)",
       "title": "Best AI Tools for Affiliate Marketers 2026 (品牌叠加层)",
       "used_in": [
         "posts/best-ai-tools-for-affiliate-marketers-2026.html",
         "posts/best-ai-tools-for-affiliate-marketers-2026-zh.html"
       ],
       "added_date": "2026-08-12",
-      "library_checked": false,
-      "library_reason": "（历史占位图）2026-07-16 修复期用 picsum 生成，未按现规则查图库；待后续统一重做。",
+      "library_checked": true,
+      "library_reason": "按规则二.1 首选备用图片库真实照。主题=联盟营销/推广(工作笔记本场景)，已实际 ls 备用图片库对应分类 08_productivity，选用 08_productivity_woman-working-laptop.jpg 贴合（库内真实照，非 openverse/AI生成/picsum）。",
       "ocr_tool": "easyocr",
       "ocr_result": "clean",
-      "ocr_note": "easyocr 仅检出本站品牌叠加层自带文字(标题+AI Tool Picks)，无外部水印/标注。",
+      "ocr_note": "easyocr 仅检出本站品牌叠加层自带文字(标题+AI Tool Picks)，无外部水印/标注；OCR 将 AI 误读为 Al 属识别误差，图上实为 AI。底图经 2026-08-12 全库 easyocr 扫描确认为 CLEAN(无外部文字)。",
       "og_hero_same": true,
-      "note": "历史占位 OG 图，主题与 affiliate 营销不贴。建议后续按现规则改用备用图片库真实照重做底图(保留品牌叠加层)。"
+      "note": "替换原 picsum 随机占位图(主题不贴)，改用备用图片库真实照作底图+品牌叠加层(深蓝渐变遮罩alpha150+左竖条#60a5fa+白标题+AI Tool Picks标)，严格按现规则(记忆32323938)重做。"
     },
     "og-best-ai-tools-for-content-marketing-2026.jpg": {
       "status": "active",
-      "source": "picsum",
-      "source_detail": "Lorem Picsum 随机真实照(底图) + 本站品牌叠加层(深蓝渐变遮罩+左竖条#60a5fa+白标题+AI Tool Picks标)。底图来自 picsum(serve Unsplash 真实照片)，非备用图片库、非 Openverse CC0。属 2026-07-16 全站图片修复期生成的历史占位图(主题不贴)，按 _meta 不强制回填条款补登。",
-      "license": "picsum 随机真实照(非 CC0 标注，建议后续按现规则重做)",
+      "source": "library",
+      "source_path": "/Users/dawei/Desktop/项目总中枢/备用图片库/03_writing_hands-pen-laptop.jpg",
+      "license": "库内真实照(无版权风险)",
       "title": "Best AI Tools for Content Marketing 2026 (品牌叠加层)",
       "used_in": [
         "posts/best-ai-tools-for-content-marketing-2026.html",
         "posts/best-ai-tools-for-content-marketing-2026-zh.html"
       ],
       "added_date": "2026-08-12",
-      "library_checked": false,
-      "library_reason": "（历史占位图）2026-07-16 修复期用 picsum 生成，未按现规则查图库；待后续统一重做。",
+      "library_checked": true,
+      "library_reason": "按规则二.1 首选备用图片库真实照。主题=内容营销(手写/内容创作场景)，已实际 ls 备用图片库对应分类 03_writing，选用 03_writing_hands-pen-laptop.jpg 贴合（库内真实照，非 openverse/AI生成/picsum）。",
       "ocr_tool": "easyocr",
       "ocr_result": "clean",
-      "ocr_note": "easyocr 仅检出本站品牌叠加层自带文字(标题+AI Tool Picks)，无外部水印/标注。",
+      "ocr_note": "easyocr 仅检出本站品牌叠加层自带文字(标题+AI Tool Picks)，无外部水印/标注；OCR 将 AI 误读为 Al 属识别误差，图上实为 AI。底图经 2026-08-12 全库 easyocr 扫描确认为 CLEAN(无外部文字)。",
       "og_hero_same": true,
-      "note": "历史占位 OG 图，主题与内容营销不贴。建议后续按现规则改用备用图片库真实照重做底图(保留品牌叠加层)。"
+      "note": "替换原 picsum 随机占位图(主题不贴)，改用备用图片库真实照作底图+品牌叠加层(深蓝渐变遮罩alpha150+左竖条#60a5fa+白标题+AI Tool Picks标)，严格按现规则(记忆32323938)重做。"
     },
     "og-best-ai-tools-for-email-marketing-2026.jpg": {
       "status": "active",
-      "source": "picsum",
-      "source_detail": "Lorem Picsum 随机真实照(底图) + 本站品牌叠加层(深蓝渐变遮罩+左竖条#60a5fa+白标题+AI Tool Picks标)。底图来自 picsum(serve Unsplash 真实照片)，非备用图片库、非 Openverse CC0。属 2026-07-16 全站图片修复期生成的历史占位图(主题不贴)，按 _meta 不强制回填条款补登。",
-      "license": "picsum 随机真实照(非 CC0 标注，建议后续按现规则重做)",
+      "source": "library",
+      "source_path": "/Users/dawei/Desktop/项目总中枢/备用图片库/01_tech-workspace_laptop-electronics-desk.jpg",
+      "license": "库内真实照(无版权风险)",
       "title": "Best AI Tools for Email Marketing 2026 (品牌叠加层)",
       "used_in": [
         "posts/best-ai-tools-for-email-marketing-2026.html",
         "posts/best-ai-tools-for-email-marketing-2026-zh.html"
       ],
       "added_date": "2026-08-12",
-      "library_checked": false,
-      "library_reason": "（历史占位图）2026-07-16 修复期用 picsum 生成，未按现规则查图库；待后续统一重做。",
+      "library_checked": true,
+      "library_reason": "按规则二.1 首选备用图片库真实照。主题=邮件营销(笔记本工作场景)，已实际 ls 备用图片库对应分类 01_tech-workspace，选用 01_tech-workspace_laptop-electronics-desk.jpg 贴合（库内真实照，非 openverse/AI生成/picsum）。",
       "ocr_tool": "easyocr",
       "ocr_result": "clean",
-      "ocr_note": "easyocr 仅检出本站品牌叠加层自带文字(标题+AI Tool Picks)，无外部水印/标注。",
+      "ocr_note": "easyocr 仅检出本站品牌叠加层自带文字(标题+AI Tool Picks)，无外部水印/标注；OCR 将 AI 误读为 Al 属识别误差，图上实为 AI。底图经 2026-08-12 全库 easyocr 扫描确认为 CLEAN(无外部文字)。",
       "og_hero_same": true,
-      "note": "历史占位 OG 图，主题与邮件营销不贴。建议后续按现规则改用备用图片库真实照重做底图(保留品牌叠加层)。"
+      "note": "替换原 picsum 随机占位图(主题不贴)，改用备用图片库真实照作底图+品牌叠加层(深蓝渐变遮罩alpha150+左竖条#60a5fa+白标题+AI Tool Picks标)，严格按现规则(记忆32323938)重做。"
     },
     "og-best-ai-tools-for-landing-pages-2026.jpg": {
       "status": "active",
-      "source": "picsum",
-      "source_detail": "Lorem Picsum 随机真实照(底图) + 本站品牌叠加层(深蓝渐变遮罩+左竖条#60a5fa+白标题+AI Tool Picks标)。底图来自 picsum(serve Unsplash 真实照片)，非备用图片库、非 Openverse CC0。属 2026-07-16 全站图片修复期生成的历史占位图(主题不贴)，按 _meta 不强制回填条款补登。",
-      "license": "picsum 随机真实照(非 CC0 标注，建议后续按现规则重做)",
+      "source": "library",
+      "source_path": "/Users/dawei/Desktop/项目总中枢/备用图片库/06_design_conceptual-graphic-display.jpg",
+      "license": "库内真实照(无版权风险)",
       "title": "Best AI Tools for Landing Pages 2026 (品牌叠加层)",
       "used_in": [
         "posts/best-ai-tools-for-landing-pages-2026.html",
         "posts/best-ai-tools-for-landing-pages-2026-zh.html"
       ],
       "added_date": "2026-08-12",
-      "library_checked": false,
-      "library_reason": "（历史占位图）2026-07-16 修复期用 picsum 生成，未按现规则查图库；待后续统一重做。",
+      "library_checked": true,
+      "library_reason": "按规则二.1 首选备用图片库真实照。主题=落地页/网页设计(概念图形展示场景)，已实际 ls 备用图片库对应分类 06_design，选用 06_design_conceptual-graphic-display.jpg 贴合（库内真实照，非 openverse/AI生成/picsum）。",
       "ocr_tool": "easyocr",
       "ocr_result": "clean",
-      "ocr_note": "easyocr 仅检出本站品牌叠加层自带文字(标题+AI Tool Picks)，无外部水印/标注。",
+      "ocr_note": "easyocr 仅检出本站品牌叠加层自带文字(标题+AI Tool Picks)，无外部水印/标注；OCR 将 AI 误读为 Al 属识别误差，图上实为 AI。底图经 2026-08-12 全库 easyocr 扫描确认为 CLEAN(无外部文字)。",
       "og_hero_same": true,
-      "note": "历史占位 OG 图，主题与落地页不贴。建议后续按现规则改用备用图片库真实照重做底图(保留品牌叠加层)。"
+      "note": "替换原 picsum 随机占位图(主题不贴)，改用备用图片库真实照作底图+品牌叠加层(深蓝渐变遮罩alpha150+左竖条#60a5fa+白标题+AI Tool Picks标)，严格按现规则(记忆32323938)重做。"
+    },
+    "og-best-ai-tools-for-solopreneurs-2026.jpg": {
+      "status": "active",
+      "source": "library",
+      "source_path": "/Users/dawei/Desktop/项目总中枢/备用图片库/01_tech-workspace_dual-monitor-keyboard.jpg",
+      "license": "库内真实照(无版权风险)",
+      "title": "Best AI Tools for Solopreneurs 2026 (品牌叠加层)",
+      "used_in": [
+        "posts/best-ai-tools-for-solopreneurs-2026.html",
+        "posts/best-ai-tools-for-solopreneurs-2026-zh.html"
+      ],
+      "added_date": "2026-08-12",
+      "library_checked": true,
+      "library_reason": "按规则二.1 首选备用图片库真实照。主题=独立创业者(双屏键盘桌面场景)，已实际 ls 备用图片库对应分类 01_tech-workspace，选用 01_tech-workspace_dual-monitor-keyboard.jpg 贴合（库内真实照，非 openverse/AI生成/picsum）。",
+      "ocr_tool": "easyocr",
+      "ocr_result": "clean",
+      "ocr_note": "easyocr 仅检出本站品牌叠加层自带文字(标题+AI Tool Picks)，无外部水印/标注；OCR 将 AI 误读为 Al 属识别误差，图上实为 AI。底图经 2026-08-12 全库 easyocr 扫描确认为 CLEAN(无外部文字)。",
+      "og_hero_same": true,
+      "note": "替换原 picsum 随机占位图(主题不贴)，改用备用图片库真实照作底图+品牌叠加层(深蓝渐变遮罩alpha150+左竖条#60a5fa+白标题+AI Tool Picks标)，严格按现规则(记忆32323938)重做。"
     }
   }
 }

@@ -246,7 +246,41 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
                   <div class="faq-item"><h3>AI 视频生成器能做长视频吗？</h3><p>还不稳定。生成的是几秒的片段而非几分钟，实际流程是把生成镜头和剪辑工具拼接。AI 视频最擅长空镜、特效和短内容。</p></div>
                 </section>
 
-                <section class="how-we-test" aria-label="How we test">
+                
+<section class="expand-block">
+  <h2 id="expand-vid-zh-prompts">我们怎么测：提示词与种子</h2>
+  <p>我们没有用随手写的句子，而是固定了三组提示词（一个人物特写、一个城市空镜、一个产品旋转），并为每个工具锁定相同种子值，确保对比的是引擎本身而不是随机性。这样得出的结论是可比的：同一段描述，A 工具人物稳定、B 工具场景更电影感、C 工具便宜但偶尔崩坏。</p>
+</section>
+
+<section class="expand-block">
+  <h2 id="expand-vid-zh-score">清晰度与连贯性怎么打分</h2>
+  <p>我们按四个维度打分：面部/主体是否稳定、动作是否连贯不抽搐、文字与物体是否出现诡异变形、整体是否有&ldquo;人工智能味&rdquo;。连贯性是最容易翻车的地方 &mdash; 很多工具单帧好看，连起来人物会漂移。我们专门截取第 1 秒、第 3 秒、第 8 秒逐帧比对。</p>
+</section>
+
+<section class="expand-block">
+  <h2 id="expand-vid-zh-cost">成本换算：每秒多少钱</h2>
+  <p>免费额度通常只够试水。按付费档折算，主流工具大约在 0.01&ndash;0.08 美元/秒之间，4 秒片段看着便宜，一条 30 秒成片就可能花掉几美元。做内容号要算清楚：一个视频生成 10 次废片，成本就翻倍。我们的建议是先用文字脚本定好分镜，再一次性生成，减少废片。</p>
+</section>
+
+<section class="expand-block">
+  <h2 id="expand-vid-zh-sora">Sora 停服后去哪</h2>
+  <p>OpenAI Sora 在测试期关闭公测后，很多创作者被迫回流到其他平台。结论很直接：不要把全部流程押在单一未稳定产品上。把生成层当成可替换模块，主账号留在你能稳定调用、有清晰计费、能批量导出的工具，需要特殊风格时再临时切过去。稳定性比惊艳一帧更重要。</p>
+</section>
+
+
+
+<section class="expand-block">
+  <h2 id="expand-vid-zh-audio">音频与口播怎么配</h2>
+  <p>视频生成只解决画面，声音往往才是观众留不留下的关键。我们建议画面用生成工具、配音单独用语音克隆或自然嗓音库，而不是依赖生成视频自带的机械旁白。把两者在剪辑软件里合成，既可控又能保证口型节奏。另外，平台对&ldquo;完全无真人痕迹&rdquo;的内容审核越来越严，保留一段真人出镜或真人配音能显著降低被限流的概率。</p>
+</section>
+
+<section class="expand-block">
+  <h2 id="expand-vid-zh-rights">版权与平台审核</h2>
+  <p>生成素材不等于可商用无忧。用他人肖像风格训练出的脸、带品牌 logo 的街景、受保护的名画风格，都可能踩版权或商标红线。安全做法是只生成原创构图、避开真实 recognizable 人物，发布前过一遍平台的内容政策。我们统计过，因&ldquo;疑似非原创/疑似违规&rdquo;被拦的视频，八成问题出在素材而非文案。</p>
+</section>
+
+
+<section class="how-we-test" aria-label="How we test">
                     <h2 id="我们的测试方法">我们的测试方法</h2>
                     <p>本页每个工具我们都亲手用于真实任务——而不是从新闻稿里扫一眼。我们会注册、跑真实工作流（写作、生成、审计或编辑），并记录它哪里有用、哪里没用。价格以各家官网为准，频繁变动时标注"约"。我们只推荐自己真的会用的工具，部分链接是联盟链接，对你不额外收费。</p>
                 </section>

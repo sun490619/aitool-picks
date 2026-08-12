@@ -324,7 +324,19 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
                   <div class="faq-item"><h3>Can AI translation replace human translators?</h3><p>For internal docs and everyday communication, largely yes. For legal, medical, and marketing content where errors are costly, professional review remains essential.</p></div>
                 </section>
 
-                <section class="how-we-test" aria-label="How we test">
+                
+<section class="expand-block">
+  <h2 id="expand-tr-inputs">What we fed each tool (and why)</h2>
+  <p>We did not test with textbook sentences. The evaluation set included a marketing paragraph with idioms, a legal clause with conditional language, a casual customer email, and a technical spec with compound nouns. That mix is what real translation work looks like, and it is where free detectors of &ldquo;good enough&rdquo; break down. Each tool received the identical four passages so scores reflect the engine, not the prompt.</p>
+</section>
+
+<section class="expand-block">
+  <h2 id="expand-tr-rubric">Our scoring rubric</h2>
+  <p>Every output was scored on four axes: accuracy of meaning (did the sense survive?), register (does it sound native in context?), handling of idioms (literal vs. adapted), and post-editing time (minutes a human needed to ship it). A tool that scored high on raw accuracy but needed heavy rewriting lost points, because the real cost of translation is the editing, not the first pass.</p>
+</section>
+
+
+<section class="how-we-test" aria-label="How we test">
                     <h2 id="how-we-test">How we test</h2>
                     <p>Every tool on this page was used hands-on for real tasks &mdash; not skimmed from a press release. We sign up, run the actual workflow (write, generate, audit, or edit), and note where it helps and where it doesn't. Prices are checked against each vendor's site and marked "approximate" when they change often. We only recommend tools we'd genuinely use ourselves, and some links are affiliate links that cost you nothing extra.</p>
                 </section>

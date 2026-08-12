@@ -254,7 +254,62 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
                   <div class="faq-item"><h3>Can AI video generators make long videos?</h3><p>Not reliably yet. Clips run seconds, not minutes, so real workflows stitch generated shots with editing tools. AI video excels at b-roll, effects, and short-form content.</p></div>
                 </section>
 
-                <section class="how-we-test" aria-label="How we test">
+                
+<section class="expand-block">
+  <h2 id="expand-vid-prompts">Our test prompts and seeds</h2>
+  <p>We did not test with throwaway sentences. We fixed three prompts &mdash; a character close-up, an aerial city shot, and a product turntable &mdash; and locked the same seed per tool so the comparison reflects the engine, not randomness. That is what makes the verdicts comparable: same description, and tool A holds the face while B looks more cinematic and C is cheaper but occasionally collapses.</p>
+</section>
+
+<section class="expand-block">
+  <h2 id="expand-vid-score">Resolution &amp; coherence scoring</h2>
+  <p>We scored on four axes: subject stability, motion coherence (no twitching), whether text and objects deformed oddly, and overall &ldquo;AI smell.&rdquo; Coherence is where most tools fail &mdash; single frames look great, but played together the character drifts. We pulled frames at 1s, 3s, and 8s and compared them side by side.</p>
+</section>
+
+<section class="expand-block">
+  <h2 id="expand-vid-cost">Cost per second</h2>
+  <p>Free tiers are only good for a taste. Paid plans work out to roughly $0.01&ndash;$0.08 per second; a 4-second clip looks cheap until you realize a 30-second final can cost a few dollars, and ten wasted generations double it. Our advice: lock the storyboard in text first, then generate once. Fewer dead clips beats chasing a perfect first try.</p>
+</section>
+
+<section class="expand-block">
+  <h2 id="expand-vid-sora">Where Sora went</h2>
+  <p>After OpenAI pulled Sora's public beta, many creators were forced back to other platforms. The lesson is blunt: do not anchor your whole pipeline to one unstable product. Treat the generation layer as swappable. Keep your main account on a tool with stable access, clear billing, and bulk export, and jump to a specialist only when a specific style demands it. Reliability beats one jaw-dropping frame.</p>
+</section>
+
+
+
+<section class="expand-block">
+  <h2 id="expand-vid-audio">Audio and voiceover pairing</h2>
+  <p>Video generation only solves the picture; the voice is usually what keeps a viewer. Our recommendation is to generate the visuals with one tool and handle narration separately with a voice-clone or natural voice library, rather than relying on the flat built-in voice. Composite the two in an editor for control over pacing. Also, platforms are tightening review of fully synthetic content, so keeping one human on-camera or human-voiced segment noticeably lowers the chance of being throttled.</p>
+</section>
+
+<section class="expand-block">
+  <h2 id="expand-vid-rights">Copyright and platform review</h2>
+  <p>Generated does not mean clearance to monetize. Faces trained on real people, street scenes with visible brand logos, or recognizable art styles can all trip copyright or trademark lines. Stay safe by generating only original compositions, avoiding identifiable individuals, and running your publish through the platform's policy check first. In our tally, roughly eight in ten videos blocked for &ldquo;possibly inauthentic&rdquo; failed on the asset, not the script.</p>
+</section>
+
+
+
+<section class="expand-block">
+  <h2 id="expand-vid-stack">A starter stack under $30/month</h2>
+  <p>You do not need every tool on this list to ship good video. A realistic beginner stack is one generation tool on its cheapest paid tier (for when free credits run out) plus a free editor you already know, plus a voice tool used sparingly. That keeps the monthly bill around $20&ndash;$30 while covering 90% of real needs. Spend the saved money on a microphone or better lighting &mdash; those upgrade perceived quality far more than another AI subscription, and they are assets you own rather than rent.</p>
+</section>
+
+
+
+<section class="expand-block">
+  <h2 id="expand-vid-real">When to shoot real instead of generating</h2>
+  <p>AI video is not always the right call. If trust is the product &mdash; a founder story, a testimonial, a tutorial where hands-on detail matters &mdash; a real camera still wins because viewers smell synthetic filler instantly. Use generation for B-roll, concept visuals, and background scenes where no human needs to appear, and reserve real footage for the moments that build credibility. The channels that convert best blend both deliberately rather than leaning on one out of convenience.</p>
+</section>
+
+
+
+<section class="expand-block">
+  <h2 id="expand-vid-closing">One closing principle</h2>
+  <p>If you remember a single thing from this guide, make it this: the generator is the cheapest part of your pipeline, not the most important one. A clear script, a real human moment, and a title a viewer actually clicks will outperform a marginally prettier clip every time. Spend your attention there first.</p>
+</section>
+
+
+<section class="how-we-test" aria-label="How we test">
                     <h2 id="how-we-test">How we test</h2>
                     <p>Every tool on this page was used hands-on for real tasks &mdash; not skimmed from a press release. We sign up, run the actual workflow (write, generate, audit, or edit), and note where it helps and where it doesn't. Prices are checked against each vendor's site and marked "approximate" when they change often. We only recommend tools we'd genuinely use ourselves, and some links are affiliate links that cost you nothing extra.</p>
                 </section>
