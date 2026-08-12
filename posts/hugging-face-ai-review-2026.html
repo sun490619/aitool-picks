@@ -196,7 +196,8 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
                 <li><a href="#pricing">Pricing</a></li>
                 <li><a href="#best-use-cases">Best Use Cases</a></li>
                 <li><a href="#final-verdict">Final Verdict</a></li>
-            </ul>
+                            <li><a href="#faq">FAQ</a></li>
+</ul>
         </div>
 <h2 id="model-library">Model Library</h2>
         <p>The Hugging Face Hub now hosts hundreds of thousands of models. Finding the right model is faster than it used to be because the leaderboards, task filters, and download counts give you context. The filter for text generation, image classification, translation, and embedding tasks is reliable. What is still missing is a strong quality signal outside English benchmarks. If you need a multilingual classifier or a legal-domain LLM, you will still spend meaningful time reading model cards and testing samples.</p>
@@ -232,6 +233,14 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
         <p>Hugging Face is the default starting point for anyone who wants to use open AI models without building a GPU cluster from scratch. It is not the cheapest production runtime by the token, but it is the fastest path from curiosity to working code. If your project needs model transparency, open weights, or offline inference, Hugging Face is harder to replace than any single closed API.</p>
         <p><strong>Verdict: Recommended for developers, researchers, and teams evaluating open models versus closed APIs.</strong></p>
     
+
+                <section class="faq-section">
+                  <h2 id="faq">Frequently asked questions</h2>
+                  <div class="faq-item"><h3>What is Hugging Face used for?</h3><p>It's the largest open hub for AI models, datasets, and demos — download models, run inference via API, host demos in Spaces, and use the Transformers library. Think GitHub for machine learning.</p></div>
+                  <div class="faq-item"><h3>Is Hugging Face free?</h3><p>Model downloads, most datasets, and community features are free. Paid tiers (from $9/month) add private repos, faster inference endpoints, and hardware upgrades for Spaces.</p></div>
+                  <div class="faq-item"><h3>Can beginners use Hugging Face?</h3><p>Yes — Spaces demos run in the browser with no setup, and pipelines in the Transformers library wrap complex models into a few lines of Python. Deploying to production needs more engineering.</p></div>
+                </section>
+
                 <section class="how-we-test" aria-label="How we test">
                     <h2 id="how-we-test">How we test</h2>
                     <p>Every tool on this page was used hands-on for real tasks &mdash; not skimmed from a press release. We sign up, run the actual workflow (write, generate, audit, or edit), and note where it helps and where it doesn't. Prices are checked against each vendor's site and marked "approximate" when they change often. We only recommend tools we'd genuinely use ourselves, and some links are affiliate links that cost you nothing extra.</p>

@@ -194,7 +194,8 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
                 <li><a href="#deployment-considerations">Deployment Considerations</a></li>
                 <li><a href="#comparison-summary">Comparison Summary</a></li>
                 <li><a href="#final-verdict">Final Verdict</a></li>
-            </ul>
+                            <li><a href="#faq">FAQ</a></li>
+</ul>
         </div>
 <h2 id="llama-models">Llama Models</h2>
         <p>Meta's latest Llama release is a strong general-purpose model. It performs well on reasoning, coding, and long-context tasks. The weights are available for research and commercial use under a permissive license. The main advantage of Llama is ecosystem support: most local inference tools, fine-tuning frameworks, and quantization formats support it first. If you want a single model family for multiple use cases, Llama is the lowest-risk choice.</p>
@@ -219,6 +220,14 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
         <p>Open source models are now production-ready for teams that prioritize data control, cost control, or offline operation. Closed models still lead on raw capability and convenience, but the gap shrinks every release. The smartest strategy in 2026 is to use open models where control and cost matter and closed models where capability and integration speed matter.</p>
         <p><strong>Verdict: Recommended as viable alternatives to closed models for private hosting and offline workflows.</strong></p>
     
+
+                <section class="faq-section">
+                  <h2 id="faq">Frequently asked questions</h2>
+                  <div class="faq-item"><h3>What are the best open source AI models in 2026?</h3><p>Llama leads general chat and reasoning, Mistral offers the best efficiency-to-quality ratio for smaller deployments, and Stable Diffusion remains the image standard. All three run privately on your own hardware.</p></div>
+                  <div class="faq-item"><h3>Are open source models as good as GPT-4 or Claude?</h3><p>For everyday tasks, remarkably close. They trail top closed models on the hardest reasoning, but win on privacy, cost at scale, and fine-tuning freedom.</p></div>
+                  <div class="faq-item"><h3>What hardware do you need to run open models?</h3><p>Quantized 7–13B models run on a decent consumer GPU or Apple Silicon Mac. Larger models need 24GB+ VRAM or cloud GPUs — or use hosted inference to skip hardware entirely.</p></div>
+                </section>
+
                 <section class="how-we-test" aria-label="How we test">
                     <h2 id="how-we-test">How we test</h2>
                     <p>Every tool on this page was used hands-on for real tasks &mdash; not skimmed from a press release. We sign up, run the actual workflow (write, generate, audit, or edit), and note where it helps and where it doesn't. Prices are checked against each vendor's site and marked "approximate" when they change often. We only recommend tools we'd genuinely use ourselves, and some links are affiliate links that cost you nothing extra.</p>

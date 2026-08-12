@@ -195,7 +195,8 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
                 <li><a href="#部署考量">部署考量</a></li>
                 <li><a href="#对比小结">对比小结</a></li>
                 <li><a href="#最终结论">最终结论</a></li>
-            </ul>
+                            <li><a href="#faq">常见问题</a></li>
+</ul>
         </div>
 <h2 id="llama">Llama 系列</h2>
             <p>Meta 最新的 Llama 是强通用模型，在推理、编码和长上下文任务上表现好。权重以宽松许可供研究和商业使用。Llama 的最大优势是生态支持：多数本地推理工具、微调框架和量化格式都最先支持它。如果你想用一个模型家族覆盖多场景，Llama 是风险最低的选择。</p>
@@ -219,6 +220,14 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
             <h2 id="最终结论">最终结论</h2>
             <p>对重视数据控制、成本控制或离线运行的团队，开源模型现在已能用于生产。闭源模型在原始能力和便利性上仍领先，但差距每次发版都在缩小。2026 年最聪明的策略是：在控制和成本重要的地方用开源模型，在能力和集成速度重要的地方用闭源模型。</p>
             <p><strong>结论：作为闭源模型的可用替代，推荐用于私有托管和离线工作流。</strong></p>
+
+
+            <section class="faq-section">
+              <h2 id="faq">常见问题</h2>
+              <div class="faq-item"><h3>2026 年最好的开源 AI 模型有哪些？</h3><p>通用对话和推理 Llama 领先，小规模部署的效率质量比 Mistral 最佳，图像标准仍是 Stable Diffusion。三者都能在自有硬件上私密运行。</p></div>
+              <div class="faq-item"><h3>开源模型有 GPT-4 或 Claude 那么强吗？</h3><p>日常任务上惊人地接近。最难的推理仍落后顶级闭源模型，但在隐私、规模化成本和微调自由度上完胜。</p></div>
+              <div class="faq-item"><h3>跑开源模型需要什么硬件？</h3><p>量化后的 7–13B 模型在不错的消费级显卡或 Apple Silicon Mac 上就能跑。更大的模型需要 24GB+ 显存或云 GPU——或者直接用托管推理跳过硬件。</p></div>
+            </section>
 
             <section class="how-we-test" aria-label="我们的测试方法">
                 <h2 id="我们的测试方法">我们的测试方法</h2>

@@ -196,7 +196,8 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
                 <li><a href="#价格">价格</a></li>
                 <li><a href="#最佳用例">最佳用例</a></li>
                 <li><a href="#最终结论">最终结论</a></li>
-            </ul>
+                            <li><a href="#faq">常见问题</a></li>
+</ul>
         </div>
 <h2 id="ghostwriter-agent">Ghostwriter 与 Agent 模式</h2>
             <p>Ghostwriter 是行内助手。它给补全、解释选中代码、从函数签名生成单元测试。对常见库和标准模式准确率不错；对冷门框架或结构特殊的内部代码库较弱。Agent 模式把这个扩展成一个循环：读错误、提修复、应用、重跑命令。我们在一个小 FastAPI 项目上测了它，它修好了导入错误和缺失的环境变量，全程我们没碰终端。</p>
@@ -228,6 +229,14 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
             <h2 id="最终结论">最终结论</h2>
             <p>Replit AI 是"有想法、想在同一小时看到它跑起来"的人的最佳入口。Agent 模式不是自主发布，但它移除的摩擦足够多，让"想法到可用原型"的差距比 2026 年任何浏览器 IDE 都小。对生产级系统，你最终会超出它的能力。对验证和学习，它难被击败。</p>
             <p><strong>结论：推荐给重视速度胜过基础设施控制的快速原型、学习和独立构建者。</strong></p>
+
+
+            <section class="faq-section">
+              <h2 id="faq">常见问题</h2>
+              <div class="faq-item"><h3>Replit AI 适合干什么？</h3><p>在浏览器里带智能体辅助地开发和部署——它的 Agent 能根据一句描述搭脚手架、写代码、上线可用应用。最适合原型、学习和小产品。</p></div>
+              <div class="faq-item"><h3>Replit 多少钱？</h3><p>付费版约 $25/月起，智能体积分按用量另计。重度使用 Agent 成本会上涨，大项目要盯着用量表。</p></div>
+              <div class="faq-item"><h3>Replit Agent 能做生产级应用吗？</h3><p>它能很快上线真实可用的应用，但复杂生产系统仍需工程审查——安全、扩展性和边界情况还是人的责任。</p></div>
+            </section>
 
             <section class="how-we-test" aria-label="我们的测试方法">
                 <h2 id="我们的测试方法">我们的测试方法</h2>

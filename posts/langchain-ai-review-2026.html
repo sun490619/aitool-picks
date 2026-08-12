@@ -195,7 +195,8 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
                 <li><a href="#comparison">Comparison</a></li>
                 <li><a href="#pricing">Pricing</a></li>
                 <li><a href="#final-verdict">Final Verdict</a></li>
-            </ul>
+                            <li><a href="#faq">FAQ</a></li>
+</ul>
         </div>
 <h2 id="chains-and-pipelines">Chains and Pipelines</h2>
         <p>A chain is a sequence of calls. LangChain's historical chain abstractions have been replaced by LCEL, the LangChain Expression Language. LCEL lets you compose prompts, models, and output parsers with a pipe syntax. That syntax is cleaner than the old chain classes and works better with streaming and async execution. For most new projects, start with LCEL instead of legacy chains.</p>
@@ -223,6 +224,14 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
         <p>LangChain is the default starting point for developers building LLM applications in 2026. The ecosystem is large, the abstractions are useful, and the community support is strong. The downside is that the framework changes quickly and documentation sometimes lags behind releases. If you choose LangChain, pin your dependency version and isolate framework code from business logic so upgrades do not become risky.</p>
         <p><strong>Verdict: Recommended as the primary framework for production LLM applications, with the caveat to stabilize versions early.</strong></p>
     
+
+                <section class="faq-section">
+                  <h2 id="faq">Frequently asked questions</h2>
+                  <div class="faq-item"><h3>What is LangChain used for?</h3><p>LangChain is the most widely used framework for building LLM applications — chaining prompts, connecting tools and agents, managing memory, and wiring retrieval (RAG) over your own data.</p></div>
+                  <div class="faq-item"><h3>Is LangChain free?</h3><p>The open-source framework is free. Costs come from the LLM APIs you call and optional hosted services like LangSmith for tracing and evaluation (from around $9/month).</p></div>
+                  <div class="faq-item"><h3>Do I need LangChain to build with LLMs?</h3><p>No — simple apps can call model APIs directly. LangChain earns its complexity when you need agents, tool use, RAG pipelines, or swapping providers without rewriting everything.</p></div>
+                </section>
+
                 <section class="how-we-test" aria-label="How we test">
                     <h2 id="how-we-test">How we test</h2>
                     <p>Every tool on this page was used hands-on for real tasks &mdash; not skimmed from a press release. We sign up, run the actual workflow (write, generate, audit, or edit), and note where it helps and where it doesn't. Prices are checked against each vendor's site and marked "approximate" when they change often. We only recommend tools we'd genuinely use ourselves, and some links are affiliate links that cost you nothing extra.</p>

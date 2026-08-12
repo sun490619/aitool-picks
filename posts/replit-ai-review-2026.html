@@ -195,7 +195,8 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
                 <li><a href="#pricing">Pricing</a></li>
                 <li><a href="#best-use-cases">Best Use Cases</a></li>
                 <li><a href="#final-verdict">Final Verdict</a></li>
-            </ul>
+                            <li><a href="#faq">FAQ</a></li>
+</ul>
         </div>
 <h2 id="ghostwriter-and-agent-mode">Ghostwriter and Agent Mode</h2>
         <p>Ghostwriter is the inline assistant. It suggests completions, explains selected code, and generates unit tests from function signatures. Accuracy is good for common libraries and standard patterns. It is weaker on niche frameworks or internal codebases with unusual structure. Agent Mode extends this by running a loop: read the error, propose a fix, apply it, rerun the command. We tested it on a small FastAPI project. It fixed import errors and missing environment variables without us touching the terminal.</p>
@@ -228,6 +229,14 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
         <p>Replit AI is the best on-ramp for people who have an idea and want to see it run within the same hour. The agentic mode is not autonomous shipping, but it removes enough friction that the gap between idea and working prototype is smaller than any other browser IDE in 2026. For production-grade systems, you will eventually outgrow it. For validation and learning, it is hard to beat.</p>
         <p><strong>Verdict: Recommended for rapid prototyping, learning, and solo builders who value speed over infrastructure control.</strong></p>
     
+
+                <section class="faq-section">
+                  <h2 id="faq">Frequently asked questions</h2>
+                  <div class="faq-item"><h3>What is Replit AI good for?</h3><p>Building and deploying from the browser with agentic assistance — its Agent can scaffold, code, and ship a working app from a description. Best for prototypes, learning, and small products.</p></div>
+                  <div class="faq-item"><h3>How much does Replit cost?</h3><p>Paid plans start around $25/month with usage-based agent credits on top. Costs can climb with heavy agent use, so watch the meter on big builds.</p></div>
+                  <div class="faq-item"><h3>Can Replit Agent build production apps?</h3><p>It ships real, deployed apps fast, but complex production systems still need engineering review — security, scaling, and edge cases remain human responsibilities.</p></div>
+                </section>
+
                 <section class="how-we-test" aria-label="How we test">
                     <h2 id="how-we-test">How we test</h2>
                     <p>Every tool on this page was used hands-on for real tasks &mdash; not skimmed from a press release. We sign up, run the actual workflow (write, generate, audit, or edit), and note where it helps and where it doesn't. Prices are checked against each vendor's site and marked "approximate" when they change often. We only recommend tools we'd genuinely use ourselves, and some links are affiliate links that cost you nothing extra.</p>

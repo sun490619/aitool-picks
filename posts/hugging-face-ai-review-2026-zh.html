@@ -197,7 +197,8 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
                 <li><a href="#价格">价格</a></li>
                 <li><a href="#最佳用例">最佳用例</a></li>
                 <li><a href="#最终结论">最终结论</a></li>
-            </ul>
+                            <li><a href="#faq">常见问题</a></li>
+</ul>
         </div>
 <h2 id="模型库">模型库</h2>
             <p>Hugging Face Hub 现在托管数十万个模型。找到对的模型比过去快，因为排行榜、任务筛选和下载量给了你上下文。文本生成、图像分类、翻译、embedding 任务的筛选可靠。仍缺的是英语基准之外强烈的质信号。如果你要多语言分类器或法律域 LLM，你仍会花不少时间读 model card、测样本。</p>
@@ -232,6 +233,14 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
             <h2 id="最终结论">最终结论</h2>
             <p>Hugging Face 是任何想用开放 AI 模型、又不想从零搭 GPU 集群的人的默认起点。它按 token 算不是最便宜的生产运行时，但它是从好奇到可用代码最快的路径。如果你的项目需要模型透明、开放权重或离线推理，Hugging Face 比任何单一闭源 API 都难被替代。</p>
             <p><strong>结论：推荐给评估开放模型 vs 闭源 API 的开发者、研究者和团队。</strong></p>
+
+
+            <section class="faq-section">
+              <h2 id="faq">常见问题</h2>
+              <div class="faq-item"><h3>Hugging Face 是干什么的？</h3><p>它是最大的开放 AI 模型、数据集和演示中心——下载模型、通过 API 推理、在 Spaces 托管演示、使用 Transformers 库。可以理解为机器学习界的 GitHub。</p></div>
+              <div class="faq-item"><h3>Hugging Face 免费吗？</h3><p>模型下载、多数数据集和社区功能免费。付费档（$9/月起）增加私有仓库、更快的推理端点和 Spaces 硬件升级。</p></div>
+              <div class="faq-item"><h3>新手能用 Hugging Face 吗？</h3><p>能——Spaces 演示浏览器直接跑零配置，Transformers 的 pipeline 几行 Python 就能调用复杂模型。但部署到生产还需要更多工程能力。</p></div>
+            </section>
 
             <section class="how-we-test" aria-label="我们的测试方法">
                 <h2 id="我们的测试方法">我们的测试方法</h2>
