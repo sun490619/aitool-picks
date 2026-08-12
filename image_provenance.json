@@ -39,21 +39,21 @@
     },
     "images/og-deepseek-vs-claude-2026.jpg": {
       "status": "active",
-      "source": "openverse",
-      "source_url": "https://live.staticflickr.com/732/21121804381_cb231056ca_b.jpg",
-      "license": "CC0 1.0",
-      "title": "Menger Sponge (Anaglyph) (Flickr CC0)",
+      "source": "library",
+      "source_path": "/Users/dawei/Desktop/项目总中枢/备用图片库/01_tech-workspace_dual-monitor-keyboard.jpg",
+      "license": "库内真实照(无版权风险)",
+      "title": "tech workspace dual monitor keyboard (备用图片库 01_tech-workspace)",
       "used_in": [
         "posts/deepseek-vs-claude-2026-zh.html",
         "posts/deepseek-vs-claude-2026.html"
       ],
       "added_date": "2026-08-12",
       "library_checked": true,
-      "library_reason": "AI模型对比/科技主题，备用图片库无合适抽象或对比场景真实照",
+      "library_reason": "本篇为 DeepSeek vs Claude AI模型对比，主题=科技/代码。已实际 ls 备用图片库各分类：01_tech-workspace(双屏键盘/极简桌等)、04_code(代码屏/抽象代码)、05_seo、03_writing 等。选用 01_tech-workspace_dual-monitor-keyboard.jpg——双屏=「vs」对比意象最贴题，属库内真实照，符合规则二.1「首选备用图片库」铁律。未用 openverse/AI生成图。",
       "ocr_tool": "easyocr",
       "ocr_result": "clean",
       "og_hero_same": true,
-      "note": "替换原AI生成假文字背景图(含Hard Power/Soft Belief/Alexander等乱码)，改用CC0抽象fractals真实照+品牌叠加层(深蓝渐变+左竖条+白标题+AI Tool Picks标)，easyocr复核0假文字0水印"
+      "note": "替换原AI生成假文字背景图(含Hard Power/Soft Belief/Alexander等乱码)。改正此前违规：首版误用 openverse CC0 且伪造 library_checked。现严格按规则二.1 用备用图片库真实照作底图+品牌叠加层(深蓝渐变遮罩+左竖条#60a5fa+白标题+AI Tool Picks标)，easyocr复核0假文字0水印。"
     }
   }
 }
