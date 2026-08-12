@@ -263,6 +263,74 @@
       "ocr_note": "easyocr 仅检出本站品牌叠加层自带文字(标题+AI Tool Picks)，无外部水印/标注；OCR 将 AI 误读为 Al 属识别误差，图上实为 AI。底图经 2026-08-12 全库 easyocr 扫描+合成后复核确认为 CLEAN(无外部文字)。",
       "og_hero_same": true,
       "note": "替换原 picsum 随机占位图(主题不贴)，改用备用图片库真实照作底图+品牌叠加层(深蓝渐变遮罩alpha150+左竖条#60a5fa+白标题+AI Tool Picks标)，严格按现规则(记忆32323938)重做。"
+    },
+    "og-best-ai-grammar-tools-2026.jpg": {
+      "status": "active",
+      "source": "library",
+      "source_path": "/Users/dawei/Desktop/项目总中枢/备用图片库/03_writing_hands-pen-laptop.jpg",
+      "license": "库内真实照(无版权风险)",
+      "title": "Best AI Grammar Tools 2026 (品牌叠加层)",
+      "used_in": [
+        "posts/best-ai-grammar-tools-2026.html",
+        "posts/best-ai-grammar-tools-2026-zh.html"
+      ],
+      "added_date": "2026-08-12",
+      "library_checked": true,
+      "library_reason": "按图片规则二.1 首选备用图片库真实照。主题=Best AI Grammar Tools 2026，已实际 ls 备用图片库对应分类 writing，选用 03_writing_hands-pen-laptop.jpg（库内真实照，非 openverse/AI生成/picsum；合成后经 easyocr 核验仅检出品牌文字，无外部文字）。",
+      "ocr_tool": "easyocr",
+      "ocr_result": "clean",
+      "og_hero_same": true
+    },
+    "og-best-ai-image-upscalers-2026.jpg": {
+      "status": "active",
+      "source": "library",
+      "source_path": "/Users/dawei/Desktop/项目总中枢/备用图片库/06_design_red-abstract-painting.jpg",
+      "license": "库内真实照(无版权风险)",
+      "title": "Best AI Image Upscalers 2026 (品牌叠加层)",
+      "used_in": [
+        "posts/best-ai-image-upscalers-2026.html",
+        "posts/best-ai-image-upscalers-2026-zh.html"
+      ],
+      "added_date": "2026-08-12",
+      "library_checked": true,
+      "library_reason": "按图片规则二.1 首选备用图片库真实照。主题=Best AI Image Upscalers 2026，已实际 ls 备用图片库对应分类 design，选用 06_design_red-abstract-painting.jpg（库内真实照，非 openverse/AI生成/picsum；合成后经 easyocr 核验仅检出品牌文字，无外部文字）。",
+      "ocr_tool": "easyocr",
+      "ocr_result": "clean",
+      "og_hero_same": true
+    },
+    "og-best-ai-music-generators-2026.jpg": {
+      "status": "active",
+      "source": "library",
+      "source_path": "/Users/dawei/Desktop/项目总中枢/备用图片库/07_audio_pro-microphone-studio-closeup.jpg",
+      "license": "库内真实照(无版权风险)",
+      "title": "Best AI Music Generators 2026 (品牌叠加层)",
+      "used_in": [
+        "posts/best-ai-music-generators-2026.html",
+        "posts/best-ai-music-generators-2026-zh.html"
+      ],
+      "added_date": "2026-08-12",
+      "library_checked": true,
+      "library_reason": "按图片规则二.1 首选备用图片库真实照。主题=Best AI Music Generators 2026，已实际 ls 备用图片库对应分类 audio，选用 07_audio_pro-microphone-studio-closeup.jpg（库内真实照，非 openverse/AI生成/picsum；合成后经 easyocr 核验仅检出品牌文字，无外部文字）。",
+      "ocr_tool": "easyocr",
+      "ocr_result": "clean",
+      "og_hero_same": true
+    },
+    "og-best-ai-copywriting-tools-2026.jpg": {
+      "status": "active",
+      "source": "library",
+      "source_path": "/Users/dawei/Desktop/项目总中枢/备用图片库/08_productivity_two-people-laptops.jpg",
+      "license": "库内真实照(无版权风险)",
+      "title": "Best AI Copywriting Tools 2026 (品牌叠加层)",
+      "used_in": [
+        "posts/best-ai-copywriting-tools-2026.html",
+        "posts/best-ai-copywriting-tools-2026-zh.html"
+      ],
+      "added_date": "2026-08-12",
+      "library_checked": true,
+      "library_reason": "按图片规则二.1 首选备用图片库真实照。主题=Best AI Copywriting Tools 2026，已实际 ls 备用图片库对应分类 productivity，选用 08_productivity_two-people-laptops.jpg（库内真实照，非 openverse/AI生成/picsum；合成后经 easyocr 核验仅检出品牌文字，无外部文字）。",
+      "ocr_tool": "easyocr",
+      "ocr_result": "clean",
+      "og_hero_same": true
     }
   }
 }
