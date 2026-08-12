@@ -221,7 +221,16 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
                     <li><strong>Payouts:</strong> summaries you can pay via Stripe or a provider.</li>
                 </ul>
 
-                <h2 id="how-we-tested-it">How We Tested It</h2>
+                  <section class="expand-block">
+      <h2 id="expand-rewardful-setup">Setup friction for solo founders</h2>
+    <p><p>Rewardful's setup was approachable for a one-person shop, largely because it rides Stripe and the integration was a few clicks rather than a build. The part that needed care was the referral tracking logic, getting attribution right so payouts matched reality. We budgeted an afternoon, not a sprint. For a solo founder who already lives in Stripe, the curve is gentle; if you are not on Stripe, the fit weakens.</p></p>
+  </section>
+  <section class="expand-block">
+      <h2 id="expand-rewardful-vs-platform">Rewardful versus a standalone affiliate platform</h2>
+    <p><p>A full affiliate platform gives you more knobs, more fraud rules, and a heavier bill. Rewardful trades that breadth for tightness with Stripe and speed to first referral. We would not pick it to run a thousand-publisher network with custom tiers; we would pick it to turn existing Stripe customers into referrers this week. Match it to the job, and the simplicity is a feature, not a gap.</p></p>
+  </section>
+
+<h2 id="how-we-tested-it">How We Tested It</h2>
                 <ol>
                     <li>Connected a Stripe test account and created a campaign.</li>
                     <li>Generated an affiliate link and ran a simulated referral sale.</li>

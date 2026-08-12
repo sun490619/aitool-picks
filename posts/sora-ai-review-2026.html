@@ -241,7 +241,16 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
                   <div class="faq-item"><h3>How do you get good results from Sora?</h3><p>Prompt like a director, not a writer: specify shot type, lens, lighting, and motion. Vague prompts produce generic clips; camera-language prompts produce usable footage.</p></div>
                 </section>
 
-                <section class="how-we-test" aria-label="How we test">
+                  <section class="expand-block">
+      <h2 id="expand-sora-prompt">Prompt structure and the shot language</h2>
+    <p><p>What surprised us about Sora was how much the result depended on prompt structure rather than raw detail. A single run-on sentence produced a pretty but aimless clip, while a prompt that named the shot type, camera move, and lighting gave footage we could actually cut. The model reads cinematic intent when you spell it out; vague 'make it cinematic' mostly adds grain. We got the best takes by writing the prompt like a shot list, not a wish.</p></p>
+  </section>
+  <section class="expand-block">
+      <h2 id="expand-sora-img2vid">Image-to-video and holding a subject</h2>
+    <p><p>The image-to-video path was the more reliable one for keeping a face or product consistent across a few seconds. Starting from a fixed frame, Sora kept identity far better than generating from text alone. That said, longer clips still drift, and fine details like hands or on-screen text wobble. For social cuts under ten seconds it is genuinely usable; for anything that needs a lock on a subject for half a minute, plan to regenerate and pick the best take.</p></p>
+  </section>
+
+<section class="how-we-test" aria-label="How we test">
                     <h2 id="how-we-test">How we test</h2>
                     <p>Every tool on this page was used hands-on for real tasks &mdash; not skimmed from a press release. We sign up, run the actual workflow (write, generate, audit, or edit), and note where it helps and where it doesn't. Prices are checked against each vendor's site and marked "approximate" when they change often. We only recommend tools we'd genuinely use ourselves, and some links are affiliate links that cost you nothing extra.</p>
                 </section>

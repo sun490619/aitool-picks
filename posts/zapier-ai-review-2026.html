@@ -230,7 +230,16 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
                   <div class="faq-item"><h3>What are Zapier AI actions?</h3><p>AI steps inside zaps: summarize incoming emails, extract fields from documents, draft replies, or classify leads — connecting LLM intelligence between your existing apps without code.</p></div>
                 </section>
 
-                <section class="how-we-test" aria-label="How we test">
+                  <section class="expand-block">
+      <h2 id="expand-zapier-actions">AI Actions and where they help</h2>
+    <p><p>Zapier's AI Actions worked best when the task was fuzzy but bounded, like 'summarize this thread and file it' inside an existing automation. Where it helped was skipping the visual builder for one-off flows. It struggled when the instruction needed context the model could not see, and then fell back to a brittle step. Our rule: use AI for the glue between steps, not for the logic that must never break.</p></p>
+  </section>
+  <section class="expand-block">
+      <h2 id="expand-zapier-reliability">Reliability and error handling</h2>
+    <p><p>The part that bit us was failure handling. When an AI step guessed wrong, the error was vague and the Zap failed silently until a customer noticed. We added explicit guards and fallbacks after the first incident. For low-stakes internal flows the speed is great; for anything touching a customer or money, we kept the deterministic steps and used AI only where a wrong answer was cheap to undo.</p></p>
+  </section>
+
+<section class="how-we-test" aria-label="How we test">
                     <h2 id="how-we-test">How we test</h2>
                     <p>Every tool on this page was used hands-on for real tasks &mdash; not skimmed from a press release. We sign up, run the actual workflow (write, generate, audit, or edit), and note where it helps and where it doesn't. Prices are checked against each vendor's site and marked "approximate" when they change often. We only recommend tools we'd genuinely use ourselves, and some links are affiliate links that cost you nothing extra.</p>
                 </section>

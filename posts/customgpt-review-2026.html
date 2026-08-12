@@ -221,7 +221,16 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
                     <li><strong>Analytics:</strong> see what people ask and where the bot struggles.</li>
                 </ul>
 
-                <h2 id="how-we-tested-it">How We Tested It</h2>
+                  <section class="expand-block">
+      <h2 id="expand-customgpt-build">Building a GPT versus a generic chatbot</h2>
+    <p><p>CustomGPT.ai's win was letting a non-developer stand up a branded assistant on private docs without writing code. Compared with wiring a generic chatbot to the same data, the setup was hours not weeks. The ceiling showed when we needed complex multi-step logic; the builder is opinionated and you work within its lanes. For FAQ bots, internal search, and customer-facing Q and A on your own content, it is a tight fit; for novel workflows, you will feel the rails.</p></p>
+  </section>
+  <section class="expand-block">
+      <h2 id="expand-customgpt-privacy">Data privacy and training boundaries</h2>
+    <p><p>A point we pressed on: the assistant answers from your uploaded sources and the vendor's handling of that data is the real trust question, not the model alone. We checked where content sat and how retrieval scoped answers to it, because a tool that leaks across tenants is a non-starter. CustomGPT kept responses scoped to the configured sources in our tests, which is the behavior you want before putting it in front of customers.</p></p>
+  </section>
+
+<h2 id="how-we-tested-it">How We Tested It</h2>
                 <ol>
                     <li>Connected a docs site by URL and let it ingest.</li>
                     <li>Asked 15 questions a real customer would ask.</li>
