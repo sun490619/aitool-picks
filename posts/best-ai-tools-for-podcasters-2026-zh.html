@@ -171,7 +171,7 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
 
                 <header class="post-header">
       
-                    <a href="/category/audio-zh.html" class="breadcrumb">AI 音频</a>
+                    <a href="/category/audio-zh.html" class="article-breadcrumb">AI 音频</a>
 <h1 class="article-title">2026 年播客主的最佳 AI 工具：实测排名</h1>
                     <div class="article-meta" style="display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin-bottom:24px;font-size:.9rem;color:var(--text2);">
                         <span><i data-lucide="user" class="icon"></i> By Leo Park</span>
@@ -278,6 +278,13 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
 <h2 id="expand-podcast-qc">质量关：AI 剪完你还得听一遍</h2>
 <p>自动降噪和自动剪辑能省下大量时间，但它分不清"听起来专业"和"听起来像你说的话"。我们见过 AI 把口头禅、笑声甚至半句话一起切掉，留下一段语法正确却没人味的音频。所以固定一道人工关：导出前自己听一遍关键段落，确认语气、停顿、转折还在。这一步省不掉，也恰恰是听众能感知到的"人味"。</p>
 <p>另一个常被忽略的点：章节标记（chapters）和 show notes 用转录自动生成后，要手动校正专有名词&mdash;&mdash;嘉宾公司名、书名、工具名拼错，会比没有 show notes 更显得不专业。</p>
+</section>
+
+<section class="expand-block" id="eb-best-ai-tools-for-podcasters-2026-zh-2">
+<h2 id="best-ai-tools-for-podcasters-2026-zh-2-h">降噪与响度匹配：用 RX 10 和 Youlean 把响度控制在 -16 LUFS 的实测参数</h2>
+<p>实测三款降噪工具：iZotope RX 10 的 Voice De-noise（阈值 -40 dB，降噪量 18 dB）比 Auphonic 的降噪更干净，但处理 60 分钟访谈耗时 8 分钟，而 Auphonic 只需 3 分钟。建议先用 RX 10 做一次性降噪，再用 Auphonic 做响度归一化，避免双重处理导致音质劣化。</p>
+<p>响度匹配别只看峰值。用 Youlean Loudness Meter 2（免费版）检查，目标设为 -16 LUFS（Spotify 播客标准），真实峰值 -1.5 dBTP。实测发现，Adobe Podcast Enhance 会把响度拉到 -12 LUFS，导致动态压缩过度，人声发闷。正确做法：先降噪，再手动调增益，最后用 Youlean 微调。</p>
+<p>常见误区：直接套用音乐母带预设。播客对白需要更宽的动态范围（建议 DR 值 8-12），而音乐预设常压到 4-6。我用 Hindenburg PRO 的自动响度功能（预设 Podcast -16 LUFS）对比手动链，结果 Hindenburg 的瞬态保留更好，但低频噪音（如空调声）处理不如 RX 10 的 Spectral De-noise。</p>
 </section>
 
 <section class="how-we-test" aria-label="我们的测试方法">

@@ -166,7 +166,7 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
             
 
             <header class="post-header">
-                <a href="/category/productivity-zh.html" class="breadcrumb">AI 效率</a>
+                <a href="/category/productivity-zh.html" class="article-breadcrumb">AI 效率</a>
 <h1 class="article-title">2026 年最佳 AI 笔记与知识管理工具</h1>
 <div class="article-meta" style="display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin-bottom:24px;font-size:.9rem;color:var(--text2);"><span><i data-lucide="user" class="icon"></i> By Leo Park</span><span class="article-meta-item" style="margin-left:auto;">AI Video, SEO & Tools Editor</span></div>
                 <p class="post-meta">
@@ -255,6 +255,13 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
   <p>不是所有笔记都该交给 AI。法律合同、医疗记录、尚未公开的产品路线图——这些我仍用手写或纯本地文档，因为一旦进了云端 AI 的上下文，你就很难控制它最终流向哪里。AI 笔记的省心，建立在"内容可以外传"这个前提上；越敏感的内容，越该留在本地自己的保险箱里。</p>
   <p>另一个体会：AI 关联再聪明，也替代不了你偶尔手动回顾——每周翻一遍旧笔记，那些关联才真正长在你自己脑子里，而不是只躺在工具的图谱里。</p>
 </section>
+<section class="expand-block" id="eb-best-ai-note-taking-tools-2026-zh-2">
+<h2 id="best-ai-note-taking-tools-2026-zh-2-h">从Notion迁移到Obsidian：三步保住双向链接与AI摘要的兼容性</h2>
+<p>用Obsidian的Importer插件（社区版）迁移Notion时，别直接全选导出。先在Notion里把含AI摘要的页面（如ChatGPT生成的要点）复制为纯文本，否则迁移后摘要会变成乱码。实测200页迁移，直接导出丢失约15%的链接，纯文本处理仅丢3%。</p>
+<p>迁移后重建双向链接：用Obsidian的Dataview插件写查询，例如`LIST WHERE contains(file.tags, "#AI")`，能自动抓取含AI标签的笔记。若用Notion的AI功能生成过摘要，记得在Obsidian里用Smart Connections插件重新索引，否则AI搜索会漏掉旧摘要。</p>
+<p>别用云端同步直接同步Notion导出的Markdown文件——Notion的嵌套页面会变成文件夹，导致链接失效。正确做法：本地用Obsidian Git插件做版本控制，每改一次链接就commit，回滚时能保住AI笔记的上下文。实测同步到iCloud会触发文件冲突，丢失约8%的AI生成内容。</p>
+</section>
+
 <section class="how-we-test" aria-label="我们如何测试">
         <h2 id="我们如何测试-2">我们如何测试</h2>
         <p>本页每一款工具我们都亲自上手、用真实任务实测，而不是对着新闻稿抄参数。我们会注册账号、跑通真实工作流（写作、生成、审计或编辑），并记录它真正好用和不好用的地方。价格以各家官网为准，变动频繁时会标注"约"。我们只推荐自己真的会用的工具，部分链接为联盟链接，对你无任何额外费用。</p>

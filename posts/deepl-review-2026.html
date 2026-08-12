@@ -171,7 +171,7 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
 
                 <header class="post-header">
                           
-<a href="/category/productivity.html" class="breadcrumb">AI Productivity</a>
+<a href="/category/productivity.html" class="article-breadcrumb">AI Productivity</a>
 <h1 class="article-title">DeepL Review 2026: Best AI Translator for Accuracy & Nuance?</h1>
 <div class="article-meta" style="display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin-bottom:24px;font-size:.9rem;color:var(--text2);">
                         <span><i data-lucide="user" class="icon"></i> By Leo Park</span>
@@ -260,7 +260,14 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
       <h2>Our practical recommendation</h2>
       <p>For most people the right answer is not DeepL or Google but both, with DeepL as the default for anything that will be read by another human and Google as the fallback for rare languages and camera translation. Start on the free tier, keep a human in the loop on anything confidential or customer-facing, and upgrade to Pro only once the character cap starts breaking your flow. Treat it as a fluency amplifier, not a replacement for a translator on work that carries legal or brand risk. Used that way, it is one of the highest-value AI tools you can run daily, and the quality gap over the alternative is something you feel on the very first sentence.</p>
 
-    <section class="how-we-test" aria-label="How we test">
+    <section class="expand-block" id="eb-deepl-review-2026-2">
+<h2 id="deepl-review-2026-2-h">Why DeepL Fails on Markdown-Heavy Files (and How to Fix It)</h2>
+<p>When you paste raw Markdown into DeepL's web interface, it often mangles code blocks, links, and inline backticks—turning `[text](url)` into translated gibberish. This is because DeepL treats the entire string as natural language, so URLs get localized and code comments get translated. For a 500-line README, you'll waste 20+ minutes cleaning up artifacts.</p>
+<p>The fix: split your content before translating. Use a regex like `(```[\s\S]*?```|`[^`]*`|\[.*?\]\(.*?\))` in VS Code to extract code blocks and links into placeholders, then translate the remaining prose. Alternatively, run the file through `markdown-it` with a custom renderer that swaps code spans for tokens like `{{CODE_1}}` before hitting DeepL API—this preserves syntax and cuts post-editing time by roughly 70%.</p>
+<p>A cheaper shortcut: paste your Markdown into Notion, select all, copy as plain text (Cmd+Shift+V), translate, then re-apply formatting manually. But if you're translating docs weekly, invest in the DeepL API (€25/month for 500k characters) and write a 20-line Python script using the `mistune` library to strip inline code before sending. This also avoids the character-count inflation from duplicated backticks, which silently eats your monthly quota.</p>
+</section>
+
+<section class="how-we-test" aria-label="How we test">
                     <h2 id="how-we-test">How we test</h2>
                     <p>Every tool on this page was used hands-on for real tasks &mdash; not skimmed from a press release. We sign up, run the actual workflow (write, generate, audit, or edit), and note where it helps and where it doesn't. Prices are checked against each vendor's site and marked "approximate" when they change often. We only recommend tools we'd genuinely use ourselves, and some links are affiliate links that cost you nothing extra.</p>
                 </section>

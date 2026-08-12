@@ -165,7 +165,7 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
 
     <header class="post-header">
             
-<a href="/category/productivity.html" class="breadcrumb">AI Productivity</a>
+<a href="/category/productivity.html" class="article-breadcrumb">AI Productivity</a>
 <h1 class="article-title">Best Notion AI Alternatives in 2026</h1>
       <div class="article-meta" style="display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin-bottom:24px;font-size:.9rem;color:var(--text2);">
         <span>Sam Porter</span><span>2026-07-27</span><span>7 min read</span>
@@ -239,7 +239,14 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
       <h2>A note on AI add-ons before you commit</h2>
       <p>Every alternative now ships some AI feature, and it's easy to let "has AI" tip the decision. Judge the AI by what it saves you, not by its presence. Obsidian's AI plugins summarize and query your own notes locally — genuinely useful if your vault is large. Coda's AI writes into tables and automations, which pays off only if you already run processes there. Mem's AI is the product, so it's where the capability is deepest but the lock-in is highest. Capacities is still building theirs. The pattern: AI is a multiplier on a workflow you already have, not a reason to adopt a workflow you don't. Pick the base tool for how it handles your notes day to day, then treat AI as a bonus to verify, not the headline to chase.</p>
 
-    <section class="how-we-test" aria-label="How we pick">
+    <section class="expand-block" id="eb-notion-alternatives-2026-2">
+<h2 id="notion-alternatives-2026-2-h">How to Migrate Your Notion Database Without Losing Relationships or Formulas</h2>
+<p>Most people export Notion as Markdown & CSV, then import into Coda or Anytype—and immediately lose linked database relations, rollups, and formula fields. Notion's native export flattens relation properties into plain text IDs, not actual references. Before switching, run a diagnostic: export a copy of your workspace, then open the CSV in Google Sheets and count columns named 'Relation' or 'Rollup'. If you have more than 20, plan a manual rebuild or use a paid migration tool like Notion2Coda (supports relations) or Anytype's built-in importer (handles basic relations but drops rollups).</p>
+<p>For a realistic timeline: a 500-page workspace with 15 databases and 40 formulas takes 6–8 hours to migrate manually, even with tools. A common mistake is assuming AI alternatives like Mem or Reflect can auto-structure your data—they can't. They import plain text only. Instead, prioritize which databases are mission-critical (e.g., CRM, project tracker) and rebuild those first in the new tool. For formulas, test each one in the target app's formula language—Coda uses a Google Sheets–like syntax, while Anytype uses a custom block-based formula editor that requires rewriting.</p>
+<p>If you're on a free Notion plan, export everything before your subscription lapses—Notion limits exports to 1,000 blocks per file on free tier, so you'll need multiple exports. Also, audit your attachments: Notion export includes files as relative paths, but cloud-only embeds (e.g., Figma, Miro) break. Use a script to replace those with public URLs before importing. Finally, set a 2-week overlap period: run both Notion and the new tool in parallel, and only delete Notion after verifying that all critical relations resolve in the new system.</p>
+</section>
+
+<section class="how-we-test" aria-label="How we pick">
       <h2 id="how-we-pick">How we pick</h2>
       <p>We rank alternatives by real task fit, not hype: writing quality, context window, price, privacy, and ecosystem. Each is tested hands-on where possible. Links may be affiliate links and never cost you extra.</p>
     </section>

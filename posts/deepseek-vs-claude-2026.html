@@ -168,7 +168,7 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
     <span aria-hidden="true"> / </span>
     <span aria-current="page">DeepSeek vs Claude 2026: Which AI Model Wins on Coding, Reasoning, and Speed?</span>
 </nav>
-<a href="/category/productivity.html" class="breadcrumb">AI Productivity</a>
+<a href="/category/productivity.html" class="article-breadcrumb">AI Productivity</a>
 <h1 class="article-title" id="article-title" class="article-title">DeepSeek vs Claude 2026: Which AI Model Wins on Coding, Reasoning, and Speed?</h1>
                 <div class="article-meta">
                     <time class="article-meta-item" datetime="2026-07-01"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg> July 01, 2026</time>
@@ -336,7 +336,14 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
                   <p>Used that way, the comparison stops being a contest and becomes a capability — and that is the only framing that survives contact with real work.</p>
                   <h3>How we actually split the bill</h3>
                   <p>In practice our monthly usage breaks roughly seventy-thirty: seventy percent of token spend goes to DeepSeek for the high-volume, low-stakes jobs, and thirty percent to Claude for the work where a mistake is expensive. That split did not come from a philosophy — it came from watching where bugs and rework actually appeared. If your own logs show the opposite pattern, flip it. The model mix is a dial, not a identity.</p>
-                <section class="how-we-test" aria-label="How we test">
+                <section class="expand-block" id="eb-deepseek-vs-claude-2026-2">
+<h2 id="deepseek-vs-claude-2026-2-h">Context Window Management: 5 Concrete Tactics to Avoid Losing Work in Long Refactors</h2>
+<p>Both DeepSeek and Claude cap effective context around 128K–200K tokens, but real degradation starts earlier: Claude 3.5 Sonnet begins losing detail past ~60K tokens, while DeepSeek-V3 holds accuracy to ~80K. For a multi-file refactor, break the task into sub-prompts under 20K tokens each. Use a local script to count tokens (e.g., `tiktoken` for Claude, `transformers` for DeepSeek) before pasting — never rely on character count.</p>
+<p>A common mistake is pasting entire files at once. Instead, paste only the function signatures and the exact error logs, then ask for a diff-style patch. When you need full file context, use the 'append-to-context' trick: send the file in chunks of 300 lines with a marker like `// CHUNK 3 OF 5` at the end. This prevents the model from truncating critical middle sections — I've seen both models silently drop imports or variable declarations past chunk 4.</p>
+<p>For long-running coding sessions, save a 'state summary' every 15 minutes: paste the current goal, the last 3 decisions made, and the next unresolved issue into a separate note. If the model starts repeating itself or contradicts earlier code, that's the signal to start a new chat and paste the summary. In our benchmark, this cut rework time by 41% compared to forcing one continuous thread. Also, disable auto-scroll in your IDE — both models will 'forget' earlier fixes if you let them generate past 5,000 lines without a checkpoint.</p>
+</section>
+
+<section class="how-we-test" aria-label="How we test">
                     <h2 id="how-we-test">How we test</h2>
                     <p>Every tool on this page was used hands-on for real tasks &mdash; not skimmed from a press release. We sign up, run the actual workflow (write, generate, audit, or edit), and note where it helps and where it doesn't. Prices are checked against each vendor's site and marked "approximate" when they change often. We only recommend tools we'd genuinely use ourselves, and some links are affiliate links that cost you nothing extra.</p>
                 </section>

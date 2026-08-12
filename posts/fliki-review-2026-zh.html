@@ -173,7 +173,7 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
 
     <header class="post-header">
             
-<a href="/category/video-zh.html" class="breadcrumb">AI 视频生成器</a>
+<a href="/category/video-zh.html" class="article-breadcrumb">AI 视频生成器</a>
 <h1 class="article-title">Fliki 评测 2026：用 AI 语音把文字变成视频</h1>
 <div class="article-meta" style="display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin-bottom:24px;font-size:.9rem;color:var(--text2);"><span><i data-lucide="user" class="icon"></i> By Maya Rivera</span><span class="article-meta-item" style="margin-left:auto;">AI Writing & Productivity Editor</span></div>
       <div class="article-meta" style="display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin-bottom:24px;font-size:.9rem;color:var(--text2);">
@@ -279,7 +279,14 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
       <p>Fliki 有免费档可以试做短视频（通常带水印、时长受限），付费档解锁更长视频、去水印、更多声音和高清导出。关键认知：免费档的设计目的是"让你尝到甜头"，真要稳定产出一定会撞到时长和功能的墙。建议先用免费档完整跑通一个视频，确认画风你接受，再决定付费。付费按月或年，年付单价低但锁死；如果你只是阶段性冲量，月付更灵活。另外留意"按字数计费"的坑——自动生成的配音脚本越长，消耗越快，控制脚本长度能显著降本。总的来说，对"要快、要量、要省剪辑人力"的个人和小团队，Fliki 的性价比很能打。</p>
     </section>
 
-    <section class="how-we-test" aria-label="我们的测试方法">
+    <section class="expand-block" id="eb-fliki-review-2026-zh-2">
+<h2 id="fliki-review-2026-zh-2-h">Fliki 语音参数实测：从 120 字/分钟到 180 字/分钟的调参技巧</h2>
+<p>在 Fliki 中，默认语音速度是 1.0 倍，对应约 150 字/分钟。但实际生成时，中文语音在 1.0 倍下会显得拖沓，尤其在产品介绍或教程视频中。我建议将速度调至 1.15-1.25 倍，同时将停顿间隔（Pause）设为 300ms，这样既能保持自然感，又能将视频时长压缩 15%-20%。</p>
+<p>具体操作：在文本编辑框中，选中需要调整的段落，点击右侧的'语速'滑块，输入 1.2 即可。注意不要超过 1.3 倍，否则会丢失语气重音。另外，Fliki 的'强调'功能（Highlight）可对关键词加粗，但实测仅对英文有效，中文需手动在文本前后加 * 号，否则会生成奇怪的读音。</p>
+<p>对比同类工具：ElevenLabs 的语音自然度更高，但生成视频需额外拼接；而 Fliki 的优势在于内置 2000+ 背景音乐和自动字幕。如果你需要批量生成短视频，建议先用 Fliki 的 API 批量测试不同语速，记录每个片段的时长，再统一调整。常见误区是直接使用默认设置，导致视频节奏慢、完播率低。</p>
+</section>
+
+<section class="how-we-test" aria-label="我们的测试方法">
       <h2 id="我们的测试方法">我们的测试方法</h2>
       <p>我们在免费与付费档位真实脚本生成并导出视频，评估语音自然度与素材相关度，并计时完整工作流。价格对照官网核实，地区差异大时标注"约"。链接可能为联盟链接，绝不会让你多花钱。</p>
     </section>

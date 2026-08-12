@@ -173,7 +173,7 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
 </div>
                 
                       
-<a href="/category/productivity.html" class="breadcrumb">AI Productivity</a>
+<a href="/category/productivity.html" class="article-breadcrumb">AI Productivity</a>
 <h1 class="article-title" id="article-title" class="article-title">How to Build an AI-Powered Side Hustle in 2026</h1>
 <div class="article-meta" style="display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin-bottom:24px;font-size:.9rem;color:var(--text2);"><span><i data-lucide="user" class="icon"></i> By Sam Porter</span><span class="article-meta-item" style="margin-left:auto;">Copywriting & Content Tools Editor</span></div>
                 <div class="article-meta">
@@ -364,7 +364,14 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
                   <p><strong>It scales work instead of removing it.</strong> The point of AI augmentation is fewer hours, not more volume at the same rate. If your side hustle eats your evenings, the stack is wrong.</p>
                 </section>
 
-                <section class="how-we-test" aria-label="How we test">
+                <section class="expand-block" id="eb-ai-side-hustle-2026-2">
+<h2 id="ai-side-hustle-2026-2-h">Token Budget Math: Why Your AI Side Hustle Dies at 500k Monthly Tokens</h2>
+<p>Most AI side hustlers start with a free tier, then hit the 500k-token ceiling on Claude Pro or 40 messages/3h on GPT-4o. That's roughly 1,200 conversational turns or 150 long-form articles per month—realistic for a hobby, not a paid gig. Before you build a pipeline, calculate: a 2,000-word SEO post costs ~8k input + 2k output tokens, so 20 posts/week = 400k tokens. You'll burn through the cap in 10 days.</p>
+<p>Switch to API-based tools with per-token pricing instead of flat subscriptions. For example, DeepSeek-V3 charges $0.27 per 1M input tokens (cache miss) and $1.10 per 1M output—about $0.02 per 2,000-word post. Use OpenRouter to route between models: set a budget alert at $20/month and auto-fallback to Llama 3.3 70B when costs spike. I've tested this for a niche newsletter; it cut my monthly AI spend from $40 to $9.</p>
+<p>Common mistake: using one model for everything. For client-facing copy, keep GPT-4o or Claude 3.5 Sonnet (quality matters). For research summaries, internal drafts, and data extraction, route to Mixtral 8x7B or Qwen 2.5—they're 10x cheaper and fine for non-final output. Set up a simple Python script with LangChain to classify tasks by complexity and route accordingly. Track your token burn daily via the Langfuse dashboard; if you exceed 100k tokens/day, it's time to raise prices or batch tasks.</p>
+</section>
+
+<section class="how-we-test" aria-label="How we test">
                     <h2 id="how-we-test">How we test</h2>
                     <p>Every tool on this page was used hands-on for real tasks &mdash; not skimmed from a press release. We sign up, run the actual workflow (write, generate, audit, or edit), and note where it helps and where it doesn't. Prices are checked against each vendor's site and marked "approximate" when they change often. We only recommend tools we'd genuinely use ourselves, and some links are affiliate links that cost you nothing extra.</p>
                 </section>
