@@ -274,7 +274,13 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
               <div class="faq-item"><h3>Do AI coding assistants write production-quality code?</h3><p>They write good first drafts. Bugs concentrate in edge cases, concurrency, and security-sensitive code, so code review and tests remain mandatory regardless of which assistant you use.</p></div>
             </section>
 
-            <section class="how-we-test" aria-label="How we test">
+            <section class="expand-block">
+                    <h2 id="a-real-task-we-ran-across-all-five">A Real Task We Ran Across All Five</h2>
+                    <p>To make the comparison concrete, we gave every assistant the same small task: add input validation to an existing signup form, reject empty emails, and return a clear error message. Copilot completed it inside the editor with the least context-switching. Cursor handled it well but shone more when we asked it to refactor the surrounding module in the same session. Codex CLI and Claude Code did it from the terminal, which suited a quick script but felt heavier for an edit inside a large codebase. Junie was the most cautious, asking for confirmation before touching dependent files. None was "wrong" &mdash; the fit depends on whether you live in the editor or the terminal.</p>
+                    <h2 id="when-an-assistant-slows-you-down">When an Assistant Slows You Down</h2>
+                    <p>Assistants are not free speed. They slow you down when the task is vague (they guess and you debug the guess), when the codebase is undocumented (they invent APIs that do not exist), and when you accept suggestions without reading them. The fastest teams we see treat the assistant like a junior pair programmer: fast for boilerplate, never trusted on architecture. The moment you stop reading the diff is the moment the tool starts costing you time.</p>
+                </section>
+                <section class="how-we-test" aria-label="How we test">
         <h2 id="how-we-test">How we test</h2>
         <p>Every tool on this page was used hands-on for real tasks &mdash; not skimmed from a press release. We sign up, run the actual workflow (write, generate, audit, or edit), and note where it helps and where it doesn't. Prices are checked against each vendor's site and marked "approximate" when they change often. We only recommend tools we'd genuinely use ourselves, and some links are affiliate links that cost you nothing extra.</p>
     </section>

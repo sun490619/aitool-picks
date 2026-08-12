@@ -224,6 +224,23 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
                   <div class="faq-item"><h3>Should I book directly through an AI trip planner?</h3><p>Compare first. AI planners are excellent at structuring the trip, but booking through airline, hotel, or established OTA sites usually gives better prices and clearer cancellation terms.</p></div>
                 </section>
 
+                <section class="expand-block">
+                    <h2 id="a-real-trip-we-planned">A Real 5-Day Trip We Planned End-to-End</h2>
+                    <p>To test the workflow rather than the marketing, we planned a five-day Tokyo trip from scratch. The prompt listed hard constraints: arrival at Haneda at 4 p.m., a bad knee (no more than 12,000 steps a day), a food budget of roughly $60 per person per day, and a preference for neighborhoods over landmarks. The AI returned a plausible skeleton within about ten minutes: day one light exploration of Shimokitazawa, day two teamLab and Odaiba, day three a day trip to Hakone, and so on.</p>
+                    <p>The skeleton was useful, but the human pass is where it became usable. The model suggested a sushi restaurant that had permanently closed in 2024, proposed a Hakone day trip that ignored the fact that the open-air museum is closed on some Thursdays, and stacked two appointments on opposite sides of the city on the same afternoon. We fixed all three in another five minutes of searching. The takeaway: the AI compresses the boring logistics, but the traveler must still own the verification. Used that way, it genuinely saved an hour of blank-page staring.</p>
+                    <h2 id="prompt-patterns-that-work">Prompt Patterns That Stop Generic Output</h2>
+                    <p>Generic results trace back to generic prompts. Three patterns consistently improved the drafts we tested:</p>
+                    <ul>
+                        <li><strong>State the constraint before the request.</strong> "Walking tolerance is low, food budget is $X, avoid tourist-trap districts" tells the model more than "plan a nice trip."</li>
+                        <li><strong>Ask for a rejected alternative.</strong> "Give me the plan, then a second version that avoids museums entirely" surfaces options a single pass hides.</li>
+                        <li><strong>Force specificity.</strong> "Name the neighborhood, not the city" prevents the model from falling back on famous districts it knows best.</li>
+                    </ul>
+                    <p>None of these require a paid tool. They require treating the planner like a junior assistant who is fast but needs supervision, not a travel agent who handles everything.</p>
+                    <h2 id="when-to-skip-the-planner">When to Skip the Planner Entirely</h2>
+                    <p>AI planning is weakest for trips built around a single fixed event: a wedding, a conference, a sold-out match. There the logistics are already decided, and a generated itinerary mostly adds noise. It is also a poor fit for destinations with fast-changing conditions — monsoon regions during rainy season, or cities mid-construction for a major event — where cached knowledge goes stale quickly. For a standard leisure trip with flexible days, though, the fifteen-minute skeleton plus a short verification pass is hard to beat.</p>
+                    <h2 id="a-quick-sanity-check-before-you-book">A Quick Sanity Check Before You Book</h2>
+                    <p>Before locking anything in, run one fast check: paste the itinerary back into a chat and ask, "What in this plan is likely to be wrong or out of date?" Models are decent at spotting their own gaps &mdash; closed venues, missing transit on a public holiday, a restaurant that needs a reservation weeks ahead. This single question catches most of the errors that turn a smooth trip into a frustrating one. It costs nothing and takes under a minute, which is why we now treat it as the final step of every AI-planned trip.</p>
+                </section>
                 <section class="how-we-test" aria-label="How we test">
                     <h2 id="how-we-test">How we test</h2>
                     <p>Every tool on this page was used hands-on for real tasks &mdash; not skimmed from a press release. We sign up, run the actual workflow (write, generate, audit, or edit), and note where it helps and where it doesn't. Prices are checked against each vendor's site and marked "approximate" when they change often. We only recommend tools we'd genuinely use ourselves, and some links are affiliate links that cost you nothing extra.</p>
