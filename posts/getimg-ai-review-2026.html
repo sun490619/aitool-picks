@@ -256,7 +256,19 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
           </div>
         </div>
 
-        <section class="how-we-test">
+            <section class="expand-block">
+      <h2 id="expand-getimg-in-design-pipeline">Plugging generated images into a real design workflow</h2>
+    <p>Generating a one-off hero image is easy; the hard part is making getimg.ai fit a repeatable workflow. In practice people get the most value by treating the API as a batch asset factory: you write a small script that loops over a list of prompt variants, pulls sizes you actually use (1:1 for cards, 16:9 for headers, 1200x630 for social), and dumps them into a folder with predictable filenames. That turns a creative gamble into a production step you can re-run when a campaign needs ten fresh variants.</p>
+    <p>The browser editor is fine for exploration, but if you find yourself clicking 'generate' forty times to fill a content calendar, move that work into the API or the built-in workflows. The models also handle inpainting and outpainting, which matters more than raw text-to-image quality: you can drop a product into a scene, or extend a banner without re-shooting. The teams that stick with getimg.ai are the ones who stopped treating it as a toy and wired it into the place where images actually get used.</p>
+    </section>
+
+    <section class="expand-block">
+      <h2 id="expand-getimg-commercial-rights">The boundary of commercial rights you should check</h2>
+    <p>Before you ship a generated image in a paid product, read what your plan actually licenses. Lower tiers often allow commercial use but cap how you can resell the raw output, while enterprise or higher plans widen that. The practical risk is not 'will the AI sue me' but 'can I use this in client work or merch without tripping the platform's terms'. Check whether the model you picked (SDXL, a fine-tune, a community model) carries its own license on top of getimg.ai's terms.</p>
+    <p>A safe habit: keep a record of which prompt, model, and plan produced each asset you publish, so if a dispute ever arises you can show the generation was within your tier. Avoid generating recognizable real people or brand logos, since those create liability no plan covers. Treat the license checkbox as part of your asset checklist, not an afterthought.</p>
+    </section>
+
+<section class="how-we-test">
           <h2 id="how-we-tested">How we tested</h2>
           <p>We signed up, generated a set of images across prompts, then ran inpainting, outpainting, and face restore on real samples. We judged output quality, edit predictability, speed on a paid plan, and how the credit system felt in practice. No vendor paid for a ranking.</p>
         </section>

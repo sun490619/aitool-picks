@@ -233,7 +233,19 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
                   <div class="faq-item"><h3>What are GitHub Copilot's limits?</h3><p>It's strongest at in-place completion and weaker at repo-wide architectural changes, where AI-native editors like Cursor lead. Treat multi-file edit as a fast draft, not a finished refactor.</p></div>
                 </section>
 
-                <section class="how-we-test" aria-label="How we test">
+                    <section class="expand-block">
+      <h2 id="expand-copilot-cadence">A realistic cadence for commits and reviews with Copilot</h2>
+    <p>The underrated way to use Copilot is not 'write a whole feature' but weaving it into your commit and review rhythm. Sketch the function signatures and edge cases yourself, let it fill boilerplate and error branches, then have it draft test skeletons you only tweak assertions for. It handles low-risk repetition while you keep the architectural calls.</p>
+    <p>A cadence that survives real projects: commit in small steps, give Copilot one clear micro-goal at a time instead of letting it rewrite a whole file. Read the diff yourself right after, because completions often sneak in dependencies or names you did not intend. Treat it like a fast-typing junior who lacks the global picture - right rhythm doubles output, hands-off trust plants bugs.</p>
+    </section>
+
+    <section class="expand-block">
+      <h2 id="expand-copilot-quality">Where Copilot quietly hurts code quality</h2>
+    <p>A few task types where Copilot slows you down or worse. Changes sensitive to business logic that depend on implicit cross-file conventions - it sees far less context than you do and produces code that 'runs but is wrong'. Security, auth, and concurrency details where a plausible-looking completion can be genuinely dangerous.</p>
+    <p>And the code you already know cold: writing it yourself is faster than reading its output and correcting it. Rule of thumb: if you could write this snippet in 30 seconds, do not wait for it to guess. Reserve Copilot for 'I know what to do, but it is tedious to type'. The tell that it is slowing you: time spent reading and fixing its output exceeds time to write it yourself.</p>
+    </section>
+
+<section class="how-we-test" aria-label="How we test">
                     <h2 id="how-we-test">How we test</h2>
                     <p>Every tool on this page was used hands-on for real tasks &mdash; not skimmed from a press release. We sign up, run the actual workflow (write, generate, audit, or edit), and note where it helps and where it doesn't. Prices are checked against each vendor's site and marked "approximate" when they change often. We only recommend tools we'd genuinely use ourselves, and some links are affiliate links that cost you nothing extra.</p>
                 </section>
