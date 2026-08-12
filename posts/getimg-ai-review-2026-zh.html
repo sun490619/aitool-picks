@@ -256,7 +256,17 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
           </div>
         </div>
 
-        <section class="how-we-test">
+        <section class="expand-block">
+  <h2 id="expand-getimg-zh-pipeline">用 getimg 做真实配图流水线</h2>
+  <p>getimg 适合批量产出风格一致的配图：博客封面、社媒卡片、产品概念图。我们的做法是在提示词里锁定同一个风格种子（或固定 model + 负向词），一次出一组同调性的图，避免每篇视觉各唱各的。对需要系列感的栏目尤其省事。注意生成后人工挑图、裁到统一比例再上传，不要直接丢原图——平台对尺寸和主体居中有偏好，这一步决定点击率。</p>
+</section>
+
+<section class="expand-block">
+  <h2 id="expand-getimg-zh-rights">版权与商用的边界</h2>
+  <p>AI 生成的图大多可商用，但有两个雷区：一是生成可识别的真人肖像或受保护的 IP/logo，容易踩肖像权或商标；二是把训练数据里的艺术家风格「点名模仿」用于商业物料。品牌发布前我们过一遍自查：主体是否原创构图、是否含可识别标识、授权条款是否覆盖当前用途。多数日常配图没问题，但大范围投放前确认一次最稳。</p>
+</section>
+
+<section class="how-we-test">
           <h2 id="how-we-tested">我们如何测试</h2>
           <p>我们注册账号，跨提示词生成一组图片，再对真实样本做重绘、扩图和人脸修复。我们从产出质量、修图可预期性、付费方案速度和额度体感来评判。没有任何厂商为排名付费。</p>
         </section>
