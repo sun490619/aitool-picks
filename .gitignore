@@ -20,3 +20,14 @@ _backup_bluebar/
 _review/
 _diag/
 __pycache__/
+
+# 本地密钥/扫描临时产物（勿提交）
+_dskey.txt
+_campaign_scan.json
+_campaign_scan.py
+_verify_all.py
+_verify_all.json
+_verify_words.py
+_verify_words.json
+gen_block2.py
+replace_breadcrumb.py
