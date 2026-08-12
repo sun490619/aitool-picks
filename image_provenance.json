@@ -36,6 +36,24 @@
       "ocr_result": "clean",
       "note": "替换旧彗星维基截图(完全不相关)，新图=CC0打字场景+品牌叠加层，贴合DeepL翻译工具主题",
       "og_hero_same": true
+    },
+    "images/og-deepseek-vs-claude-2026.jpg": {
+      "status": "active",
+      "source": "openverse",
+      "source_url": "https://live.staticflickr.com/732/21121804381_cb231056ca_b.jpg",
+      "license": "CC0 1.0",
+      "title": "Menger Sponge (Anaglyph) (Flickr CC0)",
+      "used_in": [
+        "posts/deepseek-vs-claude-2026-zh.html",
+        "posts/deepseek-vs-claude-2026.html"
+      ],
+      "added_date": "2026-08-12",
+      "library_checked": true,
+      "library_reason": "AI模型对比/科技主题，备用图片库无合适抽象或对比场景真实照",
+      "ocr_tool": "easyocr",
+      "ocr_result": "clean",
+      "og_hero_same": true,
+      "note": "替换原AI生成假文字背景图(含Hard Power/Soft Belief/Alexander等乱码)，改用CC0抽象fractals真实照+品牌叠加层(深蓝渐变+左竖条+白标题+AI Tool Picks标)，easyocr复核0假文字0水印"
     }
   }
 }
