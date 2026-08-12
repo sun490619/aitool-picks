@@ -249,7 +249,16 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
           <div class="faq-item"><h3>Are they safe for client or team code?</h3><p>Treat generated code as untrusted. Review diffs, keep secrets out of context, and never paste regulated data into a cloud model without an approved plan. Most teams add a review gate before merges.</p></div>
         </section>
 
-                <section class="how-we-test" aria-label="How we test">
+                <section class="expand-block">
+    <h2 id="expand-coding-hand">What we'd still do by hand</h2>
+    <p>Across all three, the model writes the first 80% of a feature fast. But we kept a human in the loop for anything touching auth, payments, or data deletion — the cost of a silent bug there is too high. Treat these tools as a tireless junior, not as a replacement for review.</p>
+</section>
+<section class="expand-block">
+    <h2 id="expand-coding-payoff">Setup time vs. payoff</h2>
+    <p>On a fresh repo with no context, expect an hour of pointing the agent at your architecture before it stops guessing. On a repo you already work in daily, the payoff shows in the first session. The tools reward familiarity with the codebase more than any setting does.</p>
+</section>
+
+<section class="how-we-test" aria-label="How we test">
                     <h2 id="how-we-test">How we test</h2>
                     <p>Every tool on this page was used hands-on for real tasks &mdash; not skimmed from a press release. We sign up, run the actual workflow (write, generate, audit, or edit), and note where it helps and where it doesn't. Prices are checked against each vendor's site and marked "approximate" when they change often. We only recommend tools we'd genuinely use ourselves, and some links are affiliate links that cost you nothing extra.</p>
                 </section>
