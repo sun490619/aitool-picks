@@ -196,7 +196,19 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
           <div class="faq-item"><h3>做调研 Perplexity 比 ChatGPT 好吗？</h3><p>有来源的事实型调研是的——引用让核实变快。但创意工作、编程和不依赖联网的多步推理，ChatGPT 仍更好。</p></div>
         </section>
 
-        <section class="how-we-test" aria-label="How we test">
+            <section class="expand-block">
+      <h2 id="expand-perplexity-zh-citation">引用来源可靠性与事实核查边界</h2>
+    <p>Perplexity 最大的卖点是'带引用回答'，但引用不等于正确。我们实测发现，当它给的源是聚合页、论坛或二手报道时，论点会被稀释甚至转错。关键做法是：凡涉及具体数字、法规、医疗或金钱决策，一定要点开它列的源链接自己核对，别把'有引用'当成'已验证'。</p>
+    <p>另一个坑是它偶尔会'自信地编'——把几个来源拼成一篇看似通顺但实际不存在的说法。我们建立的习惯是：先用它快速定位信息点，再用原始来源交叉确认。把它当'带路的研究助理'，而不是'终审裁判'，信息安全事故率立刻降下来。</p>
+    </section>
+
+    <section class="expand-block">
+      <h2 id="expand-perplexity-zh-vs-chat">它和直接问聊天模型的边界</h2>
+    <p>很多人问：有了 Perplexity，还用得着直接问 ChatGPT/Claude 吗？实测边界很清楚——当你要的是'实时、有出处、能追源'的事实，Perplexity 更省事；当你要的是'开放创作、脑力激荡、代码或长篇起草'，纯聊天模型更顺手，因为它不会被'必须引用'的框架绑住。</p>
+    <p>还有一类任务两者都不合适：需要你公司私密数据、或未公开的内部文档。Perplexity 默认搜的是公开网页，喂不进你的私有知识库。这种场景要么接它支持的私有空间，要么回到本地模型，别指望它替你'通灵'内部信息。</p>
+    </section>
+
+<section class="how-we-test" aria-label="How we test">
             <h2 id="我们的测试方法">我们的测试方法</h2>
             <p>本页每个工具我们都亲手用于真实任务——而不是从新闻稿里扫一眼。我们会注册、跑真实工作流（写作、生成、审计或编辑），并记录它哪里有用、哪里没用。价格以各家官网为准，频繁变动时标注"约"。我们只推荐自己真的会用的工具，部分链接是联盟链接，对你不额外收费。</p>
         </section>

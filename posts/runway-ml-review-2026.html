@@ -327,7 +327,19 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
                   <div class="faq-item"><h3>How much does Runway ML cost?</h3><p>Free tier for testing, then $12, $28, and $76 monthly tiers by credits and resolution. Serious short-form producers typically need the $28 tier.</p></div>
                 </section>
 
-                <section class="how-we-test" aria-label="How we test">
+                    <section class="expand-block">
+      <h2 id="expand-runway-ml-speed">Generation speed and real-world wait times</h2>
+    <p>Runway ML's image quality gets the praise, but what users actually feel is 'how long.' In our testing, peak hours stretch the queue noticeably: a short clip can take minutes or more from submit to render, several times slower than off-peak. So for any scheduled project, never model generation as instant; build in a buffer.</p>
+    <p>Practical speed-ups: split high-priority and low-priority clips into separate queues, lock the version on the draft tier before refining, and batch-submit outside the crowded global windows. It is not 'click and instantly out' but 'plan then click.' Fold the wait into your workflow and the whole thing flows better.</p>
+    </section>
+
+    <section class="expand-block">
+      <h2 id="expand-runway-ml-rights">Commercial rights and asset licensing boundaries</h2>
+    <p>Before you ship a Runway clip to a paid client, rights are a must-check. We verified: subscription tiers differ in commercial license scope, some explicitly allow commercial use, others restrict resolution or purpose. Do not assume 'I generated it so I can sell it'; read the tier's terms you actually paid for.</p>
+    <p>The other edge is dispute risk from training-data provenance. If your output closely mimics a protected IP, the client's legal team may push back. Our safe play: keep generation records for commercial work, confirm tier rights, and avoid visibly cloning an existing brand's visuals. Front-loading compliance beats a rejected delivery every time.</p>
+    </section>
+
+<section class="how-we-test" aria-label="How we test">
                     <h2 id="how-we-test">How we test</h2>
                     <p>Every tool on this page was used hands-on for real tasks &mdash; not skimmed from a press release. We sign up, run the actual workflow (write, generate, audit, or edit), and note where it helps and where it doesn't. Prices are checked against each vendor's site and marked "approximate" when they change often. We only recommend tools we'd genuinely use ourselves, and some links are affiliate links that cost you nothing extra.</p>
                 </section>

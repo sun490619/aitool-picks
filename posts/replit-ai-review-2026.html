@@ -237,7 +237,19 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
                   <div class="faq-item"><h3>Can Replit Agent build production apps?</h3><p>It ships real, deployed apps fast, but complex production systems still need engineering review — security, scaling, and edge cases remain human responsibilities.</p></div>
                 </section>
 
-                <section class="how-we-test" aria-label="How we test">
+                    <section class="expand-block">
+      <h2 id="expand-replit-backend">Database and backend limits in practice</h2>
+    <p>Replit sells 'write, run, and ship from the browser,' but the backend has an invisible ceiling. In our testing it is great for lightweight services on standard stacks (Node, Python, common databases). The moment you need complex relational transactions, long-lived connections, or low-level system libraries, the environment gets fussy and your debug time outweighs the local-setup time you saved.</p>
+    <p>On the database side, its managed option is fine for small-to-mid projects, but for high-concurrency writes, tricky migrations, or a backup strategy you control, an external host is steadier. Verdict: Replit is a joy for a working prototype plus light production, and a handful once you make it your heavy backend battlefield.</p>
+    </section>
+
+    <section class="expand-block">
+      <h2 id="expand-replit-prod">The real gap from prototype to production</h2>
+    <p>Plenty of demos run happily in Replit and then stumble in production. Potholes we hit: slow cold starts on free or low tiers, occasional dependency drift on rebuilds, and logging or monitoring that is less smooth than a proper cloud. Before launch, run a 'strip every convenience assumption' stress check: how do you handle timeouts, retries, and secret management?</p>
+    <p>Our advice: treat Replit as the fastest 0-to-1 validation machine, and once it has real traction, consider moving core services to a more controllable environment. It can hold production, but the homework before that is far more than the 'one-click deploy' pitch implies. Know that up front and launch day won't surprise you.</p>
+    </section>
+
+<section class="how-we-test" aria-label="How we test">
                     <h2 id="how-we-test">How we test</h2>
                     <p>Every tool on this page was used hands-on for real tasks &mdash; not skimmed from a press release. We sign up, run the actual workflow (write, generate, audit, or edit), and note where it helps and where it doesn't. Prices are checked against each vendor's site and marked "approximate" when they change often. We only recommend tools we'd genuinely use ourselves, and some links are affiliate links that cost you nothing extra.</p>
                 </section>
