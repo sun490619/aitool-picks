@@ -2,11 +2,14 @@
 """
 aitool-picks 发布前强制门禁（pre-publish gate）。
 
-把三类反复犯规的"软约束"编译成机器强制：
+把反复犯规的"软约束"编译成机器强制：
   ① 配图铁律（图库优先 / easyocr / 禁 tesseract / og=hero）
   ② 文章结构铁律（面包屑 / hero / 单一 article-meta / related-articles 唯一）
   ③ 日期 + JSON-LD 铁律（datePublished 必填且 = <time datetime> /
      dateModified >= datePublished / 数值字段为数字禁引号）
+  ④ 列表页排序铁律（置顶第1 + 其余日期倒序）
+  ⑤ 字数铁律（2026-08-13：正文 ≥1500 硬性下限，EN 计 word / ZH 计中文字符；
+     新增文章 <1500 FAIL，修改存量 <1500 WARN；>1800 仅 WARN 不卡）
 
 任何一次 push，若改动涉及【新增图】或【新增/修改 posts 文章】，
 违规即拒绝推送。只检查本次改动的文件，不误伤存量已上线文章。
@@ -182,6 +185,46 @@ def check_post_dates(rel):
 
 
 # ---------------------------------------------------------------------------
+# ⑤ 字数铁律门禁（2026-08-13，对应"薄度 / 像诈骗站"根因）
+#    规则：每篇正文 ≥1500（EN word / ZH 中文字符），硬性下限写死。
+#    新增文章 <1500 → FAIL；修改存量 <1500 → WARN（不阻断）。>1800 仅 WARN。
+# ---------------------------------------------------------------------------
+MIN_WORDS = 1500
+TARGET_MAX = 1800
+
+def check_word_count(rel, is_new):
+    errs, warns = [], []
+    path = os.path.join(REPO, rel)
+    try:
+        h = open(path, encoding="utf-8").read()
+    except Exception:
+        return errs, warns
+    if "tool-selector" in os.path.basename(rel):
+        return errs, warns  # 工具页豁免字数要求
+    is_zh = bool(re.search(r'<html[^>]*lang="zh"', h, re.I))
+    body = re.sub(r'<script[\s\S]*?</script>', ' ', h, flags=re.I)
+    body = re.sub(r'<style[\s\S]*?</style>', ' ', body, flags=re.I)
+    body = re.sub(r'<[^>]+>', ' ', body)
+    if is_zh:
+        cnt = len(re.findall(r'[一-鿿]', body))
+        unit = "中文字"
+    else:
+        cnt = len(re.findall(r"[A-Za-z0-9][A-Za-z0-9'’.\-]*", body))
+        unit = "词"
+    if cnt < MIN_WORDS:
+        msg = f"{rel}: 正文 {cnt}{unit} < 硬性下限 {MIN_WORDS}（§13.13 / §九 字数铁律）"
+        if is_new:
+            errs.append(f"[FAIL] {msg} → 新文章不准 push，须扩写到 ≥{MIN_WORDS}{unit}")
+        else:
+            warns.append(f"[WARN] {msg} → 存量薄文整改 backlog，建议扩写（不阻断本次 push）")
+    elif cnt > TARGET_MAX:
+        warns.append(
+            f"[WARN] {rel}: 正文 {cnt}{unit} > {TARGET_MAX}，建议精简到 {TARGET_MAX} 内（上限不卡，可多于）"
+        )
+    return errs, warns
+
+
+# ---------------------------------------------------------------------------
 # ④ 列表页排序门禁（对应"文章排序乱"根因）
 #    规则：置顶文章(data-pinned="1")必须排第1位；其余卡片按日期倒序
 #    （最新在上）。任何一次改动涉及首页/分类页都强制校验，杜绝"新文埋底"。
@@ -236,10 +279,17 @@ def main():
         if p in added:
             struct_errors += check_post_structure(p)
     errors = list(struct_errors)
+    warnings = []
 
     # ---- ③ 日期/JSON-LD 门禁：对所有改动文章生效（含仅改日期的存量）----
     for p in posts:
         errors += check_post_dates(p)
+
+    # ---- ⑤ 字数铁律门禁：新增文章硬卡(<1500 FAIL)，修改存量仅 WARN ----
+    for p in posts:
+        e, w = check_word_count(p, p in added)
+        errors += e
+        warnings += w
 
     # ---- ④ 列表页排序门禁 ----
     for f in files:
@@ -267,7 +317,6 @@ def main():
         except Exception:
             pass
 
-    warnings = []
     for img in sorted(need_check):
         rec = prov.get(img)
         if rec is None:
@@ -299,7 +348,7 @@ def main():
             )
 
     print("=" * 60)
-    print("aitool-picks 发布前门禁（配图 + 结构 + 日期/JSON-LD）")
+    print("aitool-picks 发布前门禁（配图 + 结构 + 日期/JSON-LD + 字数）")
     print(f"改动文件 {len(files)} 个 | 需校验图 {len(need_check)} 张 | 文章 {len(posts)} 篇")
     print("=" * 60)
     for w in warnings:
