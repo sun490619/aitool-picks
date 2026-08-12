@@ -308,7 +308,18 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
                   <div class="faq-item"><h3>AI 放大图片到多少倍不掉质量？</h3><p>2–4 倍放大在多数照片上都很自然。超过 4 倍后 AI 会开始「编造」细节，用在艺术图上可以，但可能扭曲人脸和文字。</p></div>
                 </section>
 
-                <section class="how-we-test" aria-label="How we test">
+                
+<section class="expand-block" id="eb-upscale-strategy">
+  <h2 id="eb-upscale-strategy-h">老照片 vs 插画的不同策略</h2>
+  <p>放大不是无脑拉倍数。老照片建议"修复 + 放大"两步分开：直接 4x 会把噪点放大成油画感，先降噪再放大，眼睛、牙齿这些区域最好手动蒙版保护。插画和 logo 其实更适合矢量重绘，放大只适合位图素材。电商白底产品图放大后边缘常会糊，需要重新抠图，别以为放完就能直接用。</p>
+</section>
+<section class="expand-block" id="eb-upscale-batch">
+  <h2 id="eb-upscale-batch-h">批处理 100 张的工时账</h2>
+  <p>单张手动精修约 3–5 分钟；批处理自动 4x 约 8 秒/张，但仍有约 20% 需要质检返工。100 张总耗时从 8 小时压到约 1.5 小时，省的是重复操作，不是省掉判断。</p>
+  <p>版权要提醒一句：放大后的图版权看你用的工具条款，商用前确认是否允许。多数允许，但训练数据来源各有说法，重要商用项目别想当然。</p>
+</section>
+
+<section class="how-we-test" aria-label="How we test">
                     <h2 id="我们的测试方法">我们的测试方法</h2>
                     <p>本页上的每个工具都用真实任务亲手使用过——而不是扫一眼新闻稿。我们会注册、运行实际工作流（写作、生成、审计或编辑），并记录它有用和没用的地方。价格对照各厂商官网核实，若经常变动则标注"约"。我们只推荐自己真正会用的工具，部分链接为联盟链接，对你不会产生额外费用。</p>
                 </section>

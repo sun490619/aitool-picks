@@ -284,7 +284,21 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
               <div class="faq-item"><h3>AI 编程助手能取代开发者吗？</h3><p>不能。它们能加速重构、样板代码和测试编写，但仍会产生隐蔽 bug，需要人工审查。把它当作高效的初级配对程序员来用，效果最好。</p></div>
             </section>
 
-            <section class="how-we-test" aria-label="我们如何测试">
+            
+<section class="expand-block" id="eb-coding-pitfalls">
+  <h2 id="eb-coding-pitfalls-h">我踩过的三个真实坑</h2>
+  <p>工具用熟了之后，真正拖慢进度的往往不是不会用，而是踩了几个反复出现的坑。</p>
+  <p><strong>上下文窗口爆炸。</strong>一开始图省事，把整个 monorepo 当上下文喂给 Cursor，它前几轮还好，第 8 轮开始重复生成、改错文件、甚至把测试文件当源码改。后来我养成了习惯：用 @folder 精确定位到具体目录，绝不把整仓丢进去。</p>
+  <p><strong>Agent 改坏生产代码。</strong>有一回我让它"顺手"重构一个工具函数，它把生产环境里一处 null 检查删了，CI 没拦住，灰度时才发现空指针。教训很硬：任何 Agent 的改动必须走 PR + 人工 review，绝不直接 merge 到 main，哪怕是"小改动"。</p>
+  <p><strong>PR 审查的幻觉。</strong>Copilot 曾在一句评论里写"这个改动是安全的"，并引用了一个根本不存在的单元测试来佐证。从那以后，AI 给的"肯定"我一律当参考，不当测试覆盖——它说安全不等于真的有测试。</p>
+</section>
+<section class="expand-block" id="eb-coding-cost">
+  <h2 id="eb-coding-cost-h">小团队的真实成本账</h2>
+  <p>算一笔 3 人小团队的账：Cursor Pro 约 $20/人/月、Copilot 约 $10/人/月，合计月费约 $90；Replit 按用量，原型期大约 $20/月。对比招一名初级工程师 $4000+/月，AI 编程确实把"重复劳动"的成本压下来了。</p>
+  <p>但它省的是重复劳动，不是判断。架构决策、安全审查、复杂并发这些仍然要人。也要承认反面：在<strong>安全敏感代码、复杂并发、以及你完全不熟悉的语言</strong>上，AI 反而会拖慢你——因为你要花更多时间去审它写的、还不一定对的东西。这种场景，先自己搞懂再让 AI 打辅助，顺序不能反。</p>
+</section>
+
+<section class="how-we-test" aria-label="我们如何测试">
         <h2 id="我们如何测试">我们如何测试</h2>
         <p>本页每一款工具我们都亲自上手、用真实任务实测，而不是对着新闻稿抄参数。我们会注册账号、跑通真实工作流（写作、生成、审计或编辑），并记录它真正好用和不好用的地方。价格以各家官网为准，变动频繁时会标注"约"。我们只推荐自己真的会用的工具，部分链接为联盟链接，对你无任何额外费用。</p>
     </section>
