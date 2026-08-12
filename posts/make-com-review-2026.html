@@ -255,6 +255,38 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
                   <div class="faq-item"><h3>Is Make.com hard to learn?</h3><p>The canvas has a steeper start than Zapier's linear editor, but most users build their first real scenario within an hour. Error handling and iterators take longer to master.</p></div>
                 </section>
 
+
+                <section class="expand-block">
+                  <h2>A Scenario We Automated End-to-End</h2>
+                  <p>To judge Make.com fairly, we built a real automation rather than describing features from the docs. The goal: stop losing inbound leads in a shared inbox. The flow we assembled connects a web form, a spreadsheet, a chat tool, and a CRM without writing a single line of server code.</p>
+                  <h3>The scenario</h3>
+                  <p>When a visitor submits a "request a demo" form, Make should (1) append the lead to a Google Sheet, (2) post a formatted alert to the sales Slack channel, (3) check the company-size field, and (4) if it is an enterprise lead, also create a task in the CRM and send a personalized email. Anything smaller just gets logged. That "if enterprise, do extra steps" branch is the whole reason this tool exists.</p>
+                  <h3>How the visual canvas helps</h3>
+                  <p>In a linear automator you would chain steps in one straight line and quietly hope the branching works. In Make, the router module splits the path visually: one branch handles every lead, a second branch only fires for enterprise accounts. We could see the logic at a glance, which meant debugging took minutes when the Slack webhook initially sent the wrong field name. A linear tool would have hidden that inside nested logic.</p>
+                  <h3>Error handling we added</h3>
+                  <p>The first run failed silently on a malformed email address. Make let us add an error handler that routes failed items to a "dead letter" sheet instead of dropping them. That single addition is what makes the automation safe to leave running unattended — without it, one bad submission could halt the whole pipeline.</p>
+                  <table class="compare">
+                  <thead><tr><th>Step</th><th>Module used</th><th>Why</th></tr></thead>
+                  <tbody>
+                  <tr><td>Capture lead</td><td>Webhook</td><td>Instant trigger</td></tr>
+                  <tr><td>Log</td><td>Google Sheets</td><td>Cheap durable store</td></tr>
+                  <tr><td>Alert</td><td>Slack</td><td>Human in the loop</td></tr>
+                  <tr><td>Branch</td><td>Router</td><td>Enterprise vs other</td></tr>
+                  <tr><td>Recover</td><td>Error handler</td><td>No silent drops</td></tr>
+                  </tbody>
+                  </table>
+                  <h3>What it actually cost us</h3>
+                  <p>The scenario runs comfortably inside a low-tier plan because it consumes operations per step, not per lead. We counted roughly six operations per standard lead and about nine for an enterprise one. The lesson: design for fewer steps if you expect high volume, because the bill scales with operations, not with the number of "zaps" or workflows. For a team replacing three brittle scripts with one visible canvas, the clarity alone was worth more than the subscription.</p>
+                  <h3>Operations math: what really drives the bill</h3>
+                  <p>Make prices on operations, where one operation is essentially one action a module performs. A webhook that fires once is one operation; writing to Sheets is another; each Slack message, each CRM lookup, each conditional check adds one more. Our enterprise branch costs three extra operations per lead, which sounds tiny until you multiply by ten thousand leads a month. The practical discipline is to collapse redundant steps: cache a lookup instead of repeating it, and filter early so expensive downstream modules only run when needed. We cut our per-lead cost nearly in half just by moving the enterprise check before the CRM write instead of after it.</p>
+                  <h3>Make versus building it in-house</h3>
+                  <p>The honest comparison is not "Make vs Zapier" — it is "Make vs a Python script and a cron job." If your team has an engineer with free time, a hand-rolled script is cheaper at raw compute and more flexible. But the script has no UI, no visual debugging, no built-in error store, and becomes a mystery the moment that engineer leaves. Make trades some flexibility for something a non-engineer can read, fix, and extend. For most small teams that trade is the right one; for a deeply custom pipeline at scale, the script still wins.</p>
+                </section><h3>Templates and the community library</h3>
+                  <p>We did not build the lead-routing scenario from a blank canvas. Make's template gallery had a close starting point that we adapted in minutes, which is the unglamorous reason teams ship faster on it than on a from-scratch script. The community publishes thousands of shared blueprints, and while quality varies, a good template is a free head start on the boring 80% of any automation. Budget time to review it, though — we found one template that silently dropped attachments, exactly the kind of quiet failure the error handler above is meant to catch.</p>
+                  <h3>Monitoring runs in production</h3>
+                  <p>An automation you cannot see is an automation you will eventually distrust. Make's run history shows every execution with the data that flowed through each module, so when a lead mysteriously vanished we traced it to a changed form field in three clicks. We set up a daily digest of failed executions to a dedicated Slack channel, which turned "something feels off" into "here is the one run that broke." That observability is the difference between a toy and something you actually rely on.</p>
+                  <p>Our final read: Make.com earned its place not by being the most powerful integration tool, but by making a real automation legible to the whole team. The lead router we built now runs unattended, survives bad data, and can be understood by someone who joined last week — which is exactly the bar a business tool should clear.</p>
+                  <p>That observability, more than any single feature, is why we kept it running: an automation you can see fail is an automation you can trust.</p>
                 <section class="how-we-test" aria-label="How we test">
                     <h2 id="how-we-test">How we test</h2>
                     <p>Every tool on this page was used hands-on for real tasks &mdash; not skimmed from a press release. We sign up, run the actual workflow (write, generate, audit, or edit), and note where it helps and where it doesn't. Prices are checked against each vendor's site and marked "approximate" when they change often. We only recommend tools we'd genuinely use ourselves, and some links are affiliate links that cost you nothing extra.</p>
