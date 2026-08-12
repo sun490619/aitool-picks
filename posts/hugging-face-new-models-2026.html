@@ -286,7 +286,19 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
                   <div class="faq-item"><h3>Are open-source models as good as GPT-4 or Claude?</h3><p>For many everyday tasks, the best open models (Llama, Qwen, Mistral, DeepSeek, Gemma) are surprisingly close and run privately on your own hardware. They usually trail the very top closed models on the hardest reasoning, but for most writing, coding, and image tasks they are more than enough and cost nothing per call.</p></div>
                 </section>
 
-                <section class="how-we-test" aria-label="How we test">
+                    <section class="expand-block">
+      <h2 id="expand-hfnew-eval">How we actually evaluate a new model before trusting it</h2>
+    <p>A new model dropping is not the same as a new model being useful. Our habit is to run it against a fixed set of small tasks we already know the answers to - a few classification cases, a code snippet, an image prompt - before trusting any benchmark the authors publish. Benchmarks can be gamed; your own tiny eval set cannot, and it takes minutes.</p>
+    <p>We also separate 'impressive demo' from 'reliable default'. A model that nails one flashy example but is inconsistent on the tenth repeat is not safe to wire into a product. Look at update cadence and open issues too: a model with no community maintenance behind it becomes your personal tech debt the moment an edge case breaks. New is only better if it is also dependable.</p>
+    </section>
+
+    <section class="expand-block">
+      <h2 id="expand-hfnew-runtime">Matching a model to your actual hardware budget</h2>
+    <p>The headline number that matters for most teams is not accuracy, it is 'can this run on what I already have'. A 70B model that needs two enterprise GPUs is a different animal from a 7B that fits on a consumer card, and the gap shows up as latency, cost, and whether you can even serve it at all.</p>
+    <p>Before chasing the biggest release, estimate your real throughput need: how many requests per minute, what latency is acceptable, and what a failed request costs you. Often a smaller, quantized model clears the bar at a tenth of the infrastructure bill. Track new models with that budget in mind, not as a leaderboard - the right pick is the one your hardware and wallet can actually sustain.</p>
+    </section>
+
+<section class="how-we-test" aria-label="How we test">
                     <h2 id="how-we-test">How we test</h2>
                     <p>Every tool on this page was used hands-on for real tasks &mdash; not skimmed from a press release. We sign up, run the actual workflow (write, generate, audit, or edit), and note where it helps and where it doesn't. Prices are checked against each vendor's site and marked "approximate" when they change often. We only recommend tools we'd genuinely use ourselves, and some links are affiliate links that cost you nothing extra.</p>
                 </section>

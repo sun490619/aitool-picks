@@ -241,7 +241,19 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
                   <div class="faq-item"><h3>Can beginners use Hugging Face?</h3><p>Yes — Spaces demos run in the browser with no setup, and pipelines in the Transformers library wrap complex models into a few lines of Python. Deploying to production needs more engineering.</p></div>
                 </section>
 
-                <section class="how-we-test" aria-label="How we test">
+                    <section class="expand-block">
+      <h2 id="expand-hf-selfhost">Getting a model running on your own server</h2>
+    <p>Hugging Face is not just a download shelf; it is also the smoothest on-ramp to running models on your own hardware. The pragmatic path: prototype on the Inference API first to confirm the output is worth it, then decide whether to self-host. When you do, load weights with the official transformers library and use inference optimizations - quantization, batching, caching - to get VRAM into a runnable bracket rather than buying the biggest GPU up front.</p>
+    <p>What actually bites people is not the code but dependencies and versions. The same model can behave differently across transformers versions and CUDA combos, so lock the environment into a requirements file or container before you hand it off - that alone kills most 'works on my machine' arguments. If traffic is spiky, ride serverless inference per-request until volume justifies a dedicated GPU; blindly reserving a monthly box wastes money and attention.</p>
+    </section>
+
+    <section class="expand-block">
+      <h2 id="expand-hf-pick">How to pick the right model without drowning in options</h2>
+    <p>The model count on Hugging Face is paralyzing, but selection is simple: match the task, then read the vitals. Doing text classification? Filter the 'text-classification' tag for high downloads and recent updates; do not get seduced by a cool-named obscure model. Building chat? Prefer ones with a chat template and active maintenance over a single-paper demo.</p>
+    <p>The second dimension people skip is the license. Many strong models are restricted for commercial use, and discovering that after you have built on them is wasted work - read the license before you commit. Also, do not worship parameter count: a small model with good prompts is often enough, and its deploy cost and latency are far lower. The goal is not 'strongest' but 'just enough for your case and shippable'.</p>
+    </section>
+
+<section class="how-we-test" aria-label="How we test">
                     <h2 id="how-we-test">How we test</h2>
                     <p>Every tool on this page was used hands-on for real tasks &mdash; not skimmed from a press release. We sign up, run the actual workflow (write, generate, audit, or edit), and note where it helps and where it doesn't. Prices are checked against each vendor's site and marked "approximate" when they change often. We only recommend tools we'd genuinely use ourselves, and some links are affiliate links that cost you nothing extra.</p>
                 </section>
