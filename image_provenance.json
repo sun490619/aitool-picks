@@ -21,7 +21,7 @@
       "og_hero_same": true,
       "note": "已知违规样本，证明门禁逻辑；不阻断历史，但标记为待补正。"
     },
-    "images/og-deepl-review-2026.jpg": {
+    "og-deepl-review-2026.jpg": {
       "status": "active",
       "source": "openverse",
       "source_url": "https://live.staticflickr.com/664/21713977623_7d69d4e6a8_b.jpg",
@@ -37,7 +37,7 @@
       "note": "替换旧彗星维基截图(完全不相关)，新图=CC0打字场景+品牌叠加层，贴合DeepL翻译工具主题",
       "og_hero_same": true
     },
-    "images/og-deepseek-vs-claude-2026.jpg": {
+    "og-deepseek-vs-claude-2026.jpg": {
       "status": "active",
       "source": "library",
       "source_path": "/Users/dawei/Desktop/项目总中枢/备用图片库/01_tech-workspace_dual-monitor-keyboard.jpg",
@@ -55,7 +55,7 @@
       "og_hero_same": true,
       "note": "替换原AI生成假文字背景图(含Hard Power/Soft Belief/Alexander等乱码)。改正此前违规：首版误用 openverse CC0 且伪造 library_checked。现严格按规则二.1 用备用图片库真实照作底图+品牌叠加层(深蓝渐变遮罩+左竖条#60a5fa+白标题+AI Tool Picks标)，easyocr复核0假文字0水印。"
     },
-    "images/og-best-ai-tools-for-affiliate-marketers-2026.jpg": {
+    "og-best-ai-tools-for-affiliate-marketers-2026.jpg": {
       "status": "active",
       "source": "picsum",
       "source_detail": "Lorem Picsum 随机真实照(底图) + 本站品牌叠加层(深蓝渐变遮罩+左竖条#60a5fa+白标题+AI Tool Picks标)。底图来自 picsum(serve Unsplash 真实照片)，非备用图片库、非 Openverse CC0。属 2026-07-16 全站图片修复期生成的历史占位图(主题不贴)，按 _meta 不强制回填条款补登。",
@@ -74,7 +74,7 @@
       "og_hero_same": true,
       "note": "历史占位 OG 图，主题与 affiliate 营销不贴。建议后续按现规则改用备用图片库真实照重做底图(保留品牌叠加层)。"
     },
-    "images/og-best-ai-tools-for-content-marketing-2026.jpg": {
+    "og-best-ai-tools-for-content-marketing-2026.jpg": {
       "status": "active",
       "source": "picsum",
       "source_detail": "Lorem Picsum 随机真实照(底图) + 本站品牌叠加层(深蓝渐变遮罩+左竖条#60a5fa+白标题+AI Tool Picks标)。底图来自 picsum(serve Unsplash 真实照片)，非备用图片库、非 Openverse CC0。属 2026-07-16 全站图片修复期生成的历史占位图(主题不贴)，按 _meta 不强制回填条款补登。",
@@ -93,7 +93,7 @@
       "og_hero_same": true,
       "note": "历史占位 OG 图，主题与内容营销不贴。建议后续按现规则改用备用图片库真实照重做底图(保留品牌叠加层)。"
     },
-    "images/og-best-ai-tools-for-email-marketing-2026.jpg": {
+    "og-best-ai-tools-for-email-marketing-2026.jpg": {
       "status": "active",
       "source": "picsum",
       "source_detail": "Lorem Picsum 随机真实照(底图) + 本站品牌叠加层(深蓝渐变遮罩+左竖条#60a5fa+白标题+AI Tool Picks标)。底图来自 picsum(serve Unsplash 真实照片)，非备用图片库、非 Openverse CC0。属 2026-07-16 全站图片修复期生成的历史占位图(主题不贴)，按 _meta 不强制回填条款补登。",
@@ -112,7 +112,7 @@
       "og_hero_same": true,
       "note": "历史占位 OG 图，主题与邮件营销不贴。建议后续按现规则改用备用图片库真实照重做底图(保留品牌叠加层)。"
     },
-    "images/og-best-ai-tools-for-landing-pages-2026.jpg": {
+    "og-best-ai-tools-for-landing-pages-2026.jpg": {
       "status": "active",
       "source": "picsum",
       "source_detail": "Lorem Picsum 随机真实照(底图) + 本站品牌叠加层(深蓝渐变遮罩+左竖条#60a5fa+白标题+AI Tool Picks标)。底图来自 picsum(serve Unsplash 真实照片)，非备用图片库、非 Openverse CC0。属 2026-07-16 全站图片修复期生成的历史占位图(主题不贴)，按 _meta 不强制回填条款补登。",
