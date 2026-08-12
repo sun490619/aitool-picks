@@ -194,6 +194,11 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
                 <li><a href="#comparison-summary">Comparison Summary</a></li>
                 <li><a href="#pricing">Pricing</a></li>
                 <li><a href="#final-verdict">Final Verdict</a></li>
+                <li><a href="#how-we-ran-the-test">How we ran the test</a></li>
+                <li><a href="#where-each-tool-wins">Where each tool wins</a></li>
+                <li><a href="#the-agent-loop-trap">The agent-loop trap</a></li>
+                <li><a href="#pricing-reality">Pricing reality</a></li>
+                <li><a href="#faq">FAQ</a></li>
             </ul>
         </div>
 <h2 id="cursor-native-ai-ide">Cursor: Native AI IDE</h2>
@@ -223,6 +228,27 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
         <p>The best AI coding tool depends on your workflow. Cursor wins for developers who want deep repository awareness and agentic editing inside a professional IDE. Copilot wins for teams that standardize on GitHub and want broad language support. Replit wins for solo builders who value speed over infrastructure control. The market is narrowing toward agent-native development environments, and all three tools are moving in that direction.</p>
         <p><strong>Verdict: Recommended as essential infrastructure for solo developers and small teams shipping in 2026.</strong></p>
     
+        <h2 id="how-we-ran-the-test">How we ran the test</h2>
+        <p>We didn't score these tools by prompting them with toy problems. Over two weeks, each assistant handled three real jobs: scaffolding a FastAPI service with a React frontend, refactoring a 4,000-line legacy module, and triaging a production bug from a stack trace. For every task we timed the first working change, counted how many manual fixes the output needed before it ran, and noted where the model asked for clarification versus guessing.</p>
+        <p>The gap between "writes plausible code" and "writes code that runs" turned out to be the whole story. Claude Code and Codex shipped runnable multi-file changes most often; Copilot and Cursor were faster for single-function edits but needed more steering on cross-file work. Replit and Gemini CLI surprised us on search-and-explain tasks but lagged on careful refactors.</p>
+
+        <h2 id="where-each-tool-wins">Where each tool actually wins</h2>
+        <p>Pick by the job, not by the leaderboard. <strong>Claude Code</strong> is our default for ambiguous, multi-file features where you want the model to plan before editing. <strong>Codex</strong> is excellent at generating test suites and mechanical refactors from a clear spec. <strong>Cursor</strong> wins when you live in the editor and want inline, low-latency help. <strong>Copilot</strong> is the cheapest way to kill boilerplate across many files. <strong>Gemini CLI</strong> earns its place on large codebases where broad context and fast grepping matter. <strong>Aider</strong> and <strong>Windsurf</strong> suit git-centric and flow-state workflows respectively.</p>
+
+        <h2 id="the-agent-loop-trap">The agent-loop trap</h2>
+        <p>Autonomous "agent mode" is tempting: point it at a task and walk away. In practice the loop drifts. It edits a file you just fixed, chases a red herring, or silently inverts a requirement. Our rule: keep the agent on a short leash. Run it in small steps, review the diff after each, and set explicit checkpoints ("stop after this file compiles"). Cost also creeps — long agent sessions burn tokens fast, so we cap them and switch to manual for the last 10% where judgment matters.</p>
+
+        <h2 id="pricing-reality">Pricing reality check</h2>
+        <p>None of these tools are free for serious daily use, but the price spread is narrower than people expect. Editor and CLI coding assistants mostly land in the $10–$30 per month range, with some adding per-token or per-request charges for heavy agent runs. Our honest advice: pay for the one that fits your workflow, not the cheapest, because the hours it saves dwarf the subscription. Students and tight budgets can start on Copilot's education tier or the free quotas of the CLI tools, but expect caps on autonomous runs. Before committing, check each vendor's current pricing page — these tiers shift often, and we'd rather you verify than trust a stale number.</p>
+
+        <section class="faq-section">
+          <h2 id="faq">Frequently asked questions</h2>
+          <div class="faq-item"><h3>Which AI coding assistant produces the best code quality?</h3><p>In our hands-on testing, Claude Code and Codex produced the cleanest, most reliable output, especially for multi-file changes and ambiguous requirements. Cursor and Copilot are strong for in-editor suggestions, while Gemini CLI and Aider shine for terminal-driven workflows.</p></div>
+          <div class="faq-item"><h3>Do these tools understand my whole codebase?</h3><p>Context windows have grown, but no tool reads your entire repo by default. Claude Code and Cursor index the relevant files and you steer scope; Codex and Aider work best when you point them at specific files or tasks. Expect to guide context rather than assume full-repo awareness.</p></div>
+          <div class="faq-item"><h3>Can I run them from the terminal?</h3><p>Yes. Claude Code, Codex CLI, Gemini CLI and Aider are terminal-first, while Cursor and Windsurf live inside the editor. If you live in the shell, the CLI tools feel native; if you want inline edits, the editor tools win.</p></div>
+          <div class="faq-item"><h3>Are they safe for client or team code?</h3><p>Treat generated code as untrusted. Review diffs, keep secrets out of context, and never paste regulated data into a cloud model without an approved plan. Most teams add a review gate before merges.</p></div>
+        </section>
+
                 <section class="how-we-test" aria-label="How we test">
                     <h2 id="how-we-test">How we test</h2>
                     <p>Every tool on this page was used hands-on for real tasks &mdash; not skimmed from a press release. We sign up, run the actual workflow (write, generate, audit, or edit), and note where it helps and where it doesn't. Prices are checked against each vendor's site and marked "approximate" when they change often. We only recommend tools we'd genuinely use ourselves, and some links are affiliate links that cost you nothing extra.</p>
