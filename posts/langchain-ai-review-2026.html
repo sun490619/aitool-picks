@@ -232,7 +232,22 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
                   <div class="faq-item"><h3>Do I need LangChain to build with LLMs?</h3><p>No — simple apps can call model APIs directly. LangChain earns its complexity when you need agents, tool use, RAG pipelines, or swapping providers without rewriting everything.</p></div>
                 </section>
 
-                <section class="how-we-test" aria-label="How we test">
+                
+<section class="expand-block">
+      <h2 id="expand-langchain-deploy">Deployment and the real ops cost</h2>
+    <p><p>LangChain itself is free and open source, but 'running locally' and 'running in production' are two different budgets. A local demo costs nothing; the moment you serve it to users you own model-api keys, vector-store storage, request queuing, and failure retries. Teams routinely underestimate this: the demo lands in a day, the production version slips three weeks.</p></p>
+    <p><p>Our guidance: for personal projects or small internal tools, a hosted SDK plus one model provider is the least painful. Self-hosting the model underneath means someone owns GPUs, versions, and patches indefinitely. LangChain is only the glue; the real operational weight sits below it. When you total the cost, don't stop at 'the framework is free' factor in who wakes up at 2 a.m. when the service dies.</p></p>
+    <p><p>It also helps to ship behind a simple eval harness early, so a breaking prompt change surfaces before users do. That harness is part of the ops cost people forget.</p></p>
+    </section>
+
+<section class="expand-block">
+      <h2 id="expand-langchain-when-skip">When you should skip LangChain entirely</h2>
+    <p><p>Not every LLM need deserves LangChain. If your use case is 'call a model once and return text,' three lines of direct API code is enough, and wrapping a framework on top just adds abstraction and debugging overhead. The framework earns its place when you need multi-step orchestration, tool use, memory, or retrieval. For simple jobs it's a sledgehammer for a thumbtack.</p></p>
+    <p><p>There's a quieter downside: the more chained steps you add, the harder a failure is to locate. A 12-step agent that hangs leaves you guessing which stage stuck. So if the business is early and the logic is simple, write it bare first. Reach for LangChain only when the complexity genuinely outgrows what you can manage by hand. Tools should grow out of complexity, not be bolted on at the start.</p></p>
+    <p><p>We've seen teams adopt it on day one, then spend week two fighting the abstraction instead of shipping features. That order almost always backfires.</p></p>
+    </section>
+
+<section class="how-we-test" aria-label="How we test">
                     <h2 id="how-we-test">How we test</h2>
                     <p>Every tool on this page was used hands-on for real tasks &mdash; not skimmed from a press release. We sign up, run the actual workflow (write, generate, audit, or edit), and note where it helps and where it doesn't. Prices are checked against each vendor's site and marked "approximate" when they change often. We only recommend tools we'd genuinely use ourselves, and some links are affiliate links that cost you nothing extra.</p>
                 </section>
