@@ -228,7 +228,22 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
                   <div class="faq-item"><h3>What hardware do you need to run open models?</h3><p>Quantized 7–13B models run on a decent consumer GPU or Apple Silicon Mac. Larger models need 24GB+ VRAM or cloud GPUs — or use hosted inference to skip hardware entirely.</p></div>
                 </section>
 
-                <section class="how-we-test" aria-label="How we test">
+                
+<section class="expand-block">
+      <h2 id="expand-oss-hardware">Hardware and VRAM thresholds: what you can actually run locally</h2>
+    <p><p>The biggest myth about open-source models is that free means zero cost. The weights are free, but running them needs a GPU. In our testing, 7B-class models run smoothly on consumer cards with 8-12GB of VRAM and the experience surprises people; to run a 70B-class model comfortably you want 24GB-plus, otherwise you're stuck quantizing and sacrificing speed. So check your actual card before chasing parameter counts.</p></p>
+    <p><p>There's a second layer: the inference framework, like llama.cpp or vLLM, and the quantization precision directly set speed and footprint. The same model at 4-bit fits a small card but loses a little accuracy; 8-bit is steadier but hungry. Most users should start at 4-bit small models, private and subscription-free; to step up to large models, either add VRAM or host in the cloud. Weigh the hardware gate before you buy anything.</p></p>
+    <p><p>We've seen buyers regret a 70B ambition on an 8GB laptop, the quantization tax made it unusable.</p></p>
+    </section>
+
+<section class="expand-block">
+      <h2 id="expand-oss-license">Licensing and the commercial-use boundary</h2>
+    <p><p>Open source doesn't mean free to commercialize. Many strong models ship under non-commercial or community licenses, fine for personal play, risky if baked into a paid product. Our advice is to read the license clause once before launch, especially Llama-family and some derived weights, confirm commercial use is allowed.</p></p>
+    <p><p>Safe path: personal projects experiment freely; for commercial products prefer weights explicitly marked usable, or go through the official licensing channel. Don't wait for a cease-and-desist to care. The license is the most underrated trap in open source, ten minutes reading terms beats a thousandfold-costly cleanup later.</p></p>
+    <p><p>We now flag license status in every model-evaluation doc, because it's the line between a hobby and a liability.</p></p>
+    </section>
+
+<section class="how-we-test" aria-label="How we test">
                     <h2 id="how-we-test">How we test</h2>
                     <p>Every tool on this page was used hands-on for real tasks &mdash; not skimmed from a press release. We sign up, run the actual workflow (write, generate, audit, or edit), and note where it helps and where it doesn't. Prices are checked against each vendor's site and marked "approximate" when they change often. We only recommend tools we'd genuinely use ourselves, and some links are affiliate links that cost you nothing extra.</p>
                 </section>
