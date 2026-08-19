@@ -12,14 +12,24 @@
   },
   "images": {
     "og-edesk-review-2026.jpg": {
-      "status": "legacy_violation",
+      "status": "active",
       "source": "openverse",
-      "library_checked": false,
-      "library_reason": "（历史违规）当时未先查图库，直接用的 Openverse。待用户同意后按规则重做。",
-      "ocr_tool": "tesseract",
-      "ocr_result": "clean_by_chance",
+      "source_url": "https://stocksnap.io/photo/woman-working-8LHTBAZW32",
+      "license": "CC0 1.0",
+      "title": "Woman Working (Stocksnap CC0, Helena Lopes)",
+      "library_path": "/Users/dawei/Desktop/项目总中枢/备用图片库/08_productivity_woman-working-laptop-2.jpg",
+      "used_in": [
+        "posts/edesk-review-2026.html",
+        "posts/edesk-review-2026-zh.html"
+      ],
+      "added_date": "2026-08-19",
+      "library_checked": true,
+      "library_reason": "底图=Openverse 搜索→Stocksnap CC0 真实照(女性办公场景，贴电商卖家主题)。已下载并入库备用图片库 08_productivity 分类留底。",
+      "ocr_tool": "easyocr",
+      "ocr_result": "clean",
+      "ocr_note": "easyocr 仅检出品牌叠加层自带文字(eDesk Review 2026 + AI Tool Picks)，无外部水印/标注；底图 cand3-woman-work.jpg 经 easyocr 复核 CLEAN。",
       "og_hero_same": true,
-      "note": "已知违规样本，证明门禁逻辑；不阻断历史，但标记为待补正。"
+      "note": "2026-08-19 用户选定第3张底图(Woman Working)重做 og 图，替换原违规样本；中英文文章 og:image 与 hero 图指向同一文件，全部一致。原底图已入库留底。"
     },
     "og-deepl-review-2026.jpg": {
       "status": "active",
