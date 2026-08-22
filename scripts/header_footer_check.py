@@ -115,6 +115,15 @@ def main() -> int:
         data_zh_m = re.search(r'<html\s+[^>]*data-zh-url="([^"]*)"', html[:500])
         has_data_zh = bool(data_zh_m)
 
+        # —— 配对正确性硬检查（防复发：指向自身 / 指向不存在文件）——
+        if has_data_zh:
+            declared = data_zh_m.group(1).strip()
+            self_path = '/' + rel
+            if declared.rstrip('/') == self_path.rstrip('/'):
+                failures.append((rel, f'data-zh-url 指向自身（{declared}），语言切换会自指，必须指向真实对应语言页'))
+            elif not (root / declared.lstrip('/')).exists():
+                failures.append((rel, f'data-zh-url 指向不存在文件（{declared}）'))
+
         if lang == 'en':
             if has_zh and not has_data_zh:
                 failures.append((rel, f'EN 页有对应 ZH 文件，但缺少 data-zh-url（应为 /{rel.replace(".html", "-zh.html")}）'))
