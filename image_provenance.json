@@ -341,6 +341,26 @@
       "ocr_tool": "easyocr",
       "ocr_result": "clean",
       "og_hero_same": true
+    },
+    "og-invideo-review-2026.jpg": {
+      "status": "active",
+      "source": "openverse",
+      "source_url": "https://openverse.org/images?q=video%20editing",
+      "license": "CC0 1.0",
+      "title": "Realistic photo of a video editing workspace (Openverse CC0, downloaded 2026-08-04)",
+      "library_path": null,
+      "used_in": [
+        "posts/invideo-review-2026.html",
+        "posts/invideo-review-2026-zh.html"
+      ],
+      "added_date": "2026-08-22",
+      "library_checked": true,
+      "library_reason": "文章归 video 类，但备用图片库 02_video-production 分类为空(0 张)，无可用图库真实照；故按规则 fallback 用 Openverse CC0 真实照(视频编辑工作场景，贴 InVideo 主题)。",
+      "ocr_tool": "easyocr",
+      "ocr_result": "clean",
+      "ocr_note": "easyocr 仅检出品牌叠加层自带文字(InVideo Review 2026 + AI Tool Picks)，无外部水印/标注；底图经 easyocr 复核 CLEAN。",
+      "og_hero_same": true,
+      "note": "2026-08-22 新增 InVideo 评测 og 图，沿用管道已下载的 realistic_photo_of_a_video_edi 底图(CC0)。标题区亮度实测109(规则97-127达标)，四角深蓝 B>G>R 亮度≤95，竖条(96,165,250)贴合规则，唯一色154071，无水印。"
     }
   }
 }
