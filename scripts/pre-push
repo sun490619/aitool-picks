@@ -16,5 +16,14 @@ python3 "$ROOT/scripts/html_structure_check.py"
 status=$?
 if [ $status -ne 0 ]; then
   echo "[pre-push] HTML 结构门禁拦截推送。先修正上面的标签不平衡，再 push。"
+  exit $status
 fi
-exit $status
+
+python3 "$ROOT/scripts/header_footer_check.py"
+status=$?
+if [ $status -ne 0 ]; then
+  echo "[pre-push] 全局页眉页脚一致性门禁拦截推送。先修正上面的 header/mobile drawer 不一致，再 push。"
+  exit $status
+fi
+
+exit 0
