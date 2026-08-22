@@ -782,32 +782,6 @@ html.dark .badge { background: rgba(59, 130, 246, .18); color: #60A5FA; }
 }
 html.dark .card-icon { background: rgba(59,130,246,.18); color: #60A5FA; }
 
-.pros-cons-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-  padding-top: 18px;
-}
-.pros-card, .cons-card {
-  border-radius: var(--radius);
-  padding: 22px;
-  border: 1px solid var(--border);
-}
-.pros-card {
-  background: #ECFDF5;
-  border-color: #A7F3D0;
-}
-.pros-card h3 { color: #065F46; margin-bottom: 12px; font-size: 1rem; }
-.pros-card li { color: #064E3B; font-size: .95rem; margin-bottom: 6px; }
-.cons-card {
-  background: #FEF2F2;
-  border-color: #FECACA;
-}
-.cons-card h3 { color: #991B1B; margin-bottom: 12px; font-size: 1rem; }
-.cons-card li { color: #7F1D1D; font-size: .95rem; margin-bottom: 6px; }
-html.dark .pros-card { background: rgba(6,78,59,.25); border-color: #065F46; }
-html.dark .pros-card h3, html.dark .pros-card li { color: #A7F3D0; }
-html.dark .cons-card { background: rgba(127,29,29,.25); border-color: #991B1B; }
 html.dark .cons-card h3, html.dark .cons-card li { color: #FECACA; }
 
 .pricing-card {
