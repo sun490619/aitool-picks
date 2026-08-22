@@ -344,23 +344,23 @@
     },
     "og-invideo-review-2026.jpg": {
       "status": "active",
-      "source": "openverse",
-      "source_url": "https://openverse.org/images?q=video%20editing",
-      "license": "CC0 1.0",
-      "title": "Realistic photo of a video editing workspace (Openverse CC0, downloaded 2026-08-04)",
-      "library_path": null,
+      "source": "备用图片库",
+      "source_url": "",
+      "license": "免费商用/CC0(备用图片库视频创作场景真实照)",
+      "title": "02_video-production_lighting-equipment-studio.jpg (摄影灯光器材棚, 视频制作场景)",
+      "library_path": "/Users/dawei/Desktop/项目总中枢/备用图片库/02_video-production_lighting-equipment-studio.jpg",
       "used_in": [
         "posts/invideo-review-2026.html",
         "posts/invideo-review-2026-zh.html"
       ],
       "added_date": "2026-08-22",
       "library_checked": true,
-      "library_reason": "文章归 video 类，但备用图片库 02_video-production 分类为空(0 张)，无可用图库真实照；故按规则 fallback 用 Openverse CC0 真实照(视频编辑工作场景，贴 InVideo 主题)。",
+      "library_reason": "video 类备用图片库已有6张真实照(v2.2要求优先用图库)；选 lighting-equipment-studio 因其未被任何现有 og 使用，与原 video-editing 底座视觉差异最大，杜绝跨篇撞图。",
       "ocr_tool": "easyocr",
       "ocr_result": "clean",
-      "ocr_note": "easyocr 仅检出品牌叠加层自带文字(InVideo Review 2026 + AI Tool Picks)，无外部水印/标注；底图经 easyocr 复核 CLEAN。",
+      "ocr_note": "easyocr 仅检出品牌叠加层自带文字(InVideo Review 2026 / AI Tool Picks)，底图无外部水印/标注。",
       "og_hero_same": true,
-      "note": "2026-08-22 新增 InVideo 评测 og 图，沿用管道已下载的 realistic_photo_of_a_video_edi 底图(CC0)。标题区亮度实测109(规则97-127达标)，四角深蓝 B>G>R 亮度≤95，竖条(96,165,250)贴合规则，唯一色154071，无水印。"
+      "note": "2026-08-22 换底座：原 realistic_photo_of_a_video_edi 与同批 video 类文章底座视觉相似(用户反馈撞图)，改换备用图片库 lighting-equipment-studio 真实照(库内未用，不撞)。标题区亮度99(规则97-127达标)，四角深蓝≤95，竖条(96,165,250)。"
     }
   }
 }
