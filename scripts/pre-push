@@ -1,0 +1,20 @@
+#!/bin/sh
+# aitool-picks 发布前强制门禁（pre-push hook）
+# 任何 push 都会先跑：1) 配图/内容门禁 2) HTML 结构门禁。
+# 这是把"配图铁律"与"前端样式铁律"从人脑记忆变成机器强制的关键一环。
+
+ROOT="$(git rev-parse --show-toplevel)"
+
+python3 "$ROOT/pre_publish_check.py"
+status=$?
+if [ $status -ne 0 ]; then
+  echo "[pre-push] 配图/内容门禁拦截推送。先修正上面的违规，再 push。"
+  exit $status
+fi
+
+python3 "$ROOT/scripts/html_structure_check.py"
+status=$?
+if [ $status -ne 0 ]; then
+  echo "[pre-push] HTML 结构门禁拦截推送。先修正上面的标签不平衡，再 push。"
+fi
+exit $status
