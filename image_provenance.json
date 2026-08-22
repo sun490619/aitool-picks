@@ -6,7 +6,8 @@
       "ocr_tool": "必须是 easyocr。严禁 tesseract（中文 OCR 假阴性会漏检水印，规则明文禁止）。",
       "ocr_result": "必须是 clean（easyocr 未检出任何外部水印/标注）。",
       "og_hero_same": "og:image 与文章内 hero 图必须为同一文件。",
-      "library_checked": "用 openverse 前必须先 ls 备用图片库/<对应分类> 确认无合适图，并填 reason。绝不允许'没查就直奔 openverse'。"
+      "library_checked": "用 openverse 前必须先 ls 备用图片库/<对应分类> 确认无合适图，并填 reason。绝不允许'没查就直奔 openverse'。",
+      "reuse_policy": "凡 images/ 下被文章(og:image / hero / 正文插图)引用的图 = 已用(used)，reuse_forbidden=true：禁止复用于任何新文章；文件必须保留不删。（2026-08-22 起替代旧'用过的图删除'做法：用户改口为'标记不删、已用不复用'）"
     },
     "note": "历史已上线图(2026-08-11 前)不强制回填；门禁只卡'本次新增/改动的图'。但 eDesk(og-edesk-review-2026.jpg)作为已知违规样本，已登记为 legacy_violation 待补正，仅警告不阻断。"
   },
@@ -29,7 +30,8 @@
       "ocr_result": "clean",
       "ocr_note": "easyocr 仅检出品牌叠加层自带文字(eDesk Review 2026 + AI Tool Picks)，无外部水印/标注；底图 cand3-woman-work.jpg 经 easyocr 复核 CLEAN。",
       "og_hero_same": true,
-      "note": "2026-08-19 用户选定第3张底图(Woman Working)重做 og 图，替换原违规样本；中英文文章 og:image 与 hero 图指向同一文件，全部一致。原底图已入库留底。"
+      "note": "2026-08-19 用户选定第3张底图(Woman Working)重做 og 图，替换原违规样本；中英文文章 og:image 与 hero 图指向同一文件，全部一致。原底图已入库留底。",
+      "reuse_forbidden": true
     },
     "og-deepl-review-2026.jpg": {
       "status": "active",
@@ -45,7 +47,8 @@
       "library_reason": "翻译工具主题，备用图片库无打字/输入/语言类场景图",
       "ocr_result": "clean",
       "note": "替换旧彗星维基截图(完全不相关)，新图=CC0打字场景+品牌叠加层，贴合DeepL翻译工具主题",
-      "og_hero_same": true
+      "og_hero_same": true,
+      "reuse_forbidden": true
     },
     "og-deepseek-vs-claude-2026.jpg": {
       "status": "active",
@@ -63,7 +66,8 @@
       "ocr_tool": "easyocr",
       "ocr_result": "clean",
       "og_hero_same": true,
-      "note": "替换原AI生成假文字背景图(含Hard Power/Soft Belief/Alexander等乱码)。改正此前违规：首版误用 openverse CC0 且伪造 library_checked。现严格按规则二.1 用备用图片库真实照作底图+品牌叠加层(深蓝渐变遮罩+左竖条#60a5fa+白标题+AI Tool Picks标)，easyocr复核0假文字0水印。"
+      "note": "替换原AI生成假文字背景图(含Hard Power/Soft Belief/Alexander等乱码)。改正此前违规：首版误用 openverse CC0 且伪造 library_checked。现严格按规则二.1 用备用图片库真实照作底图+品牌叠加层(深蓝渐变遮罩+左竖条#60a5fa+白标题+AI Tool Picks标)，easyocr复核0假文字0水印。",
+      "reuse_forbidden": true
     },
     "og-best-ai-tools-for-affiliate-marketers-2026.jpg": {
       "status": "active",
@@ -82,7 +86,8 @@
       "ocr_result": "clean",
       "ocr_note": "easyocr 仅检出本站品牌叠加层自带文字(标题+AI Tool Picks)，无外部水印/标注；OCR 将 AI 误读为 Al 属识别误差，图上实为 AI。底图经 2026-08-12 全库 easyocr 扫描确认为 CLEAN(无外部文字)。",
       "og_hero_same": true,
-      "note": "替换原 picsum 随机占位图(主题不贴)，改用备用图片库真实照作底图+品牌叠加层(深蓝渐变遮罩alpha150+左竖条#60a5fa+白标题+AI Tool Picks标)，严格按现规则(记忆32323938)重做。"
+      "note": "替换原 picsum 随机占位图(主题不贴)，改用备用图片库真实照作底图+品牌叠加层(深蓝渐变遮罩alpha150+左竖条#60a5fa+白标题+AI Tool Picks标)，严格按现规则(记忆32323938)重做。",
+      "reuse_forbidden": true
     },
     "og-best-ai-tools-for-content-marketing-2026.jpg": {
       "status": "active",
@@ -101,7 +106,8 @@
       "ocr_result": "clean",
       "ocr_note": "easyocr 仅检出本站品牌叠加层自带文字(标题+AI Tool Picks)，无外部水印/标注；OCR 将 AI 误读为 Al 属识别误差，图上实为 AI。底图经 2026-08-12 全库 easyocr 扫描确认为 CLEAN(无外部文字)。",
       "og_hero_same": true,
-      "note": "替换原 picsum 随机占位图(主题不贴)，改用备用图片库真实照作底图+品牌叠加层(深蓝渐变遮罩alpha150+左竖条#60a5fa+白标题+AI Tool Picks标)，严格按现规则(记忆32323938)重做。"
+      "note": "替换原 picsum 随机占位图(主题不贴)，改用备用图片库真实照作底图+品牌叠加层(深蓝渐变遮罩alpha150+左竖条#60a5fa+白标题+AI Tool Picks标)，严格按现规则(记忆32323938)重做。",
+      "reuse_forbidden": true
     },
     "og-best-ai-tools-for-email-marketing-2026.jpg": {
       "status": "active",
@@ -120,7 +126,8 @@
       "ocr_result": "clean",
       "ocr_note": "easyocr 仅检出本站品牌叠加层自带文字(标题+AI Tool Picks)，无外部水印/标注；OCR 将 AI 误读为 Al 属识别误差，图上实为 AI。底图经 2026-08-12 全库 easyocr 扫描确认为 CLEAN(无外部文字)。",
       "og_hero_same": true,
-      "note": "替换原 picsum 随机占位图(主题不贴)，改用备用图片库真实照作底图+品牌叠加层(深蓝渐变遮罩alpha150+左竖条#60a5fa+白标题+AI Tool Picks标)，严格按现规则(记忆32323938)重做。"
+      "note": "替换原 picsum 随机占位图(主题不贴)，改用备用图片库真实照作底图+品牌叠加层(深蓝渐变遮罩alpha150+左竖条#60a5fa+白标题+AI Tool Picks标)，严格按现规则(记忆32323938)重做。",
+      "reuse_forbidden": true
     },
     "og-best-ai-tools-for-landing-pages-2026.jpg": {
       "status": "active",
@@ -139,7 +146,8 @@
       "ocr_result": "clean",
       "ocr_note": "easyocr 仅检出本站品牌叠加层自带文字(标题+AI Tool Picks)，无外部水印/标注；OCR 将 AI 误读为 Al 属识别误差，图上实为 AI。底图经 2026-08-12 全库 easyocr 扫描确认为 CLEAN(无外部文字)。",
       "og_hero_same": true,
-      "note": "替换原 picsum 随机占位图(主题不贴)，改用备用图片库真实照作底图+品牌叠加层(深蓝渐变遮罩alpha150+左竖条#60a5fa+白标题+AI Tool Picks标)，严格按现规则(记忆32323938)重做。"
+      "note": "替换原 picsum 随机占位图(主题不贴)，改用备用图片库真实照作底图+品牌叠加层(深蓝渐变遮罩alpha150+左竖条#60a5fa+白标题+AI Tool Picks标)，严格按现规则(记忆32323938)重做。",
+      "reuse_forbidden": true
     },
     "og-best-ai-tools-for-solopreneurs-2026.jpg": {
       "status": "active",
@@ -158,7 +166,8 @@
       "ocr_result": "clean",
       "ocr_note": "easyocr 仅检出本站品牌叠加层自带文字(标题+AI Tool Picks)，无外部水印/标注；OCR 将 AI 误读为 Al 属识别误差，图上实为 AI。底图经 2026-08-12 全库 easyocr 扫描确认为 CLEAN(无外部文字)。",
       "og_hero_same": true,
-      "note": "替换原 picsum 随机占位图(主题不贴)，改用备用图片库真实照作底图+品牌叠加层(深蓝渐变遮罩alpha150+左竖条#60a5fa+白标题+AI Tool Picks标)，严格按现规则(记忆32323938)重做。"
+      "note": "替换原 picsum 随机占位图(主题不贴)，改用备用图片库真实照作底图+品牌叠加层(深蓝渐变遮罩alpha150+左竖条#60a5fa+白标题+AI Tool Picks标)，严格按现规则(记忆32323938)重做。",
+      "reuse_forbidden": true
     },
     "og-best-ai-tools-for-students-2026.jpg": {
       "status": "active",
@@ -177,7 +186,8 @@
       "ocr_result": "clean",
       "ocr_note": "easyocr 仅检出本站品牌叠加层自带文字(标题+AI Tool Picks)，无外部水印/标注；OCR 将 AI 误读为 Al 属识别误差，图上实为 AI。底图经 2026-08-12 全库 easyocr 扫描确认为 CLEAN(无外部文字)。",
       "og_hero_same": true,
-      "note": "替换原 picsum 随机占位图(主题不贴)，改用备用图片库真实照作底图+品牌叠加层(深蓝渐变遮罩alpha150+左竖条#60a5fa+白标题+AI Tool Picks标)，严格按现规则(记忆32323938)重做。"
+      "note": "替换原 picsum 随机占位图(主题不贴)，改用备用图片库真实照作底图+品牌叠加层(深蓝渐变遮罩alpha150+左竖条#60a5fa+白标题+AI Tool Picks标)，严格按现规则(记忆32323938)重做。",
+      "reuse_forbidden": true
     },
     "og-best-ai-tools-for-youtube-creators-2026.jpg": {
       "status": "active",
@@ -196,7 +206,8 @@
       "ocr_result": "clean",
       "ocr_note": "easyocr 仅检出本站品牌叠加层自带文字(标题+AI Tool Picks)，无外部水印/标注；OCR 将 AI 误读为 Al 属识别误差，图上实为 AI。底图经 2026-08-12 全库 easyocr 扫描确认为 CLEAN(无外部文字)。",
       "og_hero_same": true,
-      "note": "替换原 picsum 随机占位图(主题不贴)，改用备用图片库真实照作底图+品牌叠加层(深蓝渐变遮罩alpha150+左竖条#60a5fa+白标题+AI Tool Picks标)，严格按现规则(记忆32323938)重做。"
+      "note": "替换原 picsum 随机占位图(主题不贴)，改用备用图片库真实照作底图+品牌叠加层(深蓝渐变遮罩alpha150+左竖条#60a5fa+白标题+AI Tool Picks标)，严格按现规则(记忆32323938)重做。",
+      "reuse_forbidden": true
     },
     "og-best-ai-translation-tools-2026.jpg": {
       "status": "active",
@@ -215,7 +226,8 @@
       "ocr_result": "clean",
       "ocr_note": "easyocr 仅检出本站品牌叠加层自带文字(标题+AI Tool Picks)，无外部水印/标注；OCR 将 AI 误读为 Al 属识别误差，图上实为 AI。底图经 2026-08-12 全库 easyocr 扫描确认为 CLEAN(无外部文字)。",
       "og_hero_same": true,
-      "note": "替换原 picsum 随机占位图(主题不贴)，改用备用图片库真实照作底图+品牌叠加层(深蓝渐变遮罩alpha150+左竖条#60a5fa+白标题+AI Tool Picks标)，严格按现规则(记忆32323938)重做。"
+      "note": "替换原 picsum 随机占位图(主题不贴)，改用备用图片库真实照作底图+品牌叠加层(深蓝渐变遮罩alpha150+左竖条#60a5fa+白标题+AI Tool Picks标)，严格按现规则(记忆32323938)重做。",
+      "reuse_forbidden": true
     },
     "og-best-ai-video-tools-2026.jpg": {
       "status": "active",
@@ -234,7 +246,8 @@
       "ocr_result": "clean",
       "ocr_note": "easyocr 仅检出本站品牌叠加层自带文字(标题+AI Tool Picks)，无外部水印/标注；OCR 将 AI 误读为 Al 属识别误差，图上实为 AI。底图经 2026-08-12 全库 easyocr 扫描确认为 CLEAN(无外部文字)。",
       "og_hero_same": true,
-      "note": "替换原 picsum 随机占位图(主题不贴)，改用备用图片库真实照作底图+品牌叠加层(深蓝渐变遮罩alpha150+左竖条#60a5fa+白标题+AI Tool Picks标)，严格按现规则(记忆32323938)重做。"
+      "note": "替换原 picsum 随机占位图(主题不贴)，改用备用图片库真实照作底图+品牌叠加层(深蓝渐变遮罩alpha150+左竖条#60a5fa+白标题+AI Tool Picks标)，严格按现规则(记忆32323938)重做。",
+      "reuse_forbidden": true
     },
     "og-best-ai-website-builders-2026.jpg": {
       "status": "active",
@@ -253,7 +266,8 @@
       "ocr_result": "clean",
       "ocr_note": "easyocr 仅检出本站品牌叠加层自带文字(标题+AI Tool Picks)，无外部水印/标注；OCR 将 AI 误读为 Al 属识别误差，图上实为 AI。底图经 2026-08-12 全库 easyocr 扫描+合成后复核确认为 CLEAN(无外部文字)。",
       "og_hero_same": true,
-      "note": "替换原 picsum 随机占位图(主题不贴)，改用备用图片库真实照作底图+品牌叠加层(深蓝渐变遮罩alpha150+左竖条#60a5fa+白标题+AI Tool Picks标)，严格按现规则(记忆32323938)重做。"
+      "note": "替换原 picsum 随机占位图(主题不贴)，改用备用图片库真实照作底图+品牌叠加层(深蓝渐变遮罩alpha150+左竖条#60a5fa+白标题+AI Tool Picks标)，严格按现规则(记忆32323938)重做。",
+      "reuse_forbidden": true
     },
     "og-best-ai-writing-tools-non-native-english-2026.jpg": {
       "status": "active",
@@ -272,7 +286,8 @@
       "ocr_result": "clean",
       "ocr_note": "easyocr 仅检出本站品牌叠加层自带文字(标题+AI Tool Picks)，无外部水印/标注；OCR 将 AI 误读为 Al 属识别误差，图上实为 AI。底图经 2026-08-12 全库 easyocr 扫描+合成后复核确认为 CLEAN(无外部文字)。",
       "og_hero_same": true,
-      "note": "替换原 picsum 随机占位图(主题不贴)，改用备用图片库真实照作底图+品牌叠加层(深蓝渐变遮罩alpha150+左竖条#60a5fa+白标题+AI Tool Picks标)，严格按现规则(记忆32323938)重做。"
+      "note": "替换原 picsum 随机占位图(主题不贴)，改用备用图片库真实照作底图+品牌叠加层(深蓝渐变遮罩alpha150+左竖条#60a5fa+白标题+AI Tool Picks标)，严格按现规则(记忆32323938)重做。",
+      "reuse_forbidden": true
     },
     "og-best-ai-grammar-tools-2026.jpg": {
       "status": "active",
@@ -289,7 +304,8 @@
       "library_reason": "按图片规则二.1 首选备用图片库真实照。主题=Best AI Grammar Tools 2026，已实际 ls 备用图片库对应分类 writing，选用 03_writing_hands-pen-laptop.jpg（库内真实照，非 openverse/AI生成/picsum；合成后经 easyocr 核验仅检出品牌文字，无外部文字）。",
       "ocr_tool": "easyocr",
       "ocr_result": "clean",
-      "og_hero_same": true
+      "og_hero_same": true,
+      "reuse_forbidden": true
     },
     "og-best-ai-image-upscalers-2026.jpg": {
       "status": "active",
@@ -306,7 +322,8 @@
       "library_reason": "按图片规则二.1 首选备用图片库真实照。主题=Best AI Image Upscalers 2026，已实际 ls 备用图片库对应分类 design，选用 06_design_red-abstract-painting.jpg（库内真实照，非 openverse/AI生成/picsum；合成后经 easyocr 核验仅检出品牌文字，无外部文字）。",
       "ocr_tool": "easyocr",
       "ocr_result": "clean",
-      "og_hero_same": true
+      "og_hero_same": true,
+      "reuse_forbidden": true
     },
     "og-best-ai-music-generators-2026.jpg": {
       "status": "active",
@@ -323,7 +340,8 @@
       "library_reason": "按图片规则二.1 首选备用图片库真实照。主题=Best AI Music Generators 2026，已实际 ls 备用图片库对应分类 audio，选用 07_audio_pro-microphone-studio-closeup.jpg（库内真实照，非 openverse/AI生成/picsum；合成后经 easyocr 核验仅检出品牌文字，无外部文字）。",
       "ocr_tool": "easyocr",
       "ocr_result": "clean",
-      "og_hero_same": true
+      "og_hero_same": true,
+      "reuse_forbidden": true
     },
     "og-best-ai-copywriting-tools-2026.jpg": {
       "status": "active",
@@ -340,7 +358,8 @@
       "library_reason": "按图片规则二.1 首选备用图片库真实照。主题=Best AI Copywriting Tools 2026，已实际 ls 备用图片库对应分类 productivity，选用 08_productivity_two-people-laptops.jpg（库内真实照，非 openverse/AI生成/picsum；合成后经 easyocr 核验仅检出品牌文字，无外部文字）。",
       "ocr_tool": "easyocr",
       "ocr_result": "clean",
-      "og_hero_same": true
+      "og_hero_same": true,
+      "reuse_forbidden": true
     },
     "og-invideo-review-2026.jpg": {
       "status": "active",
@@ -360,7 +379,662 @@
       "ocr_result": "clean",
       "ocr_note": "easyocr 仅检出品牌叠加层自带文字(InVideo Review 2026 / AI Tool Picks)，底图无外部水印/标注。",
       "og_hero_same": true,
-      "note": "2026-08-22 换底座：原 realistic_photo_of_a_video_edi 与同批 video 类文章底座视觉相似(用户反馈撞图)，改换备用图片库 lighting-equipment-studio 真实照(库内未用，不撞)。标题区亮度99(规则97-127达标)，四角深蓝≤95，竖条(96,165,250)。"
+      "note": "2026-08-22 换底座：原 realistic_photo_of_a_video_edi 与同批 video 类文章底座视觉相似(用户反馈撞图)，改换备用图片库 lighting-equipment-studio 真实照(库内未用，不撞)。标题区亮度99(规则97-127达标)，四角深蓝≤95，竖条(96,165,250)。",
+      "reuse_forbidden": true
+    },
+    "og-ai-coding-review-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-ai-customer-support-setup-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-ai-productivity-tools-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-ai-side-hustle-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-ai-tools-dropshipping-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-ai-transcriber-meeting-notes-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-ai-trip-planner-review-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-ai-video-editing-tools-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-aiapply-review-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-aitool-picks-home.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-babylovegrowth-review-2026-zh.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-babylovegrowth-review-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-best-ai-avatar-video-tools-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-best-ai-coding-assistants-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-best-ai-dubbing-video-localization-tools-2026-zh.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-best-ai-dubbing-video-localization-tools-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-best-ai-email-writing-tools-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-best-ai-note-taking-tools-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-best-ai-paraphrasing-tools-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-best-ai-presentation-tools-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-best-ai-resume-builders-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-best-ai-seo-tools-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-best-ai-tools-faceless-youtube-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-best-ai-tools-for-newsletter-creators-2026-zh.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-best-ai-tools-for-newsletter-creators-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-best-ai-tools-for-online-courses-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-best-ai-tools-for-podcasters-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-best-ai-tools-for-small-business-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-best-ai-tools-for-social-media-managers-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-best-ai-voice-generator-tools-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-best-free-ai-tools-content-creators-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-best-free-ai-tools-freelancers-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-best-free-ai-tools-students-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-canva-ai-review-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-category-audio.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-category-coding.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-category-image.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-category-productivity.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-category-seo.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-category-video.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-category-writing.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-chatbase-review-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-chatgpt-alternatives-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-chatgpt-vs-claude-vs-gemini-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-copy-ai-review-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-coursebox-review-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-cursor-ai-code-editor-review-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-customgpt-review-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-data-methodology.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-descript-ai-review-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-elevenlabs-review-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-fliki-review-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-frase-review-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-generative-engine-optimization-guide-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-getgenie-review-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-getimg-ai-review-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-getreditus-review-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-github-copilot-ai-review-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-grammarly-alternatives-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-grammarlygo-review-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-gumroad-review-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-headlime-review-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-hugging-face-ai-review-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-hugging-face-new-models-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-jasper-ai-review-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-jasper-alternatives-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-jasper-vs-writesonic.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-klap-review-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-kling-ai-review-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-koalawriter-review-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-langchain-ai-review-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-make-com-review-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-market-data-analysis-ai-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-mem-ai-review-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-midjourney-v7-review-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-mindmapai-review-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-mockey-review-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-neuronwriter-review-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-notion-ai-review-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-notion-alternatives-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-open-source-ai-models-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-originality-ai-review-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-palabra-review-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-perplexity-ai-review-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-replit-ai-review-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-rewardful-review-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-runway-ai-review-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-runway-ml-review-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-rytr-review-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-simplified-review-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-site-about.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-site-affiliate-disclosure.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-site-contact.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-site-free-resources.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-site-privacy.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-site-suggest-tool.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-site-terms.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-site-tools-we-use.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-sora-ai-review-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-submagic-review-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-synthesia-review-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-taskade-review-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-tool-selector.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-track-brand-visibility-ai-search-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-vidiq-review-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-what-40-ai-writing-tools-taught-us-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-wordtune-review-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-writesonic-review-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
+    },
+    "og-zapier-ai-review-2026.jpg": {
+      "status": "used",
+      "reuse_forbidden": true,
+      "source": "unknown (batch-scan auto-marked)",
+      "note": "2026-08-22 全量扫描自动标记：已被文章引用=已用，禁止复用于新文章；文件保留不删。"
     }
   }
 }
