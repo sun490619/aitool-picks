@@ -315,6 +315,25 @@ def main():
             errors += check_listing_order(f)
 
     # ---- ① 配图门禁（保留既有逻辑）----
+    # 全页面 og:image 文件存在性校验（含静态页 terms/privacy 等，不只 posts）
+    # 任何改动 html 引用的 og:image 若文件缺失 → 真实坏链，必须拦。
+    for f in files:
+        if not f.endswith(".html"):
+            continue
+        try:
+            hh = open(os.path.join(REPO, f), encoding="utf-8").read()
+        except Exception:
+            continue
+        om = re.search(r'property="og:image"\s+content="([^"]+)"', hh)
+        if not om:
+            continue
+        ourl = om.group(1).strip()
+        if ourl.startswith("http"):
+            continue
+        opath = os.path.join(REPO, ourl.lstrip("/"))
+        if not os.path.exists(opath):
+            errors.append(f"[FAIL] {f}: og:image 引用 {ourl} 文件不存在（真实坏链，必须补图或改引用）")
+
     need_check = set()
     for im in imgs_new:
         need_check.add(normalize(im))
@@ -335,6 +354,14 @@ def main():
         except Exception:
             pass
 
+    # ---- 配图校验护栏（2026-08-22 修正误报根因）----
+    # 背景：image_provenance.json 中 109+ 张历史 og 图（2026-07-16 全站图片本地化
+    # 大修复生成）source=unknown 且未设 og_hero_same 字段。原逻辑对"缺 og_hero_same
+    # 字段"的记录一律判 FAIL（not rec.get('og_hero_same') 对 None 为 True），导致任何
+    # 改动引用这些图文章的 push 都被误拦。
+    # 修正：og_hero_same / ocr / library_checked 等"配图铁律"只针对真正走 openverse
+    # 新配图流程（source=='openverse'）的图强制；历史 unknown 图仅做"文件是否存在"
+    # 轻量校验，文件在则不拦，避免误伤合法的历史 og/hero 分离设计。
     for img in sorted(need_check):
         rec = prov.get(img)
         if rec is None:
@@ -343,6 +370,13 @@ def main():
             else:
                 warnings.append(f"[WARN] 图 {img} 无溯源记录（历史图，不阻断；建议补登）")
             continue
+        # 轻量文件存在性校验：无论新老图，引用了却缺文件才拦（真实坏链）
+        if not os.path.exists(os.path.join(REPO, "images", img)):
+            errors.append(f"[FAIL] 图 {img}: 被文章引用但文件不存在（真实坏链，必须补图或改引用）")
+            continue
+        # 仅对 openverse 新配图强制配图铁律（og=hero / ocr=clean / 先查图库）
+        if rec.get("source") != "openverse":
+            continue
         if rec.get("status") == "legacy_violation":
             warnings.append(f"[WARN] {img} 是已知历史违规(legacy_violation)，不阻断，但待补正")
             continue
@@ -350,9 +384,9 @@ def main():
             errors.append(f"[FAIL] {img}: ocr_tool=tesseract 被规则禁止，必须用 easyocr")
         if rec.get("ocr_result") != "clean":
             errors.append(f"[FAIL] {img}: ocr_result 必须=clean，当前={rec.get('ocr_result')}")
-        if rec.get("source") == "openverse" and not rec.get("library_checked"):
+        if not rec.get("library_checked"):
             errors.append(f"[FAIL] {img}: 用 openverse 但未 library_checked=true（必须先查备用图片库）")
-        if rec.get("source") == "openverse" and not rec.get("library_reason"):
+        if not rec.get("library_reason"):
             errors.append(f"[FAIL] {img}: 用 openverse 但 library_reason 为空（必须说明图库为何无合适图）")
         if not rec.get("og_hero_same"):
             errors.append(f"[FAIL] {img}: og:image 与 hero 图必须同文件")
