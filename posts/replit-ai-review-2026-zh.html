@@ -208,6 +208,18 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
                             <li><a href="#faq">常见问题</a></li>
 </ul>
         </div>
+        <div class="at-a-glance">
+          <p class="glance-title"><span class="badge">TL;DR</span> 一览速览</p>
+          <ul>
+            <li>Ghostwriter 与 Agent 模式：Ghostwriter 是行内助手。它给补全、解释选中代码、从函数签名生成单元测试。对常见库和标准模式准确率不错；</li>
+            <li>部署与分享：Replit 一键就能把运行中的 app 部署到 Replit 托管的域名。免费档足够做原型和小型工具。付费档去掉等待时间、允许自定义域名。部署流水</li>
+            <li>最佳用例：Replit AI 是"有想法、想在同一小时看到它跑起来"的人的最佳入口。Agent 模式不是自主发布，但它移除的摩擦足够多，让"想法到可用原型"的差</li>
+            <li>数据库与后端能力的真实边界：Replit 的卖点是'浏览器里就能写、能跑、能部署'，但后端这块有隐形天花板。我们实测：它适合标准栈（Node、Python、常见</li>
+            <li>从原型到生产的真实落差：很多 demo 在 Replit 里跑得欢，一上生产就露怯。我们踩过的坑包括：免费/低配算力下冷启动慢、依赖在重构时偶尔漂移、以及日志和</li>
+          </ul>
+          <p class="glance-score">综合评分：<strong>4.2 / 5</strong> —— 值得一试的务实选择。</p>
+        </div>
+
 <h2 id="ghostwriter-agent">Ghostwriter 与 Agent 模式</h2>
             <p>Ghostwriter 是行内助手。它给补全、解释选中代码、从函数签名生成单元测试。对常见库和标准模式准确率不错；对冷门框架或结构特殊的内部代码库较弱。Agent 模式把这个扩展成一个循环：读错误、提修复、应用、重跑命令。我们在一个小 FastAPI 项目上测了它，它修好了导入错误和缺失的环境变量，全程我们没碰终端。</p>
 

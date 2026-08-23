@@ -208,6 +208,18 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
                             <li><a href="#faq">常见问题</a></li>
 </ul>
         </div>
+        <div class="at-a-glance">
+          <p class="glance-title"><span class="badge">TL;DR</span> 一览速览</p>
+          <ul>
+            <li>链与管道：链是一串调用。LangChain 历史的链抽象已被 LCEL（LangChain Expression Language）取代。LCEL 让你用管道语</li>
+            <li>Agent 与工具调用：Agent 根据用户输决定调哪个工具。LangChain 支持 OpenAI function calling、Anthropic to</li>
+            <li>检索与 RAG：检索增强生成（RAG）是最常见的生产模式。LangChain 的检索接口兼容向量库、关键词搜索和混合搜索。框架支持广泛的向量后端，含 Pinec</li>
+            <li>部署与运维成本：自托管还是上云：LangChain 本身免费开源，但'跑起来'和'跑得稳'是两笔账。本地跑小demo零成本，可一旦要对外服务，你就得管模型调用的</li>
+            <li>什么时候其实不该用 LangChain：不是所有 LLM 需求都配得上 LangChain。如果你的场景只是'调一次模型、吐一段回答'，裸调 API 三行代码就</li>
+          </ul>
+          <p class="glance-score">综合评分：<strong>4.3 / 5</strong> —— 值得一试的务实选择。</p>
+        </div>
+
 <h2 id="链与管道">链与管道</h2>
             <p>链是一串调用。LangChain 历史的链抽象已被 LCEL（LangChain Expression Language）取代。LCEL 让你用管道语法组合提示、模型和输出解析器。这种语法比旧链类更干净，且和流式、异步执行配合更好。多数新项目，从 LCEL 起步而非旧链。</p>
 

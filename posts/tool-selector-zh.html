@@ -237,7 +237,17 @@ function tsRank(){
       +'<div class="ts-btns"><a class="btn btn-primary" href="'+t.aff+'" target="_blank" rel="nofollow sponsored">Try '+t.name+' &rarr;</a>'
       +'<a class="btn" href="'+t.review+'" target="_blank" rel="nofollow">Read our review</a></div></div>';
   }).join('');
-  document.getElementById('ts-results').innerHTML='<h2>你的首选匹配</h2>'+html;
+  document.getElementById('ts-results').innerHTML='        <div class="at-a-glance">
+          <p class="glance-title"><span class="badge">TL;DR</span> 一览速览</p>
+          <ul>
+            <li>选工具的真正维度很少是头条功能，而是：每周重复的那件活、产出能否核验、切换成本。</li>
+            <li>我们按"与习惯的贴合"而非裸能力排序，因为真被打开的那把工具才产出工作。</li>
+            <li>多数人该从免费起步，只在撞到清晰的墙时才升级。</li>
+            <li>对的升级时机是付费档这周就搬掉一个真瓶颈，不是对比表更好看。</li>
+          </ul>
+        </div>
+
+<h2>你的首选匹配</h2>'+html;
 }
 document.getElementById('ts-btn').addEventListener('click',tsRank);
 </script>

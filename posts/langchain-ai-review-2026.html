@@ -202,6 +202,18 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
                             <li><a href="#faq">FAQ</a></li>
 </ul>
         </div>
+        <div class="at-a-glance">
+          <p class="glance-title"><span class="badge">TL;DR</span> At a glance</p>
+          <ul>
+            <li>Chains and Pipelines — A chain is a sequence of calls.</li>
+            <li>Agents and Tool Use — Agents decide which tool to call based on user input.</li>
+            <li>Memory — Memory lets applications remember previous interactions.</li>
+            <li>Retrieval and RAG — Retrieval-augmented generation is the most common production pattern.</li>
+            <li>Comparison — Compared with LlamaIndex, LangChain is more general-purpose and has stronger tool and agent abstractions.</li>
+          </ul>
+          <p class="glance-score">Our overall score: <strong>4.2 / 5</strong> — a solid pick worth a look.</p>
+        </div>
+
 <h2 id="chains-and-pipelines">Chains and Pipelines</h2>
         <p>A chain is a sequence of calls. LangChain's historical chain abstractions have been replaced by LCEL, the LangChain Expression Language. LCEL lets you compose prompts, models, and output parsers with a pipe syntax. That syntax is cleaner than the old chain classes and works better with streaming and async execution. For most new projects, start with LCEL instead of legacy chains.</p>
 

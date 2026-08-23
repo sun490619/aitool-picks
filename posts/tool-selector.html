@@ -237,7 +237,17 @@ function tsRank(){
       +'<div class="ts-btns"><a class="btn btn-primary" href="'+t.aff+'" target="_blank" rel="nofollow sponsored">Try '+t.name+' &rarr;</a>'
       +'<a class="btn" href="'+t.review+'" target="_blank" rel="nofollow">Read our review</a></div></div>';
   }).join('');
-  document.getElementById('ts-results').innerHTML='<h2>Your top matches</h2>'+html;
+  document.getElementById('ts-results').innerHTML='        <div class="at-a-glance">
+          <p class="glance-title"><span class="badge">TL;DR</span> At a glance</p>
+          <ul>
+            <li>The real fit drivers are rarely headline features: the one job you repeat weekly, verifiable output, and switching cost.</li>
+            <li>We rank by how well a tool fits your habit, not raw capability — only the tool you actually open produces work.</li>
+            <li>Most users should start free and upgrade only at a clear wall.</li>
+            <li>The right upgrade moment is when paid tier removes a real bottleneck this week, not a prettier comparison table.</li>
+          </ul>
+        </div>
+
+<h2>Your top matches</h2>'+html;
 }
 document.getElementById('ts-btn').addEventListener('click',tsRank);
 </script>
