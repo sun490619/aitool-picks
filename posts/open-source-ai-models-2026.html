@@ -225,7 +225,18 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
         <p><strong>Verdict: Recommended as viable alternatives to closed models for private hosting and offline workflows.</strong></p>
     
 
-                <section class="faq-section">
+                
+        <h2 id="pricing">Pricing: open weights are free</h2>
+        <p>Every model in this guide is open-source and free to download and self-host — Llama, Mistral, Stable Diffusion, and the rest cost $0 in licensing. What you pay for is compute.</p>
+        <ul>
+            <li><strong>Self-hosted / local</strong> — free, limited by your GPU, Apple Silicon, or cloud VM and electricity.</li>
+            <li><strong>Hosted inference API</strong> (Together, Groq, HF Inference, etc.) — pay per token; chat models commonly run $0.0001–$0.001 per 1K tokens, with free tiers for light use.</li>
+            <li><strong>Enterprise support</strong> — paid plans from the lab or a cloud vendor if you need SLAs and private deployments.</li>
+        </ul>
+        <p>For most teams, the free tier plus a cheap hosted API covers real workloads. The cost ceiling is your traffic, not a license fee.</p>
+
+
+<section class="faq-section">
                   <h2 id="faq">Frequently asked questions</h2>
                   <div class="faq-item"><h3>What are the best open source AI models in 2026?</h3><p>Llama leads general chat and reasoning, Mistral offers the best efficiency-to-quality ratio for smaller deployments, and Stable Diffusion remains the image standard. All three run privately on your own hardware.</p></div>
                   <div class="faq-item"><h3>Are open source models as good as GPT-4 or Claude?</h3><p>For everyday tasks, remarkably close. They trail top closed models on the hardest reasoning, but win on privacy, cost at scale, and fine-tuning freedom.</p></div>
