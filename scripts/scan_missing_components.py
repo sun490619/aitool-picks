@@ -82,7 +82,7 @@ def scan_file(p: Path):
             missing.append("[评测]评分条rating")
         if not re.search(r'pros|cons|Pros & Cons|pros-cons', text, re.I):
             missing.append("[评测]Pros/Cons")
-        if not re.search(r'pricing|Pricing', text, re.I):
+        if not re.search(r'pricing|Pricing|价格|定价|方案|套餐|月费|/月|per month|\$\d+/mo', text, re.I):
             missing.append("[评测]Pricing")
         if not re.search(r'cta-box|btn-primary', text, re.I):
             missing.append("[评测]CTA框")
