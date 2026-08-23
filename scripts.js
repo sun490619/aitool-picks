@@ -391,8 +391,12 @@ window.AIToolPicks = {
   // 列表页（首页 /category/）的卡片也用 <article class="post-card">，
   // 绝不能在列表页注入投票框——否则会污染卡片、挤掉 Read 链接。
   if (location.pathname.indexOf('/posts/') === -1) return;
-  // 文章详情页正文容器：老页 article.post，新页 article.article-content。
-  var article = document.querySelector('article.post, article.article-content');
+  // 文章详情页正文容器：覆盖全站所有历史/现行 article class
+  // （post / article-content / article-body / post-article / post-body / 带 container 组合）。
+  var article = document.querySelector(
+    'article.post, article.article-content, article.article-body, ' +
+    'article.post-article, article.post-body, article.post-article.container'
+  );
   if (!article) return;
   // 防重复注入（若脚本被加载两次）
   if (article.querySelector('#voteUp')) return;
