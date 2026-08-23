@@ -231,7 +231,28 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
         <h2 id="final-verdict">Final Verdict</h2>
         <p>The best AI coding tool depends on your workflow. Cursor wins for developers who want deep repository awareness and agentic editing inside a professional IDE. Copilot wins for teams that standardize on GitHub and want broad language support. Replit wins for solo builders who value speed over infrastructure control. The market is narrowing toward agent-native development environments, and all three tools are moving in that direction.</p>
         <p><strong>Verdict: Recommended as essential infrastructure for solo developers and small teams shipping in 2026.</strong></p>
-    
+
+        <section class="pros-cons" aria-label="Pros and cons">
+            <div class="pros">
+                <h3>What we liked</h3>
+                <ul>
+                    <li>Genuinely shortens the boring 80% of a feature &mdash; scaffolding, boilerplate, and mechanical refactors land fast.</li>
+                    <li>Claude Code and Codex handled multi-file changes that actually ran, not just plausible snippets.</li>
+                    <li>Free or cheap entry tiers (Copilot education, CLI quotas) make it easy to try before paying.</li>
+                    <li>Editor and terminal options cover almost every workflow, from IDE-heavy to shell-first.</li>
+                </ul>
+            </div>
+            <div class="cons">
+                <h3>What gave us pause</h3>
+                <ul>
+                    <li>Autonomous agent loops drift &mdash; they re-edit fixed files and invert requirements if left unsupervised.</li>
+                    <li>Cross-file work still needs steering; single-function edits are where the speed really shows.</li>
+                    <li>Long agent sessions burn tokens fast, so cost creeps unless you cap them.</li>
+                    <li>No tool reads your whole repo by default &mdash; you must guide context or expect guessing.</li>
+                </ul>
+            </div>
+        </section>
+
         <h2 id="how-we-ran-the-test">How we ran the test</h2>
         <p>We didn't score these tools by prompting them with toy problems. Over two weeks, each assistant handled three real jobs: scaffolding a FastAPI service with a React frontend, refactoring a 4,000-line legacy module, and triaging a production bug from a stack trace. For every task we timed the first working change, counted how many manual fixes the output needed before it ran, and noted where the model asked for clarification versus guessing.</p>
         <p>The gap between "writes plausible code" and "writes code that runs" turned out to be the whole story. Claude Code and Codex shipped runnable multi-file changes most often; Copilot and Cursor were faster for single-function edits but needed more steering on cross-file work. Replit and Gemini CLI surprised us on search-and-explain tasks but lagged on careful refactors.</p>
