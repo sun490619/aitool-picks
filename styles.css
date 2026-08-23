@@ -1498,3 +1498,16 @@ main > .container > .breadcrumb { max-width: 760px; margin-left: auto; margin-ri
 .intro-toc { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 18px 0 0; }
 .intro-toc li { background: var(--color-bg-muted); border: 1px solid var(--border); border-radius: 999px; padding: 6px 14px; font-size: .88rem; color: var(--text); }
 
+/* 2026-08-23: inline 联盟工具链接（正文内工具名→可点）。
+   设计原则：不跳脱、不强行染色/下划线，继承正文文字色，仅 hover 时给极淡提示。
+   专属 class .inline-tool 不影响任何现有 .article-content a 规则（1300行）。 */
+.article-content a.inline-tool {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color .12s ease;
+}
+.article-content a.inline-tool:hover {
+  border-bottom-color: var(--accent);
+}
+
