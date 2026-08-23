@@ -234,6 +234,26 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
             <p>LangChain 是 2026 年开发者构建 LLM 应用的默认起点。生态大、抽象有用、社区支持强。缺点是框架变化快、文档有时落后于发版。如果你选 LangChain，固定依赖版本、把框架代码和业务逻辑隔离，这样升级不会变冒险。</p>
             <p><strong>结论：推荐作为生产级 LLM 应用的主框架，但前提是尽早稳定版本。</strong></p>
 
+            <section class="pros-cons" aria-label="优点与缺点">
+                <div class="pros">
+                    <h3>我们喜欢的点</h3>
+                    <ul>
+                        <li>生态大、抽象有用，是 2026 年构建 LLM 应用的默认起点。</li>
+                        <li>社区支持强，踩坑几乎都能搜到现成方案。</li>
+                        <li>把模型、向量库、工具串成一条链路的成本极低。</li>
+                        <li>从原型到生产的中间层省下大量胶水代码。</li>
+                    </ul>
+                </div>
+                <div class="cons">
+                    <h3>让我们犹豫的点</h3>
+                    <ul>
+                        <li>框架变化快，文档有时落后于发版，升级易踩坑。</li>
+                        <li>抽象层在复杂场景会反过来挡路，需理解底层。</li>
+                        <li>版本固定和代码隔离没做好，升级会变成冒险。</li>
+                        <li>对极简单需求偏重，轻量场景可不必引入。</li>
+                    </ul>
+                </div>
+            </section>
 
             <section class="faq-section">
               <h2 id="faq">常见问题</h2>
