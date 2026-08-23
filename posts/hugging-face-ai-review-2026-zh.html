@@ -241,6 +241,28 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
 
             <h2 id="最终结论">最终结论</h2>
             <p>Hugging Face 是任何想用开放 AI 模型、又不想从零搭 GPU 集群的人的默认起点。它按 token 算不是最便宜的生产运行时，但它是从好奇到可用代码最快的路径。如果你的项目需要模型透明、开放权重或离线推理，Hugging Face 比任何单一闭源 API 都难被替代。</p>
+
+            <section class="pros-cons" aria-label="优点与缺点">
+                <div class="pros">
+                    <h3>我们喜欢的点</h3>
+                    <ul>
+                        <li>开放模型、数据集、Space 一站托管，从好奇到可用代码最快。</li>
+                        <li>模型透明、开放权重、可离线推理，闭源 API 替代不了。</li>
+                        <li>Transformers 等生态成熟，迁移和复用好。</li>
+                        <li>免费额度与社区资源多，学习和原型成本极低。</li>
+                    </ul>
+                </div>
+                <div class="cons">
+                    <h3>让我们犹豫的点</h3>
+                    <ul>
+                        <li>按 token 算不是最便宜的生产运行时，规模上来成本高。</li>
+                        <li>Inference Endpoints 配置和成本需自己算清，新手易踩坑。</li>
+                        <li>模型质量参差，开源不等于开箱好用，需自测。</li>
+                        <li>私有/合规部署仍需自己搭，不是纯托管省心。</li>
+                    </ul>
+                </div>
+            </section>
+
             <p><strong>结论：推荐给评估开放模型 vs 闭源 API 的开发者、研究者和团队。</strong></p>
 
 
