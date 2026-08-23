@@ -20,9 +20,10 @@
 import re
 import sys
 from pathlib import Path
+from typing import Optional
 
 
-def extract_mobile_drawer(html: str) -> str | None:
+def extract_mobile_drawer(html: str) -> Optional[str]:
     """从 overlay 开始提取到 mobile-menu 结束。"""
     start = html.find('<div class="mobile-menu-overlay"')
     if start == -1:
