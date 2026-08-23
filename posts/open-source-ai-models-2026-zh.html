@@ -190,6 +190,9 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
           <strong>Disclosure:</strong> <strong>披露声明：</strong>本文包含联盟链接。若您通过链接注册或购买，我们可能获得佣金，不会增加您的费用。我们只推荐亲自实测过的工具。详见<a href="/affiliate-disclosure.html">完整联盟披露声明</a>。
         </div>
 
+
+        
+
 <img src="/images/og-open-source-ai-models-2026.jpg" alt="2026 年顶级开源 AI 模型对比：Llama、Mistral 与 Stable Diffusion" class="post-hero" loading="lazy">
 
             <p><strong>披露：</strong>本文含<a href="/affiliate-disclosure.html">联盟链接</a>。若你通过它们注册，我们可能获得佣金，且不会增加你的任何额外费用。我们只推荐亲手实测、真心认可的工具。</p>        <div class="toc" aria-label="Table of contents">
@@ -238,14 +241,14 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
             
 <section class="expand-block">
       <h2 id="expand-oss-zh-hardware">硬件与显存门槛：本地到底能跑什么</h2>
-    <p><p>开源模型最大的错觉是'免费=零成本'。模型本身不花钱，但跑起来要显卡。我们实测，7B 级别的小模型在消费级显卡（如 8-12G 显存）就能流畅跑，体验惊喜；70B 级别想跑舒服，得 24G 以上显存，否则只能靠量化妥协速度。所以选模型前先看你手里的卡，别被参数党带偏。</p></p>
-    <p><p>还有一层：推理框架（如 llama.cpp、vLLM）和量化精度直接决定速度和占用。同一模型 4-bit 量化能塞进小卡但略掉精度，8-bit 更稳但吃显存。普通用户从 4-bit 小模型起步最稳，既保隐私又零月费；真要上位大模型，要么加卡要么上云托管。硬件这道槛，先掂量再下单。</p></p>
+    <p>开源模型最大的错觉是'免费=零成本'。模型本身不花钱，但跑起来要显卡。我们实测，7B 级别的小模型在消费级显卡（如 8-12G 显存）就能流畅跑，体验惊喜；70B 级别想跑舒服，得 24G 以上显存，否则只能靠量化妥协速度。所以选模型前先看你手里的卡，别被参数党带偏。</p>
+    <p>还有一层：推理框架（如 llama.cpp、vLLM）和量化精度直接决定速度和占用。同一模型 4-bit 量化能塞进小卡但略掉精度，8-bit 更稳但吃显存。普通用户从 4-bit 小模型起步最稳，既保隐私又零月费；真要上位大模型，要么加卡要么上云托管。硬件这道槛，先掂量再下单。</p>
     </section>
 
 <section class="expand-block">
       <h2 id="expand-oss-zh-license">许可证与商业使用的边界</h2>
-    <p><p>开源不等于能随便商用。很多强模型用的是'非商业'或'社区'许可证，个人玩随意，拿来做成收费产品可能踩线。我们建议上线前一定读一眼许可证条款，尤其是 Llama 系列和某些衍生权重，商用前确认允许。</p></p>
-    <p><p>稳妥做法：个人项目随便试；商业产品优先选明确标注可商用的权重，或走官方许可通道。别等产品跑起来收到律师函才后悔。许可证是开源世界里最被低估的坑，花十分钟读条款，比事后补救便宜一万倍。</p></p>
+    <p>开源不等于能随便商用。很多强模型用的是'非商业'或'社区'许可证，个人玩随意，拿来做成收费产品可能踩线。我们建议上线前一定读一眼许可证条款，尤其是 Llama 系列和某些衍生权重，商用前确认允许。</p>
+    <p>稳妥做法：个人项目随便试；商业产品优先选明确标注可商用的权重，或走官方许可通道。别等产品跑起来收到律师函才后悔。许可证是开源世界里最被低估的坑，花十分钟读条款，比事后补救便宜一万倍。</p>
     </section>
 
 <section class="how-we-test" aria-label="我们的测试方法">
