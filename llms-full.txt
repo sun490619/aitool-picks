@@ -169,3 +169,4 @@ Independent, global AI tool reviews. This file lists every public page (English 
 
 ## Research & Data
 - What 40+ AI Writing Tool Reviews Taught Us in 2026 — https://aitool-picks.com/posts/what-40-ai-writing-tools-taught-us-2026.html
+- 40+ AI 写作工具评测教会我们的事（2026）— https://aitool-picks.com/posts/what-40-ai-writing-tools-taught-us-2026-zh.html
