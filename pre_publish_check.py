@@ -25,7 +25,7 @@ import subprocess
 import sys
 
 REPO = subprocess.check_output(["git", "rev-parse", "--show-toplevel"]).decode().strip()
-LIB = "/Users/dawei/Desktop/项目总中枢/备用图片库"
+LIB = "/Users/dawei/ai-agent-context/项目总中枢/备用图片库"
 PROV_PATH = os.path.join(REPO, "image_provenance.json")
 
 CATEGORY_MAP = {
