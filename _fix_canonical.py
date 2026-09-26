@@ -21,12 +21,12 @@ FIXES = [
     <meta name="twitter:description" content="Best AI writing tools compared: Grammarly, Jasper, Writesonic, Copy.ai, Rytr, QuillBot, LanguageTool, Hemingway and more.">
     <link rel="canonical" href="''' + BASE_URL + '''/category/writing.html">
     <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D53DQ3JKKL"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9P81TDKC8X"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'G-D53DQ3JKKL');
+      gtag('config', 'G-9P81TDKC8X');
     </script>
 '''),
     # Posts 页 - 都有 GA/OG/Twitter，只缺 canonical
