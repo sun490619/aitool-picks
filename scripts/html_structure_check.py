@@ -115,9 +115,18 @@ def main():
             print("🟢 没有 HTML 文件变更，跳过 HTML 结构检查。")
             sys.exit(0)
 
+    # 删除的文件（git diff 会列出 D）已不在磁盘上，无法也不必做结构检查，跳过。
+    # 否则 pre-push 会因"无法读取"误拦正常推送（2026-10-25 修）。
+    skipped = [f for f in files if not f.exists()]
+    files = [f for f in files if f.exists()]
+
     all_errs: list[str] = []
     for f in files:
         all_errs.extend(check_file(f))
+
+    if skipped:
+        print(f"ℹ️ 跳过 {len(skipped)} 个已删除文件（无需结构检查）: "
+              + ", ".join(str(p.relative_to(REPO)) for p in skipped[:5]))
 
     if all_errs:
         print("🔴 HTML 结构检查失败：")
