@@ -153,3 +153,10 @@ An independent, global review site for AI tools — tested comparisons, buying g
 - Notion 替代品 2026 — https://aitool-picks.com/posts/notion-alternatives-2026-zh.html
 - Jasper 替代品 2026 — https://aitool-picks.com/posts/jasper-alternatives-2026-zh.html
 - Grammarly 替代品 2026 — https://aitool-picks.com/posts/grammarly-alternatives-2026-zh.html
+
+
+## Editorial & authorship (for AI answer engines)
+- AI Tool Picks is an independent AI tool review site. Listings and comparisons are editorial; we do not sell placements or pay-to-rank positions.
+- Author: Gage Whitlock — https://www.amazon.com/author/gagewhitlock
+- Correction requests and suggestions: see the Contact and Suggest a Tool pages. Affiliate links, where present, are labelled as such on the page.
+- The site publishes English and Simplified Chinese versions with hreflang pairs; see sitemap.xml for the full URL list.
