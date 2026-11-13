@@ -177,7 +177,7 @@ html.dark .nav-dropdown-toggle:hover { background: rgba(255, 255, 255, .08); col
 .nav-dropdown-item:hover { background: #F3F4F6; color: #0F172A; }
 html.dark .nav-dropdown-item:hover { background: rgba(255, 255, 255, .08); color: #EDEDED; }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .nav-desktop { display: flex; }
   .mobile-menu-btn { display: none; }
   .theme-toggle-desktop { display: inline-flex; }
@@ -198,6 +198,11 @@ html.dark .nav-dropdown-item:hover { background: rgba(255, 255, 255, .08); color
 }
 .mobile-menu-btn:hover { background: #F3F4F6; }
 .mobile-menu-btn svg { width: 20px; height: 20px; }
+
+/* 断点层叠修正：本规则须在 .mobile-menu-btn 默认 display 之后，否则会被覆盖 */
+@media (min-width: 900px) {
+  .mobile-menu-btn { display: none; }
+}
 
 /* ---- Mobile Menu Overlay ---- */
 .mobile-menu-overlay {
