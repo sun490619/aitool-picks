@@ -357,8 +357,14 @@ html.dark .pill-switch { background: rgba(255, 255, 255, .10); }
 html.dark .theme-toggle-btn { background: rgba(255, 255, 255, .10); }
 html.dark .theme-toggle-btn:hover { background: rgba(255, 255, 255, .16); }
 .theme-toggle-btn svg { width: 16px; height: 16px; }
-/* Desktop header toggle: hidden on mobile (drawer has its own), compact on desktop */
+/* Desktop header toggle: hidden on mobile (drawer has its own), compact on desktop.
+   NOTE: the show rule MUST come AFTER this hide rule — a later equal-specificity
+   rule overrides an earlier one, and it was previously placed before it,
+   which hid the toggle on ALL widths (regression fixed 2026-11-14). */
 .theme-toggle-desktop { display: none; width: auto; padding: 8px 12px; margin-left: 8px; }
+@media (min-width: 900px) {
+  .theme-toggle-desktop { display: inline-flex; }
+}
 
 /* ---- Article share buttons ---- */
 .share-buttons { display: flex; gap: 8px; align-items: center; }
