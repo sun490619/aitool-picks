@@ -179,7 +179,7 @@ html.dark .nav-dropdown-item:hover { background: rgba(255, 255, 255, .08); color
 
 @media (min-width: 950px) {
   .nav-desktop { display: flex; }
-  .mobile-menu-btn { display: none; }
+  .mobile-menu-btn { display: inline-flex; }
   .theme-toggle-desktop { display: inline-flex; }
 }
 
@@ -201,7 +201,7 @@ html.dark .nav-dropdown-item:hover { background: rgba(255, 255, 255, .08); color
 
 /* 断点层叠修正：本规则须在 .mobile-menu-btn 默认 display 之后，否则会被覆盖 */
 @media (min-width: 950px) {
-  .mobile-menu-btn { display: none; }
+  .mobile-menu-btn { display: inline-flex; }
 }
 
 /* ---- Mobile Menu Overlay ---- */
