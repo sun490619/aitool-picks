@@ -180,7 +180,7 @@ html.dark .nav-dropdown-item:hover { background: rgba(255, 255, 255, .08); color
 @media (min-width: 950px) {
   .nav-desktop { display: flex; }
   .mobile-menu-btn { display: inline-flex; }
-  .theme-toggle-desktop { display: inline-flex; }
+  .theme-toggle-desktop { display: none; }
 }
 
 /* ---- Mobile Menu Button ---- */
@@ -363,7 +363,7 @@ html.dark .theme-toggle-btn:hover { background: rgba(255, 255, 255, .16); }
    which hid the toggle on ALL widths (regression fixed 2026-11-14). */
 .theme-toggle-desktop { display: none; width: auto; padding: 8px 12px; margin-left: 8px; }
 @media (min-width: 950px) {
-  .theme-toggle-desktop { display: inline-flex; }
+  .theme-toggle-desktop { display: none; }
 }
 
 /* ---- Article share buttons ---- */
