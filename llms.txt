@@ -160,3 +160,5 @@ An independent, global review site for AI tools — tested comparisons, buying g
 - Author: Gage Whitlock — https://www.amazon.com/author/gagewhitlock
 - Correction requests and suggestions: see the Contact and Suggest a Tool pages. Affiliate links, where present, are labelled as such on the page.
 - The site publishes English and Simplified Chinese versions with hreflang pairs; see sitemap.xml for the full URL list.
+- Self Publishing Titans Review 2027 (KDP all-in-one toolkit) — https://aitool-picks.com/posts/self-publishing-titans-review-2027.html
+- Self Publishing Titans 评测 2027（KDP 一站式工具箱·中文版） — https://aitool-picks.com/posts/self-publishing-titans-review-2027-zh.html
