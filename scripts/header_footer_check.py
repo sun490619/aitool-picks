@@ -148,6 +148,14 @@ def main() -> int:
         if norm != canonical:
             failures.append((rel, f'mobile drawer 结构与首页 {lang.upper()} 真源不一致'))
 
+        # 关键交互组件存在性（案例97：一致性检查查不出"全站一致地丢失"）
+        if 'mobile-menu-btn' not in html:
+            failures.append((rel, '缺少三条横杠按钮（mobile-menu-btn）'))
+        if 'langSwitch' not in html and 'data-lang' not in html:
+            failures.append((rel, '缺少语言切换入口（langSwitch / data-lang）'))
+        if 'data-theme-toggle' not in html and 'themeToggle' not in html:
+            failures.append((rel, '缺少明暗切换按钮（data-theme-toggle / themeToggle）'))
+
         checked += 1
 
     print(f'[header_footer_check] 检查文件: {checked}, 失败: {len(failures)}')
