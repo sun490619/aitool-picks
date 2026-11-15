@@ -1065,6 +1065,12 @@
    "added_date": "2026-08-31",
    "library_checked": true,
    "library_reason": "06_design 分类真实场景照，贴题 3D 建模/数字创作；按铁律优先用备用图片库而非 AI 生成或 Openverse"
+  },
+  "og-self-publishing-titans-review-2027.jpg": {
+   "status": "used",
+   "reuse_forbidden": true,
+   "source": "self-made brand cover (site template style), generated 2026-11-15",
+   "note": "SPT 评测 2026-11-15 新文封面：品牌模板生成，仅用于本文 EN/ZH。"
   }
  }
 }
