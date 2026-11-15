@@ -225,7 +225,7 @@ html.dark .mobile-menu-overlay { background: rgba(0, 0, 0, .6); }
   height: 100vh;
   height: 100dvh;
   width: min(340px, 85vw);
-  z-index: 300;
+  z-index: 100000; /* above #ms-consent-wrap (99999): drawer buttons must stay clickable while consent banner is open */
   background: var(--bg);
   border-left: 1px solid var(--border);
   box-shadow: 0 20px 40px rgba(0, 0, 0, .10);
@@ -1254,8 +1254,10 @@ html.dark .atp-features__header {
   display: block;
   height: 140px;
   margin: -16px -16px 14px;
-  background-size: cover;
+  background-size: contain; /* keep full cover art visible — titles baked into og images must not be cropped */
   background-position: center;
+  background-color: #16233f;
+  background-repeat: no-repeat;
   border-radius: 12px 12px 0 0;
 }
 @media (max-width: 720px) {

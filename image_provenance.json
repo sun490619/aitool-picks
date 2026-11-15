@@ -1071,6 +1071,32 @@
    "reuse_forbidden": true,
    "source": "self-made brand cover (site template style), generated 2026-11-15",
    "note": "SPT 评测 2026-11-15 新文封面：品牌模板生成，仅用于本文 EN/ZH。"
+  },
+  "og-tripo3d-review-2026.jpg": {
+   "status": "used",
+   "reuse_forbidden": true,
+   "source": "self-made brand cover (site template style) over official Tripo brand image, 2026-11-15",
+   "note": "Tripo 评测封面：站模板+官方底图+标题文字，仅本文 EN/ZH 用。"
+  },
+  "official/tripo3d/brand-og.jpg": {
+   "status": "used",
+   "source": "official Tripo3D og image (cdn-blog.holymolly.ai)",
+   "note": "官方品牌图，Tripo 文 hero+底图。"
+  },
+  "official/tripo3d/hires-1920x1080-capture-step-studio-function.jpg": {
+   "status": "used",
+   "source": "official Tripo text-to-3d feature page",
+   "note": "Studio 工作台截图。"
+  },
+  "official/tripo3d/hires-ui-capture-step-studio-function-image.jpg": {
+   "status": "used",
+   "source": "official Tripo image-to-3d feature page",
+   "note": "图生 3D 工作台截图。"
+  },
+  "official/tripo3d/hires-ui-smartmesh-p2-features-1.jpg": {
+   "status": "used",
+   "source": "official Tripo Smart Mesh page",
+   "note": "参考图→拓扑网格原理图。"
   }
  }
 }
