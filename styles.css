@@ -1241,8 +1241,9 @@ html.dark .atp-features__header {
   line-height: 1.35;
 }
 .related-articles .r-cat {
-  display: inline-block;
-  margin-top: 8px;
+  display: block; /* own line below title, never squeezed against title text */
+  width: fit-content;
+  margin-top: 10px;
   font-size: .78rem;
   color: var(--accent, #2d7ff9);
   background: color-mix(in srgb, var(--accent, #2d7ff9) 10%, #fff);
