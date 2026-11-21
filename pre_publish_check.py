@@ -8,9 +8,10 @@ aitool-picks 发布前强制门禁（pre-publish gate）。
   ③ 日期 + JSON-LD 铁律（datePublished 必填且 = <time datetime> /
      dateModified >= datePublished / 数值字段为数字禁引号）
   ④ 列表页排序铁律（置顶第1 + 其余日期倒序）
-  ⑤ 字数铁律（2026-08-13：正文 ≥1500 硬性下限，EN 计 word / ZH 计中文字符；
-     新增文章 <1500 FAIL，修改存量 <1500 WARN；>1800 仅 WARN 不卡。
-     历史冻结集 _wordcount_frozen.json（39 篇，用户定死不再改动）字数检查全豁免）
+  ⑤ 字数铁律（2026-08-13 立；2026-11-21 按竞品对标改类型分档，EN 计 word / ZH 计中文字符：
+     单品评测 2200 / 汇总清单 3500 / 对比 2000 / 教程 1500 / 新闻 800；
+     ★只对新文章硬卡 FAIL；存量旧文一律不检查（用户"旧的不管"）；
+     历史冻结集 _wordcount_frozen.json（39 篇）继续全豁免；超长不卡不警告）
 
 
 任何一次 push，若改动涉及【新增图】或【新增/修改 posts 文章】，
@@ -201,12 +202,38 @@ def check_post_dates(rel):
 
 
 # ---------------------------------------------------------------------------
-# ⑤ 字数铁律门禁（2026-08-13，对应"薄度 / 像诈骗站"根因）
-#    规则：每篇正文 ≥1500（EN word / ZH 中文字符），硬性下限写死。
-#    新增文章 <1500 → FAIL；修改存量 <1500 → WARN（不阻断）。>1800 仅 WARN。
+# ⑤ 字数铁律门禁（2026-08-13 立；2026-11-21 用户拍板改按类型分档）
+#    对标竞品实测：TechRadar 单品评测 2277词 / 汇总清单 4892词。
+#    分档下限（EN 计 word / ZH 计中文字符）：
+#      单品评测 review 2200 / 汇总清单 roundup 3500 / 对比 faceoff 2000 /
+#      教程 howto 1500 / 新闻 news 800。
+#    ★只对新文章硬卡（<下限 FAIL）；存量旧文一律不检查字数（用户明确"旧的不管"）。
+#      历史冻结集 _wordcount_frozen.json（39 篇）继续全豁免。
+#    超长不再 WARN（用户要求向竞品看齐写长，长文是目标不是问题）。
 # ---------------------------------------------------------------------------
-MIN_WORDS = 1500
-TARGET_MAX = 1800
+MIN_WORDS_BY_TYPE = {
+    "review": 2200,
+    "roundup": 3500,
+    "faceoff": 2000,
+    "howto": 1500,
+    "news": 800,
+}
+
+
+def detect_article_type(rel):
+    """按文件名判定文章类型（用户 2026-11-21 分档标准）。"""
+    stem = os.path.basename(rel).lower().replace("-zh.html", ".html")
+    stem = stem[:-5] if stem.endswith(".html") else stem
+    if re.search(r"(^|-)vs(-|$)", stem) or "-versus-" in stem:
+        return "faceoff"
+    if stem.startswith("best-") or stem.startswith("top-") or "-tools-for-" in stem or stem.endswith("-tools"):
+        return "roundup"
+    if stem.startswith("how-to-") or "-how-to-" in stem or "-guide" in stem or stem.startswith("guide-") or "-tutorial" in stem:
+        return "howto"
+    if stem.startswith("news-") or stem.endswith("-news") or "-news-" in stem:
+        return "news"
+    return "review"
+
 
 def check_word_count(rel, is_new):
     errs, warns = [], []
@@ -219,6 +246,10 @@ def check_word_count(rel, is_new):
         return errs, warns  # 工具页豁免字数要求
     if rel in _FROZEN:
         return errs, warns  # 历史冻结集（用户定死不再改动）字数检查豁免
+    if not is_new:
+        return errs, warns  # ★2026-11-21 起存量旧文一律不检查字数（用户：旧的暂时不管）
+    atype = detect_article_type(rel)
+    min_words = MIN_WORDS_BY_TYPE[atype]
     is_zh = bool(re.search(r'<html[^>]*lang="zh"', h, re.I))
     body = re.sub(r'<script[\s\S]*?</script>', ' ', h, flags=re.I)
     body = re.sub(r'<style[\s\S]*?</style>', ' ', body, flags=re.I)
@@ -229,16 +260,9 @@ def check_word_count(rel, is_new):
     else:
         cnt = len(re.findall(r"[A-Za-z0-9][A-Za-z0-9'’.\-]*", body))
         unit = "词"
-    if cnt < MIN_WORDS:
-        msg = f"{rel}: 正文 {cnt}{unit} < 硬性下限 {MIN_WORDS}（§13.13 / §九 字数铁律）"
-        if is_new:
-            errs.append(f"[FAIL] {msg} → 新文章不准 push，须扩写到 ≥{MIN_WORDS}{unit}")
-        else:
-            warns.append(f"[WARN] {msg} → 存量薄文整改 backlog，建议扩写（不阻断本次 push）")
-    elif cnt > TARGET_MAX:
-        warns.append(
-            f"[WARN] {rel}: 正文 {cnt}{unit} > {TARGET_MAX}，建议精简到 {TARGET_MAX} 内（上限不卡，可多于）"
-        )
+    if cnt < min_words:
+        msg = f"{rel}: 正文 {cnt}{unit} < {atype}({min_words}{unit}) 硬性下限（2026-11-21 竞品对标分档）"
+        errs.append(f"[FAIL] {msg} → 新文章不准 push，须扩写到 ≥{min_words}{unit}")
     return errs, warns
 
 
@@ -303,7 +327,7 @@ def main():
     for p in posts:
         errors += check_post_dates(p)
 
-    # ---- ⑤ 字数铁律门禁：新增文章硬卡(<1500 FAIL)，修改存量仅 WARN ----
+    # ---- ⑤ 字数铁律门禁：新文章按类型分档硬卡 FAIL，存量旧文不检查 ----
     for p in posts:
         e, w = check_word_count(p, p in added)
         errors += e
