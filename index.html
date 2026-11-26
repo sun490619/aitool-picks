@@ -160,9 +160,9 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
                     <a href="/category/writing.html" class="btn btn-primary">Explore AI Writing Tools</a>
                     <a href="/category/seo.html" class="btn btn-secondary">Best AI SEO Tools</a>
                 </div>
-                <div class="hero-stats" role="img" aria-label="Site statistics: 110 in-depth reviews, 7 categories covered, independent and reader-funded">
-                    <div class="stat-item"><div class="stat-value">110</div><div class="stat-label">In-Depth Reviews</div></div>
-                    <div class="stat-item"><div class="stat-value">7</div><div class="stat-label">Categories</div></div>
+                <div class="hero-stats" role="img" aria-label="Site statistics: 111 in-depth reviews, 7 categories covered, independent and reader-funded">
+                    <div class="stat-item"><div class="stat-value" id="statReviews">111</div><div class="stat-label">In-Depth Reviews</div></div>
+                    <div class="stat-item"><div class="stat-value" id="statCategories">7</div><div class="stat-label">Categories</div></div>
                     <div class="stat-item"><div class="stat-value">100%</div><div class="stat-label">Independent</div></div>
                 </div>
             </div>
@@ -1951,5 +1951,21 @@ if(localStorage.getItem('atp_owner_exclude')==='1'||document.cookie.indexOf('atp
     <script src="/shared.js"></script>
     <script src="/scripts.js"></script>
 <script src="/bd-subscribe.js" defer></script>
+<script>
+(function(){
+  try{
+    var cards=document.querySelectorAll('#postsGrid article.post-card');
+    if(!cards.length) return;
+    var seen={};
+    cards.forEach(function(c){var k=c.getAttribute('data-category');if(k)seen[k]=1;});
+    var nReviews=cards.length, nCats=Object.keys(seen).length;
+    var r=document.getElementById('statReviews'), g=document.getElementById('statCategories');
+    if(r) r.textContent=nReviews;
+    if(g && nCats) g.textContent=nCats;
+    var box=document.querySelector('.hero-stats');
+    if(box) box.setAttribute('aria-label','Site statistics: '+nReviews+' in-depth reviews, '+nCats+' categories covered, independent and reader-funded');
+  }catch(e){}
+})();
+</script>
 </body>
 </html>
